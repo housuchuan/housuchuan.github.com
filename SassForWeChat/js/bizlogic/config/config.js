@@ -1,5 +1,5 @@
 /**
- * 作者: dailc
+ * 作者: housc
  * 时间: 2016-05-21 
  * 描述: 项目中用到的通用config文件 
  */
@@ -25,13 +25,13 @@ define(function(require, exports, module) {
 	 */
 	(function() {
 		//正式地址
-		var serverUrl_formal = 'https://218.4.136.120:8086/MobileServiceAPI';
+		var serverUrl_formal = 'http://218.4.136.120:8086/MobileServiceAPI';
 		var udateFileUrl_formal = '';
 		//测试地址
 		var serverUrl_test = '';
 		var udateFileUrl_test = '';
 		//mock地址
-		var serverUrl_mock = 'https://218.4.136.118:8086/mockjs/95/';
+		var serverUrl_mock = 'http://218.4.136.118:8086/mockjs/95/';
 		if(exports.isFormal === true) {
 			exports.serverUrl = serverUrl_formal;
 			exports.spdateFileUrl = udateFileUrl_formal;
