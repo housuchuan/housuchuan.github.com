@@ -1,0 +1,126 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>知乎</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/discovery/common_list.css',
+				'css/discovery/discovery.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">发现</h1>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active" href="#item1mobile">
+							热门推荐
+						</a>
+						<a class="mui-control-item" href="#item2mobile">
+							热门收藏
+						</a>
+						<a class="mui-control-item" href="#item3mobile">
+							本月热榜
+						</a>
+						<a class="mui-control-item" href="#item4mobile">
+							今日热榜
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<div id="slider" class="mui-slider slider-imgSlider">
+										<div class="mui-slider-group mui-slider-loop">
+											<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+											<div class="mui-slider-item mui-slider-item-duplicate">
+												<a href="#">
+													<img src="../../img/discovery/muwu.jpg"/>
+												</a>
+											</div>
+											<!-- 第一张 -->
+											<div class="mui-slider-item">
+												<a href="#">
+													<img src="../../img/discovery/shuijiao.jpg"/>
+												</a>
+											</div>
+											<!-- 第二张 -->
+											<div class="mui-slider-item">
+												<a href="#">
+													<img src="../../img/discovery/muwu.jpg"/>
+												</a>
+											</div>
+											<!-- 第三张 -->
+											<div class="mui-slider-item">
+												<a href="#">
+													<img src="../../img/discovery/shuijiao.jpg"/>
+												</a>
+											</div>
+											<!-- 第四张 -->
+											<div class="mui-slider-item">
+												<a href="#">
+													<img src="../../img/discovery/shuijiao.jpg"/>
+												</a>
+											</div>
+										</div>
+									</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									222
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item4mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 通用seajs配置 -->
+		<script>
+			SrcBoot.outSeaConfig();
+		</script>
+		<script>
+			seajs.use('js/bizlogic/discovery/discovery.js');
+		</script>
+	</body>
+
+</html>

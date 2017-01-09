@@ -1,0 +1,52 @@
+/**
+ * 作者：孙尊路
+ * 日期：2016-04-05 
+ * 描述：这是通用的一个列表页面（图文并茂）
+ */
+.mui-table h4,
+.mui-table h5,
+.mui-table .mui-h5,
+.mui-table .mui-h6,
+.mui-media-body h5,
+.mui-media-body .mui-h5,
+.mui-media-body .mui-h6,
+.mui-table p,
+.mui-media-body p {
+	margin-top: 0;
+}
+
+.mui-media-body h4,
+.mui-table h4 {
+	line-height: 21px;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.mui-media-body h5,
+.mui-table h5 {
+	line-height: 20px;
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.mui-table .mui-h6 {
+	text-align: left;
+}
+
+.mui-table-view .mui-media-object {
+	line-height: 42px;
+	max-width: 78px;
+	height: 78px;
+}
+/*通用样式：控制每一行（栏）底部边框left设置为0；*/
+.mui-table-view-cell:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}

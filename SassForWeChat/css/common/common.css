@@ -1,0 +1,36 @@
+/**
+ * 公用css -可以替换为对应项目的公用样式
+ * 这里写一些测试样式
+ */
+body,
+.mui-content {
+	background-color: #FFFFFF;
+}
+/*重写头部导航栏bar背景色,颜色为 187bc2*/
+.mui-bar-nav {
+   background:#187bc2;
+   z-index: 20;
+}
+/*重写title的颜色,666666
+ title大小为18px*/
+.mui-title {
+	font-size: 18px;
+	color: #ffffff;
+}
+/*重写返回按钮颜色*/
+.mui-icon-left-nav {
+	color: #FFFFFF;
+}
+/*右侧的info图标*/
+.mui-icon-info-filled {
+	color: #FFFFFF;
+}
+/*重写按钮*/
+.mui-btn-block {
+	height: 45px;
+	line-height: 45px;
+	padding: 0;
+}
+.common-hidden {
+	display: none;
+}

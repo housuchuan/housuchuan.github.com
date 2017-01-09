@@ -1,0 +1,55 @@
+{
+  "html/mainpage/index.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "js/libs/mui.min.js",
+      "js/core/sea.min.js",
+      "js/bizlogic/config/seaBizConfig.js",
+      "css/common/common.css",
+      "img/mainpage/img_circleTitleImg.png",
+      "css/mainpage/qq.css",
+      "css/mainpage/origin.css",
+      "js/bizlogic/config/config.js",
+      "js/core/RayApp/sea.config.js",
+      "js/core/RayApp/cacheControl.config.js",
+      "js/libs/mustache.min.js",
+      "js/core/RayApp/Tools/RayApp.CommonTools.js",
+      "js/libs/zepto.min.js",
+      "js/core/RayApp/RayApp.Config.js",
+      "img/mainpage/img-women.jpg",
+      "css/mui.min.css",
+      "js/bizlogic/mainpage/qq.js",
+      "js/core/RayApp/Tools/RayApp.StorageTools.js",
+      "js/core/RayApp/Tools/RayApp.WindowTools.js",
+      "js/core/RayApp/Tools/RayApp.PullToRefresh.Base.Type1.js",
+      "js/core/RayApp/Tools/RayApp.PullToRefresh.Base.Type1.material1.js",
+      "js/core/RayApp/Tools/RayApp.HtmlTools.js",
+      "js/core/RayApp/Tools/RayApp.PullToRefresh.Impl.Default.js",
+      "css/RayApp/RayApp.PullToRefresh.css"
+    ],
+    "refer": [
+      "html/discovery/discovery.html"
+    ]
+  },
+  "html/discovery/discovery.html": {
+    "resources": [
+      "js/bizlogic/discovery/discovery.js",
+      "css/discovery/discovery.css",
+      "css/discovery/common_list.css",
+      "js/core/RayApp/cacheControl.config.js",
+      "fonts/mui.ttf",
+      "js/libs/mui.min.js",
+      "js/core/sea.min.js",
+      "js/bizlogic/config/seaBizConfig.js",
+      "css/common/common.css",
+      "js/core/RayApp/sea.config.js",
+      "js/bizlogic/config/config.js",
+      "js/libs/mustache.min.js",
+      "js/core/RayApp/Tools/RayApp.CommonTools.js",
+      "js/libs/zepto.min.js",
+      "js/core/RayApp/RayApp.Config.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  }
+}

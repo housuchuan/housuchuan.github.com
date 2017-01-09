@@ -1,0 +1,193 @@
+$fontSize:14px !default;
+@mixin liSetStyle($class,$tc,$mc,$lc,$rc){
+    .#{$class}-hotTitle {color:$tc;}
+    .#{$class}-liTitle {font-size:15px;color:$mc;}
+    .#{$class}-souce {color:$lc;}
+    .#{$class}-Content {color:$rc;display: -webkit-box;overflow: hidden;white-space: normal;text-overflow: ellipsis;word-wrap: break-word;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+}
+/*首页图标设置*/
+%fontColor {
+    color: #fff;   
+}
+%blColor {
+    color: #000;   
+}
+%iconSize {
+    margin: 3px 0 0 0px;
+    padding-right: 0;
+    font-size: 20px;
+    font-weight: 500;  
+}
+%boxPadding {
+    padding: 15px 12px;
+}
+@mixin bgc($bgc){
+    background-color: $bgc;
+}
+@mixin borderR($top,$right,$bottom,$left,$bw:1px){
+    border: $bw solid #6D6D72;
+}
+@mixin userImg($wid,$hei,$radius) {
+    width: $wid;
+    height: $hei;
+    border-radius: $radius;
+}
+
+//sass编译
+#offCanvasWrapper {
+    #offCanvasSideScroll {
+        .title {
+            display: inline-block;
+            height: 51px;
+            padding: 1px;
+            background-color: #fff;
+            border-radius: 30px;
+            img {
+                @include userImg(50px,50px,30px)
+            }
+        }
+        .content {
+            div {
+                @extend %fontColor;
+                font-size: 16px;
+            }
+            & div:last-child {
+                color: #58a8e5;
+                font-size: $fontSize;
+            }
+        }
+    }
+    .asideBar {
+        margin-top: 140px;
+        padding-top: 8px;
+        @include bgc(#fff);
+        ul li{
+            @include bgc(#fff);
+            font-size: $fontSize;
+            color: #1b1b1b;
+            a {
+                text-indent: 10px;
+                .mui-icon {
+                    padding-right: 30px;
+                    font-size: 18px;
+                }
+                span:last-child {
+                    @extend %blColor;
+                }
+            }
+        }
+        ul li:first-child a {
+            background-color: #e0e0e0;
+        }
+        ul .mui-table-view-cell:after {
+            content: none;
+        }
+        ul.mui-table-view-inverted:after {
+            background-color: #cfcfcf;
+        }
+        .mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn).mui-active {
+            background-color: #e0e0e0;
+        }
+        .mui-scroll > div {
+            @extend %blColor;
+            line-height: 40px;
+            text-indent: 20px;
+            font-size: $fontSize;
+            &.changeTopic {
+                margin-top: 10px;
+            }
+        }
+    }
+    .mui-off-canvas-left {
+       @include bgc(#3392e2);
+    }
+}
+
+.mui-inner-wrap {
+    .mui-bar {
+        @include bgc(#0177d9);
+            span.mui-icon {
+                color: #e0e0e0;
+                font-size: 23px;
+                font-weight: 600;
+        }
+        .mainPageT {
+            margin-left: 10px;
+            font-weight: 800;
+            color: #fff;
+        }
+        .mui-title {
+            width: 100px;
+            line-height: 28px;
+            display: flex;
+            display: -webkit-flex;
+            margin: 8px auto;
+            font-size: $fontSize;
+            @extend %fontColor;
+            @include borderR('','','','');
+            background-color: #007AFF;
+            border-radius: 5px;
+            div {
+                flex: 1;
+            }
+            & div:first-child {
+                border-right: 1px solid #777777;
+                opacity: .5;
+            }
+        }
+        .mui-title-icons {
+            .mui-icon {
+                @extend %iconSize;
+            }
+        }
+    }
+    //首页列表数据
+    #offCanvasContentScroll {
+        .mui-scroll-wrapper {
+            margin-top: 44px;    
+        }
+        .mui-table-view-cell {
+            font-size: $fontSize;
+                .mui-info {
+                margin-top: 8px;
+                display: flex;
+                & div:first-child {
+                    flex: 1.5;
+                    span {
+                        display: block;
+                        width: 90%;
+                        margin-right: 10%;
+                        text-align: center;
+                        line-height: 20px;
+                        @extend %fontColor;
+                        background-color: #6cafe4;
+                        border-radius: 3px;
+                    }
+                }
+                & div:last-child {
+                    flex: 9;
+                    padding-left: 3px;
+                    font-size: $fontSize;
+                }
+            }
+        }
+        .mui-table-view-cell:after {
+            left: 0;
+        }
+        img {
+            @include userImg(20px,20px,'');
+        }
+    }
+}
+
+.mui-popover {
+    width: 150px;
+    height: 90px;
+    font-size: $fontSize;
+    .mui-table-view-cell>a:not(.mui-btn) {
+        padding: 10px 15px;
+        }
+    }
+
+@include liSetStyle('mui',#ababab,#1d1d1d,#fff,#777777);
+
