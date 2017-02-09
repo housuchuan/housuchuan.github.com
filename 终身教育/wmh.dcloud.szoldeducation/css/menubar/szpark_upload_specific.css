@@ -1,0 +1,32 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-06-28
+ * 描述：上传到页面设计
+ */
+ .mui-scroll-wrapper {
+ 	padding-top: 44px;
+ }
+ .upload-pic img {
+ 	float: left;
+	width: 100px;
+	height: 80px;
+}
+ .photo-info {
+	float: left;
+	margin-left: 15px;
+	padding: 10px 0;
+}
+ .photo-info > span {
+ 	display: block;
+ }
+ .photo-info > span:first-child {
+ 	font-size: 16px;
+ 	font-weight: 600;
+ }
+ .photo-info > span:last-child {
+ 	margin-top: 15px;
+ 	font-size: 14px;
+ }
+ .mui-table-view:after {
+ 	left: 15px;
+ }

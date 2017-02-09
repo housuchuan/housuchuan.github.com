@@ -1,0 +1,76 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-27 15:19:07
+        描述：本机文件 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>上传视频</title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/mystudy/szpark_native_file.css" />
+	</head>
+	<header class="mui-bar mui-bar-nav clearfix">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">上传视频</h1>
+		<!--<a class="cancel">取消</a>-->
+	</header>
+
+	<body>
+		<div class="mui-content" style="background-color: #ffffff;">
+			<div>
+				<span class="video">视频</span>
+				<div class="upload-video">
+				<button id="btnUpload" class="choose" onclick="chooseImgFromGalleryFile.click()"><img src="../../img/mystudy/img-upload.png"/>视频选择</button>
+				<input type="file" id="chooseImgFromGalleryFile" accept="video/*" style="display: none;" />
+				</div>
+				<!--<button type="button" class="mui-btn mui-btn-blue mui-btn-block choose" onclick="chooseImgFromGalleryFile.click()">选择</button>
+				<input type="file" id="chooseImgFromGalleryFile" accept="video/*" style="display: none;" />-->
+			</div>
+			<ul class="mui-table-view">
+			        <li class="mui-table-view-cell mobile-video">
+						<div class="arrow arrow-before"></div><span>手机视频</span>
+			        </li>
+			        <div class="video-wrapper">
+				        <!--<li class="mui-table-view-cell video-resource mui-clearfix">
+							<div class="pitch pitch-on"></div>
+							<img src="../../img/mystudy/img-nativephoto.jpg"/>
+							<div class="video-info">
+								<span>IMG_128.MOV</span><br  />	
+								<span>2.06M</span><br />
+								<span>09:16:00</span>
+							</div>
+				        </li>-->
+			        </div>
+			    </ul>
+			    <div class="upload">
+			    	<div class="whether-public clearfix">
+						<span>是否公开</span>
+						<span class="icon-choice">否</span>
+						<div class="wrong-choice defaule-choice choice-active"></div><span class="icon-choice">是</span>
+						<div class="true-choice defaule-choice"></div>
+					</div>
+					<div class="mui-clearfix">
+						<span class="fileSize">已选0M</span>
+				    	<button class="videoSubmit">上传</button>	
+					</div>				
+			    </div>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js" ></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/mystudy/szpark_native_file");
+		</script>
+	</body>
+
+</html>

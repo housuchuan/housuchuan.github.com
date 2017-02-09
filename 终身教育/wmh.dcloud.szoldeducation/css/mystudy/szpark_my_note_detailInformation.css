@@ -1,0 +1,262 @@
+/*
+ * 作者：侯苏川
+        时间：2016-08-09 11:43:07
+        描述 ：我的文档--笔记详情
+ * /
+/*标题选择样式设计*/
+
+body {
+	background-color: #fff;
+}
+
+.column {
+	background-color: #f7f6fb;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.column > span:first-child {
+	margin-left: 15px;
+	margin-right: 14px;
+}
+
+.column > span {
+	display: inline-block;
+	padding: 0 11.5px;
+	line-height: 40px;
+}
+
+.items-active {
+	color: #187bc2;
+	border-bottom: 2px solid #187bc2;
+}
+
+
+/*搜索框样式设计*/
+
+input[type=search] {
+	margin-bottom: 0;
+	border-radius: 15px;
+	font-size: 13px;
+	background-color: #eeeff3;
+}
+
+.mui-search:before {
+	top: 70%;
+}
+
+.input-area {
+	padding: 10px 10px;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #fff;
+}
+
+
+/*内容样式设计*/
+
+.mui-table-view:after {
+	left: 15px;
+}
+
+.selection-items {
+	position: relative;
+}
+
+.selection-items > li {
+	margin: 0 9px 0 28px;
+}
+
+.selection-items > li:first-child {
+	margin: 0;
+}
+
+.selection-items > li > span {
+	display: block;
+}
+
+.selection-items > li > span:first-child {
+	margin-bottom: 12px;
+	font-size: 14px;
+}
+
+.selection-items > li > span:last-child {
+	font-size: 12px;
+	color: #adadad;
+}
+
+
+/*视频内容样式设计*/
+
+.mui-slider-handle > div {
+	float: left;
+	width: 90px;
+	height: 75px;
+	background: url(../../img/mystudy/img_my_study.jpg) no-repeat;
+	background-size: 90px 75px;
+}
+
+.mui-slider-handle > h4 {
+	margin: 0 0 10px 100px;
+	padding-top: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 14px;
+}
+
+.studyed {
+	margin: 0 0 0 10px;
+}
+
+.studying {
+	margin-left: 10px;
+}
+
+.studyed-common-sizecol {
+	font-size: 12px;
+	color: #b9b9b9;
+}
+
+.timedata {
+	margin-left: 5px;	
+}
+
+/*笔记列表样式*/
+.mui-table-view:after,.mui-table-view:before {
+	content: none;
+}
+
+
+/*时间轴线*/
+.time-line {
+	position: absolute;
+	top: 15.5px;
+	bottom: 0;
+	left: 15px;
+	width: 1px;
+	margin: 0;
+	background-color: #cccccc;
+}
+
+.note-items {
+	position: relative;
+	font-size: 14px;
+	border-bottom: 1px dashed #d9d9d9;
+}
+
+.note-items p {
+	margin: 15px 0;
+	color: #000000;
+}
+
+.timer-icon {
+	position: absolute;
+	left: -23px;
+	top: 16px;
+	width: 20px;
+	height: 20px;
+	background: url(../../img/mystudy/img_timerIcon.png) no-repeat center #ffffff;
+	background-size: 100% 100%;
+}
+
+.play-record {
+	padding-top: 15.5px;
+	color: #187bc2;
+}
+
+.li-bottomItems {
+	font-size: 13px;
+	color: #999999;
+}
+
+.li-bottomItems div {
+	display: inline-block;
+}
+
+.li-bottomItems div:last-child {
+	float: right;
+}
+
+.note-operation span {
+	display: inline-block;
+	vertical-align: 3px;
+}
+
+.note-operation img {
+	width: 16px;
+	height: 16px;
+	margin: 0 5px 0 17px;
+}
+
+.note-operation span:first-child img {
+	margin-left: 0;
+} 
+
+/*文档笔记*/
+.articleNote-items {
+	margin: 15px 10px 0 10px !important;
+	border-bottom: 1px dashed #d9d9d9;
+}
+
+.articleNote-items p {
+	color: #000000;
+}
+
+/*编辑弹出框*/
+
+.editBox {
+	display: none;
+	position: absolute;
+	top: 142px;
+	width: 90%;
+	margin: 0 5%;
+	padding: 9px 9.5px 14px 9.5px; 
+	border: 1px solid #d4d4d4;
+	background-color: #fcfcfd;
+	z-index: 10;
+}
+
+.editBox img {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 16px;
+	height: 15px;
+}
+
+.editBox textarea {
+	padding: 10px 10px 10px 30px;
+	height: 160px;
+	text-indent: 15px;
+	font-size: 14px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.editBox-operation button {
+	width: 40%;
+	margin: 0 4%;
+	border-radius: 20px;
+}
+
+.editBox-operation button:first-child {
+	background-color: #e6e6e6;
+}
+
+.editBox-operation button:last-child {
+	color: #ffffff;
+	background-color: #187bc2;
+}
+
+/*遮罩*/
+.zhezhao-area {
+	display: none;
+	position: absolute;
+	top: 44px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 4;
+	background-color: #000000;
+	opacity: .5;	
+}
+

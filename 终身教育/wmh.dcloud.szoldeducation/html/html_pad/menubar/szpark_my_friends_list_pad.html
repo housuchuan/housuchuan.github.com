@@ -1,0 +1,88 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-08-08 15:08:45
+        描述： 好友模块子页面 
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>好友</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/menubar/szpark_my_friends_list_pad.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="friendsBar mui-clearfix">
+				<span>好友</span>
+				<div class="friends-tabBar">
+					<span class="friends-tabActive">好友申请</span>
+					<span>好友列表</span>
+				</div>
+			</div>
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="mui-table-view" id="listdata">
+						<!--<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+								<div class="mui-media-body">
+									<span>李大大</span>
+									<p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+								</div>
+								<div class="friends-operation">
+									<button type="button" class="mui-btn mui-btn-block">同意</button>
+									<button type="button" class="mui-btn mui-btn-block">忽略</button>					
+								</div>
+							</a>
+						</li>-->
+						<!--用户自己的好友变成删除按钮-->
+						<!--<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+								<div class="mui-media-body">
+									<span>端木磊</span>
+									<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+								</div>
+								<div class="friends-operation">
+									<button type="button" id="delete" class="mui-btn mui-btn-block">删除</button>					
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+								<div class="mui-media-body">
+									<span>洋洋</span>
+									<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+								</div>
+								<div class="friends-operation">
+									<button type="button" id="delete" class="mui-btn mui-btn-block">删除</button>					
+								</div>
+							</a>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="../../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../../js/'
+			});
+			seajs.use("bizlogic/menubar/szpark_my_friends_list");
+		</script>
+	</body>
+
+</html>

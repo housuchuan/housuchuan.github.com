@@ -1,0 +1,118 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-13 08:29:07
+        描述： 个人主页子界面 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket0.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/studycircle/szpark_personal_page_list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<!--个人信息模块-->
+			<div class="personal-info" id="baseInfoData">
+				<div class="personal-name clearfix"><img src="../../img/MobileFrame/img_head_logo190-190.png" id="HeadImage" />
+					<div class="personal-concern"><span id="userName"></span><br/></div>
+				</div>
+				<!--<div class="personal-choose">
+					<div>
+						<span>10</span><br />
+						<span>关注TA的</span>
+					</div>
+					<div>
+						<span>8</span><br />
+						<span>TA关注的</span>
+					</div>
+					<div>
+						<span>168</span><br />
+						<span>TA的访客</span>
+					</div>
+				</div>-->
+			</div>
+
+			<div class="mui-scroll-wrapper space-wrapper">
+				<div class="mui-scroll needWrapper">
+					<!--这里放置真实显示的DOM内容-->
+					<div class="twd" style="position: fixed;top: 118px;bottom: 0;width: 100%;">
+
+						<!--圈子部分-->
+						<div class="mui-table-view circle">
+							<div class="circle-item clearfix">
+								<span>圈子</span>
+								<span class="TA-common TA-join TA-eve TA-addevent">我加入的</span>
+								<span class="TA-common TA-create TA-eve TA-addevent TA-active">我创建的</span>
+								<span class="TA-common TA-join TA-eve TA-addevent">审核中</span>
+							</div>
+							<div class="mui-scroll-wra">
+								<div class="mui-scroll-wrapper mui-scroll-top" id="pullrefresh">
+									<div class="mui-scroll">
+										<div id="listdata">
+											<!--这里放置真实显示的DOM内容-->
+											<!--<li id="circle-sec" class="mui-table-view-cell">
+									<div class="circle-sec-inner clearfix">
+										<img src="../../img/study/img_index_007acdemiceducation_pad.png" />
+										<div class="circle-sec">
+											<span>我们爱物理</span><br />
+											<span class="TA-common circle-check">[审核通过]</span><br />
+											<span class="TA-common circle-common-col">1111</span><span class="TA-common">成员</span><span class="TA-common circle-common-col circle-theme">610</span><span class="TA-common">话题</span>
+										</div>
+									</div>
+									<button type="button" class="mui-btn mui-btn-blue mui-btn-outlined">管理</button>
+								</li>-->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--话题部分-->
+						<div class="theme circle">
+							<div class="circle-item clearfix">
+								<span>话题</span>
+								<span class="TA-common TA-create TA-addevent selectTopic">我赞的</span>
+								<span class="TA-common TA-create TA-addevent selectTopic">我回复的</span>
+								<span class="TA-common TA-join TA-addevent selectTopic TA-active">我发表的</span>
+							</div>
+							<div class="mui-scroll-wrapper mui-scroll-bottom last-scroll" id="pullrefresh2">
+								<div class="mui-scroll">
+									<ul id="listdata2">
+										<!--<li class="mui-table-view-cell theme-sec clearfix" id="{{topicId}}">
+									<span>{{author}}</span>
+									<span class="theme-commom theme-publish-date">{{time}}</span>
+									<span class="theme-commom theme-publish-date">发布时间：</span><br />
+									<span class="theme-issuer">{{topicName}}</span><br />
+									<span class="theme-watch viewtext">【查看正文】</span>
+									<span class="theme-commom circlename">{{from}}</span>
+									<span class="theme-commom theme-publish-date">来自：</span>
+								</li>-->
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/studycircle/szpark_personal_page_list");
+		</script>
+	</body>
+
+</html>

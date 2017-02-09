@@ -1,0 +1,71 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-13 08:29:07
+        描述：我的视频页面 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的视频</title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket0.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/mystudy/szpark_my_video.css" />
+	</head>
+	<header class="mui-bar mui-bar-nav clearfix">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">我的视频</h1>
+	</header>
+
+	<body>
+		<div class="mui-content">
+			<!-- 搜索框-->
+			<div class="input-area">
+				<div class="mui-input-row mui-search">
+					<input type="search" class="mui-input-clear" placeholder="请输入您要搜索的内容">
+				</div>
+			</div>
+			<div class="upload-video">
+				<button id="btnUpload"><img src="../../img/mystudy/img-upload.png"/>上传视频</button>
+			</div>
+			<!--内容选择-->
+			<div class="column">
+				<span class="TA-common items-active">公开</span>
+				<span class="TA-common">保密</span>
+			</div>
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul id="listdata" class="mui-table-view">
+						<!--<li class="mui-table-view-cell mui-ellipsis">
+							<div class="videoList">
+								<img src="../../img/homepage/img_news1.jpg" />
+								<div>
+									<h4 class="mui-ellipsis">科技发展富强科技发展富强科技发展富强科技发展富强</h4>
+									<span>已审核</span><br />
+									<span>2016/03/21 12:22:20</span>
+								</div>
+							</div>	
+						</li>-->
+						<ul/>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/mystudy/szpark_my_video");
+		</script>
+	</body>
+
+</html>

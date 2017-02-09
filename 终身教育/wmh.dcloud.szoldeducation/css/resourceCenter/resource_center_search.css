@@ -1,0 +1,108 @@
+.mui-pull-top-pocket {
+	top: 10px !important;
+}
+#searchBorder{
+	margin-left: 5%;
+	margin-top: 15px;
+	height: 40px;
+}
+#search{
+	width: 80%;
+	float: left;
+	height: 100%;
+	text-align: left;
+}
+#searchButton{
+	text-align: center;
+	width: 15%;
+	height: 100%;
+	float: left;
+	background-color: #0062CC;
+	border-radius: 5px;
+}
+
+#searchButton img{
+	margin-top: 7px;
+	width: 25px;
+	height: 25px;
+}
+
+
+
+/*搜索结果列表样式*/
+.mui-scroll-wrapper {
+	margin-top: 114px;	
+}
+
+#searchList{
+	margin-top: 15px;
+}
+.imgBorder{
+	float: left;
+}
+.imgBorder img{
+	width: 89px;
+	height: 60px;
+}
+.infoDetailBorder{
+	float: left;
+	width: 60%;
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 17px;
+	color: #b8b8b8;
+}
+
+.infoDetailBorder div {
+	width: 100%;
+}
+
+.zhiboItem{
+	padding: 10px 10px;
+	width: 100%;
+	height: 82px;
+}
+.zhiboTitle{
+	font-size: 14px;
+	line-height: 19px;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #000000;
+}
+
+/*遮罩及其弹出框*/
+#zhezhao-area {
+	display: none;
+	position: fixed;
+	top: 44px;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	filter: alpha(opacity=70);
+}
+#alertWin{
+	display: none;
+	background-color: #EEEEEE;
+	font-size: 14px;
+	padding: 15px;
+	color: #000000;
+	position: fixed;
+	top: 150px;
+	width: 80%;
+	left: 10%;
+	z-index: 1002;
+	border-radius: 6px;
+}
+#btnGroup{
+	margin-top: 20px;
+	text-align: center;
+}
+#btnGroup button{
+	margin-left: 3px;
+	margin-right: 3px;
+}

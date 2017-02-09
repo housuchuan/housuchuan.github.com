@@ -1,0 +1,152 @@
+/** 
+        作者：孙尊路
+        时间：2016-04-07 11:38:16
+        描述：  侧滑页面
+**/
+
+
+/*字体颜色*/
+
+.mui-content {
+	color: #ffffff;
+	height: 100%;
+	font-size: 14px;
+}
+
+#userName {
+	word-break: break-all;
+}
+
+.LoginName {
+	word-break: break-all;
+}
+
+
+/*每个ul背景颜色*/
+
+.mui-table-view {
+	color: #ffffff;
+	background-color: #09335a;
+	margin-top: 10px;
+}
+
+
+/*Div侧滑部分背景颜色*/
+
+.mui-off-canvas-left {
+	background-color: #09335a;
+}
+
+
+/*PLUS下面*/
+
+.mui-scroll-wrapper-backcolor {
+	background-color: #09335a;
+}
+
+
+/*li上边界下边界border颜色*/
+
+.mui-table-view:before,
+.mui-table-view:after {
+	background-color: #09335a;
+}
+
+.mui-table-view-cell:after {
+	background-color: #09335a;
+}
+
+
+/*头部头像和右边登录信息字样，*/
+
+.mui-media-body {
+	padding-top: 10px;
+}
+
+
+/*img头像,暂时不设置*/
+
+.head-img {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin-right: 14px;
+	border-radius: 30px;
+}
+
+
+/*
+ * 单击效果
+ * -webkit-border-radius：苹果；谷歌，等一些浏览器认，因为他们都用的是webkit内核；
+ * -moz-border-radius：moz这个属性 主要是专门支持Mozilla Firefox 火狐浏览器的CSS属性。
+ * */
+
+.mui-table-view-cell.mui-active {
+	background-color: #187bc2!important;
+	-moz-border-radius: 15px;
+	/* Gecko browsers */
+	-webkit-border-radius: 15px;
+	/* Webkit browsers */
+	border-radius: 15px;
+	/* W3C syntax */
+}
+
+
+/*.mui-table-view-cell:active {
+	background-color: #187bc2;
+}*/
+
+
+/*设置反馈栏*/
+
+.mui-table-view-cell1 {
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #000000;
+}
+
+.setting {
+	padding-top: 10px;
+	width: 50%;
+	height: 46px;
+}
+
+.comment {
+	width: 50%;
+	height: 46px;
+	padding-top: 10px;
+}
+
+
+/*
+ * 单击效果
+ * -webkit-border-radius：苹果(Safari)；谷歌(Chrome)，等一些浏览器认，因为他们都用的是webkit内核；
+ * -moz-border-radius：moz这个属性 主要是专门支持Mozilla Firefox 火狐(Firefox)浏览器的CSS属性。
+ * */
+
+.setting:active {
+	background-color: #187bc2;
+	-moz-border-radius: 15px;
+	/* Gecko browsers */
+	-webkit-border-radius: 15px;
+	/* Webkit browsers */
+	border-radius: 15px;
+	/* W3C syntax */
+}
+
+
+/*
+ * 单击效果
+ * -webkit-border-radius：苹果；谷歌，等一些浏览器认，因为他们都用的是webkit内核；
+ * -moz-border-radius：moz这个属性 主要是专门支持Mozilla Firefox 火狐浏览器的CSS属性。
+ * */
+
+.comment:active {
+	background-color: #187bc2;
+	-moz-border-radius: 15px;
+	/* Gecko browsers */
+	-webkit-border-radius: 15px;
+	/* Webkit browsers */
+	border-radius: 15px;
+	/* W3C syntax */
+}

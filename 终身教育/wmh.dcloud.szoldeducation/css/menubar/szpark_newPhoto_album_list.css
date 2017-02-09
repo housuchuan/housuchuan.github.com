@@ -1,0 +1,305 @@
+/*
+ *作者：侯苏川
+ *时间：2016-06-23 08:29:07
+ *描述： 相册子页面(个人空间)   
+ */
+
+body,
+.mui-content {
+	background-color: #fff;
+}
+
+
+/*相册添加上传部分*/
+
+.photo-list {
+	height: 49px;
+	padding: 6px 10px;
+	background-color: #f7f6fb;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.photo-list> span {
+	line-height: 36px;
+	font-size: 14px;
+}
+
+.photo-list button {
+	float: right;
+	margin-left: 10px;
+	padding: 7.5px 9.5px;
+	font-size: 12px;
+	color: #6b9fd1;
+	background-color: #f7f6fb;
+	border: 1px solid #6b9fd1;
+}
+
+
+/*相册内容样式设计*/
+
+.add-photoAlbum span {
+	margin-top: 16%;
+	font-size: 60px;
+}
+
+.add-photoAlbum {
+	text-align: center;
+}
+
+.add-photoAlbum> div {
+	font-size: 14px;
+	color: #187bc2;
+}
+
+.add-photoAlbum:active {
+	background-color: #999999;
+	opacity: .5;
+}
+
+.add-photoAlbum:active div {
+	color: #6641E2;
+}
+
+.photolist {
+	float: left;
+	width: 48%;
+	margin-top: 10px;
+	margin-left: 1%;
+	padding: 2.5px;
+	border: 1px solid #cccccc;
+}
+
+.photolist:first-child {
+	height: 145px;
+	border: 1px solid #187bc2;
+}
+
+.photolist:nth-child(2) {
+	/*background-color: #cccccc;*/
+}
+
+.photolist:nth-child(2) .photo-operation {
+	/*background-color: #cccccc;*/
+}
+
+.photolist:last-child {
+	margin-bottom: 40px;
+}
+
+.photo-background {
+	position: relative;
+	height: 115px;
+}
+
+.photo-background> img {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #cccccc;
+}
+
+.photo-background> span {
+	position: absolute;
+	right: 11px;
+	bottom: 8px;
+	color: #fff;
+}
+
+.photo-operate {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.photo-operate button {
+	margin: 5px 3px;
+	padding: 3px 5px;
+	color: #ffffff;
+	background-color: #000000;
+	opacity: 0.6;
+}
+
+.photo-operation {
+	background-color: #f7f6fb;
+}
+
+.photo-operation> span {
+	display: inline-block;
+	width: 100%;
+	padding: 0 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	font-size: 14px;
+	vertical-align: -9px;
+}
+
+.photo-operation> button {
+	margin: 3px 0 3px 4%;
+	width: 20%;
+	padding: 2px 0;
+	font-size: 12px;
+	color: #187bc2;
+	background-color: #fff;
+	border: 1px solid #187bc2;
+}
+
+.mui-table-view:before,
+.mui-table-view-cell:before,
+.mui-table-view:after,
+.mui-table-view-cell:after {
+	content: none;
+}
+
+
+/*添加相册*/
+
+
+/*相册头*/
+
+#zhezhao-area {
+	display: none;
+	position: fixed;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.5;
+	opacity: .50;
+	filter: alpha(opacity=70);
+}
+
+.add-photo {
+	position: fixed;
+	top: 5px;
+	width: 95%;
+	margin-left: 2.5%;
+	border-radius: 5px;
+	background-color: #fafafa;
+	z-index: 1002;
+	display: none;
+}
+
+.photo-bar {
+	width: 100%;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #187bc2;
+}
+
+.mui-icon-closeempty {
+	float: left;
+	margin: 6px 4px 0 0;
+	color: #fff;
+	font-size: 30px;
+}
+
+
+/*相册名称及描述*/
+
+.photo-input {
+	margin-top: 10px;
+	padding: 0;
+	padding-left: 20px;
+	background-color: #fff;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.cut-line {
+	width: 100%;
+	height: 1px;
+	background-color: #e0e0e0;
+}
+
+input[type=text] {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.photo-name> input[type=text] {
+	padding: 13px 0;
+}
+
+.photo-describe> input[type=text] {
+	padding: 18px 0 38px 0;
+}
+
+
+/*相册是否公开及按钮样式*/
+
+.whether-public {
+	height: 44px;
+	margin-top: 9px;
+	padding-right: 25px;
+	background-color: #fff;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.whether-public> span:first-child {
+	margin-left: 10px;
+	display: inline-block;
+	line-height: 44px;
+	font-weight: 600;
+}
+
+.wrong-choice {
+	margin: 0 9px 0 24px;
+}
+
+.true-choice {
+	margin-right: 9.5px;
+}
+
+.icon-choice {
+	float: right;
+	display: inline-block;
+	line-height: 44px;
+	color: #999999;
+}
+
+.whether-public> div {
+	float: right;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-top: 13px;
+	background-size: 18px 18px;
+}
+
+.defaule-choice {
+	background: url(../../img/menubar/img-nocheck.png) no-repeat;
+}
+
+.choice-active {
+	background: url(../../img/menubar/img-check.png) no-repeat;
+}
+
+.button-area> button {
+	float: left;
+	display: inline-block;
+	width: 45%;
+	margin: 10px 2.5%;
+	padding: 13px 0;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.cancel-btn {
+	background-color: #d1d1d1;
+}
+
+.confirm-btn {
+	float: right;
+	margin-right: 6px;
+}
+
+.confirm-btn:active {
+	font-size: 14px;
+}

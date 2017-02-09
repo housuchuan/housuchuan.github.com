@@ -1,0 +1,121 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-06-27 14:29:07
+ * 描述：我的视频
+ */
+
+.mui-scroll-wrapper {
+	margin-top: 209px;
+}
+
+/*公开保密分类*/
+.column {
+	background-color: #f7f6fb;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.column > span:first-child {
+	margin-left: 15px;
+	margin-right: 14px;
+}
+
+.column > span {
+	display: inline-block;
+	padding: 0 11.5px;
+	line-height: 40px;
+}
+
+.items-active {
+	color: #187bc2;
+	border-bottom: 2px solid #187bc2;
+}
+
+
+/*搜索框样式设计*/
+
+input[type=search] {
+	margin-bottom: 0;
+	border-radius: 15px;
+	background-color: #eeeff3;
+}
+
+.mui-search:before {
+	top: 70%;
+}
+
+.input-area {
+	padding: 10px 10px;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #fff;
+}
+
+
+/*上传视频样式*/
+
+.upload-video {
+	width: 100%;
+	margin-top: 9px;
+	padding: 8.5px 0;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #fff;
+}
+
+.upload-video img {
+	position: absolute;
+	top: 10px;
+	left: 33%;
+	width: 16px;
+	height: 16px;
+	margin-right: 4.5px;
+}
+
+.upload-video > button {
+	width: 95%;
+	margin-left: 2.5%;
+	padding: 9px 0;
+	color: #187bc2;
+	border: 1px solid #187bc2;
+}
+
+
+/*视频内容样式设计*/
+
+h4 {
+	font-size: 14px;
+}
+
+.videoList > img {
+	width: 88px;
+	height: 61px;
+}
+
+.videoList> div {
+	display: inline-block;
+	width: 70%;
+	margin-left: 10px;
+}
+
+.videoList> div > span {
+	font-size: 12px;
+	color: #b9b9b9;
+}
+
+.mui-table-view:after {
+	left: 15px;
+}
+
+
+/*标题*/
+
+.mui-ellipsis {
+	line-height: 20px;
+}
+
+  /*右划样式*/
+ .mui-table-view-cell>.mui-slider-left>.mui-btn, .mui-table-view-cell>.mui-slider-right>.mui-btn {
+	padding: 0 20px;
+}
+ .mui-table-view-cell>.mui-slider-left>.mui-btn.mui-icon, .mui-table-view-cell>.mui-slider-right>.mui-btn.mui-icon {
+ 	font-size: 15px;
+ }

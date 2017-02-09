@@ -1,0 +1,335 @@
+/** 
+        作者：孙尊路
+        时间：2016-04-05 11:38:16
+        描述：  园区app首页面
+**/
+
+
+/*重写title的颜色,
+ title大小为18px*/
+
+.mui-title {
+	text-align: center;
+}
+
+
+/**
+ * 图片轮播  
+ */
+
+html,
+body {
+	height: 100%;
+}
+
+.mui-content {
+	position: relative;
+	height: 100%;
+}
+
+.mui-bar-nav~.mui-content {
+	padding-top: 30px;
+}
+
+.mui-slider {
+	margin: 10px;
+	/*	height: auto;*/
+	/*首页的两行按钮图标，上边界的边距左右不对等*/
+	/*	width: auto;*/
+}
+
+.mui-slider-indicator .mui-active.mui-indicator {
+	background: #187bc2;
+	bottom: 0px;
+}
+
+.mui-slider-indicator .mui-indicator {
+	background: #fff;
+	margin: 2px;
+}
+
+.mui-grid-view.mui-grid-9 {
+	margin-top: 0px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.mui-grid-view.mui-grid-9 .mui-media {
+	color: #797979;
+	height: 100%;
+}
+
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+	margin: 0;
+	padding: 0px 0px;
+	vertical-align: top;
+	border-right: none;
+	border-bottom: none;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell.mui-col-xs-3 {
+	height: 120px;
+	text-align: center;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+	font-size: 12px;
+	color: #333333;
+}
+
+
+/*
+ * 重写mui-icon,千万不要使用mui-icon,避免覆盖重写mui其他的地方，比如（刷新什么的） 所有模块图标尺寸大小
+ * */
+
+.re-mui-icon {
+	width: 75px;
+	height: 75px;
+	background-size: 100%;
+	/*背景图像将仅显示一次。*/
+	background-repeat: no-repeat;
+}
+
+
+/**
+ * 新闻
+ */
+
+.mui-table-view-cell_news {
+	width: 50%;
+	padding-left: 12px;
+	height: 140px;
+	margin: 12px 0;
+	float: left;
+	overflow: hidden;
+	border-right: 1px dashed #d8d8d8;
+}
+
+.spark_left_img {
+	float: left;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item img {
+	/*默认图片的大小
+	 * width: 150px;
+	height: 100px;*/
+	/*新的默认图片大小*/
+	width: 200px;
+	height: 125px;
+}
+
+
+/*控制页面高度*/
+
+.dataitem {}
+
+.spark_right_content {
+	width: 50%;
+	margin: 0 0 0 16px;
+	height: 150px;
+	float: left;
+}
+
+.spark_right_comefrom {
+	font-size: 12px;
+	width: auto;
+	/*来源的长度，超出显示省略号...*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.spark_right_title {
+	margin-top: 8px;
+	font-size: 16px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+
+/*
+ *注意：图片轮播的每一项间距控制小一点（把允许显示的行数为6，这样就可以靠近一点了，不至于显示空白太多）
+ */
+
+.spark_right_word {
+	margin-top: 8px;
+	font-size: 12px;
+	line-height: 15px;
+	display: -webkit-box;
+	-webkit-line-clamp: 6;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.spark_blue {
+	color: #187bc2;
+	width: 50%;
+	display: block;
+	float: left;
+	/*来源的长度，超出显示省略号...*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+/*将pad版页面调整2行7列，新增教育关工委和你问我答*/
+
+.mui-col-sm-2 {
+	width: 14.27%;
+}
+
+
+/*刷新包裹层*/
+
+.mui-scroll-wrapper {
+	margin-top: 44px;
+}
+
+
+/*底部包裹层隐藏*/
+
+.mui-pull-bottom-wrapper {
+	display: none;
+}
+
+
+/***
+  * 释放立即刷新 刷新字样调整为0
+  * */
+
+.mui-bar-nav~.mui-content .mui-pull-top-pocket {
+	top: 0px;
+}
+
+
+/*下拉菜单最终更改样式*/
+
+.school-servey {
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.school-servey li {
+	float: left;
+	width: 14.28%;
+	padding: 10px 0;
+	font-size: 12px;
+	background-color: #ffffff;
+}
+
+.school-servey li:active {
+	background-color: #e0e0e0;
+}
+
+.school-servey li div:first-child {
+	width: 75px;
+	height: 75px;
+	margin: 0 auto;
+	background-size: 100%;
+}
+
+.school-servey li div:last-child {
+	text-align: center;
+}
+
+
+/*新闻公告图标*/
+
+.mui-icon-schoolservey {
+	background: url(../../img/homepage/img_index_001schoolsummary_pad.png) no-repeat;
+}
+
+.mui-icon-grid02 {
+	background: url(../../img/homepage/img_index_003news_pad.png) no-repeat;
+}
+
+
+/*社区教育图标*/
+
+.mui-icon-grid03 {
+	background: url(../../img/homepage/img_index_005comedy_pad.png) no-repeat;
+}
+
+
+/*学历教育图标*/
+
+.mui-icon-grid04 {
+	background: url(../../img/homepage/img_index_007acdemiceducation_pad.png) no-repeat;
+}
+
+
+/*老年教育图标*/
+
+.mui-icon-grid05 {
+	background: url(../../img/homepage/img_index_002oldeducation_pad.png) no-repeat;
+}
+
+
+/**/
+
+.mui-icon-grid06 {
+	background: url(../../img/homepage/img_index_006resourcecenter_pad.png) no-repeat;
+}
+
+
+/*终身教育研究所图标*/
+
+.mui-icon-grid07 {
+	background: url(../../img/homepage/img_index_004alllife_pad.png) no-repeat;
+}
+
+
+/*资源中心图标*/
+
+
+/*.mui-icon-grid08 {
+	background: url(../../img/homepage/img_index_006resourcecenter_pad.png) no-repeat;
+}*/
+
+
+/*研习圈图标*/
+
+.mui-icon-grid09 {
+	background: url(../../img/homepage/img_index_008yanxi_pad.png) no-repeat;
+}
+
+
+/*我的学习图标*/
+
+.mui-icon-mystudy {
+	background: url(../../img/homepage/img_index_009mystudy_pad.png) no-repeat;
+}
+
+
+/*地图图标*/
+
+.mui-icon-myroom {
+	background: url(../../img/homepage/img_index_011personalspace_pad.png) no-repeat;
+}
+
+.mui-icon-mymap {
+	background: url(../../img/homepage/img_index_010maps_pad.png) no-repeat;
+}
+
+
+/*调查图标*/
+
+.mui-icon-check {
+	background: url(../../img/homepage/img_index_012investigation_pad.png) no-repeat;
+}
+
+
+/*教育关工委图标*/
+
+.mui-icon-jyggw {
+	background: url(../../img/homepage/img_jyggw_btn@2x.png) no-repeat;
+}
+
+
+/*你问我答图标*/
+
+.mui-icon-nwwd {
+	background: url(../../img/homepage/img_nwwd_btn@2x.png) no-repeat;
+}

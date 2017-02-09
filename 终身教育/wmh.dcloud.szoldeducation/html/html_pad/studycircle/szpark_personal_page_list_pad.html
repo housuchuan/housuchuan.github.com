@@ -1,0 +1,79 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-09-20 09:37:00
+        描述： 个人主页子页面 
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/common/repailTopPocket44.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/studycircle/szpark_personal_page_list_pad.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<!--审核人员列表-->
+			<div class="circleHeader"><span></span><span>圈子</span></div>
+			<div class="mui-scroll-wrapper validate-area" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div id="listdata" class="check-area mui-clearfix">
+						<!--<li class="mui-clearfix" id="{{id}}">
+							<img src="{{image}}" />
+							<div class="manage">管理</div>
+							<div class="check-status">
+								<div>{{title}}</div>
+								<div class="validate">{{status}}</div>
+								<div><span>{{member}}</span><span>成员</span></div>
+							</div>
+							<div class="topic-content"><span>{{topic}}</span><span>话题</span></div>
+						</li>-->
+						
+					</div>
+				</div>
+			</div>
+
+			<!--发布内容区域-->
+			<div class="topicHeader"><span></span><span>话题</span></div>
+			<div class="mui-scroll-wrapper publishConten-area" id="pullrefresh2">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="mui-table-view" id='listdata2'>
+						<!--<li class="mui-table-view-cell" id="{{topicId}}">
+							<div class="pubishContentAreaList mui-clearfix">
+								<img src="../../../img/MobileFrame/img_head_logo102-102.png" />
+								<div class="personalInfo">
+									<div class="name">{{author}}</div>
+									<div><span>发布时间：</span><span>{{time}}</span></div>
+								</div>
+								<div class="fromArea"><span>来自：</span><span>{{from}}</span></div>
+							</div>
+							<p>{{topicName}}</p>
+						</li>-->
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js" ></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			//区域滚动
+			seajs.config({
+				base: '../../../js/'
+			});
+			seajs.use("bizlogic/js_pad/studycircle/szpark_personal_page_list_pad");
+		</script>
+	</body>
+
+</html>

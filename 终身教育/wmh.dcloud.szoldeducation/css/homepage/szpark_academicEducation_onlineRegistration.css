@@ -1,0 +1,90 @@
+/**
+ * 学历教育 在线报名
+ * @author dailc
+ */
+
+
+/*详情容器区域*/
+
+.main-container {
+	/*relative来给子元素的absolute定位*/
+	position: relative;
+	background: #FFFFFF;
+	overflow: hidden;
+	word-break: break-all;
+}
+
+
+/*输入item*/
+
+.input-item {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #e0e0e0;
+	overflow: hidden;
+}
+
+input[type=text],
+input[type=number],
+textarea {
+	padding: 0;
+	margin-bottom: 0;
+	border: 0px;
+}
+
+/*输入item的 tips*/
+
+.input-item> .tips {
+	font-size: 15px;
+	color: #000000;
+	padding-left: 10px;
+}
+
+
+/*输入item的 input*/
+
+.input-item> input {
+	float: right;
+	height: 50px;
+	line-height: 50px;
+	font-size: 15px;
+	width: 70%;
+}
+
+
+/******************************按钮区域****************************/
+
+
+/*按钮通用*/
+
+.btn-common {
+	display: block;
+	width: 92%;
+	margin-left: 4%;
+	margin-right: 4%;
+	height: 40px;
+}
+/*.btn-common:link{
+	border-color: #000000;
+}
+.btn-common:visited {
+	border-color: #D22C2C;
+}*/
+
+.btn-common:hover {
+	border-color: #051F3D;
+}
+
+.btn-common:focus {
+	border-color: #051F3D;
+}
+
+
+/*提交按钮*/
+
+#btn-submit {
+	margin-top: 30px;
+	background: #1ebaf3;
+	color: #FFFFFF;
+	border-radius: 5px;
+}

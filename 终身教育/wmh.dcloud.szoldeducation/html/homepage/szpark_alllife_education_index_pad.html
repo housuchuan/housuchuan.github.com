@@ -1,0 +1,87 @@
+<!-- 
+        作者：朱晓琪
+        时间：2016-05-16
+        描述： 终身教育研究所父页面  pad html
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>终身教育研究所</title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/homepage/szpark_alllife_education_index_pad.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket0.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">终身教育研究所</h1>
+		</header>
+		
+		<!--<div class="mui-content">
+			 <div class="szpark_newstitle_left">
+		    	<ul class="szpark_newstitle_left_view">
+		    		<li class="szpark_newstitle_left_cell szpark_active" id="002001">研究所简介</li>
+		    		<li class="szpark_newstitle_left_cell" >科研动态</li>
+		    		<li class="szpark_newstitle_left_cell" >政策文献</li>
+		    		<li class="szpark_newstitle_left_cell" >科研讲坛</li>
+		    		<li class="szpark_newstitle_left_cell" >研究成果</li>
+		    	</ul>
+		    </div>
+		</div>-->
+		
+		<div class="mui-content">
+			<div class="szpark_newstitle_left">
+				<div id="" class="mui-control-content">
+					<div id="scrollTab" class="mui-scroll-wrapper detailscroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="szpark_newstitle_left_view">
+								<li class="szpark_newstitle_left_cell szpark_active" id="010001">研究所简介</li>
+								<li class="szpark_newstitle_left_cell" id="010002">科研动态</li>
+								<li class="szpark_newstitle_left_cell" id="010003">政策文献</li>
+								<li class="szpark_newstitle_left_cell" id="010004">科研讲坛</li>
+								<li class="szpark_newstitle_left_cell" id="010005">研究成果</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mui-scroll-wrapper listwrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<ul class="mui-table-view" id="listdata">
+						<!--<li class="mui-table-view-cell" id="{{InfoID}}"><div class="notice-txt2"><span>{{Title}}</span><span>发布时间：{{InfoDate}}</span></div></li>-->
+					</ul>
+				</div>
+			</div>
+			<div class="szpark_newstitle_right">
+				<div id="" class="mui-control-content">
+					<div id="scrollDetail" class="mui-scroll-wrapper detailscroll-wrapper">
+						<div class="mui-scroll">
+							<div class="my-content" id="content">
+								<!--<div class="title">{{title}}</div><div class="time"><span>{{infodate}}</span>&nbsp;|&nbsp;来源:<span>{{infoZhuanZai}}</span></div><div id="txt"></div><div class="attaches"><ul id="attachListData"></ul></div>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/libs/iscroll.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_alllife_education_index_pad');
+		</script>
+	</body>
+
+</html>

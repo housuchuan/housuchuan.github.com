@@ -1,0 +1,117 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-10-26 11:51:11
+        描述：  原创展示视频播放页面
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/common/repailTopPocket0.css" />
+		<link rel="stylesheet" href="../../../css/common/common_animate.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/menubar/szpark_original_display_videoPlayer_pad.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">原创视频</h1>
+		</header>
+
+		<div class="mui-content">
+			<!--遮罩-->
+			<div class="zhezhao-area" id="zhezhao-area"></div>
+			<!--弹出框-->
+			<div id="join-circle" class="join-circle">
+				<div class="circle-bar">
+					<span id="commontitle">举报</span>
+					<a class="clearfix"><span class="mui-icon mui-icon-closeempty"></span></a>
+				</div>
+				<div class="circle-input">
+					<textarea id="reason" name="" rows="5" cols="" placeholder="亲，请填写举报理由！(50字以内)"></textarea>
+				</div>
+				<div class="button-area clearfix">
+					<button class="cancel-btn">取消</button>
+					<button class="confirm-btn">举报</button>
+				</div>
+			</div>
+			<!-- 点播html代码-->
+			<div id="player"></div>
+
+			<!--评论区-->
+			<div class="videoCommentArea">
+			<div class="commentTitle">评论</div>
+			<div class="newest-comment">最新评论</div>
+			<div class="mui-scroll-wrapper mui-scroll-comment" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="list-container commentArea mui-table-view" id="listdata">
+						<!--<li class="mui-table-view-cell CommentItem">
+							<div class="headImgBorder"><img src="../../../img/MobileFrame/img_head_logo102-102.png" width="30px" height="30px" /></div>
+							<div class="commentBorder">
+								<div class="commentUserName">木棉</div>
+								<div class="commentDate">8小时前</div>
+								<div class="commentContent">说的真好</div>
+								<div class="secondLevelCommnet mui-clearfix">
+									<div class="review">
+										<div class="reviewIcon"></div>
+										<div>回复</div>
+									</div>
+									<div class="report">
+										<div class="reportIcon"></div>
+										<div>举报</div>
+									</div>
+								</div>
+								<div class="reviewContent">
+									<img src="../../img/educate/img_noticepic.png" /><span class="reviewName">木棉</span></span><span>回复啊啊啊：你还好吗你还好吗你还好吗？</span><br />
+									<div class="reviewDate">2016-11-14 xx xx xx</div>
+									<div class="secondLevelCommnet mui-clearfix">
+										<div class="review">
+											<div class="reviewIcon"></div>
+											<div class="replay">回复</div>
+										</div>
+										<div class="report">
+											<div class="reportIcon"></div>
+											<div>举报</div>
+										</div>
+										<div class="ZanBorder"><span>12</span><span>赞</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="zanBorder">
+								<span>12</span><span>赞</span>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+
+			<!--评论输入框-->
+			<div class="comment">
+				<input type="text" name="" id="content" value="" placeholder="说点什么吧...(50字以内)" />
+				<button type="button" class="mui-btn mui-btn-blue send" id="btnPublish">发表</button>
+			</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/bcloud.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../../js/'
+			});
+			seajs.use("bizlogic/js_pad/menubar/szpark_original_display_videoPlayer_pad");
+		</script>
+
+	</body>
+
+</html>

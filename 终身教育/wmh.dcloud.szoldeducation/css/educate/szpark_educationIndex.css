@@ -1,0 +1,197 @@
+/**
+ * 作者：黄赟博
+ * 日期：2016-04-05
+ * 介绍：教育关工委 首页
+ */
+
+body {
+	color: #333333;
+}
+
+.mui-bar-nav {
+	background-color: #187bc2;
+}
+
+.mui-bar-nav h1 {
+	color: #ffffff;
+	font-size: 18px;
+}
+
+#slider {
+	width: 100%;
+}
+
+
+/**
+ * 图片轮播  
+ */
+
+.mui-slider-indicator .mui-active.mui-indicator {
+	/*background: #187bc2;*/
+}
+
+.mui-slider-indicator .mui-indicator {
+	/*background: #fff;*/
+	margin: 2px;
+}
+
+
+/*图标*/
+
+.wh-padded {
+	width: 100%;
+	height: 89px;
+	background-color: #fff;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.wh-padded-item {
+	float: left;
+	padding-top: 9px;
+	width: 33.33333%;
+	text-align: center;
+}
+
+
+/*教育栏目-点击效果*/
+
+.course:active,
+.wh-padded-item:active {
+	background-color: #EAEAEA;
+}
+
+.wh-padded-item img {
+	width: 48px;
+	height: 48px;
+}
+
+.wh-padded-item span {
+	display: block;
+	font-size: 12px;
+	color: #333;
+}
+
+
+/*更多*/
+
+.kecheng {
+	height: 40px;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 40px;
+}
+
+.kecheng span:first-child {
+	font-size: 14px;
+}
+
+.kecheng-right {
+	float: right;
+}
+
+#more {
+	font-size: 10px;
+	color: #adadad;
+}
+
+.kecheng-right img {
+	width: 10px;
+	height: 5px;
+}
+
+
+/*课程内容*/
+
+.content {
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	background-color: white;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.course {
+	position: relative;
+	width: 47%;
+	float: left;
+	margin-right: 3%;
+	margin-bottom: 9px;
+}
+
+.course-pic {
+	display: block;
+	width: 100%;
+	height: 83px;
+}
+
+.title {
+	font-size: 12px;
+	display: block;
+	margin-top: 5px;
+}
+
+ul {
+	margin-top: 4px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+
+li {
+	width: 10px;
+	height: 10px;
+	float: left;
+	list-style-type: none;
+	margin-right: 2px;
+}
+
+/*视屏预览以及播放弹出框*/
+#zhezhao-area {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	filter: alpha(opacity=70);
+}
+
+#alertWin {
+	display: none;
+	background-color: #EEEEEE;
+	font-size: 14px;
+	padding: 15px;
+	color: #000000;
+	position: fixed;
+	top: 150px;
+	width: 80%;
+	left: 10%;
+	z-index: 1002;
+	border-radius: 6px;
+}
+
+#btnGroup {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#btnGroup button {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+/*为登录状态下显示没有任何数据*/
+ .noData {
+ 	display: block;
+ 	text-align: center;
+ 	line-height: 100px;
+ 	font-size: 14px;
+ 	color: darkgray;
+ }

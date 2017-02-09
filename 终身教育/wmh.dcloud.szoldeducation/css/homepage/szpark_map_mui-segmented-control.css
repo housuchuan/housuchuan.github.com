@@ -1,0 +1,70 @@
+/**
+ * 作者：孙尊路
+ * 日期：2016-05-03
+ * 简介：滑动tab页，通用样式
+ */
+
+
+/*由于没有使用自带的内容切换内容，这里单独给滑块内容定高度为1px,达到缩小tab栏目与内容区域的间距*/
+
+#mui-slider-item-content {
+	height: 1px;
+}
+
+.mui-bar~.mui-content .mui-fullscreen {
+	top: 44px;
+	height: auto;
+}
+
+.mui-segmented-control.mui-scroll-wrapper {
+	padding-top: 10px;
+	/***包裹层的高度*/
+	height: 60px;
+	/*包裹层的颜色目前是白色*/
+	background-color: #FFFFFF;
+}
+
+
+/*每一项之间的间距*/
+
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item {
+	display: inline-block;
+	width: auto;
+	padding: 0 15px;
+	border: 0;
+}
+
+
+/*分类图标*/
+
+.image_icon {
+	height: 20px;
+	width: 20px;
+	display: block;
+	margin-left: 12%;
+}
+
+.mui-segmented-control .mui-control-item {
+	line-height: 34px;
+}
+
+.mui-segmented-control {
+	font-size: 12px;
+	/*font-weight: 600;*/
+}
+
+.mui-active1 {
+	color: #007aff;
+	border-bottom: 2px solid #007aff;
+	background: 0 0;
+}
+
+
+
+
+/*滑动控件边界居上聚下*/
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+	border-top: 1px solid #c8c7cc;
+	border-bottom: 0px solid #c8c7cc;
+}

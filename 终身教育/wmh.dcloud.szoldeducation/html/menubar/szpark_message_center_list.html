@@ -1,0 +1,51 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-13 08:29:07
+        描述： 我的消息子页面 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的消息</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/common/common_list.css" />
+		<link rel="stylesheet" href="../../css/menubar/szpark_message_center_list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="mui-table-view" id="listdata">
+						<!--<li class="mui-table-view-cell mui-media" id="{{InfoID}}">
+								<div class="mui-slider-right mui-disabled"><a class="mui-btn mui-btn-red mui-icon ">删除</a></div>
+							<div class="mui-slider-handle clearfix">
+								<div class="mui-media-body">
+								<h5 class="mui-ellipsis"><span>【学习计划】</span>江苏射阳老师来我校江苏射阳老师来我校交流座谈江苏射阳老师来我校交流座谈交流座谈</h5>
+							</div>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/menubar/szpark_message_center_list");
+		</script>
+	</body>
+
+</html>

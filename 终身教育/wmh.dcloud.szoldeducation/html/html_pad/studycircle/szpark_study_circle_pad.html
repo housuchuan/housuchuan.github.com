@@ -1,0 +1,125 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-07-08 08:21:07
+        描述： 研习圈ipad版本页面 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>研习圈</title>
+
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/common/common_animate.css" />
+		<link rel="stylesheet" href="../../../css/common/repailTopPocket0.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/studycircle/szpark_study_circle_pad.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav clearfix">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">研习圈</h1>
+			<!--<a id="add-icon"><span class="mui-icon mui-icon-search" id="menu-btn"></span></a>-->
+		</header>
+		<div class="mui-content">
+			<div class="section-left">
+				<div class="mui-scroll-wrapper column-selection">
+					<div class="mui-scroll">
+						<!--这里放置真实显示的DOM内容-->
+						<ul class="tab-list">
+							<!--<li class="topic-choice">
+								<div class="mui-navigate-right">语文圈</div>
+							</li>
+							<li class="topic-choice section-left-active">
+								<div class="mui-navigate-right">数学圈</div>
+							</li>
+							<li class="topic-choice">
+								<div class="mui-navigate-right">英语圈</div>
+							</li>
+							<li class="topic-choice">
+								<div class="mui-navigate-right">物理圈</div>
+							</li>
+							<li class="topic-choice">
+								<div class="mui-navigate-right">生物圈</div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="mui-right">
+				<div id="menu" class="menu">
+					<div class="study-choose mui-ellipsis">
+						<div class="study">
+							<div class="study-personalpage"></div>
+							<span>个人主页</span>
+						</div>
+						<!--<div class="study mui-ellipsis">
+							<div class="study-managecircle"></div>
+							<span>管理的圈子</span>
+						</div>
+						<div class="study mui-ellipsis">
+							<div class="study-managermanage"></div>
+							<span>圈主管理</span>
+						</div>-->
+						<div class="study mui-ellipsis">
+							<div class="study-createcircle"></div>
+							<span>创建圈子</span>
+						</div>
+					</div>
+				</div>
+
+				<!--信息内容滚动区域-->
+				<div class="mui-scroll-wrapper message-block-wrapper" id="pullrefresh">
+					<div class="mui-scroll">
+						<!--这里放置真实显示的DOM内容-->
+						<div class="message-block mui-clearfix" id="listdata">
+							<!--<div class="mui-clearfix">
+								<img src="../../../img/menubar/img-menubar.jpg" />
+								<span class="title-program mui-ellipsis">初三数学、语文、英语、物理Myengilish</span>
+								<div class="m-btn mui-clearfix">
+									<a id="icon-plus"><span class="mui-icon mui-icon-plus attend-in"></span></a>
+									<span class="video-show">加入</span>
+								</div>
+							</div>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end-->
+		</div>
+		<!--遮罩层-->
+		<div id="zhezhao-area"></div>
+		<!--申请加入圈子弹出框-->
+		<div id="join-circle" class="join-circle">
+			<div class="circle-bar">
+				<!--<div class="cancel-btn">取消</div>-->
+				<span>申请加入圈子</span>
+				<!--<a class="clearfix"><span class="mui-icon mui-icon-closeempty"></span></a>-->
+				<!--<div class="confirm-btn">申请加入</div>-->
+			</div>
+			<div class="circle-input">
+				<textarea id="reason" name="" rows="5" cols="" placeholder="亲，请填写加入理由！"></textarea>
+			</div>
+			<div class="button-area clearfix">
+				<button class="cancel-btn">取消</button>
+				<button class="confirm-btn">申请加入</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../../js/"
+			});
+			seajs.use('bizlogic/js_pad/studycircle/szpark_study_circle_pad');
+		</script>
+	</body>
+
+</html>

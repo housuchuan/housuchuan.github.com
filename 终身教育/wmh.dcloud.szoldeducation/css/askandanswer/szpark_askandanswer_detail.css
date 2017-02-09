@@ -1,0 +1,60 @@
+/*
+ * 你问我答详情页面
+ * 咨询答疑详情页复用
+ * 家长问答详情页
+ * @author dailc
+ * */
+
+/*重写body背景*/
+body {
+	background: #ffffff;
+}
+/*右侧的icon btn*/
+.mui-bar .mui-icon {
+	color: #FFFFFF;
+	font-size: 30px;
+	padding-top: 8px;
+}
+/*详情容器区域*/
+.main-container {
+	/*relative来给子元素的absolute定位*/
+	position: relative;
+	background: #ffffff;
+	font-size: 14px;
+	/*默认颜色*/
+	color: #333333;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+	word-break: break-all;
+}
+/*ask 模块*/
+.ask-container {
+	min-height: 36px;
+	height: auto !important;
+	padding-top: 13px;
+	padding-bottom: 0;
+}
+/*answer 模块*/
+.answer-container {
+	min-height: 36px;
+	height: auto !important;
+	padding-top: 6px;
+}
+/*ask title*/
+.ask-title {
+	
+}
+/*ask content*/
+.ask-content {
+	padding-left: 8px;
+}
+/*answer title*/
+.answer-title {
+	color: #bdbdbd;
+}
+/*answer content*/
+.answer-content {
+	color: #187bc2;
+	padding-left: 8px;
+}

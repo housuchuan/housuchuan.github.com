@@ -1,0 +1,206 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-06-27 15:19:07
+ * 描述：本机文件 
+ */
+
+/*头部bar样式设计*/ 
+ html{
+	background-color: #ffffff;
+}
+ .cancel {
+ 	float: right;
+ 	line-height: 44px;
+ 	font-size: 15px;
+ 	color: #fff;
+ }
+ /*视频样式设计*/
+ .mui-content {
+ 	padding-bottom: 47px;
+ }
+ .mui-content > div:first-child {
+ 	border-bottom: 1px solid #e3e3e3;
+ }
+ .mobile-video > span{
+ 	font-size: 14px;
+ 	font-weight: 600;
+ }
+ .video {
+ 	display: inline-block;
+ 	margin-left: 10px;
+ 	padding: 0 7.5px;
+ 	line-height: 40.5px;
+ 	font-size: 14px;
+ 	color: #187bc2;
+ 	border-bottom: 3px solid #187bc2;
+ }
+ /*上传视频样式*/
+
+.upload-video {
+	float: right;
+	margin: 2px 5px 0 0;
+	background-color: #fff;
+}
+
+.upload-video img {
+	position: absolute;
+	top: 10px;
+	left: 2%;
+	width: 16px;
+	height: 16px;
+	margin-right: 4.5px;
+}
+
+.upload-video > button {
+	padding: 9px 10px 9px 20px;
+	color: #187bc2;
+	border: 1px solid #187bc2;
+	font-size: 13px;
+}
+
+ /*.choose {
+ 	display: inline-block;
+ 	float: right;
+ 	margin: 6px 6px 0 0;
+ 	padding: 3px 5px;
+ 	width: 20%;
+ 	font-size: 15px;
+ }*/
+ .arrow {
+ 	display: inline-block;
+ 	width: 7.5px;
+ 	height: 5.5px;
+ 	margin-bottom: 4px;
+ 	margin-right: 7px;
+ }
+ .arrow-before {
+ 	background: url(../../img/mystudy/img-downarrow.png) no-repeat;
+	background-size: 100% 100%;
+ }
+ .arrow-change {
+ 	background: url(../../img/mystudy/img-right.png) no-repeat;
+ 	background-size: 100% 100%;
+ }
+ /*视频内容样式*/
+ .video-wrapper {
+	padding-bottom: 40px;
+}
+ .video-resource > div:first-child {
+ 	display: inline-block;
+ 	float: right;
+ 	width: 20px;
+ 	height: 20px;
+ 	margin: 20px 5px 0 0;
+ }
+ .pitch-on {
+ 	background: url(../../img/studyCircle/img_icon-del.png) no-repeat;
+ 	background-size: 100% 100%;
+ }
+ /*.pitch-active {
+ 	background:  url(../../img/mystudy/img-check.png) no-repeat;;
+ 	background-size: 100% 100%;
+ }*/
+ .video-resource > img {
+ 	float: left;
+ 	width: 70px;
+ 	height: 70px;
+ }
+ .video-info {
+ 	display: inline-block;
+ 	margin-left: 10px;
+ 	vertical-align: 8px;
+ 	color: #b9b9b9;
+ }
+ .video-info > span {
+ 	font-size: 12px;
+ }
+ .video-info > span:first-child {
+ 	display: inline-block;
+ 	width: 100%;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	white-space: nowrap;
+ 	font-size: 14px;
+ 	color: #000;
+ }
+ 
+ .video-info > span:last-child {
+ 	display: inline-block;
+ 	width: 150px;
+ 	white-space: nowrap;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ }
+ .mui-table-view:after,.mui-table-view-cell:after {
+ 	content: none;
+ }
+ /*上传页面设置*/
+ .upload {
+ 	position: fixed;
+ 	left: 0;
+ 	right: 0;
+ 	bottom: 0;
+ 	border-top: 1px solid #e0e0e0;
+ 	background-color: #fff;
+ }
+ .upload > div:last-child > span {
+ 	margin-left: 12px;
+ 	line-height: 47px;
+ 	color: #dbdbdb;
+ }
+ .upload > div:last-child > button{
+ 	position: absolute;
+ 	right: 0;
+ 	padding: 13px 30.5px;
+ 	color: #fff;
+ 	background-color: #1ebaf3;
+ }
+ 
+ /*相册是否公开及按钮样式*/
+
+.whether-public {
+	height: 44px;
+	padding-right: 25px;
+	background-color: #fff;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.whether-public> span:first-child {
+	margin-left: 10px;
+	display: inline-block;
+	line-height: 44px;
+	font-weight: 600;
+}
+
+.wrong-choice {
+	margin: 0 9px 0 24px;
+}
+
+.true-choice {
+	margin-right: 9.5px;
+}
+
+.icon-choice {
+	float: right;
+	display: inline-block;
+	line-height: 44px;
+	color: #999999;
+}
+
+.whether-public> div {
+	float: right;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-top: 13px;
+	background-size: 18px 18px;
+}
+
+.defaule-choice {
+	background: url(../../img/menubar/img-nocheck.png) no-repeat;
+}
+
+.choice-active {
+	background: url(../../img/menubar/img-check.png) no-repeat;
+}
+

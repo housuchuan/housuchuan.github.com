@@ -1,0 +1,118 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-06-27 14:29:07
+ * 描述：学习计划
+ */
+
+body {
+	background-color: #fff;
+}
+
+.mui-scroll-wrapper {
+	margin-top: 140px;
+	padding-bottom: 44px;
+}
+
+
+/*搜索框样式设计*/
+
+input[type=search] {
+	margin-bottom: 0;
+	border-radius: 15px;
+	background-color: #eeeff3;
+}
+
+.mui-search:before {
+	top: 70%;
+}
+
+.input-area {
+	padding: 10px 10px;
+	background-color: #fff;
+}
+
+
+/*我的计划*/
+
+.myplan {
+	border-bottom: 1px solid #e1e1e1;
+	border-top: 1px solid #e1e1e1;
+	background-color: #f7f6fb;
+}
+
+.myplan > span {
+	display: inline-block;
+	margin-left: 15px;
+	line-height: 40.5px;
+	font-size: 14px;
+}
+
+.myplan > a {
+	float: right;
+	margin-top: 8px;
+}
+
+.mui-icon-plus {
+	margin-right: 15px;
+}
+
+#icon-close {
+	margin-right: 10px;
+}
+
+
+/*学习计划部分*/
+
+.mui-table-view:before {
+	content: none;
+}
+
+.mui-table-view:after {
+	left: 15px;
+}
+
+.mui-table-view-cell {
+	position: relative;
+	padding: 16px 25px 16px 8px;
+	font-size: 14px;
+}
+
+/*我的计划按钮点击效果*/
+
+ .mui-icon:active {
+ 	color: #077eaa;
+ }
+
+ .pitch {
+ 	position: absolute;
+ 	display: inline-block;
+ 	width: 20px;
+ 	height: 20px;
+	right: 3px;	
+	display: none;
+ }
+ 
+ .pitch-on {
+ 	background: url(../../img/mystudy/img-nocheck.png) no-repeat;
+ 	background-size: 100% 100%;
+ }
+ 
+ .pitch-active {
+ 	background:  url(../../img/mystudy/img-check.png) no-repeat;
+ 	background-size: 100% 100%;
+ }
+ 
+ .mui-btn-block {
+ 	position: fixed;
+ 	bottom: 0;
+ 	margin: 0;
+ 	padding: 10px 0;
+ 	background-color: #1EBBF3;
+ 	z-index: 10;
+ 	display: none;
+ }
+ 
+.mui-pull-top-pocket {
+	top: 0px !important;
+} 
+ 

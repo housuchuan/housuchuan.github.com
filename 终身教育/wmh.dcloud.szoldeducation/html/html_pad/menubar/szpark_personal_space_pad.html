@@ -1,0 +1,61 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-07-08 14:43:07
+        描述： 个人空间ipad版本页面 
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人空间</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/menubar/szpark_personal_space_pad.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">个人空间</h1>
+			<!--<a class="mui-clearfix"><span class="mui-icon mui-icon-search"></span></a>-->
+		</header>
+
+		<div class="mui-content">
+			<div class="tab-content-wrapper">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div class="tab-content mui-clearfix">
+						<div class="system-manager">
+							<div class="img-radius"><img src="../../../img/MobileFrame/img_head_logo190-190.png" id="headImg" /></div>
+							<div><span class="nick">...</span>，欢迎你！</div>
+						</div>
+						<div class="tab-item-style tab-item-common"><i class="mui-icon mui-icon-home iconstyle"></i>主页</div>
+						<div class="tab-item-common"><i class="mui-icon mui-icon-refresh iconstyle"></i>日志</div>
+						<div class="tab-item-common"><i class="mui-icon mui-icon-image iconstyle"></i>相册</div>
+						<!--<div class="tab-item-common"><i class="mui-icon mui-icon-refresh iconstyle"></i>动态</div>-->
+						<div class="tab-item-common"><i class="mui-icon mui-icon-contact iconstyle"></i>个人资料</div>
+						<div class="tab-item-common"><i class="mui-icon mui-icon-starhalf iconstyle"></i>年鉴</div>
+						<div class="tab-item-common"><i class="mui-icon mui-icon-starhalf iconstyle"></i>好友</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--引入框架库-->
+		<script type="text/javascript" src="../../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js"></script>
+	</body>
+	<script type="text/javascript">
+		seajs.config({
+			base: '../../../js/'
+		});
+		seajs.use("bizlogic/js_pad/menubar/szpark_personal_space_pad");
+	</script>
+
+</html>

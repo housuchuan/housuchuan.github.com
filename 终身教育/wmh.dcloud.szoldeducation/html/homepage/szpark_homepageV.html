@@ -1,0 +1,162 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-05 11:38:16
+        描述：  园区app首页面
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>首页</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/homepage/szpark_map_mui-segmented-control.css" />
+		<link rel="stylesheet" href="../../css/homepage/homepage.css" />
+		<link rel="stylesheet" href="../../css/common/common_animate.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="pullrefresh" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--图片轮播容器 height:125px -->
+					<div id="gallerySlider">
+					</div>
+					<ul class="mui-table-view mui-grid-view mui-grid-9 ">
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" id="school_servey">
+							<div id="">
+								<span class="mui-icon mui-icon-schoolservey"></span>
+								<div class="mui-media-body">学校概况</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" id="news_bulletin">
+							<div id="#">
+								<span class="mui-icon mui-icon-grid02"></span>
+								<div class="mui-media-body">新闻公告</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" id="community_education">
+							<div id="#">
+								<span class="mui-icon mui-icon-grid03"></span>
+								<div class="mui-media-body">社区教育</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" id="academic_education">
+							<div id="#">
+								<span class="mui-icon mui-icon-grid04"></span>
+								<div class="mui-media-body">学历教育</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" id="oldage_education">
+							<div id="#">
+								<span class="mui-icon mui-icon-grid05"></span>
+								<div class="mui-media-body">老年教育</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" id="lifelong_education">
+							<div id="#">
+								<span class="mui-icon mui-icon-grid06"></span>
+								<div class="mui-media-body">终身教育研究所</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" id="resource_center">
+							<div id="#">
+								<span class="mui-icon mui-icon-grid07"></span>
+								<div class="mui-media-body">资源中心</div>
+							</div>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" id="study_circle">
+							<div id="#">
+								<span class="mui-icon mui-icon-grid08"></span>
+								<div class="mui-media-body">研习圈</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="recommand_cource_ul">
+						<li><span class="title">推荐课程</span><span class="more" id="morecourse">更多&gt;&gt;</span></li>
+					</ul>
+					<div class="linewrap">
+						<div class="line"></div>
+					</div>
+					<ul class="mui-table-view mui-grid-view recommand_cource_ul_content" id="coursedata">
+						<!--<li class="mui-table-view-cell mui-media mui-col-xs-6" style="">
+							<div>
+								<img class="mui-media-object" src="../../img/homepage/img_recommand_cource1.png">
+								<div class="content">
+									<span class="fs12">食品的营养与健康</span>
+									<span style="display: block;"><img src="../../img/homepage/img_star1.png"/><img src="../../img/homepage/img_star0.png"/><img src="../../img/homepage/img_star0.png"/><img src="../../img/homepage/img_star0.png"/><img src="../../img/homepage/img_star0.png"/></span>
+								</div>
+							</div>
+						</li>-->
+					</ul>
+					<ul class="recommand_cource_ul">
+						<li><span class="title">研习圈</span><span class="more change_listdata">换一批</span></li>
+					</ul>
+					<div class="linewrap">
+						<div class="line"></div>
+					</div>
+					<div class="yanxinquan">
+						<ul class="mui-table-view mui-grid-view yanxinquan_ul" id="circlelistdata">
+							<!--<li class="mui-table-view-cell mui-media mui-col-xs-6" id="{{cricleId}}">
+								<div>
+									<img class="mui-media-object yanxiquan_img " src="../../img/homepage/img_study_circle_list.png">
+									<div class="content_yanxinquan">
+										<span class="fs12">初三数学</span><br/>
+										<span class="fs12 memberandtiezi"><span>25 </span>成员<span class="fs12"><span>104 </span></span>
+										帖子</span>
+									</div>
+								</div>
+							</li>-->
+							
+						</ul>
+					</div>
+					<ul class="recommand_cource_ul" id="maps">
+						<li><span class="title">地图</span><span class="more">更多&gt;&gt;</span></li>
+					</ul>
+					<div class="linewrap">
+						<div class="line"></div>
+					</div>
+					<div id="slider1" class="mui-slider">
+						<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+							<div class="mui-scroll" id="sliderSegmentedControl1">
+								<a class="mui-control-item" href="#mobile"></a>
+							</div>
+						</div>
+						<div class="mui-slider-group" id="mui-slider-item-content">
+							<div id="mobile" class="mui-slider-item mui-control-content"></div>
+						</div>
+
+					</div>
+					<!--地图模块-->
+					<div style="height: 280px;text-align: center;padding-top: 140px;color:#7f7f7f;font-weight:800" class="MapArea" id="map">
+						没有网络!
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="zhezhao-area"></div>
+			<div id="alertWin">
+				<div>您可以选择预览或者播放，如果预览则不能获取积分，也不能进行记录笔记等操作，如果播放需要先进行登录操作！</div>
+				<div id="btnGroup">
+					<button type="button" class="mui-btn mui-btn-blue mui-button-row alertWinBtn" id="preview">预览</button>
+					<button type="button" class="mui-btn mui-btn-green mui-button-row alertWinBtn" id="play">播放</button>
+					<button type="button" class="mui-btn mui-btn-grey mui-button-row alertWinBtn" id="cancle">取消</button>
+				</div>
+			</div>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=SZ5kbVw3i0GUWg2zYMqGNwcy1V5PcNPc"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_homepageV');
+		</script>
+	</body>
+
+</html>

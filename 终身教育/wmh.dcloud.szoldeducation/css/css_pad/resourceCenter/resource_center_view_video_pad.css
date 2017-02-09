@@ -1,0 +1,870 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-07-08 16:44:07
+ * 描述：示例视频选择页面
+ */
+
+
+/*mui的bar样式设计*/
+
+.mui-bar-nav {
+	background-color: #333333;
+}
+
+.mui-title {
+	text-align: left;
+}
+
+
+/*主体内容样式设计*/
+
+.mui-content {
+	/*position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;*/
+}
+
+
+/*媒体视频*/
+
+.mediaPlayer {
+	/*width: 73%;*/
+	height: 100%;
+	background-color: #fff;
+}
+
+.media-content {
+	width: 100%;
+	padding-top: 44px;
+	background-color: #ffffff;
+}
+
+
+/*video {
+	width: 100%;
+	height: 100px;
+	padding: 0 8px;
+	background-color: #000000;
+}*/
+
+#player {
+	width: 73%;
+	height: 493px;
+	padding: 0 8px;
+	background-color: #000000;
+}
+
+#doc {
+	width:73%;
+	height:493px; 
+	position: absolute; 
+	top: 44px;
+	z-index: 10;
+}
+
+.img-wrapper img {
+	width: 100%;
+}
+
+.media-info {
+	width: 73%;
+	margin: 0 9px 31px 15px;
+}
+
+/*简介选集tab切换*/
+.tabChoice {
+	width: 98%;
+	border-bottom: 1px solid #E1E1E1;
+}
+
+.tabChoice > span {
+	display: inline-block;
+	line-height: 60px;
+	padding: 0 20px;
+	font-size: 18px;
+}
+
+.tabChoice > span:first-child {
+	margin-right: 50px;
+	color: #0000FF;
+	border-bottom: 1px solid #0000FF;
+}
+
+.tabChoice > span:last-child {
+	margin-left: 60px;
+}
+
+/*新增*/
+
+.content-wrapper {
+	width: 73%;
+	height: 120px;
+	margin-top: 600px;
+	z-index: 10;
+}
+
+.setItem{
+	padding: 10px 10px 0 10px;
+	line-height: 30px;
+	background-color: #f7f6fb;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.zhangjie {
+	font-size: 18px;
+	color: #0062CC;
+}
+
+.selectionsList {
+	font-size: 16px;
+}
+
+.selectionsList span {
+	display: inline-block;
+	line-height: 40px;
+	float: left;
+}
+
+.resouce {
+	display: inline-block;
+	width: 50%;
+	margin-left: 10%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.selectionsList span:last-child {
+	float: right;
+	margin-right: 10px;
+}
+
+.mui-table-view-cell {
+	padding: 0;
+}
+
+p {
+	margin: 12px 15px;
+}
+
+.list-container-selection {
+	display: none;
+}
+
+.list-container-selection li:first-child div:nth-child(2) {
+	color: #ffffff;
+	background-color: #187bc2;
+}
+
+/*收藏评价*/
+
+.collections-appraise {
+	display: inline-block;
+	float: right;
+	margin-top: 10px;
+	margin-right: 18px;
+	font-size: 13px;
+}
+
+.collections-appraise .collections,
+.appraise {
+	display: inline-block;
+	margin-left: 21px;
+	color: #666666;
+}
+
+.collections-appraise .collections> div:first-child,
+.appraise> div:first-child {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #eeeeee;
+	border-radius: 20px;
+}
+
+.save-icon {
+	background: url(../../../img/resourceCenter/img_savecommon.png) no-repeat;
+	background-size: 60%;
+	background-position: center;
+}
+
+.comment-icon {
+	background: url(../../../img/resourceCenter/img_comment.png) no-repeat;
+	background-size: 60%;
+	background-position: center;
+}
+
+.save-icon-active {
+	background: url(../../../img/resourceCenter/img_save_active.png) no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+.comment-icon:active {
+	background-color: #A9A9A9;
+}
+
+.appraise:active .mui-icon-compose {
+	color: #635cf0;
+}
+
+.praise-icon {
+	display: inline-block;
+	float: right;
+	width: 16px;
+	height: 16px;
+	background: url(../../../img/resourceCenter/resource_center_zan.png) no-repeat;
+	background-size: 16px 16px;
+}
+
+.ZanBorder {
+	margin: -3px 0 0 10px;
+	/*padding-top: 4px;*/
+	padding-left: 24px;
+	background-repeat: no-repeat;
+	background-image: url(../../../img/resourceCenter/resource_center_zan.png);
+	background-size: 16px 16px;
+	background-position-y: center;
+	font-size: 12px;
+}
+
+.praise-icon-active {
+	background: url(../../../img/menubar/img_praiseactive.png) no-repeat;
+	background-size: 16px 16px;
+	background-position-y: bottom;
+}
+
+
+/*简介*/
+
+.introduction {
+	/*float: left;*/
+	margin-top: 23px;
+}
+
+.introduction span {
+	display: inline-block;
+	margin-bottom: 14px;
+}
+
+
+/*评论笔记*/
+
+.review-notes-wrapper,
+.review-comment-wrapper {
+	width: 27%;
+	margin-left: 73%;
+	margin-top: 101px;
+	margin-bottom: 59px;
+	z-index: 3;
+}
+
+.review-notes,
+.noteslist {
+	width: 100%;
+	height: 100%;
+	background-color: #fafafa;
+}
+
+.review-notes-wrapper {
+	display: none;
+}
+
+.review-notes-content {
+	margin: 0 5px 0 5px;
+	background-color: #fafafa;
+}
+
+.clock-icon {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: -5px;
+	background: url(../../../img/menubar/img-datepicker.png) no-repeat;
+	background-size: 10px 10px;
+}
+
+.comment-time {
+	display: inline-block;
+	padding: 2px 5px;
+	background-color: #e3d9d0;
+	border-radius: 5px;
+}
+
+.user-original {
+	float: right;
+	color: #c0c5d2;
+}
+
+.note-content {
+	margin: 5px 0 10px 10px;
+	word-break: break-all;
+}
+
+.note-year {
+	margin-left: 10px;
+	color: #e3d9d0;
+}
+
+.zan-wrapper {
+	float: right;
+	color: #d0c0b6;
+}
+
+.zan {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../../../img/menubar/img-praiseicon.png) no-repeat;
+	background-size: 100%;
+}
+
+.review-notes-content li {
+	padding: 12px 0;
+	font-size: 14px;
+	border-bottom: 1px dotted #e6e6e6;
+	border-left: 1px solid #f2efeb;
+}
+
+.review-notes-content li img {
+	float: left;
+	width: 64px;
+	height: 64px;
+	margin-right: 10px;
+	border: 1px solid #dadada;
+}
+
+.user-name {
+	display: inline-block;
+	width: 60px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #187bc2;
+	font-size: 13px;
+}
+
+.user-review-newlyInfo {
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+
+.user-review-newlyInfo span:last-child {
+	display: inline-block;
+	font-size: 14px;
+}
+
+.user-praise {
+	float: right;
+	margin-top: -1px;
+	margin-left: 4px;
+	font-size: 12px;
+}
+
+.time-records {
+	display: inline-block;
+	font-size: 12px;
+	color: #b4b4b4;
+}
+
+.review-notes-items {
+	position: absolute;
+	width: 27%;
+	top: 44px;
+	right: 10;
+	padding: 8px 0;
+	border-bottom: 1px solid #e6e6e6;
+	z-index: -3;
+}
+
+.review-notes-items div {
+	display: inline-block;
+	width: 40%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #ffffff;
+	background-color: #187bc2;
+	border-radius: 30px;
+	font-size: 14px;
+}
+
+.review-notes-items div:active {
+	color: #e97373;
+	background-color: #7462f6;
+}
+
+.newly-review {
+	padding: 14px 0 0 10px;
+	font-size: 14px;
+}
+
+.mui-table-view:before {
+	content: none;
+}
+
+.newly-note {
+	padding: 14px 0 0 15px;
+	font-size: 14px;
+	background-color: #c89637;
+}
+
+.newly-note span {
+	display: inline-block;
+	padding-bottom: 14px;
+	font-weight: 600;
+}
+
+.newly-review-span-active {
+	color: #ffffff;
+	border-bottom: 3px solid #ff9d24;
+}
+
+.newly-note span:first-child {
+	margin: 0 6px 0 10px;
+}
+
+.mui-table-view:after {
+	content: none;
+}
+
+
+/*评论和笔记样式*/
+
+.review-notes-items {
+	position: absolute;
+	width: 27%;
+	top: 44px;
+	right: 0;
+	padding: 8px 0;
+	border-bottom: 1px solid #e6e6e6;
+	z-index: 10;
+}
+
+.review-notes-items div {
+	display: inline-block;
+	width: 46%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #ffffff;
+	background-color: #187bc2;
+	border-radius: 30px;
+	font-size: 14px;
+}
+
+.review-notes-items div:active {
+	color: #e97373;
+	background-color: #7462f6;
+}
+
+.review-notes-items div:first-child {
+	margin-left: 2%;
+}
+
+.review-notes-items div:last-child {
+	display: none;
+}
+
+.noteIcon {
+	margin: 0 .5% 0 .5%;
+}
+
+
+/*发表*/
+
+.publish-btn {
+	position: fixed;
+	width: 27%;
+	bottom: 0;
+	right: 0;
+	margin-bottom: 15px;
+	padding: 5.5px;
+	background-color: #eeeeee;
+	z-index: 10;
+}
+
+.publish-btn input {
+	width: 70%;
+	height: 33px;
+	margin: 0;
+	padding: 0;
+	text-indent: 5px;
+	font-size: 12px;
+}
+
+.publish-btn button {
+	width: 25%;
+	height: 33px;
+	padding: 0 2.5px;
+	margin-left: 2.5%;
+	color: #fff;
+	background-color: #187bc2;
+}
+
+
+/*总体评价*/
+
+.overallPraise {
+	display: none;
+	position: fixed;
+	top: 30%;
+	left: 35%;
+	/*width: 352px;*/
+	width: 30%;
+	height: 200px;
+	background-color: #ffffff;
+	z-index: 13;
+}
+
+.overallTitle {
+	margin: 28px 0;
+	text-align: center;
+	color: #333333;
+}
+
+.overallPri {
+	margin-bottom:38px;
+	width: 205px;
+	margin: 0 auto;
+}
+
+.overallPri div {
+	display: inline-block;
+	margin-right: 7px;
+	width: 30px;
+	height: 30px;
+}
+
+.overallCommon {
+	background: url(../../../img/img_pad/resourceCenter/img_praise.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.overallPriActive {
+	background: url(../../../img/img_pad/resourceCenter/img_praiseActive.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.operateBtn {
+	padding-top: 20px;
+	border-top: 1px solid #d4d4d4;
+}
+
+.operateBtn .mui-btn-block {
+	padding: 10px 0;
+	width: 30%;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 20px;
+}
+
+.operateBtn .mui-btn-block:first-child {
+	margin-left: 15%;
+	margin-right: 10%;
+	background-color: #e6e6e6;
+	border: none;
+	color: #000000;
+}
+
+
+/*遮罩*/
+
+.zhezhao-area {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #000000;
+	opacity: .5;
+	z-index: 13;
+}
+
+/*做习题*/
+.proTitle {
+	line-height: 37px;
+	font-size: 14px;
+	text-indent: 13px;
+	color: #ffffff;
+	background-color: #1ebaf3;
+}
+
+.mui-table-view-cell {
+	padding: 0;
+}
+
+.itemsList {
+	height: 443px;
+	margin: 37px 0 0 0;
+	background-color: #f7f7fa;
+}
+
+.problem {
+	padding: 11px 15px;
+	font-size: 15px;
+	color: #878787;
+}
+
+.frame {
+	margin-left: 20px;
+}
+
+.number {
+	color: red;
+}
+
+/*选项设置*/
+.doIt {
+	display: none;
+	position:absolute;
+	top:20%;
+	left:5%;
+	z-index:1005;
+	width: 90%;
+	height: 582px;
+}
+
+.choice {
+	padding: 20px 35px 20px 15px;
+	font-size: 14px;
+	color: #4d4d4d;
+	background-color: #f7f6fb;
+	border-top: 1px solid #eaeaeb;
+	border-bottom: 1px solid #eaeaeb;
+}
+
+.choice > div {
+	margin-top: 20px;
+}
+
+.choice > div:first-child {
+	margin-top: 0px;
+}
+
+.choice > div span:first-child {
+	position: absolute;
+	display: inline-block;
+	width: 28px;
+	line-height: 28px;
+	text-align: center;
+	margin-right: 18px;
+	color: #ffffff;
+	background-color: #b3b3b3;
+	border-radius: 20px;
+}
+
+.choice > div span:last-child {
+	display: inline-block;
+	margin: 3px 0 0 48px;
+}
+
+.submitAnswerArea {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 45px;
+	width: 100%;
+	padding: 9px 0;
+	box-shadow: 0px -1px 15px #b3b1b4;
+	background-color: #ffffff;
+	z-index: 10;
+}
+
+.submitAnswer {
+	position: relative;
+	left: 50%;
+	margin-left: -140px;
+	padding: 10px 70px;
+	font-size: 14px;
+	border: none;
+	border-radius: 20px;
+	background-color: #1ebaf3;
+}
+
+.applyLine {
+	margin-left: 14.5px;
+	width: 1px;
+	height: 15px;
+	background-color: #ffffff;
+}
+
+.hideIcon {
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	color: #777777;
+	background-color: #FFFFFF;
+	border-radius: 20px;
+}
+
+.hideIcon:active {
+	color: orange;
+	background-color: #e6e6e6;
+}
+
+.hid {
+	margin-left: 45%;
+}
+
+.hidThis {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.loading {
+	display: none;
+	line-height: 443px;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	color: gray;
+}
+
+/*二级评论*/
+.reviewIcon {
+	width: 18px;
+	height: 15px;
+	margin-right: 5px;
+	background: url(../../../img/menubar/img-reporticon.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: -2px;
+}
+
+.reportIcon {
+	width: 18px;
+	height: 15px;
+	margin-right: 5px;
+	background: url(../../../img/menubar/img_report.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: -2px;
+}
+
+.review div,.report div {
+	display: inline-block;
+	font-size: 12px;
+}
+
+.review {
+	margin-left: 15px;
+}
+
+.secondLevelCommnet {
+	position: absolute;
+	right: 18px;
+}
+
+.secondLevelCommnet > div {
+	float: right;
+}
+
+.reviewContent{
+	width: 90%;
+	position: relative;
+	margin-top: 30px;
+	right: -20px;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item .commentArea img {
+	width: 30px;
+	height: 30px;
+	margin-right: 8px;
+	vertical-align: -8px;
+	border-radius: 20px;
+}
+
+.reviewEE {
+	display: inline-block;
+	margin: 0 5px;
+	font-size: 12px;
+}
+
+.reviewName {
+	color: dodgerblue;
+}
+
+.reviewDate {
+	color: #cdcdcd;
+	font-size: 14px;
+}
+
+  /*遮罩层DOM*/
+  
+  .join-circle {
+  	display: none;
+  	position: fixed;
+  	top: 20%;
+  	width: 60%;
+  	margin-left: 20%;
+  	border-radius: 5px;
+  	background-color: #fafafa;
+  	z-index: 10000;
+  }
+  
+  .circle-bar {
+  	width: 100%;
+  	line-height: 44px;
+  	text-align: center;
+  	color: #fff;
+  	border-top-left-radius: 5px;
+  	border-top-right-radius: 5px;
+  	background-color: #1ebaf3;
+  }
+  
+  .mui-icon-closeempty {
+  	float: right;
+  	margin: 6px 4px 0 0;
+  	color: #fff;
+  	font-size: 30px;
+  }
+  /*名称及描述*/
+  
+  .circle-input {
+  	margin-top: 10px;
+  	padding: 0;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	padding-top: 20px;
+  	/*background-color: #fff;*/
+  	border-top: 1px solid #e0e0e0;
+  	border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .circle-input textarea {
+  	height: 120px;
+  }
+  
+  .cut-line {
+  	width: 100%;
+  	height: 1px;
+  	background-color: #e0e0e0;
+  }
+  
+  .button-area> button {
+  	float: left;
+  	display: inline-block;
+  	width: 45%;
+  	margin: 10px 2.5%;
+  	padding: 13px 0;
+  	border-radius: 5px;
+  	color: #fff;
+  }
+  
+  .cancel-btn {
+  	background-color: #d1d1d1;
+  }
+  
+  .confirm-btn {
+  	background-color: #1ebaf3;
+  }
+  
+  input[type=text] {
+  	padding: 0 0 0 5px;
+  }
+  
+  /*防止纯数字换行*/
+  .commentContent,.reviewerContent {
+  	word-break: break-all;
+  }

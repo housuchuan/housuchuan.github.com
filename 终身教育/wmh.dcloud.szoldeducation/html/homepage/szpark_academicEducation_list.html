@@ -1,0 +1,41 @@
+<!-- 
+        作者：dailc 
+        时间：2016-04-06 11:06:37
+        描述：  学历教育列表页面
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title> 学历教育列表页面 </title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/homepage/szpark_educationAcademic_list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="pullrefresh" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="list-container mui-table-view" id="listdata">
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_academicEducation_list');
+		</script>
+	</body>
+
+</html>

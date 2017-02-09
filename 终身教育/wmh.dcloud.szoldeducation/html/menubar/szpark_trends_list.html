@@ -1,0 +1,105 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-24 08:29:07
+        描述：  个人空间(动态子页面);暂且没有用到这个动态页面；
+        因为这个页面和之前的主页动态类似；但是后期可能需要这个页面，暂时不删除。
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/menubar/szpark_trends_list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div id="listdata">
+						<div class="dynamic-area clearfix">
+							<img src="../../img/menubar/img-user.png" />
+							<span class="username">张三</span><br /><span class="publish-time">2016-02-05</span><br />
+							<span class="publish-content">长假旅行看人山人海，聪明的你错峰旅行看好山好水~</span>
+							<div class="attach">
+								<img src="../../img/educate/img_project1.png" />
+								<img src="../../img/educate/img_project1.png" />
+								<img src="../../img/educate/img_project1.png" />
+							</div>
+							<div class="operate-module">
+								<span class="comment"></span><span class="common-change">评论</span><span class="common-change common-number">(10)</span>
+								<span class="praise praise-common"></span><span class="common-change">赞</span><span class="common-change common-number">(4)</span>
+								<span class="delete"></span><span class="common-change">删除</span>
+								<span class="reporticon"></span><span class="common-change">举报</span>
+							</div>
+							<!--发表评论部分-->
+							<div class="review">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell">
+										<img src="../../img/menubar/img-user.png" />
+										<div class="review-content">
+											<span class="review-username">金胜男：</span><span>？星期日？星期日？星期日？星期日？星期日？星期日？星期日</span><br />
+											<span class="review-time">2016年6月20日 08:26:36</span><span class="review-icon"></span><span class="amputate"></span>
+										</div>
+									</li>
+									<li class="mui-table-view-cell">
+										<img src="../../img/studyCircle/img_index_004alllife_pad.png" />
+										<div class="review-content">
+											<span class="review-username">SSW：</span><span>跟前几天又不一样了哈哈 大笑哈哈 大笑</span><br />
+											<span class="review-time">昨天 08:26:36</span><span class="review-icon"></span><span class="amputate"></span>
+										</div>
+										<div class="review-replay">
+											<img src="../../img/menubar/img-user.png" />
+											<div class="review-content">
+												<span class="review-username">世界依然美丽</span><span class="reviewer">回复</span><span class="review-username">SSW：</span><span>你来看看</span><br />
+												<span class="review-time">昨天 08:26:36</span><span class="review-icon"></span><span class="amputate"></span>
+											</div>
+										</div>
+									</li>
+									<li class="mui-table-view-cell">
+										<img src="../../img/menubar/img-user.png" />
+										<div class="review-content">
+											<span class="review-username">金胜男：</span><span>星期日？</span><br />
+											<span class="review-time">2016年6月20日 08:26:36</span><span class="review-icon"></span><span class="amputate"></span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<a href="#picture" class="default-plus-selectphoto">
+								<button class="clearfix">
+									<span>我也说一句</span>
+									<div></div>										
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell clearfix">
+					<input type="text" name="" id="" value="" placeholder="说点什么吧..." />
+					<button type="button" class="mui-btn mui-btn-blue send">发送</button>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/menubar/szpark_trends_list");
+		</script>
+	</body>
+
+</html>

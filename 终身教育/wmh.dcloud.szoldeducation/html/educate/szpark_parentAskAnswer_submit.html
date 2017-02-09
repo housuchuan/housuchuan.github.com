@@ -1,0 +1,49 @@
+<!-- 
+        作者：dailc 
+        时间：2016-04-05 17:06:37
+        描述：  家长问答提问页面
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title> 家长问答提问页面 </title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/askandanswer/szpark_askandanswer_submit.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">家长问答</h1>
+		</header>
+		<div class="mui-content main-container">
+			<div class="ask-container">
+				<textarea rows="4" cols="50" placeholder="请输入提问内容" id="content"></textarea>
+			</div>
+			<div class="verify-container">
+				<input type="text" class="" placeholder="请输入验证码" id="verifyCode" />
+				<!--图形验证码,需要配合js动态生成
+                -->
+				<div class="img-verifycode" id="imgVerifyCode"></div>
+			</div>
+			<button type="button" class="btn-common" id="btn-submit">提交</button>
+			<button type="button" class="btn-common" id="btn-cancel">取消</button>
+		</div>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js" ></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/askandanswer/szpark_askandanswer_submit.js');
+		</script>
+
+	</body>
+
+</html>

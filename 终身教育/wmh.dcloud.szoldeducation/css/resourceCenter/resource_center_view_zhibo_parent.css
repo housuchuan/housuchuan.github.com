@@ -1,0 +1,29 @@
+/*收藏评价*/
+
+.mui-bar .mui-title {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.headerIcon {
+	float: right;
+	padding-top: 12px;
+	z-index: 100;
+}
+
+.headerIcon span:first-child {
+	margin: 0 10px;
+}
+
+.saveVideo {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../../img/resourceCenter/img_saveIcon.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.saveVideo-active {
+	background: url(../../img/img_pad/resourceCenter/img_praiseActive.png) no-repeat;
+	background-size: 100% 100%;
+}

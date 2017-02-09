@@ -1,0 +1,334 @@
+{
+	"html/index.html": {
+		"resources": [
+			"js/libs/mui.min.js",
+			"css/mui.min.css",
+			"images/index/img_gallery.png",
+			"js/bizlogic/common/common.js",
+			"img/index/img_bottomicon_default1.png",
+			"js/core/MobileFrame/CommonUtil.js",
+			"fonts/mui.ttf",
+			"js/core/sea.min.js",
+			"js/core/MobileFrame/WindowUtil.js",
+			"img/index/img_bottomicon_default3.png",
+			"js/libs/mustache.min.js",
+			"css/index.css",
+			"img/index/img_bottomicon_default4.png",
+			"img/index/img_bottomicon_clicked1.png",
+			"js/libs/zepto.min.js",
+			"html/homepage/szpark_homepage.html",
+			"img/index/img_bottomicon_clicked3.png",
+			"img/index/img_bottomicon_clicked2.png",
+			"js/core/MobileFrame/StorageUtil.js",
+			"img/index/img_bottomicon_default5.png",
+			"js/bizlogic/homepage/index.js",
+			"img/index/img_bottomicon_default2.png",
+			"img/index/img_bottomicon_clicked5.png",
+			"img/index/img_bottomicon_clicked4.png"
+		],
+		"refer": [
+			"html/educate/szpark_educationIndex.html",
+			"html/askandanswer/szpark_askandanswer_list.html",
+			"html/index-menu.html",
+			"html/news/szpark_news_list.html",
+			"html/investigation/szpark_investigation_list.html",
+			"html/homepage/szpark_homepage.html"
+		]
+	},
+	"html/homepage/homepage.html": {
+		"resources": [
+			"images/homepage/imgl_lifelong_education.png",
+			"images/homepage/img_star0.png",
+			"css/homepage/homepage.css",
+			"images/homepage/img_gallery.png",
+			"images/homepage/img_star1.png",
+			"images/homepage/img_map_location.png",
+			"images/homepage/img_news_bulletin.png",
+			"images/homepage/img_community_education.png",
+			"images/homepage/img_oldage_education.png",
+			"images/homepage/img_academic_education.png",
+			"css/mui.min.css",
+			"images/homepage/img_resource_center.png",
+			"images/homepage/img_recommand_cource1.png",
+			"images/homepage/img_study_circle.png",
+			"js/libs/mui.min.js",
+			"img/homepage/img_star0.png",
+			"img/homepage/img_map_location.png",
+			"img/homepage/img_star1.png",
+			"img/homepage/img_recommand_cource1.png",
+			"img/homepage/img_gallery.png",
+			"img/homepage/img_study_circle.png",
+			"img/homepage/img_resource_center.png",
+			"img/homepage/img_oldage_education.png",
+			"img/homepage/imgl_lifelong_education.png",
+			"img/homepage/img_news_bulletin.png",
+			"img/homepage/img_academic_education.png",
+			"img/homepage/img_community_education.png"
+		],
+		"refer": []
+	},
+	"html/educate/szpark_educationIndex.html": {
+		"resources": [
+			"img/educate/img_level_selected.png",
+			"css/educate/szpark_educationIndex.css",
+			"img/educate/img_project1.png",
+			"img/educate/img_activity.png",
+			"img/educate/img_notice.png",
+			"img/educate/img_slider.png",
+			"js/bizlogic/educate/szpark_educationIndex.js",
+			"img/educate/img_question.png",
+			"img/educate/img_level.png",
+			"css/common/common.css",
+			"js/core/MobileFrame/UIUtil.js",
+			"js/core/MobileFrame/WidgetUtil.js",
+			"js/core/MobileFrame/HtmlUtil.js"
+		],
+		"refer": []
+	},
+	"html/askandanswer/szpark_askandanswer_list.html": {
+		"resources": [
+			"css/askandanswer/szpark_askandanswer_list.css",
+			"js/bizlogic/askandanswer/szpark_askandanswer_list.js",
+			"js/core/MobileFrame/PullrefreshUtil.js",
+			"css/common/common.css",
+			"js/core/MobileFrame/HtmlUtil.js"
+		],
+		"refer": []
+	},
+	"html/homepage/szpark_homepage.html": {
+		"resources": [
+			"img/homepage/img_study_education.png",
+			"img/homepage/img_study_circle.png",
+			"css/homepage/homepage.css",
+			"img/homepage/img_resource_center.png",
+			"img/homepage/img_pre.png",
+			"img/homepage/img_next.png",
+			"img/homepage/img_gallery.png",
+			"js/bizlogic/homepage/szpark_homepage.js",
+			"img/homepage/img_oldage_education.png",
+			"js/core/MobileFrame/StringUtil.js",
+			"img/homepage/img_health_care.png",
+			"img/homepage/imgl_lifelong_education.png",
+			"img/homepage/img_star0.png",
+			"img/homepage/img_map_location.png",
+			"img/homepage/img_star1.png",
+			"img/homepage/img_study_circle_list.png",
+			"img/homepage/img_news_bulletin.png",
+			"img/homepage/img_exercise_fitness.png",
+			"img/homepage/img_academic_education.png",
+			"img/homepage/img_recommand_cource1.png",
+			"js/core/MobileFrame/IDCardUtil.js",
+			"img/homepage/img_community_education.png",
+			"img/homepage/img_public_service.png",
+			"img/homepage/img_meishi.png",
+			"css/common/common.css",
+			"js/core/MobileFrame/UIUtil.js",
+			"js/core/MobileFrame/WidgetUtil.js",
+			"js/bizlogic/common/common.js",
+			"js/core/MobileFrame/CommonUtil.js",
+			"js/libs/mui.min.js",
+			"js/core/sea.min.js",
+			"js/core/MobileFrame/WindowUtil.js",
+			"js/libs/zepto.min.js",
+			"css/mui.min.css",
+			"js/core/MobileFrame/HtmlUtil.js",
+			"js/core/MobileFrame/StorageUtil.js"
+		],
+		"refer": [
+			"html/homepage/szpark_school_summary.html",
+			"html/homepage/szpark_comeducation.html",
+			"html/homepage/szpark_alllife_education_index.html",
+			"html/news/szpark_news_detail.html",
+			"html/homepage/spark_map.html"
+		]
+	},
+	"html/index-menu.html": {
+		"resources": [
+			"css/index-menu.css",
+			"js/bizlogic/homepage/index-menu.js",
+			"img/index-menu/img_defaultHead.jpg"
+		],
+		"refer": []
+	},
+	"html/news/szpark_news_list.html": {
+		"resources": [
+			"css/news/szpark_news_tab.css",
+			"js/bizlogic/news/szpark_news_list.js",
+			"img/educate/img_noticepic.png",
+			"css/educate/szpark_educationNotice_list.css",
+			"js/core/MobileFrame/HtmlUtil.js",
+			"js/core/MobileFrame/ImageLoaderFactory.js",
+			"js/core/MobileFrame/DownLoadUtil.js",
+			"js/core/MobileFrame/PullrefreshUtil.js",
+			"js/core/MobileFrame/FileUtil.js"
+		],
+		"refer": []
+	},
+	"html/investigation/szpark_investigation_list.html": {
+		"resources": [
+			"js/bizlogic/investigation/szpark_investigation_list.js",
+			"js/core/MobileFrame/PullrefreshUtil.js",
+			"js/core/MobileFrame/HtmlUtil.js",
+			"css/common/common.css",
+			"css/investigation/szpark_investigation_list.css"
+		],
+		"refer": []
+	},
+	"html/homepage/szpark_school_biginfolist.html": {
+		"resources": [
+			"img/homepage/xyfc1.jpg",
+			"css/homepage/szpark_xyfc.css",
+			"js/bizlogic/homepage/szpark_school_biginfolist.js",
+			"js/core/MobileFrame/PullrefreshUtil.js"
+		],
+		"refer": []
+	},
+	"html/homepage/szpark_school_summary.html": {
+		"resources": [
+			"html/homepage/szpark_school_honorlist.html",
+			"css/homepage/szpark_school_summary.css",
+			"js/bizlogic/homepage/szpark_school_summary.js",
+			"html/homepage/szpark_school_CommonInfoShow.html",
+			"css/common/repailTopPocket90.css",
+			"js/bizlogic/common/common.js",
+			"js/libs/mustache.min.js",
+			"js/libs/zepto.min.js",
+			"fonts/mui.ttf",
+			"js/core/sea.min.js",
+			"js/libs/mui.min.js",
+			"css/mui.min.css",
+			"css/common/common.css",
+			"js/core/MobileFrame/CommonUtil.js",
+			"js/core/MobileFrame/UIUtil.js",
+			"js/core/MobileFrame/WindowUtil.js",
+			"js/core/MobileFrame/StorageUtil.js",
+			"js/core/MobileFrame/HtmlUtil.js"
+		],
+		"refer": [
+			"html/homepage/szpark_school_biginfolist.html",
+			"html/homepage/szpark_school_honorlist.html",
+			"html/homepage/szpark_school_CommonInfoShow.html"
+		]
+	},
+	"html/homepage/szpark_comeducation.html": {
+		"resources": [
+			"js/bizlogic/common/common.js",
+			"js/libs/mustache.min.js",
+			"js/libs/zepto.min.js",
+			"html/homepage/szpark_comeducationlist.html",
+			"js/core/MobileFrame/CommonUtil.js",
+			"js/bizlogic/homepage/szpark_comeducation.js",
+			"fonts/mui.ttf",
+			"js/core/sea.min.js",
+			"js/libs/mui.min.js",
+			"css/mui.min.css",
+			"js/core/MobileFrame/WindowUtil.js",
+			"js/core/MobileFrame/StorageUtil.js",
+			"css/common/common.css"
+		],
+		"refer": [
+			"html/homepage/szpark_comeducationlist.html"
+		]
+	},
+	"html/homepage/szpark_comeducationlist.html": {
+		"resources": [
+			"js/bizlogic/homepage/szpark_comeducationlist.js",
+			"css/homepage/szpark_comeducationlist.css",
+			"img/homepage/img_homepage_sqjylist1.png"
+		],
+		"refer": []
+	},
+	"html/homepage/szpark_school_honorlist.html": {
+		"resources": [
+			"img/homepage/xyfc1.jpg",
+			"js/bizlogic/homepage/szpark_school_honorlist.js",
+			"css/homepage/szpark_xyfc.css"
+		]
+	},
+	"html/homepage/szpark_school_CommonInfoShow.html": {
+		"resources": [
+			"css/homepage/szpark_school_CommonInfoShow.css",
+			"js/bizlogic/homepage/szpark_school_CommonInfoShow.js"
+		]
+	},
+	"html/homepage/szpark_alllife_education_index.html": {
+		"resources": [
+			"js/bizlogic/common/common.js",
+			"css/homepage/szpark_academicEducation_index.css",
+			"js/core/MobileFrame/CommonUtil.js",
+			"js/core/MobileFrame/UIUtil.js",
+			"fonts/mui.ttf",
+			"js/libs/mui.min.js",
+			"js/core/sea.min.js",
+			"js/core/MobileFrame/WindowUtil.js",
+			"css/common/common.css",
+			"js/libs/mustache.min.js",
+			"js/bizlogic/homepage/szpark_alllife_education_index.js",
+			"js/libs/zepto.min.js",
+			"css/mui.min.css",
+			"css/common/repailTopPocket90.css",
+			"js/core/MobileFrame/StorageUtil.js",
+			"js/core/MobileFrame/HtmlUtil.js",
+			"html/homepage/szpark_alllife_education_detail.html"
+		],
+		"refer": [
+			"html/homepage/szpark_alllife_education_detail.html",
+			"html/homepage/szpark_alllife_education_list.html"
+		]
+	},
+	"html/news/szpark_news_detail.html": {
+		"resources": [
+			"js/bizlogic/common/common.js",
+			"js/core/MobileFrame/CommonUtil.js",
+			"js/core/MobileFrame/UIUtil.js",
+			"fonts/mui.ttf",
+			"js/libs/mui.min.js",
+			"js/core/sea.min.js",
+			"js/core/MobileFrame/WindowUtil.js",
+			"css/common/common.css",
+			"css/educate/szpark_educationNotice_detail.css",
+			"js/libs/mustache.min.js",
+			"js/libs/zepto.min.js",
+			"css/mui.min.css",
+			"js/core/MobileFrame/StorageUtil.js",
+			"js/core/MobileFrame/HtmlUtil.js",
+			"js/bizlogic/news/szpark_news_detail.js"
+		]
+	},
+	"html/homepage/szpark_alllife_education_detail.html": {
+		"resources": [
+			"css/homepage/szpark_school_CommonInfoShow.css",
+			"js/bizlogic/homepage/szpark_alllife_education_detail.js"
+		]
+	},
+	"html/homepage/szpark_alllife_education_list.html": {
+		"resources": [
+			"js/bizlogic/homepage/szpark_alllife_education_list.js",
+			"css/homepage/szpark_educationAcademic_list.css",
+			"js/core/MobileFrame/PullrefreshUtil.js"
+		]
+	},
+	"html/homepage/spark_map.html": {
+		"resources": [
+			"js/bizlogic/common/common.js",
+			"img/homepage/img_mapA1.jpg",
+			"js/core/MobileFrame/CommonUtil.js",
+			"img/homepage/img_study_education.png",
+			"fonts/mui.ttf",
+			"js/core/sea.min.js",
+			"js/libs/mui.min.js",
+			"img/homepage/img_pre.png",
+			"img/homepage/img_next.png",
+			"css/common/common.css",
+			"img/homepage/img_health_care.png",
+			"css/homepage/szpark_map.css",
+			"js/libs/mustache.min.js",
+			"js/libs/zepto.min.js",
+			"js/bizlogic/homepage/szpark_map.js",
+			"img/homepage/img_exercise_fitness.png",
+			"css/mui.min.css",
+			"img/homepage/img_meishi.png",
+			"img/homepage/img_public_service.png"
+		]
+	}
+}

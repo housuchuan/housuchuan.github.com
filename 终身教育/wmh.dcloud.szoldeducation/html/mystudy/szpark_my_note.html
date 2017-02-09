@@ -1,0 +1,72 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-28 08:29:07
+        描述 ：我的文档--笔记
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的笔记</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket0.css" />
+		<link rel="stylesheet" href="../../css/mystudy/szpark_my_note.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的笔记</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" style="margin-top: 44px;" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--内容选择-->
+					<div class="column">
+						<span class="TA-common items-active">视频</span>
+						<span class="TA-common">文档</span>
+					</div>
+					<div class="input-area">
+						<div class="mui-input-row mui-search">
+							<input type="search" class="mui-input-clear" placeholder="请输入您要搜索的内容">
+						</div>
+					</div>
+
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="mui-table-view selection-items" id="listdata">
+						<!--<li class="mui-table-view-cell">
+								<span>我最喜欢的书籍上下我最喜欢的书籍上下五千年五千年</span>
+								<span>2016-12-31</span>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="mui-slider-handle clearfix">
+									<img src="../../img/educate/img_project1.png"/>
+									<h4>中小学教育</h4>
+									<span class="studyed studyed-common-sizecol">更新于</span>
+									<span class="studyed-common-sizecol">2016/2/16 12:20:20</span>
+									<br />
+									<span class="studying studyed-common-sizecol">笔记总数：</span>
+									<span class="studyed-common-sizecol noteNum">200</span>
+								</div>
+							</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/mystudy/szpark_my_note");
+		</script>
+	</body>
+
+</html>

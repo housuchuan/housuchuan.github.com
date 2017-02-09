@@ -1,0 +1,99 @@
+/*  作者：侯苏川
+        时间：2016-06-21 16:04:07
+        描述：个人空间样式
+*/
+
+
+/*menu-bar*/
+
+.mui-content-top {
+	position: relative;
+	height: 190px;
+	background: url(../../img/menubar/img-menubar.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.mui-icon-arrowleft {
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin: 30px 0 0 10px;
+	padding: 1.5px 0 0 0.5px;
+	border-radius: 15px;
+	background-color: #827366;
+}
+
+.mui-icon-arrowleft:before {
+	color: #fff;
+}
+
+
+/*点击效果*/
+
+.mui-icon-arrowleft:active {
+	background-color: darkgray;
+}
+
+/*头像*/
+img {
+	position: absolute;
+	left: 50%;
+	width: 69px;
+	height: 69px;
+	margin-top: 63.5px;
+	margin-left: -34.5px;
+	/* Gecko browsers */
+	-moz-border-radius: 40px;
+	 /*Webkit browsers*/ 
+	-webkit-border-radius: 40px;
+	 /*W3C syntax - likely to be standard so use for future proofing*/ 
+	border-radius: 40px;
+}
+
+.choose-list {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 12px 0;
+	color: #FFF;
+	font-size: 13px;
+	background: url(../../img/menubar/img-chooselist.png) repeat;
+}
+
+.choose-list > div {
+	float: left;
+	width: 16.66%;
+	padding: 0 13px;
+	text-align: center;
+	/*white-space: nowrap;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;*/
+	border-right: 1px solid #a9a19a;
+}
+
+.choose-list div:last-child {
+	position: relative;
+	border-right: none;
+}
+
+.messageNotice {
+	display: inline-block;
+	position: absolute;
+	top: -5px;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	line-height: 16px;
+	border-radius: 20px;
+	font-size: 12px;
+	background-color: #e1110e;
+}
+
+
+/*选中的时候，选项卡的样式*/
+
+.new-active {
+	/*color: #187bc2;*/
+	font-weight: 800;
+	font-size: 14px;
+}

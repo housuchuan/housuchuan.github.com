@@ -1,0 +1,65 @@
+/**
+ * 作者：戴科
+ * 时间：2016-04-05
+ */
+
+.mui-table-view-cell {
+	width: 100%;
+	height: 98px;
+	background: #ffffff;
+	border: none;
+	padding: 0;
+}
+
+.suzhou_policy_bd {
+	width: 97%;
+	height: 98px;
+	margin-left: 3%;
+	overflow: hidden;
+	border-bottom: 1px solid #e2e2e3;
+}
+
+.suzhou_policy_pic {
+	margin-top: 10px;
+	width: 105px;
+	float: left;
+	text-align: left;
+}
+
+.suzhou_policy_pic img {
+	width: 105px;
+}
+
+.suzhou_policy_word {
+	width: 60%;
+	margin-left: 10px;
+	float: left;
+}
+
+.suzhou_policy_newscontent {
+	line-height: 17px;
+	font-size: 12px;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0;
+	padding: 0;
+	-webkit-user-select: text;
+	border: none;
+	display: -webkit-box;
+	background-color: #fff;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #c4c4c4;
+}
+
+.suzhou_policy_newstitle {
+	margin-top: 10px;
+	display: block;
+	font-size: 14px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

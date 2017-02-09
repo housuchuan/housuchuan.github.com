@@ -1,0 +1,109 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-05 11:38:16
+        描述：  新闻公告android pad父页面
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>新闻公告</title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/news/szpark_news_apad_parent.css" />
+		<link rel="stylesheet" href="../../css/common/common_list.css" />
+		<link rel="stylesheet" href="../../css/common/common_click.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">新闻公告</h1>
+		</header>
+		<div class="mui-content">
+			<div class="szpark_newstitle_left">
+				<div class="mui-control-content mui-control-content_div">
+					<div id="scrollTab" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="szpark_newstitle_left_view">
+								<li class="szpark_newstitle_left_cell szpark_active" id="002001">学习新闻</li>
+								<li class="szpark_newstitle_left_cell" id="002002">区域动态</li>
+								<li class="szpark_newstitle_left_cell" id="002003">公告消息</li>
+								<li class="szpark_newstitle_left_cell" id="002004">图片新闻</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mui-scroll-wrapper listwrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--加标签的目的：解决某些手机刷新列表（空白）渲染不出来的情况（客户手机）-->
+					<div style="border-top: 1px solid #FFFFFF;">
+					</div>
+					<!--数据容器-->
+					<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed" id="listdata">
+						<!--<li class="mui-table-view-cell" id="{{InfoID}}">
+							<div class="mui-table">
+								<div class="mui-table-cell mui-col-xs-10">
+									<h4 class="mui-ellipsis">{{Title}}</h4>
+									<h5 class="mui-ellipsis-2">{{infocontent}}</h5>
+									<p class="mui-h6 mui-ellipsis">{{InfoDate}}</p>
+								</div>
+							</div>
+						</li>-->
+						<!--带图片的列表-->
+						<!--<li class="mui-table-view-cell mui-media" id="{{InfoID}}">
+							<img class="mui-media-object mui-pull-left" data-img-localcache="{{HeadNewsAttachUrl}}" />
+							<div class="mui-media-body">
+								<h4 class="mui-ellipsis">{{Title}}</h4>
+								<h5 class="mui-ellipsis-2">{{infocontent}}</h5>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+			<div class="szpark_newstitle_right">
+				<div class="mui-control-content">
+					<div id="scrollDetail" class="mui-scroll-wrapper detailscroll-wrapper">
+						<div class="mui-scroll">
+							<!--加标签的目的：解决某些手机刷新列表（空白）渲染不出来的情况（客户手机）-->
+							<div style="border-top: 1px solid #FFFFFF;">
+							</div>
+							<div class="my-content" id="content">
+								<!--<div class="title">{{title}}</div>
+								<div class="time"><span>{{infodate}}</span>&nbsp;|&nbsp;来源:<span>{{infoZhuanZai}}</span></div>
+								<div id="txt">计算机 编辑 计算机（computer）俗称电脑，是一种用于高速计算的电子计算机器，可以进行数值计算，又可以进行逻辑计算，还具有存储记忆功能。是能够按照程序运行，自动、高速处理海量数据的现代化智能电子设备。由硬件系统和软件系统所组成，没有安装任何软件的计算机称为裸机。可分为超级计算机、工业控制计算机、网络计算机、个人计算机、嵌入式计算机五类，较先进的计算机有生物计算机、光子计算机、量子计算机等。 计算机发明者约翰·冯·诺依曼。计算机是20世纪最先进的科学技术发明之一，对人类的生产活动和社会活动产生了极其重要的影响，并以强大的生命力飞速发展。它的应用领域从最初的军事科研应用扩展到社会的各个领域，已形成了规模巨大的计算机产业，带动了全球范围的技术进步，由此引发了深刻的社会变革，计算机已遍及一般学校、企事业单位，进入寻常百姓家，成为信息社会中必不可少的工具。
+									计算机的应用在中国越来越普遍，改革aa开放以后，中国计算机用户的数量不断攀升，应用水平不断提高，特别是互联网、通信、多媒体等领域的应用取得了不错的成绩。1996年至2009 年，计算机用户数量从原来的630万增长至6710 万台，联网计算机台数由原来的2.9万台上升至5940万台。互联网用户已经达到3.16 亿，无线互联网有6.7 亿移动用户，其中手机上网用户达1.17 亿，为全球第一位。 中文名 计算机 外文名 computer 时 间 1946年 第一台计算机 ENIAC 别 称电脑
+									发明者约翰·冯·诺依曼 目录 1 发展历史 2 机器组成 ▪ 硬件系统 ▪ 软件系统 3 主要特点 4 主要分类 ▪ 超级计算机 ▪ 网络计算机 ▪ 工业控制 ▪ 个人电脑 ▪ 嵌入式 5 应用领域 ▪ 信息管理 ▪ 过程控制 ▪ 辅助技术 ▪ 翻译 ▪ 多媒体应用 ▪ 计算机网络 6 发展趋势 ▪ 巨型化 ▪ 微型化 ▪ 网络化 ▪ 人工智能化 ▪ 多媒体化 ▪ 技术结合 ▪ 中国发展 7 未来 ▪ 分子 ▪ 量子型 ▪ 光子 ▪ 纳米 ▪ 生物 发展历史编辑 计算工具的演化经历了由简单到复杂、从低级到高级的不同阶段，例
+									ENIAC计算机 ENIAC计算机 如从“结绳记事”中的绳结到算筹、算盘计算尺、机械计算机等。它们在不同的历史时期发挥了各自的历史作用，同时也启发了电子计算机的研制和设计思路。 1889年，美国科学家赫尔曼·何乐礼研制出以电力为基础的电动制表机，用以储存计算资料。 1930年，美国科学家范内瓦·布什造出世界上首台模拟电子计算机。 1946年2月14日，由美国军方定制的世界上第一台电子计算机“电子数字积分计算机”（ENIAC Electronic Numerical And Calculator）在美国宾夕法尼亚大学问世了。ENIAC（中文名：埃尼阿克）是美国奥伯丁武器试验场为了满足计算弹道需要而研制成的，这台计算器使用了17840支电子管，大小为80英尺×8英尺，重达28t（吨），功耗为170kW，其运算速度为每秒5000次的加法运算，造价约为487000美元。ENIAC的问世具有划时代的意义，表明电子计算机时代的到来。在以后60多年里，计算机技术以惊人的速度发展，没有任何一门技术的性能价格比能在30年内增长6个数量级。
+									第1代：电子管数字机（1946—1958年） 硬件方面，逻辑元件采用的是真空电子管，主存储器采用汞延迟线 电子管数字计算机 电子管数字计算机 、阴极射线示波管静电存储器、磁鼓、磁芯；外存储器采用的是磁带。软件方面采用的是机器语言、汇编语言。应用领域以军事和科学计算为主。 特点是体积大、功耗高、可靠性差。速度慢（一般为每秒数千次至数万次）、价格昂贵，但为以后的计算机发展奠定了基础。 第2代：晶体管数字机（1958—1964年） 硬件方的操作系统、高级语言及其编译程序。应用领域以科学计算和事务处理为主，并开始进入工业控制领域。特点是体积缩小、能耗降低、可靠性提高、运算速度提高（一般为每秒数10万次，可高达300万次）、性能比第1代计算机有很大的提高。
+									第3代：集成电路数字机（1964—1970年） 硬件方面，逻辑元件采用中、小规模集成电路（MSI、SSI），主存储器仍采用磁芯。软件方面出现了分时操作系统以及结构化、规模化程序设计方法。特点是速度更快（一般为每秒数百万次至数千万次），而且可靠性有了显著提高，价格进一步下降，产品走向了通用化、系列化和标准化等。应用领域开始进入文字处理和图形图像处理领域。 第4代：大规模集成电路机（1970年至今） 硬件方面，逻辑元件采用大规模和超大规模集成电路（LSI和VLSI）。软件方面出现了数据库管理系统、网络管理系统和面向对象语言等。特点是1971年世界上第一台微处理器在美国硅谷诞生，开创了微型计算机的新时代。应用领域从科学计算、事务管理、过程控制逐步走向家庭。
+									由于集成技术的发展，半导体芯片的集成度更高，每块芯片可容纳数万乃至数百万个晶体管，并且可以把运算器和控制器都集中在一个芯片上、从而出现了微处理器，并且可以用微处理器和大规模、超大规模集成电路组装成微型计算机，就是我们常说的微电脑或PC机。微型计算机体积小，价格便宜，使用方便，但它的功能和运算速度已经达到甚至超过了过去的大型计算机。另一方面，利用大规模、超大规模集成电路制造的各种逻辑芯片，已经制成了体积并不很大，但运算速度可达一亿甚至几十亿次的巨型计算机。我国继1983年研制成功每秒运算一亿次的银河Ⅰ这型巨型机以后，又于1993年研制成功每秒运算十亿次的银河Ⅱ型通用并行巨型计算机。这一时期还产生了新一代的程序设计语言以及数据库管理系统和网络软件等。
+									随着物理元、器件的变化，不仅计算机主机经历了更新换代，它的外部设备也在不断地变革。比如外存储器，由最初的阴极射线显示管发展到磁芯、磁鼓，以后又发展为通用的磁盘，现又出现了体积更小、容量更大、速度更快的只读光盘（CD—ROM）。
+								</div>
+								<div class="attaches">
+									<ul id="attachListData"></ul>
+								</div>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/libs/iscroll.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/news/szpark_news_parent_apad');
+		</script>
+	</body>
+
+</html>

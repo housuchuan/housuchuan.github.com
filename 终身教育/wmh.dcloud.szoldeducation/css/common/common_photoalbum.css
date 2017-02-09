@@ -1,0 +1,63 @@
+/*
+ * 苏州园区教育A--学员风采样式   通用的相册框样式 photoalbum,所有的相册封面框都可以借鉴使用
+ * @author 孙尊路
+ * */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.w190 {
+	width: 100%;
+}
+
+.imgWrap {
+	position: relative;
+	margin-left: 2px;
+	margin-right: 2px;
+	z-index: 90;
+	float: right;
+}
+
+.imgWrap .bg1 {
+	position: absolute;
+	right: -3px;
+	bottom: -3px;
+	background-color: #E3E3E3;
+	width: 100%;
+	height: 100%;
+	z-index: 91;
+}
+
+.imgWrap .bg2 {
+	position: absolute;
+	left: -3px;
+	top: -3px;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #E3E3E3;
+	z-index: 92;
+}
+
+.imgWrap .imgDiv {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 98;
+}
+
+.imgWrap .imgDiv div {
+	width: 100%;
+	height: 100%;
+	padding: 10px 13px 13px 7px;
+}
+
+.imgWrap .imgDiv div img {}
+
+.imgWrap .info {
+	position: relative;
+	z-index: 99;
+	padding: 10px;
+}

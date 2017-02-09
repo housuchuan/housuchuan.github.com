@@ -1,0 +1,49 @@
+ body ,  .mui-content {
+ 	background-color: #fff;
+ }
+ .mui-content {
+  	padding-left: 10px;
+  }
+ .mui-content>.mui-table-view:first-child {
+ 	margin-top: 0;
+ }
+ .mui-slider-handle > div {
+ 	float: left;
+ 	width: 90px;
+ 	height: 75px;
+ 	background: url(../../img/mystudy/img_my_study.jpg) no-repeat;
+ 	background-size: 90px 75px;
+ }
+  .mui-slider-handle > h4{
+ 	margin: 0 0 10px 100px;
+ 	padding-top: 5px;
+ 	font-size: 14px;
+ 	white-space: nowrap;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ }
+  .studyed {
+ 	margin: 0 10px 0 4px;
+ }
+ .studying {
+ 	margin-left: 10px;
+ }
+ .studying-active {
+ 	font-size: 12px;
+	color: red;
+ }
+  .studyed-common-sizecol {
+  	font-size: 12px;
+ 	color: #b9b9b9;
+ }
+ .mui-table-view-cell {
+ 	padding-left: 0;
+ }
+  /*右划样式*/
+ .mui-table-view-cell>.mui-slider-left>.mui-btn, .mui-table-view-cell>.mui-slider-right>.mui-btn {
+	padding: 0 20px;
+}
+ .mui-table-view-cell>.mui-slider-left>.mui-btn.mui-icon, .mui-table-view-cell>.mui-slider-right>.mui-btn.mui-icon {
+ 	font-size: 15px;
+ }
+

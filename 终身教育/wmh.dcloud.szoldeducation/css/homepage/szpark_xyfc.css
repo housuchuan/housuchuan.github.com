@@ -1,0 +1,37 @@
+/**
+ * 作者：戴科
+ * 时间：2016-04-06
+ */
+/*相册样式*/
+.mui-table-view-cell {
+	margin: 10px;
+	/*padding: 0 15px 0 15px;*/
+	/*height: auto;*/
+	/*border: 5px solid #ddd;*/
+	border: 1px solid #E3E3E3;
+}
+.mui-table-view-cell:after {
+     background-color: #ffffff; 
+}
+.mui-table-view-cell img {
+	/*width: 280px;*/
+	width: 100%;
+	height: 180px;
+}
+
+/*数字图标*/
+.mui-table-view-cell>.mui-badge,
+.mui-table-view-cell>.mui-btn,
+.mui-table-view-cell>.mui-switch,
+.mui-table-view-cell>a>.mui-badge,
+.mui-table-view-cell>a>.mui-btn,
+.mui-table-view-cell>a>.mui-switch {
+	position: absolute;
+	top: 90%;
+	background-color: #09335A;
+	/*以下css设置透明度*/
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}

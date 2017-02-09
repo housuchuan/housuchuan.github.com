@@ -1,0 +1,104 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-07-07 08:29:07
+        描述：  资源中心ipad版本父页面
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>资源中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/resourceCenter/resource_center_pad.css" />
+	</head>
+
+	<body>
+		
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">资源中心</h1>
+		    <a class="mui-clearfix"><span class="mui-icon mui-icon-search"></span></a>
+		</header>
+		
+		<div class="mui-content">
+			<!--栏目类型列表-->
+		    <div class="column-style-list mui-clearfix">
+		    	<div class="column-list">
+			    	<div class="common-share">
+			    		<div></div><label>历史类</label>
+			    	</div>
+			    	<div class="common-share">
+			    		<div></div><label>语言文言文类</label>
+			    	</div>
+			    	<div class="common-share">
+			    		<div></div><label>语言类</label>
+			    	</div>
+			    	<div class="common-share">
+			    		<div></div><label>历史类</label>
+			    	</div>
+			    	<div class="common-share">
+			    		<div></div><label>生物类</label>
+			    	</div>
+			    	<div class="common-share">
+			    		<div></div><label>化学类</label>
+			    	</div>
+			    </div>
+			    <div class="column-list">
+			    	<div class="common-share">
+			    		<div></div><label>地理类</label>
+			    	</div>
+			    	<div class="common-share">
+			    		<div></div><label>文学类</label>
+			    	</div>
+			    	<div class="common-share">
+			    		<div></div><label>其他</label>
+			    	</div>
+			    	<div class="common-share">
+			    		<div></div><label>搞笑类</label>
+			    	</div>
+			    	<div class="common-share">
+			    		<div></div><label>小说类</label>
+			    	</div>
+			    	<div class="common-share">
+			    		<div></div><label>美食类</label>
+			    	</div>
+			    </div>
+		    </div>
+		    
+		    <!--视频文档内容-->
+			<div class="mui-scroll-wrapper message-block-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div class="message-block mui-clearfix" id="listdata">
+						<!--<div>
+							<img src="../../../img/menubar/img-menubar.jpg" />
+							<span class="title-program mui-ellipsis">冶金技术冶金技术冶金技术的发展</span>
+							<div class="m-btn mui-clearfix">
+								<div class="video-log"></div>
+								<span class="video-show">开始观看</span>
+							</div>
+						</div>-->
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--引入常用框架库-->
+		<script type="text/javascript" src="../../../js/core/sea.min.js" ></script>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js" ></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js" ></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js" ></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../../js/'
+			})
+			seajs.use("bizlogic/js_pad/resourceCenter/resource_center_pad");
+		</script>
+	</body>
+
+</html>

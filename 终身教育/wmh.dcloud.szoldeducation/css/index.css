@@ -1,0 +1,68 @@
+/**
+ * 作者：孙尊路
+ * 日期：2016-04-05
+ */
+
+/*底部导航栏的优先级显示，很重要*/
+.mui-bar-tab{
+	z-index: 300;
+}
+/*右侧的icon btn*/
+.mui-bar .mui-pull-right {
+	color: #FFFFFF;
+	font-size: 30px;
+	padding-top: 8px;
+	display: none;
+}
+.bgblue{
+	background: #187bc2;
+}
+.suzhou_white{
+	color: #ffffff;
+}
+.mui-title{
+	color: #ffffff;
+}
+.icon-home{
+	background: url(../img/index/img_bottomicon_default1.png) no-repeat;
+	background-size: 23px 20px;
+}
+.icon-news{
+	background: url(../img/index/img_bottomicon_default2.png) no-repeat;
+	background-size: 23px 20px;
+}
+.icon-askanswer{
+	background: url(../img/index/img_bottomicon_default3.png) no-repeat;
+	background-size: 23px 20px;
+}
+.icon-check{
+	background: url(../img/index/img_bottomicon_default4.png) no-repeat;
+	background-size: 23px 20px;
+}
+.icon-educate{
+	background: url(../img/index/img_bottomicon_default5.png) no-repeat;
+	background-size: 23px 20px;
+}
+/**
+ * 选中状态
+ */
+.mui-active .icon-home{
+	background: url(../img/index/img_bottomicon_clicked1.png) no-repeat;
+	background-size: 23px 20px;
+}
+.mui-active .icon-news{
+	background: url(../img/index/img_bottomicon_clicked2.png) no-repeat;
+	background-size: 23px 20px;
+}
+.mui-active .icon-askanswer{
+	background: url(../img/index/img_bottomicon_clicked3.png) no-repeat;
+	background-size: 23px 20px;
+}
+.mui-active .icon-check{
+	background: url(../img/index/img_bottomicon_clicked4.png) no-repeat;
+	background-size: 23px 20px;
+}
+.mui-active .icon-educate{
+	background: url(../img/index/img_bottomicon_clicked5.png) no-repeat;
+	background-size: 23px 20px;
+}

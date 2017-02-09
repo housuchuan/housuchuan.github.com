@@ -1,0 +1,32 @@
+/**
+ * 老年教育-终身教育
+ */
+
+#slider {
+	margin-top: 44px;
+	background-color: #ffffff;
+}
+
+#sliderSegmentedControl2 {
+	/*width: 150%;*/
+}
+/*滑动组的内容*/
+.mui-slider .mui-slider-group {
+    height: 1px;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+	display: inline-block;
+	margin: 0;
+	line-height: 37px;
+	vertical-align: top;
+}
+
+.suzhou_school_active {
+	color: #187bc2!important;
+	border-bottom: 3px solid #187bc2!important;
+}
+/*滑动控件边界居上聚下*/
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+    border-top: 1px solid #c8c7cc;
+    border-bottom: 0px solid #c8c7cc;
+}

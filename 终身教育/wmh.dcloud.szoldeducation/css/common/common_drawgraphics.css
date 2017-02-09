@@ -1,0 +1,93 @@
+/*****************绘制img的左上角三角形以及数字***********/
+
+.topleft-triangle {
+	position: absolute;
+	z-index: 10;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	border-top: 70px solid red;
+	border-right: 70px solid transparent;
+}
+
+
+/*覆盖*/
+
+.topleft-triangleV {
+	position: absolute;
+	z-index: 13;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	border-top: 20px solid #FFFFFF;
+	border-right: 20px solid transparent;
+	/*filter: alpha(opacity=0);
+				-moz-opacity: 0;
+				-khtml-opacity: 0;
+				opacity: 0;*/
+}
+
+.topleft-textV {
+	position: absolute;
+	z-index: 14;
+	top: 0px;
+	padding-top: 12px;
+	left: 0px;
+	font-size: 12px;
+	color: #FFFFFF;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+}
+
+
+/*****************绘制img的右上角三角形以及数字***********/
+
+.topright-triangle {
+	position: absolute;
+	z-index: 10;
+	width: 0;
+	height: 0;
+	top: 0;
+	right: 0;
+	border-top: 70px solid red;
+	border-left: 70px solid transparent;
+}
+
+
+/*覆盖*/
+
+.topright-triangleV {
+	position: absolute;
+	z-index: 13;
+	width: 0;
+	height: 0;
+	top: 0;
+	right: 0;
+	border-top: 20px solid #FFFFFF;
+	border-left: 20px solid transparent;
+	/*filter: alpha(opacity=0);
+				-moz-opacity: 0;
+				-khtml-opacity: 0;
+				opacity: 0;*/
+}
+
+.topright-textV {
+	position: absolute;
+	z-index: 14;
+	top: 0px;
+	padding-top: 12px;
+	right: 0px;
+	font-size: 12px;
+	color: #FFFFFF;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+}
+
+.mui-table-view-cell {
+	height: 200px;
+	background-image: url(../../img/educate/img_slider.png);
+}

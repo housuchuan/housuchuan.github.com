@@ -1,0 +1,105 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-07-10 14:48:07
+        描述：  资源视频预览
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>资源视频预览</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/common/imageviewer.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/resourceCenter/resource_center_video_preview_pad.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"></h1>
+		</header>
+
+		<div class="mui-content clearfix">
+			<!--遮罩-->
+			<div class="zhezhao"></div>
+			<div class="mui-scroll-wrapper mediaPlayer">
+				<div class="mui-scroll clearfix">
+					<!--这里放置真实显示的DOM内容-->
+					<!--媒体视频-->
+					<div class="media-content">
+						<!--视频播放-->
+						<!--<video src="http://218.87.172.126:8889/EpointBigFileUpLoad/BigFileUpLoadStorage/799d6091-d335-453f-a482-6f35d544e939/f47af25c04adde4b12400f6599d8fb02cb079fd6.mp4" controls="controls" autoplay="autoplay">
+							您的浏览器不支持 video 标签
+						</video>-->
+						<div id="player"></div>
+						<!--点播文档html区域-->
+						<div id="doc">
+							<div class="mui-scroll-wrapper imgList-pad" id="pullrefresh">
+								<div class="mui-scroll">
+									<!--这里放置真实显示的DOM内容-->
+									<ul class="mui-table-view img-wrapper" id="listdata">
+										<!--图片存放区-->
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="media-info mui-clearfix">
+							<div class="tabChoice"><span>简介</span><span>选集</span></div>
+							<div class="mui-scroll-wrapper content-wrapper">
+								<div class="mui-scroll">
+									<!--这里放置真实显示的DOM内容-->
+									<ul class="mui-table-view list-container-selection">
+										<!--<li class="setItem">
+											<div class="zhangjie">第一章节</div>
+											<div class="selectionsList mui-table-view-cell">
+												<div class="mui-clearfix"><span>01</span><span class="resouce">火影火影忍者火影忍者火忍者火影忍者火影忍者忍者</span><span>已学习</span></div>
+											</div>
+										</li>-->
+									</ul>
+									<p>
+										<!--冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史-->
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--总体评价-->
+			<div class="overallPraise">
+				<div class="overallTitle">总体评价</div>
+				<div class="overallPri">
+					<div class="overallCommon"></div>
+					<div class="overallCommon"></div>
+					<div class="overallCommon"></div>
+					<div class="overallCommon"></div>
+					<div class="overallCommon"></div>
+				</div>
+				<div class="operateBtn">
+					<button type="button" class="mui-btn mui-btn-blue mui-btn-block cancel">取消</button>
+					<button type="button" class="mui-btn mui-btn-blue mui-btn-block submit">提交</button>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js" ></script>
+		<script type="text/javascript" src="../../../js/libs/bcloud.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mui.zoom.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mui.previewimage.js"></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../../js/'
+			})
+			seajs.use("bizlogic/js_pad/resourceCenter/resource_center_video_preview_pad");
+		</script>
+	</body>
+
+</html>

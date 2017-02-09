@@ -1,0 +1,151 @@
+<!-- 
+        作者：朱晓琪
+        时间：2016-05-17
+        描述：  学员风采子页面 pad html
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/homepage/szpark_xyfclist_pad.css" />
+		<style type="text/css">
+			/*相册样式*/
+			
+			.mui-table-view-cell {
+				margin: 10px;
+				/*padding: 0 15px 0 15px;*/
+				/*height: auto;*/
+				/*border: 5px solid #ddd;*/
+				border: 1px solid #E3E3E3;
+			}
+			
+			.mui-table-view-cell:after {
+				background-color: #ffffff;
+			}
+			
+			.mui-table-view-cell img {
+				width: 340px;
+				height: 180px;
+			}
+			
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.w190 {
+				width: 100%;
+			}
+			
+			.imgWrap {
+				position: relative;
+				margin-left: 2px;
+				margin-right: 2px;
+				z-index: 90;
+				float: right;
+			}
+			
+			.imgWrap .bg1 {
+				position: absolute;
+				right: -3px;
+				bottom: -3px;
+				background-color: #E3E3E3;
+				width: 100%;
+				height: 100%;
+				z-index: 91;
+			}
+			
+			.imgWrap .bg2 {
+				position: absolute;
+				left: -3px;
+				top: -3px;
+				background-color: #fff;
+				width: 100%;
+				height: 100%;
+				border: 1px solid #E3E3E3;
+				z-index: 92;
+			}
+			
+			.imgWrap .imgDiv {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				z-index: 98;
+			}
+			
+			.imgWrap .imgDiv div {
+				width: 100%;
+				height: 100%;
+				padding: 10px 13px 13px 7px;
+			}
+			
+			.imgWrap .imgDiv div img {}
+			
+			.imgWrap .info {
+				position: relative;
+				z-index: 99;
+				padding: 10px;
+			}
+			/*在android pad上，测试加一下*/
+			.PicCountPos{
+				/*margin-top: 180px;*/
+			}
+		</style>
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<ul class="mui-table-view" id="listdata" style="background-color: #EFEFF4;">
+						<!--<li class="mui-table-view-cell picCell" id="{{ChannelGuid}}">
+							<i class="Title" style="display:none">{{ChannelName}}</i>
+							<div class="imgWrap w190">
+								<div class="bg1"></div>
+								<div class="bg2"></div>
+								<div class="imgDiv">
+									<div>
+										<img data-img-localcache="{{IndexPic}}" />
+										<span style="float: right;z-index: 1000;margin-bottom: 5px;" class="mui-badge mui-badge-primary">{{ChannelName}}</span>
+									</div>
+								</div>
+							</div>
+						</li>-->
+						<!--<li class="mui-table-view-cell picCell" id="{{ChannelGuid}}">
+							<i class="Title" style="display:none">{{ChannelName}}</i>
+							<div class="imgWrap w190">
+								<div class="bg1"></div>
+								<div class="bg2"></div>
+								<div class="imgDiv">
+									<div>
+										<img data-img-localcache="{{IndexPic}}" />
+										<span style="float: right;z-index: 1000;margin-bottom: 5px;" class="">{{PicCount}}</span>
+										<span style="float: left;z-index: 1000;margin-bottom: 5px;" class="">{{ChannelName}}</span>
+									</div>
+								</div>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_xyfclist_pad');
+		</script>
+	</body>
+
+</html>

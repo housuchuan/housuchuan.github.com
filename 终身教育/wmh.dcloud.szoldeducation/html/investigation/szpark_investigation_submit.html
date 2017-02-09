@@ -1,0 +1,58 @@
+<!-- 
+        作者：dailc 
+        时间：2016-04-05 15:06:37
+        描述： 调查填写页面 
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title> 调查投票 </title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/investigation/szpark_investigation_submit.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">调查投票</h1>
+		</header>
+		<div class="mui-content">
+			<div class="titlecontent">
+				<p class="title">标题</p>
+			</div>
+
+			<div id="content">
+				<!--<div class="subject" id="5e9b353d-307b-4781-a115-cf71dd778c07">
+					<li class="title-item">问题一（问题很长题目也很长问题很长题目也很长问题很长题目也很长问题很长题目也很长问题很长题目也很长问题很长题目也很长问题很长题目也很长问题很长题目也很长问题很）</li>
+					<form class="mui-input-group">
+						<div class="mui-input-row mui-radio mui-left"><label>星期一</label><input name="checkbox" value="0e59fd9c-c955-4b17-a4a5-7e797849c609" type="radio" class="radio-class" /></div>
+						<div class="mui-input-row mui-radio mui-left"><label>星期二</label><input name="checkbox" value="229182db-940b-4360-8ffa-42ebdc008a4f" type="radio" class="radio-class" /></div>
+						<div class="mui-input-row mui-radio mui-left"><label>星期三</label><input name="checkbox" value="d95927cc-74a5-4524-8727-a9f2b9e8ad78" type="radio" class="radio-class" /></div>
+						<div class="mui-input-row mui-radio mui-left"><label>星期四</label><input name="checkbox" value="4e9a8c5c-b071-447c-9f30-592a73433786" type="radio" class="radio-class" /></div>
+						<div class="mui-input-row mui-radio mui-left"><label>星期五（题目选项很长导致的呢题目选项很长导致的呢题目选项很长导致的呢题目选项很长导致的呢题目选项很长导致的呢题目选项很长导致的呢题目选项很长导致的呢题目选项很）</label><input name="checkbox" value="59dcaa91-7f34-4dac-95ce-bb14d59f8d0f" type="radio" class="radio-class" /></div>
+					</form>
+				</div>-->
+			</div>
+		</div>
+		<div class="pos-foot">
+			<button type="button" class="btn-common" id="btn-submit">提交</button>
+		</div>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="http://pv.sohu.com/cityjson?ie=utf-8"></script>  
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/investigation/szpark_investigation_submit.js');
+		</script>
+	</body>
+
+</html>

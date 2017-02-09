@@ -1,0 +1,261 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-07-08 16:44:07
+        描述：  资源视频播放
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>资源视频播放</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/common/repailTopPocket0.css" />
+		<link rel="stylesheet" href="../../../css/common/imageviewer.css" />
+		<link rel="stylesheet" href="../../../css/common/common_animate.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/resourceCenter/resource_center_view_video_pad.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"></h1>
+		</header>
+
+		<div class="mui-content clearfix">
+			<!--遮罩-->
+			<div class="zhezhao-area" id="zhezhao-area"></div>
+			<!--弹出框-->
+			<div id="join-circle" class="join-circle">
+				<div class="circle-bar">
+					<span id="commontitle">举报</span>
+					<a class="clearfix"><span class="mui-icon mui-icon-closeempty"></span></a>
+				</div>
+				<div class="circle-input">
+					<textarea id="reason" name="" rows="5" cols="" placeholder="亲，请填写举报理由！(50字以内)"></textarea>
+				</div>
+				<div class="button-area clearfix">
+					<button class="cancel-btn">取消</button>
+					<button class="confirm-btn">举报</button>
+				</div>
+			</div>
+
+			<div class="mui-scroll-wrapper mediaPlayer">
+				<div class="mui-scroll clearfix">
+					<!--这里放置真实显示的DOM内容-->
+					<!--媒体视频-->
+					<div class="media-content">
+						<!-- 点播html代码-->
+						<div id="player"></div>
+						<!--点播文档html区域-->
+						<div id="doc">
+							<div class="mui-scroll-wrapper imgList-wapper" id="pullrefresh4">
+								<div class="mui-scroll">
+									<!--这里放置真实显示的DOM内容-->
+									<ul class="mui-table-view img-wrapper" id="listdata4">
+										<!--图片存放区-->
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="media-info mui-clearfix">
+							<div class="tabChoice">
+								<span>简介</span><span>选集</span>
+								<div class="collections-appraise">
+									<div class="collections">
+										<div class="save-icon"></div>
+										<div>收藏</div>
+									</div>
+									<div class="appraise praiseBtn">
+										<div class="comment-icon"></div>
+										<div>评价</div>
+									</div>
+								</div>
+							</div>
+							<div class="mui-scroll-wrapper content-wrapper">
+								<div class="mui-scroll">
+									<!--这里放置真实显示的DOM内容-->
+									<ul class="mui-table-view list-container-selection">
+										<!--<li class="setItem">
+											<div class="zhangjie">第一章节</div>
+											<div class="selectionsList mui-table-view-cell">
+												<div class="mui-clearfix"><span>01</span><span class="resouce">火影火影忍者火影忍者火忍者火影忍者火影忍者忍者</span><span>已学习</span></div>
+											</div>
+										</li>-->
+									</ul>
+									<p>
+										<!--冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史冶金工业的发展历史-->
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="review-notes-items">
+				<div>评论</div>
+				<div class="noteIcon">笔记</div>
+				<div>做题</div>
+			</div>
+
+			<div class="mui-scroll-wrapper review-comment-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<!--用户评论笔记-->
+					<div class="review-notes">
+						<div class="newly-review">
+							<span>最新评论</span>
+						</div>
+						<ul class="mui-table-view review-notes-content" id="listdata">
+							<!--<li class="clearfix">
+								<img src="../../img/menubar/img-menubar.jpg" />
+								<div class="user-review-newlyInfo">
+									<div class="mui-ellipsis clearfix">
+										<span class="user-name">永辉大少</span><span class="user-praise">1赞</span>
+										<div class="praise-icon"></div>
+									</div>
+									<span class="time-records">8小时前</span>
+									<div class="commentContent">1111111111111111111111111111111111111111111111111111111111111111111</div>
+									<div class="secondLevelCommnet mui-clearfix">
+										<div class="review">
+											<div class="reviewIcon"></div>
+											<div>回复</div>
+										</div>
+										<div class="report">
+											<div class="reportIcon"></div>
+											<div>举报</div>
+										</div>
+									</div>
+									<div class="reviewContent">
+										<img src="../../img/educate/img_noticepic.png" /><span class="reviewName">木棉</span><span class="reviewEE">回复</span><span class="reviewName">木棉</span><span class="reviewName">:</span><span class="commentContent">111111111111111111111111111111111111111111</span><br />
+										<div class="reviewDate">2016-11-14 xx xx xx</div>
+										<div class="secondLevelCommnet mui-clearfix">
+											<div class="ZanBorder"><span>12</span><span>赞</span></div>
+											<div class="review">
+												<div class="reviewIcon"></div>
+												<div class="replay">回复</div>
+											</div>
+											<div class="report">
+												<div class="reportIcon"></div>
+												<div>举报</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="mui-scroll-wrapper review-notes-wrapper" id="pullrefresh2">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div class="noteslist">
+						<div class="newly-note">
+							<!--<span>我的笔记</span>-->
+							<span class="newly-review-span-active">我的笔记</span>
+						</div>
+						<ul class="mui-table-view review-notes-content" id="listdata2">
+							<!--<li class="clearfix">
+								<div class="noteWrapper mui-clearfix">
+									<span class="clock-icon"></span>
+									<span class="comment-time">00:37</span>
+									<span class="user-original">
+											<span>来自：</span>
+									<span>哈哈哈</span>
+									</span>
+								</div>
+								<div class="note-content">测试</div>
+								<div class="clearfix">
+									<span class="note-year">6月24日</span>
+									<span class="zan-wrapper">
+									<span class="zan"></span>
+									<span>(1)</span>
+									</span>
+								</div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="publish-btn">
+				<input type="text" placeholder="50字以内"></input><button class="publishBtn">发表</button>
+			</div>
+
+			<!--总体评价-->
+			<div class="overallPraise">
+				<div class="overallTitle">总体评价</div>
+				<div class="overallPri">
+					<div class="overallCommon"></div>
+					<div class="overallCommon"></div>
+					<div class="overallCommon"></div>
+					<div class="overallCommon"></div>
+					<div class="overallCommon"></div>
+				</div>
+				<div class="operateBtn">
+					<button type="button" class="mui-btn mui-btn-blue mui-btn-block cancel">取消</button>
+					<button type="button" class="mui-btn mui-btn-blue mui-btn-block submit">提交</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="doIt" id="doIt">
+			<div class="proTitle">练习题</div>
+			<div class="mui-scroll-wrapper itemsList">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div class="loading">正在加载中....</div>
+					<ul class="mui-table-view" id="questionList">
+						<!--<li id="1">
+							<div class="problem"><span>1、</span><span>某市检察院运用电子设备双路监控，同步录音录像，监督检察官办案过程，推动理性文明执法。关于理性文明执法，下列哪一说法是不正确的？</span><span class="frame">(&nbsp;&nbsp;&nbsp;<span class="number"></span>&nbsp;&nbsp;&nbsp;)</span>
+							</div>
+							<div class="choice">
+								<div>
+									<span>A</span><span>体现了以人为本的原则与精神</span>
+								</div>
+								<div>
+									<span>B</span><span>体现了以人为本的原则与精神体现了以人为本的原则与精神11111</span>
+								</div>
+								<div>
+									<span>C</span><span>体现了以人为本的原则与精神体现了以人为本的原则与精神体现了以人为本的原则与精神222222</span>
+								</div>
+								<div>
+									<span>D</span><span>体现了以人为本的原则与精神44444</span>
+								</div>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+			<div class="submitAnswerArea">
+				<button type="button" class="mui-btn mui-btn-blue submitAnswer">提交答案</button>
+			</div>
+			<div class="hidThis">
+				<div class="hid">
+					<div class="applyLine"></div>
+					<div class="hideIcon">x</div>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="../../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/bcloud.js"></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mui.zoom.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mui.previewimage.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../../js/'
+			})
+			seajs.use("bizlogic/js_pad/resourceCenter/resource_center_view_video_pad");
+		</script>
+	</body>
+
+</html>

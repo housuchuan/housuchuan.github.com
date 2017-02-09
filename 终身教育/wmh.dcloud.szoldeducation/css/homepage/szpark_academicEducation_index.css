@@ -1,0 +1,94 @@
+/**
+ * 学历教育首页
+ * 复用szpark_school_summary.css
+ * 同时重写部分
+ */
+
+
+/*右侧的icon btn*/
+
+.mui-bar .mui-pull-right {
+	color: #FFFFFF;
+	font-size: 30px;
+	padding-top: 8px;
+	display: none;
+}
+
+#slider {
+	margin-top: 44px;
+	background-color: #ffffff;
+}
+/*滑动组的内容*/
+.mui-slider .mui-slider-group {
+    height: 1px;
+}
+#sliderSegmentedControl2 {
+	/*width: 260%;*/
+}
+
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+	display: inline-block;
+	margin: 0;
+	line-height: 37px;
+	vertical-align: top;
+}
+
+.suzhou_school_tab {
+	padding-left: 10px;
+	height: 40px;
+	border-bottom: 1px solid #e3e3e3;
+	background-color: #fafafa;
+}
+
+.suzhou_school_tab {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #e2e2e3;
+}
+
+.suzhou_school_tab_cell {
+	float: left;
+	width: 21%;
+	height: 40px;
+	margin: 0 2%;
+	text-align: center;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.mui-active {
+	color: #000000!important;
+	border-bottom: none!important;
+}
+
+.suzhou_normal_content {
+	display: none;
+}
+
+.suzhou_school_active {
+	color: #187bc2!important;
+	border-bottom: 3px solid #187bc2!important;
+}
+
+.tab_silder {
+	margin-top: 44px;
+	overflow: hidden;
+	height: 40px;
+	position: relative;
+}
+
+.tab_silder_view {
+	width: 250%!important;
+	position: absolute;
+	height: 40px;
+	white-space: nowrap;
+}
+
+/*滑动控件边界居上聚下*/
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+    border-top: 1px solid #c8c7cc;
+    border-bottom: 0px solid #c8c7cc;
+}

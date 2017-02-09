@@ -1,0 +1,520 @@
+/*一级分类下的二级分类列表*/
+
+.classifyList {
+	margin-top: 76px;
+	height: 141px;
+	background-color: #ffffff;
+}
+
+.courseName {
+	padding-left: 40px;
+	font-size: 13px;
+}
+
+.courseName li {
+	height: 47px;
+	width: 32%;
+	display: inline-block;
+	text-align: center;
+	padding: 0 6px;
+	border-bottom: 1px solid #f7f6fb;
+}
+
+.innerBorder {
+	height: 23px;
+	line-height: 23px;
+	margin-top: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.courseName li:nth-child(3n-1) {
+	width: 33%;
+}
+
+.courseName li:nth-child(3n-1) .innerBorder {
+	border-left: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}
+
+.courseNameTitle {
+	position: relative;
+	height: 32px;
+	line-height: 32px;
+	font-size: 15px;
+	padding-left: 4%;
+	background-color: #f7f6fb;
+	z-index: 8;
+}
+
+.kind {
+	float: right;
+	display: inline-block;
+	width: 60px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin: 2.5px 8px 0 0;
+	color: #ffffff;
+	border: 1px solid #0000FF;
+	background-color: #007AFF;
+	border-radius: 10px;
+}
+
+.kind:active {
+	background-color: #029AFF;
+}
+
+.courseNameIcon {
+	position: absolute;
+	top: 0;
+	left: 4%;
+	width: 30px;
+	height: 30px;
+	font-size: 12px;
+	background-color: #fa678a;
+	color: #FFFFFF;
+}
+
+.courseInfoList {
+	background-color: #FFFFFF;
+	position: relative;
+}
+
+.courseNameIcon1 {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: -1px;
+	left: 3px;
+}
+
+.courseNameIcon2 {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	bottom: 4px;
+	right: -1px;
+}
+
+
+/*推荐、最新、最热*/
+
+#slider {
+	background-color: #f7f6fb;
+	font-size: 15px;
+}
+
+#sliderSegmentedControl2 {
+	width: 100%;
+}
+
+.mui-slider-indicator.mui-segmented-control {
+	margin-top: 217px;
+}
+
+.mui-fullscreen .mui-segmented-control~.mui-slider-group {
+	top: 257px;
+}
+
+#sliderSegmentedControl {
+	padding-left: 10px;
+}
+
+
+/*滑动组的内容*/
+
+.mui-slider .mui-slider-group {
+	height: 1px;
+}
+
+
+/*推荐、最新、最热宽度*/
+
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+	display: inline-block;
+	margin: 0;
+	line-height: 37px;
+	vertical-align: top;
+	width: 40%;
+}
+
+.suzhou_school_active {
+	color: #187bc2!important;
+	border-bottom: 3px solid #187bc2 !important;
+}
+
+
+/*滑动控件边界居上聚下*/
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+	border-top: 1px solid #c8c7cc;
+	border-bottom: 0px solid #c8c7cc;
+}
+
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item {
+	padding: 0;
+}
+
+.mui-slider-indicator {
+	text-align: left;
+}
+
+#zhezhao-area {
+	display: none;
+	position: fixed;
+	top: 44px;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	filter: alpha(opacity=70);
+}
+
+#alertWin {
+	display: none;
+	background-color: #EEEEEE;
+	font-size: 14px;
+	padding: 15px;
+	color: #000000;
+	position: fixed;
+	top: 150px;
+	width: 80%;
+	left: 10%;
+	z-index: 1002;
+	border-radius: 6px;
+}
+
+#btnGroup {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#btnGroup button {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.imgBorder {
+	float: left;
+}
+
+.imgBorder img {
+	width: 89px;
+	height: 60px;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item img {
+	width: 89px;
+}
+
+.infoDetailBorder {
+	float: left;
+	width: 50%;
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 17px;
+	color: #b8b8b8;
+}
+
+.zhiboItem {
+	padding: 10px 10px;
+	width: 100%;
+	height: 82px;
+}
+
+.zhiboTitle {
+	font-size: 14px;
+	line-height: 17px;
+	margin-top: 2px;
+	margin-bottom: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+/*下拉刷新*/
+
+.mui-pull-top-pocket {
+	top: 10px !important;
+}
+
+
+/*直播日期*/
+
+.broadcastDate {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.mui-backdrop {
+	/*z-index: -3;*/
+}
+
+.mui-popover {
+	width: 100px;
+	height: 150px;
+	border: 1px solid #029AFF;
+}
+
+.mui-bar-nav.mui-bar .mui-icon {
+	color: #FFFFFF;
+}
+#menu{
+	font-size: 17px;
+}
+a {
+	color: #FFFFFF;
+	padding: 15px;
+	
+}
+
+#topPopover {
+	position: fixed;
+	top: 16px;
+	right: 6px;
+}
+
+
+/*#topPopover .mui-popover-arrow {
+	left: auto;
+	right: 6px;
+}*/
+
+.kindSelections li a {
+	text-align: center;
+}
+
+
+/*关闭动画*/
+.topItem {
+	animation: topItem 0.5s;
+	-webkit-animation: topItem 0.5s;
+	-moz-animation: topItem 0.5s;
+	-o-animation: topItem 0.5s;
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes topItem{
+	from{}
+	to{
+		/*transform: translateY(-32px);*/
+		margin-top: -32px;
+	}
+}
+
+@-moz-keyframes topItem{
+	from{}
+	to{
+		/*transform: translateY(-32px);*/
+		margin-top: -32px;
+	}
+}
+
+@-ms-keyframes topItem{
+	from{}
+	to{
+		/*transform: translateY(-32px);*/
+		margin-top: -32px;
+	}
+}
+
+@-webkit-keyframes topItem{
+	from{}
+	to{
+		/*transform: translateY(-32px);*/
+		margin-top: -32px;
+	}
+}
+
+
+.classifyListActive {
+	animation: pullUp 0.5s;
+	-webkit-animation: pullUp 0.5s;
+	-moz-animation: pullUp 0.5s;
+	-o-animation: pullUp 0.5s;
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes pullUp{
+	from{}
+	to{
+		/*transform: translateY(-173px);*/
+		margin-top: -173px;
+	}
+}
+
+@-moz-keyframes pullUp{
+	from{}
+	to{
+		/*transform: translateY(-173px);*/
+		margin-top: -173px;
+	}
+}
+
+@-ms-keyframes pullUp{
+	from{}
+	to{
+		/*transform: translateY(-173px);*/
+		margin-top: -173px;
+	}
+}
+
+@-webkit-keyframes pullUp{
+	from{}
+	to{
+		/*transform: translateY(-173px);*/
+		margin-top: -173px;
+	}
+}
+
+
+
+.tt {
+	animation: pullUpc 0.5s;
+	-webkit-animation: pullUpc 0.5s;
+	-moz-animation: pullUpc 0.5s;
+	-o-animation: pullUpc 0.5s;
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes pullUpc{
+	from{}
+	to{
+		/*transform: translateY(-160px);*/
+		margin-top: 55px;
+	}
+}
+
+@-moz-keyframes pullUpc{
+	from{}
+	to{
+		/*transform: translateY(-160px);*/
+		margin-top: 55px;
+	}
+}
+
+@-ms-keyframes pullUpc{
+	from{}
+	to{
+		/*transform: translateY(-160px);*/
+		margin-top: 55px;
+	}
+}
+
+@-webkit-keyframes pullUpc{
+	from{}
+	to{
+		/*transform: translateY(-160px);*/
+		margin-top: 55px;
+	}
+}
+
+.tt2 {
+	animation: pullUp2 0.5s;
+	-webkit-animation: pullUp2 0.5s;
+	-moz-animation: pullUp2 0.5s;
+	-o-animation: pullUp2 0.5s;
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes pullUp2{
+	from{}
+	to{
+		top: 100px;
+	}
+}
+
+@-moz-keyframes pullUp2{
+	from{}
+	to{
+		top: 100px;
+	}
+}
+
+@-ms-keyframes pullUp2{
+	from{}
+	to{
+		top: 100px;
+	}
+}
+
+@-webkit-keyframes pullUp2{
+	from{}
+	to{
+		top: 100px;
+	}
+}
+
+/*打开动画*/
+.classifyListActiveB {
+	animation: pullDown 0.5s;
+	-webkit-animation: pullDown 0.5s;
+	-moz-animation: pullDown 0.5s;
+	-o-animation: pullDown 0.5s;
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes pullDown{
+	from{
+		margin-top: -109px;
+	}
+	to{
+		/*transform: translateY(0px);*/
+		margin-top: 77px;
+	}
+}
+
+@-moz-keyframes pullDown{
+	from{
+		margin-top: -109px;
+	}
+	to{
+		/*transform: translateY(0px);*/
+		margin-top: 77px;
+	}
+}
+
+@-ms-keyframes pullDown{
+	from{
+		margin-top: -109px;
+	}
+	to{
+		/*transform: translateY(0px);*/
+		margin-top: 77px;
+	}
+}
+
+@-webkit-keyframes pullDown{
+	from{
+		margin-top: -109px;
+	}
+	to{
+		/*transform: translateY(0px);*/
+		margin-top: 77px;
+	}
+}

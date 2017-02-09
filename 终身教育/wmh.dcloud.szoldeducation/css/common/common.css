@@ -1,0 +1,81 @@
+/*
+ * 苏州园区教育APP通用样式
+ * @author dailc
+ * */
+/* 定义默认背景色,根据拾色器,f7f6fb */
+body{
+	background-color:#f7f6fb;
+}
+/*定义mui-content中的颜色,这里采用和body的bg一致*/
+.mui-content{
+	background-color:#f7f6fb;
+}
+/*重写园区项目的头部导航栏bar背景色,颜色为 187bc2*/
+.mui-bar-nav {
+   background:#187bc2;
+}
+/*重写title的颜色,666666
+ title大小为18px*/
+.mui-title {
+	font-size: 18px;
+	color: #ffffff;
+}
+
+/*重写左侧返回按钮颜色*/
+.mui-pull-left{
+	color: #ffffff;
+}
+/*搜索图标颜色*/
+.mui-bar-nav span{
+	color: #ffffff;
+}
+/*重写Ul*/
+ul {
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-padding-start: 0px;
+}
+/*重写li*/
+li{
+	/*去除默认样式*/
+	list-style:none
+}
+/**
+ * 公用样式,顶间距10px
+ */
+.mt10{
+	margin-top: 10px;
+}
+/**
+ * 公用样式,顶padding 3px
+ */
+.pt3{
+	padding-top: 3px;
+}
+
+/**
+ * 定义公用样式,15px的字体
+ */
+.fs15{
+	font-size:15px;
+}
+/**
+ * 定义公用样式,13px的字体
+ */
+.fs12{
+	font-size:12px;
+}
+/**
+ * 星级
+ */
+.suzhou_stars_sellected{
+	background: url(../../img/educate/img_level_selected.png) no-repeat;
+	background-size: 10px 10px;
+}
+.suzhou_stars_unsellect{
+	background: url(../../img/educate/img_level.png) no-repeat;
+	background-size: 10px 10px;
+}
+.wh_end{
+	border: none!important;
+}

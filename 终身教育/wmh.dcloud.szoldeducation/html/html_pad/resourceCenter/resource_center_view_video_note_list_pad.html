@@ -1,0 +1,65 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-12 08:29:45
+        描述： 我的笔记 
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>笔记列表页面</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/resourceCenter/resource_center_view_video_note_list_pad.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div class="noteslist">
+						<div class="newly-note">
+							<!--<span>我的笔记</span>-->
+							<span class="newly-review-span-active">我的笔记</span>
+						</div>
+						<ul class="mui-table-view review-notes-content" id="listdata">
+							<!--<li class="clearfix">
+								<div class="mui-clearfix">
+									<span class="clock-icon"></span>
+									<span class="comment-time">00:37</span>
+									<span class="user-original">
+											<span>来自：</span>
+									<span>哈哈哈</span>
+									</span>
+								</div>
+								<div class="note-content">测试</div>
+								<div class="clearfix">
+									<span class="note-year">6月24日</span>
+									<span class="zan-wrapper">
+									<span class="zan"></span>
+									<span>(1)</span>
+									</span>
+								</div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../../js/"
+			});
+			seajs.use('bizlogic/js_pad/resourceCenter/resource_center_view_video_note_list_pad');
+		</script>
+	</body>
+
+</html>

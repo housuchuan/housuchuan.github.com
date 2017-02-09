@@ -1,0 +1,13 @@
+ .mui-content>.mui-table-view:first-child {
+ 	margin-top: 0;
+ }
+ 
+ .mui-media-body > h5 {
+ 	font-size: 15px;
+ 	color: #000;
+ }
+ 
+ .mui-table-view-cell>.mui-slider-right>.mui-btn.mui-icon {
+ 	padding: 0 30px;
+ 	font-size: 14px;
+ }

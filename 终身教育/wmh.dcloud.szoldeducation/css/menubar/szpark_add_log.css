@@ -1,0 +1,109 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-06-25
+ * 描述：新增日志页面样式
+ */
+
+
+/*头部bar样式*/
+
+.publish {
+	float: right;
+	margin-top: 11px;
+	font-size: 15px;
+	font-family: simsun;
+	color: #fff;
+}
+
+
+/*主题内容样式设计*/
+
+.publish-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+input {
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 0;
+	padding: 12px 0 0 0;
+	border: 0;
+	text-indent: 11px;
+	width: 100%;
+}
+
+textarea {
+	position: absolute;
+	top: 77px;
+	right: 0;
+	bottom: 44px;
+	left: 0;
+	margin: 0;
+	padding: 12px 0 0 0;
+	border: 0;
+	text-indent: 11px;
+}
+
+
+/*相册是否公开及按钮样式*/
+
+.whether-public {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 44px;
+	padding-right: 25px;
+	background-color: #fff;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.whether-public> span:first-child {
+	float: left;
+	margin-left: 10px;
+	display: inline-block;
+	line-height: 44px;
+	font-weight: 600;
+}
+
+.wrong-choice {
+	margin: 0 9px 0 24px;
+}
+
+.true-choice {
+	margin-right: 9.5px;
+}
+
+.icon-choice {
+	float: right;
+	display: inline-block;
+	line-height: 44px;
+	color: #999999;
+}
+
+.lable {
+	display: none;
+}
+
+.whether-public> div {
+	float: right;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-top: 13px;
+	background-size: 18px 18px;
+}
+
+.defaule-choice {
+	background: url(../../img/menubar/img-nocheck.png) no-repeat;
+}
+
+.choice-active {
+	background: url(../../img/menubar/img-check.png) no-repeat;
+}

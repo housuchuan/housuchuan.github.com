@@ -1,0 +1,44 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-12 08:29:45
+        描述：信息展示页面（通用页面） 如：学校简介
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>通用展示内容页面</title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/homepage/szpark_school_CommonInfoShow.css" />
+	</head>
+
+	<body>
+		<div class="mui-scroll-wrapper" id="scroll">
+			<div class="mui-scroll">
+				<!--加标签的目的：解决某些手机刷新列表（空白）渲染不出来的情况（客户手机）-->
+				<div style="border-top: 1px solid #FFFFFF;">
+				</div>
+				<!--这里放置真实显示的DOM内容-->
+				<div class="mui-content" id="content">
+
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/iscroll.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_school_CommonInfoShow');
+		</script>
+	</body>
+
+</html>

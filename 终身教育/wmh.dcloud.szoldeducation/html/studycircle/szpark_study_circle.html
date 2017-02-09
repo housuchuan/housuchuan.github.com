@@ -1,0 +1,125 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-13 08:29:07
+        描述： 研习圈的页面重构 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>研习圈</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/common/common_toggle_menu.css" />
+		<link rel="stylesheet" href="../../css/studycircle/szpark_study_circle.css" />
+		<link rel="stylesheet" href="../../css/common/common_animate.css" />
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav clearfix">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">研习圈</h1>
+			<a id="add-icon"><span class="mui-icon mui-icon-plusempty" id="menu-btn"></span></a>
+		</header>
+		<div class="mui-content">
+			<!--start-->
+			<div class="mui-input-row mui-search">
+				<input type="search" id="searchValue" class="mui-input-clear circle-search" placeholder="请输入您要搜索的内容">
+			</div>
+			<div id="menu-wrapper" class="menu-wrapper hidden">
+				<div id="menu" class="menu">
+					<div class="study-choose mui-ellipsis">
+						<div class="study">
+							<div class="study-personalpage"></div>
+							<span>个人主页</span>
+						</div>
+						<!--<div class="study mui-ellipsis">
+							<div class="study-managecircle"></div>
+							<span>管理的圈子</span>
+						</div>-->
+						<!--<div class="study mui-ellipsis">
+							<div class="study-managermanage"></div>
+							<span>圈主管理</span>
+						</div>-->
+						<div class="study mui-ellipsis">
+							<div class="study-createcircle"></div>
+							<span>创建圈子</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="menu-backdrop" class="menu-backdrop"></div>
+			<div class="section-left">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!--这里放置真实显示的DOM内容-->
+						<ul class="mui-table-view" id="circleTypeList">
+							<!--<li class="mui-table-view-cell topic-choice">
+								<div class="mui-navigate-right section-left-active">
+									语文圈
+								</div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="mui-right">
+				<div class="mui-scroll-wrapper mui-right-scroll" id="pullrefresh">
+					<div class="mui-scroll">
+						<!--这里放置真实显示的DOM内容-->
+						<ul id="listdata">
+							<!--<li class="mui-table-view-cell" id="{{id}}">
+								<div class="section-right section-right-fir clearfix">
+									<img data-img-localcache="{{image}}" />
+									<span class="section-right-theme">{{title}}</span><br/>
+									<span class="section-right-number section-right-fontSize">{{member}}</span>
+									<span class="section-right-member section-right-fontSize">成员</span>
+									<span class="section-right-aNumber section-right-fontSize">{{topicCount}}</span>
+									<span class="section-right-answer section-right-fontSize">帖子</span>
+									<button type="button" class="mui-btn mui-btn-blue mui-btn-block join" id="{{index}}">已经加入</button>
+								</div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--弹出加入按钮提示框-->
+
+			<!--end-->
+
+		</div>
+		<!--遮罩层-->
+		<div id="zhezhao-area"></div>
+		<!--申请加入圈子弹出框-->
+		<div id="join-circle" class="join-circle">
+			<div class="circle-bar">
+				<span>申请加入圈子</span>
+				<a class="clearfix"><span class="mui-icon mui-icon-closeempty"></span></a>
+			</div>
+			<div class="circle-input">
+				<textarea id="reason" name="" rows="5" cols="" placeholder="亲，请填写加入理由！"></textarea>
+			</div>
+			<div class="button-area clearfix">
+				<button class="cancel-btn">取消</button>
+				<button class="confirm-btn">申请加入</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/studycircle/szpark_study_circle');
+		</script>
+	</body>
+
+</html>

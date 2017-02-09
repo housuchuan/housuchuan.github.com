@@ -1,0 +1,138 @@
+ 
+ .mui-icon-plusempty {
+ 	float: right;
+ }
+ 
+ .mui-content {
+	font-size: 15px;
+ }
+ /*頭部下拉列表顯示*/
+ 
+ .study-choose {
+ 	position: relative;
+ 	margin-top: 0;
+ 	margin-bottom: 0;
+ 	padding-left: 0;
+ 	width: 100%;
+ 	height: 75px;
+ 	padding-top: 5px;
+ 	z-index: 1000;
+ 	background-color: #f7f6fb;
+ 	box-shadow: 3px 3px 3px #d4d4d4;
+ }
+ 
+ .study {
+ 	float: left;
+ 	width: 25%;
+ 	height: 100%;
+ 	text-align: center;
+ }
+ 
+ .study > div {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 45px;
+ 	height: 45px;
+ }
+ 
+ .study > span {
+ 	display: inline-block;
+ 	line-height: 25px;
+ 	font-size: 14px;
+ }
+ 
+ .study-chf > div {
+ 	background: url(../../img/studyCircle/img_homepage_nav2.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study-chs > div {
+ 	background: url(../../img/studyCircle/img_public_service.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study-chth > div {
+ 	background: url(../../img/studyCircle/img_index_004alllife_pad.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study-chfo > div {
+ 	background: url(../../img/studyCircle/img_oldeducation_nav10.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ /*内容区域*/
+ .mui-content>.mui-table-view:first-child {
+ 	margin-top: 0;
+ }
+ .mui-content>.mui-table-view:first-child {
+ 	padding-left: 15px;
+ }
+ .mui-table-view-cell>a:not(.mui-btn) {
+ 	padding-left: 0;
+ }
+ .mui-table-view-cell:after {
+ 	left: 0;
+ }
+ .mui-table-view:before {
+ 	top: 0;
+ }
+ 
+ .mui-table-view {
+ 	padding-left: 15px;	
+ }
+ 
+ .mui-circle > h4 {
+ 	display: inline-block;
+ 	color: #6e6e6e;
+ 	font-size: 15px;
+ }
+ .mui-table-view-cell:first-child > .mui-circle > h4 {
+ 	line-height: 69px;
+ }
+ .mui-circle:first-child > img {
+ 	position: absolute;
+	top: 28px;
+ 	width: 45px;
+ 	height: 45px;
+	margin-left: 13px;	
+ }
+ .mui-circle-another > span {
+ 	margin-left: 13px;
+ }
+ .mui-circle-another {
+ 	border-bottom: 1px solid #e3e3e3;
+ }
+ .mui-circle:last-child {
+ 	border-bottom: none;
+ }
+ .mui-circle-another > h4,span {
+ 	line-height: 50px;
+ }
+
+/*按钮部分*/
+ .submit-btn {
+ 	width: 95%;
+	margin-top: 10px;
+	margin-left: 2.5%;
+ 	padding: 13px 0;
+ 	color: #fff;
+ 	background-color: #1ebaf3;
+ }
+ 
+ /*输入框部分*/
+ input[type=text] {
+ 	width: 73%;
+ 	padding: 0;
+ 	font-size: 14px;
+ 	font-weight: 600;
+ 	border: none;
+ }
+ /*文件输入默认隐藏*/
+ .common-hidden{
+ 	/*display: none;*/
+ 	margin-top: -100px;
+ }
+ .mui-scroll-wrapper{
+ 	margin-top: 44px;
+ }

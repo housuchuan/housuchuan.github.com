@@ -1,0 +1,27 @@
+.imgBorder{
+	float: left;
+}
+.imgBorder img{
+	width: 89px;
+	height: 60px;
+}
+.infoDetailBorder{
+	float: left;
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 17px;
+	color: #b8b8b8;
+}
+.zhiboItem{
+	padding: 10px 10px;
+	width: 100%;
+	height: 82px;
+}
+.zhiboTitle{
+	font-size: 14px;
+	line-height: 15px;
+	margin-top: 2px;
+	margin-bottom: 12px;
+	font-weight: bold;
+	color: #000000;
+}

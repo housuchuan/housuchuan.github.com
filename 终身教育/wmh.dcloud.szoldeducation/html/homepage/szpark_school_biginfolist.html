@@ -1,0 +1,40 @@
+<!-- 
+        作者：戴科
+        时间：2016-04-05 11:38:16
+        描述：  大事件子页面
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/educate/szpark_educationNotice_list.css" />
+		<link rel="stylesheet" href="../../css/common/common_click.css" />
+	</head>
+
+	<body>
+		<div class="mui-scroll-wrapper" id="pullrefresh">
+			<div class="mui-scroll">
+				<ul class="mui-table-view" id="listdata">
+				</ul>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_school_biginfolist');
+		</script>
+	</body>
+
+</html>

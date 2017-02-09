@@ -1,0 +1,123 @@
+/*
+ * 养生餐饮列表
+ * @author sunzl
+ * */
+
+
+/*右侧的icon btn*/
+
+.mui-bar .mui-icon {
+	color: #FFFFFF;
+}
+
+
+/*列表容器区域*/
+
+.list-container {
+	/*relative来给子元素的absolute定位*/
+	position: relative;
+}
+
+
+/*重写tabview*/
+
+.mui-content>.mui-table-view:first-child {
+	margin-top: 0px;
+}
+
+
+/*重写伪元素绘制的border*/
+
+.mui-table-view:before,
+.mui-table-view:after,
+.mui-table-view-cell:after {
+	height: 0px;
+}
+
+
+/*重写padding*/
+
+.mui-table-view-cell {
+	padding: 0;
+}
+
+
+/*重写a*/
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	padding: 0;
+	margin: 0;
+	/*
+	 white-space: nowrap; 表示文本不进行换行
+	 normal 表示默认。空白会被浏览器忽略。
+	 * */
+	white-space: normal;
+}
+
+
+/*列表item*/
+
+.list-item {
+	/*relative来给子元素的absolute定位*/
+	position: relative;
+	/*margin-top: 10px;*/
+	background: #ffffff;
+	width: 100%;
+	min-height: 60px;
+	height: auto !important;
+	padding-left: 10px;
+	padding-right: 10px;
+	/*border-top: 1px solid #e0e0e0; */
+	border-bottom: 1px solid #e0e0e0;
+	overflow: hidden;
+}
+
+
+/*重写图片*/
+
+.mui-table-view .mui-media-object {
+	margin-top: 10px;
+	line-height: 72px;
+	width: 105px;
+	height: 72px;
+}
+
+
+/*item的title*/
+
+.li-title {
+	float: left;
+	font-size: 14px;
+	padding-top: 14px;
+	/*默认颜色*/
+	color: #333333;
+	/*占用一个width,可以将下一个float自动到下一行*/
+	width: 100%;
+	word-break: break-all;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/*item的content*/
+
+.li-content {
+	float: left;
+	font-size: 12px;
+	/*留一部分空格*/
+	padding-bottom: 6px;
+	color: #adadad;
+	word-break: break-all;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.mui-table-view .mui-media-object.mui-pull-left {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

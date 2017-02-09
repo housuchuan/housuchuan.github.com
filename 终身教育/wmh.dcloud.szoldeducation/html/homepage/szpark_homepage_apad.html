@@ -1,0 +1,106 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-05 11:38:16
+        描述：  园区app首页面
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>pad版首页</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/homepage/homepage_apad.css" />
+	</head>
+
+	<body>
+		<!--Plus情况下 ,app启动页 -->
+		<header class="mui-bar mui-bar-nav bgblue">
+			<div class="mui-icon mui-action-menu mui-icon-bars mui-pull-left suzhou_white"></div>
+			<h1 class="mui-title">首页</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="school-servey mui-clearfix">
+						<li id="school_servey">
+							<div class="mui-icon-schoolservey"></div>
+							<div class="mui-ellipsis">学校概况</div>
+						</li>
+						<li id="news_bulletin">
+							<div class="mui-icon-grid02"></div>
+							<div class="mui-ellipsis">新闻公告</div>
+						</li>
+						<li id="community_education">
+							<div class="mui-icon-grid03"></div>
+							<div class="mui-ellipsis">社区教育</div>
+						</li>
+						<li id="academic_education">
+							<div class="mui-icon-grid04"></div>
+							<div class="mui-ellipsis">学历教育</div>
+						</li>
+						<li id="mystudy">
+							<div class="mui-icon-grid05"></div>
+							<div class="mui-ellipsis">我的学习</div>
+						</li>
+						<li id="personSpace">
+							<div class="mui-icon-grid06"></div>
+							<div class="mui-ellipsis">个人空间</div>
+						</li>
+						<li id="educationCommuication">
+							<div class="mui-icon-grid07"></div>
+							<div class="mui-ellipsis">教育关公委</div>
+						</li>
+						<li id="oldage_education">
+							<div class="mui-icon-grid09"></div>
+							<div class="mui-ellipsis">老年教育</div>
+						</li>
+						<li id="lifelong_education">
+							<div class="mui-icon-mystudy"></div>
+							<div class="mui-ellipsis">终身教育</div>
+						</li>
+						<li id="resource_center">
+							<div class="mui-icon-myroom"></div>
+							<div class="mui-ellipsis">资源中心</div>
+						</li>
+						<li id="study_circle">
+							<div class="mui-icon-mymap"></div>
+							<div class="mui-ellipsis">研习圈</div>
+						</li>
+						<li id="maps">
+							<div class="mui-icon-check"></div>
+							<div class="mui-ellipsis">地图</div>
+						</li>
+						<li id="askAnswer">
+							<div class="mui-icon-jyggw"></div>
+							<div class="mui-ellipsis">你问我答</div>
+						</li>
+						<li id="invest_questionare">
+							<div class="mui-icon-nwwd"></div>
+							<div class="mui-ellipsis">调查</div>
+						</li>
+					</ul>
+					<!--图片轮播容器 height:未定   -->
+					<div id="gallerySlider">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_homepage_apad');
+		</script>
+	</body>
+
+</html>

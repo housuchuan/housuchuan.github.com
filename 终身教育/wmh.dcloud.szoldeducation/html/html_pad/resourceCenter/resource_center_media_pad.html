@@ -1,0 +1,49 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-07-10 12:25:07
+        描述： 研习圈视频IPAD版本
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>视频</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/resourceCenter/resource_center_media_pad.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav mui-clearfix">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">视频</h1>
+			<div class="selection-items">
+				<span class="introduce">简介</span>
+				<span class="selection">选集</span>
+				<span class="comment">评论</span>
+			</div>
+		</header>
+
+		<!--视频-->
+		<div class="mui-content">
+			<video src="http://218.87.172.126:8889/EpointBigFileUpLoad/BigFileUpLoadStorage/799d6091-d335-453f-a482-6f35d544e939/f47af25c04adde4b12400f6599d8fb02cb079fd6.mp4" controls="controls" autoplay="autoplay">
+				您的浏览器不支持 video 标签
+				</video>
+		</div>
+
+		<script type="text/javascript" src="../../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../../js/'
+			});
+			seajs.use('bizlogic/js_pad/resourceCenter/resource_center_media_pad');
+		</script>
+	</body>
+
+</html>

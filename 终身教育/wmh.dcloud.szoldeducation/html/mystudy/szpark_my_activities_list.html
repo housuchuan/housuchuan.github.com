@@ -1,0 +1,52 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-28 08:29:07
+        描述 ：我的活动页面
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的活动</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/mystudy/szpark_my_activities_list.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket0.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的活动</h1>
+		</header>
+		<div class="mui-content">
+			<!--<导航>话题部分-->
+			<div class="column">
+				<span class="TA-common items-active">发表的话题</span>
+				<span class="TA-common">回复的内容</span>
+			</div>
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="mui-table-view theme circle" id="listdata">
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/mystudy/szpark_my_activities_list");
+		</script>
+	</body>
+
+</html>

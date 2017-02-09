@@ -1,0 +1,87 @@
+ body {
+ 	background-color: #ffffff;
+ }
+ .mui-scroll {
+ 	background-color: #ffffff;
+ }
+ 
+  .mui-tip {
+ 	margin-left: 10px;
+ 	padding-bottom: 32px;
+ 	border-bottom: 1px solid #e2e2e3;
+ }
+ 
+ .mui-tip:last-child {
+ 	border-bottom: none;
+ }
+ 
+  .mui-tip:first-child {
+ 	border-bottom: 1px solid #e2e2e3;
+ }
+ 
+ .propose > span:first-child {
+ 	width: 60px;
+ 	font-size: 14px;
+ 	color: #999999;
+ }
+ 
+ .topic {
+ 	margin: 0 10px;
+ }
+ 
+ .applyer {
+ 	display: inline-block;
+ 	margin: 11px 0;
+ }
+ 
+ .applyer-name {
+ 	font-family: simhei;
+ 	font-size: 15px;
+ }
+ 
+ .last-recall {
+ 	font-size: 14px;
+ 	color: #999999;
+ }
+ 
+ .last-recall-act {
+ 	margin-left: 45px;
+ }
+ 
+ .apply-reason {
+ 	display: inline-block;
+ 	font-size: 14px;
+ 	color: #999999;
+ }
+ 
+ .proposeReason span:first-child {
+ 	float: left;
+ 	display: inline-block;
+ 	text-align: top;
+ }
+ 
+ .want-join {
+	width: 70%;
+ 	font-family: simhei;
+ 	font-size: 15px;
+ 	color: #000;
+ }
+ .btn {
+ 	float: right;
+ }
+
+ .agree {
+ 	padding: 4px 8px;
+ 	font-size: 12px;
+ 	background-color: #1ebaf3;
+ 	color: #fff;
+ }
+ 
+ .refuse {
+ 	margin: 0 10px 0 10px;
+ 	padding: 4px 8px;
+ 	font-size: 12px;
+ 	background-color: #fff;
+ 	color: #1ebaf3;
+ 	border: 1px solid #1ebaf3;
+ }

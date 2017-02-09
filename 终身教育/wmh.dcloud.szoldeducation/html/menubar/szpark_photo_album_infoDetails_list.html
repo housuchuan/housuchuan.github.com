@@ -1,0 +1,65 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-07-27 08:33:07
+        描述：相册模块相册详情
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/common/imageviewer.css" />
+		<link rel="stylesheet" href="../../css/menubar/szpark_photo_album_infoDetails_list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="photo-top">
+				<h4 id="photoAlbumName">相册1名称</h4><span class="photoNum">1张</span>
+			</div>
+			<div class="mui-clearfix">
+				<button type="button" class="mui-btn mui-btn-blue mui-btn-block upload-btn" onclick="chooseImgFromGalleryFile.click()"><img src="../../img/menubar/img_iconUpload.png"/>上传照片</button><button type="button" class="mui-btn mui-btn-blue mui-btn-outlined manage-btn">管理</button>
+				<input type="file" id="chooseImgFromGalleryFile" class="common-hidden" />
+			</div>
+			<div class="mui-scroll-wrapper photoAlbum-infoWrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="mui-table-view photoList" id="listdata">
+						<!--<li class="mui-table-view-cell">
+							<div class="chooseIcon"></div>
+							<img id="addImage" src="../../img/homepage/img_news1.jpg" data-preview-src="../../img/homepage/img_news1.jpg" data-preview-group="1"/>
+							<span class="photoTitle mui-ellipsis">名字</span>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+			<div class="deleteOperate">
+				<div class="operaton-bottomBar mui-clearfix">
+					<!--<button type="button" class="mui-btn mui-btn-blue mui-btn-outlined allSelected">全选</button>
+						<button type="button" class="mui-btn mui-btn-blue mui-btn-outlined delete"><img src="../../img/menubar/img-deleteicon.png"/>删除</button>-->
+					<span class="allSelected">全选</span><span class="download">下载</span><span class="delete">删除</span>
+				</div>
+			</div>
+		</div>
+
+		<!--引入相应的工具-->
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.previewimage.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.zoom.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use('bizlogic/menubar/szpark_photo_album_infoDetails_list');
+		</script>
+	</body>
+
+</html>

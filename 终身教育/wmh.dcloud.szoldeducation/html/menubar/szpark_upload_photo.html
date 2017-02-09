@@ -1,0 +1,107 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-28 13:41:07
+        描述：  上传照片页面
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/menubar/szpark_upload_photo.css" />
+		<style>
+		
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav clearfix">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">上传照片</h1>
+		    <a class="upload">上传</a>
+		</header>
+		<div class="mui-content">
+		    <ul class="mui-table-view uploadTo">
+		    	<li class="mui-table-view-cell" id="selectGallery">
+		    	    <a href="#middlePopover" class="mui-navigate-right clearfix">
+		    	    	 <!--上传到-->
+		    	    	<span class="photo-name">上传到</span>
+		    	    </a>
+		    	</li>
+		    </ul>
+		    <div id="middlePopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view photolist">
+						<li class="mui-table-view-cell"><a href="#">娱乐</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">物理圈</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">文学</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">卡通</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">搞笑</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">综艺π</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">历史</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">吃货</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">旅游</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="#">足迹</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		    <div class="zjg-pic-box mui-clearfix">
+				<a href="#picture" class="default-plus-selectphoto mui-btn choosePic"></a>
+				<a class="default-Noplus-selectphoto mui-btn choosePic" onclick="chooseImgFromGalleryFile.click()">
+							<input type="file" id="chooseImgFromGalleryFile" class="common-hidden" />
+						</a>
+				<span class="zjg-pic-info">可按需上传图片，最多两张</span>
+			</div>
+			<div id="tupian">
+				<div class="pailie">
+					<div class="delete-icon" id="1"></div>
+					<img src="../../img/educate/img_noticepic.png" />
+				</div>
+			</div>
+			<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="#">拍照</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">相册</a>
+					</li>
+				</ul>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="#picture"><b>取消</b></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js" ></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js" ></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/menubar/szpark_upload_photo");
+		</script>
+	</body>
+
+</html>

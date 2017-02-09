@@ -1,0 +1,29 @@
+/*
+        作者：孙尊路
+        时间：2016-04-08 08:44:03
+        描述：侧边栏-认证机构父页面
+*/
+
+/*搜索框*/
+
+.search-area {
+	height: 30px;
+	width: auto;
+	margin: 7px 13px 7px 13px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+}
+
+
+/*搜索域*/
+
+.mui-search .mui-placeholder {
+	background-color: #ffffff;
+	font-size: 12px;
+	color: #999999;
+	height: 31px;
+	line-height: 31px;
+}
+/*.mui-search .mui-indexed-list-search-input{
+	background-color: #ffffff;
+}*/

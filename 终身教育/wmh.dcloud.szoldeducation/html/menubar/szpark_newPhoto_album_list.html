@@ -1,0 +1,106 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-23 08:29:07
+        描述： 相册子页面(个人空间) 
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/menubar/szpark_newPhoto_album_list.css" />
+		<link rel="stylesheet" href="../../css/common/common_animate.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<!--遮罩层-->
+			<div id="zhezhao-area"></div>
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div class="photo-list clearfix">
+
+						<span>相册</span>
+						<!--h5actionsheet-->
+						<!--<a class="default-plus-selectphoto">
+							<button type="button" class="mui-btn mui-btn-blue">上传照片</button>
+						</a>-->
+						<!--<button type="button" id="append-album" class="mui-btn mui-btn-blue">添加相册</button>-->
+					</div>
+					<div class="photo-content">
+						<ul class="mui-table-view clearfix" id="listdata">
+							<!--<li id="append-album" class="photolist add-photoAlbum">
+								<a><span class="mui-icon mui-icon-plusempty"></span></a>
+								<div>新建相册</div>
+							</li>
+							<li class="photolist">
+								<div class="photo-background">
+									<img src="../../img/homepage/img_news1.jpg" />
+									<span>7</span>
+									<div class="photo-operate">
+										<button>修改</button><button>删除</button>
+									</div>
+								</div>
+								<div class="photo-operation">
+									<span>生活随拍</span>
+								</div>
+							</li>
+							<li id="{{albumId}} "class="photolist">
+								<div class="photo-background"><img src="{{img}}"/><span>{{number}}</span>
+									<div class="photo-operate"><button class="update">修改</button><button class="delete">删除</button></div>
+								</div>
+								<div class="photo-operation"><span>{{name}}</span></div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--添加相册-->
+		<div id="add-photo" class="add-photo">
+			<div class="photo-bar">
+				<a class="clearfix"><span class="mui-icon mui-icon-closeempty"></span></a>
+				<span>添加相册</span>
+				<span class="confirm-btn">完成</span>
+			</div>
+			<div class="photo-input">
+				<div class="mui-input-row photo-name">
+					<input type="text" class="mui-input-clear" placeholder="相册名称">
+				</div>
+				<div class="cut-line"></div>
+				<div class="mui-input-row photo-describe">
+					<input type="text" class="mui-input-clear" placeholder="相册描述">
+				</div>
+			</div>
+			<div class="whether-public clearfix">
+				<span>是否公开</span>
+				<span class="icon-choice">否</span>
+				<div class="wrong-choice defaule-choice choice-active"></div>
+				<span class="icon-choice">是</span>
+				<div class="true-choice defaule-choice"></div>
+			</div>
+			<!--<div class="button-area clearfix">
+				<button class="cancel-btn">取消</button>
+				<button class="confirm-btn">确定</button>
+			</div>-->
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/menubar/szpark_newPhoto_album_list")
+		</script>
+
+	</body>
+
+</html>

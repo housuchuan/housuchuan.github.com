@@ -1,0 +1,56 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-06-27
+ * 描述：学习档案页面
+
+/*头部*/
+
+ .topLayer {
+	height: 70px;
+	background-color: #1ebaf3;
+}
+
+ .topLayerItem {
+	float: left;
+	width: 50%;
+	line-height: 70px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+ .topLayerItem h4 {
+	color: #ffffff;
+	font-weight: 600;
+}
+
+ .topLayerItem h5 {
+	color: #beeeff;
+	margin: 10px;
+}
+
+
+/*年份样式*/
+
+ .year-date {
+	line-height: 44px;
+	margin-left: 15px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+ .year {
+	float: right;
+}
+
+ .mui-icon-arrowright {
+	margin-top: 10px;
+}
+/*echarts图表*/
+ .echart_div {
+	height: 350px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+ .study-item {
+ 	text-align: center;
+ }

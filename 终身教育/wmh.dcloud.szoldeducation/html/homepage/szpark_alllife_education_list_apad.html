@@ -1,0 +1,46 @@
+<!-- 
+        作者：朱晓琪
+        时间：2016-05-16
+        描述： 终身教育研究所list页面  pad html
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>终身教育研究所list页面</title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/homepage/szpark_alllife_education_list_apad.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket90.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper listwrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<ul class="mui-table-view" id="listdata">
+						<li class="mui-table-view-cell" id="{{InfoID}}">
+							<!--<div class="notice-txt2"><span>{{Title}}</span><span>发布时间：{{InfoDate}}</span></div>-->
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/libs/iscroll.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_alllife_education_list_apad');
+		</script>
+	</body>
+
+</html>

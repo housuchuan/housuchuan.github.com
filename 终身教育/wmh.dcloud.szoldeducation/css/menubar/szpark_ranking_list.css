@@ -1,0 +1,33 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-06-27
+ * 描述：积分排行子页面
+ */
+
+ .mui-content>.mui-table-view:first-child {
+	margin-top: 0;
+}
+ .mui-table-view-cell {
+ 	padding: 11px 0;
+ }
+ .mui-table-view-cell > div:last-child {
+ 	display: inline-block;
+ 	float: right;
+ 	width: 30%;
+ }
+ .mui-table-view-cell > div:first-child {
+ 	display: inline-block;
+ 	float: left;
+ 	width: 40%;
+ }
+ .mui-table-view-cell > div:first-child > span:first-child {
+ 	position: absolute;
+ 	left: 15px;
+ 	color: #adadad;
+ }
+ .mui-table-view-cell > div:first-child > span:last-child {
+ 	margin-left: 40%;
+ }
+ .mui-table-view:last-child:after {
+ 	left: 15px;
+ }

@@ -1,0 +1,100 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-21 08:29:07
+        描述：  创建圈子主页面
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>创建圈子</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/common/common_tips.css" />
+		<link rel="stylesheet" href="../../css/libs/mui.picker.min.css" />
+		<link rel="stylesheet" href="../../css/studycircle/szpark_create_circle.css" />
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">创建圈子</h1>
+		</header>
+		<div class="mui-content">
+			<div class="vol-tips">
+				<!--<img src="../../img/studyCircle/img_warning.png" width="30px" height="30px"/>-->
+				<span class="tips-txt">温馨提示：亲，为了确保管理人员及时审核并通过，请认真填写以下信息。</span><span class="vol-close"></span>
+			</div>
+			<ul class="mui-table-view">
+				<!--<li class="mui-table-view-cell" id="chooseType">
+					<a id="circleLogo" class="circleLogo mui-circle mui-circle-another mui-navigate-right">
+						<h4>圈子LOGO</h4>
+						<img src="../../img/educate/img_activity.png"/>
+					</a>
+				</li>-->
+				<li class="mui-table-view-cell" id="chooseType">
+					<a id="circleChoose" class="circleChoose mui-circle mui-circle-another mui-navigate-right mui-ellipsis">
+						<h4>圈子分类</h4>
+						<span class="choose">请选择</span>
+						<input type="hidden" id="type" />
+					</a>
+				</li>
+				<div class="mui-circle mui-circle-another mui-ellipsis">
+					<h4>圈子名称</h4>
+					<input type="text" name="" id="circleName" placeholder="请输入圈子名称" />
+					<!--<p>圈子名称规定使用4-12个字符，确定后不可修改！</p>-->
+				</div>
+				<div class="mui-circle mui-circle-another mui-ellipsis">
+					<h4>圈子简介</h4>
+					<input type="text" name="" id="instruct" placeholder="请介绍你的圈子" />
+					<!--<p>对您建立的圈子进行简单的文字介绍，创建后，圈主可做修改，字数不超过255字。</p>-->
+				</div>
+				<div class="mui-circle mui-circle-another mui-ellipsis">
+					<h4>圈子标签</h4>
+					<input type="text" name="" id="pag" placeholder="请输入圈子标签" />
+					<!--<p>建立圈子标签有利于全局搜索查找您的圈子，多个标签请用中文“，”分离。</p>-->
+				</div>
+
+				<div class="mui-circle mui-circle-another mui-ellipsis ">
+					<h4>圈子理由</h4>
+					<input type="text" name="" id="reason" placeholder="请输入创建圈子理由" />
+					<!--<p>认真填写申请圈子的理由提交至审核平台，以确保管理人员及时审核并通过，字数不超过255字。</p>-->
+
+				</div>
+			</ul>
+			<button id="btnSubmit">提交</button>
+		</div>
+		<!--H5模式actionsheet-->
+		<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">从相册选择</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">拍照</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#picture"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/studycircle/szpark_create_circle");
+		</script>
+	</body>
+
+</html>

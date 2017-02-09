@@ -1,0 +1,118 @@
+/*
+ * 调查投票列表css
+ * @author dailc
+ * */
+
+
+/*右侧的icon btn*/
+
+.icon-btn {
+	color: #FFFFFF;
+}
+
+
+/*列表导航item*/
+
+.list-nav-item {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid #e0e0e0;
+	overflow: hidden;
+}
+
+
+/*列表导航title*/
+
+.lnvi-title {
+	line-height: 40px;
+	font-size: 14px;
+	color: #333333;
+}
+
+
+/*列表导航更多-文字*/
+
+.lnvi-more {
+	float: right;
+	margin-top: 10px;
+	font-size: 10px;
+	color: #bcbcbd;
+}
+
+
+/*列表容器区域*/
+
+.list-container {
+	/*relative来给子元素的absolute定位*/
+	position: relative;
+	background: #ffffff;
+}
+
+
+/*列表item*/
+
+.list-item {
+	/*relative来给子元素的absolute定位*/
+	position: relative;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+}
+
+
+/*给每一个listitem 通过伪元素插入一个底部border*/
+
+.list-item::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 10px;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #e0e0e0;
+}
+
+
+/*列表item的title*/
+
+.li-title {
+	padding-left: 10px;
+	font-size: 14px;
+	color: #333333;
+	width: 65%;
+	float: left;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/*通过伪元素,通过绘制border 插入li的.*/
+
+.li-title::before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 10px;
+	top: 22px;
+	border: 2px solid #187bc2;
+	content: ' '
+}
+
+
+/*列表item的时间*/
+
+.li-time {
+	float: right;
+	font-size: 10px;
+	color: #b2b2b2;
+}

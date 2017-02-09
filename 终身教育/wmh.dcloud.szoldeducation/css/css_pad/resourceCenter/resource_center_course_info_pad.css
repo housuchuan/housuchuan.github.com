@@ -1,0 +1,914 @@
+/*一级分类下的二级分类列表*/
+
+.mui-bar .mui-title {
+	width: 30%;
+	margin: 0 auto;
+}
+
+.classifyList {
+	margin-top: 104px;
+	height: 141px;
+}
+
+.courseName {
+	padding-left: 40px;
+	font-size: 17px;
+}
+
+.courseName li {
+	height: 47px;
+	width: 32%;
+	display: inline-block;
+	text-align: center;
+	padding: 0 6px;
+	border-bottom: 1px solid #f7f6fb;
+}
+
+.innerBorder {
+	height: 30px;
+	line-height: 30px;
+	margin-top: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.courseName li:nth-child(3n-1) {
+	width: 33%;
+}
+
+.courseName li:nth-child(3n-1) .innerBorder {
+	border-left: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}
+
+.courseNameTitle {
+	position: relative;
+	height: 60px;
+	line-height: 60px;
+	font-size: 18px;
+	padding-left: 4%;
+	background-color: #f7f6fb;
+	z-index: 2;
+}
+
+.kind {
+	float: right;
+	color: #ffffff;
+	line-height: 44px;
+	margin-right: 8px;
+	/*display: inline-block;
+	width: 80px;
+	height: 40px;
+	text-align: center;
+	color: #ffffff;
+	border: 1px solid #0000FF;
+	background-color: #007AFF;
+	border-radius: 10px;*/
+}
+
+.kind:active {
+	background-color: #029AFF;
+}
+
+.courseNameIcon {
+	position: absolute;
+	top: 0;
+	left: 4%;
+	width: 40px;
+	height: 40px;
+	font-size: 17px;
+	background-color: #fa678a;
+	color: #FFFFFF;
+}
+
+.courseInfoList {
+	background-color: #FFFFFF;
+	position: relative;
+}
+
+.courseNameIcon1 {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 1px;
+	left: 3px;
+}
+
+.courseNameIcon2 {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	bottom: 4px;
+	right: 3px;
+}
+
+
+/*推荐、最新、最热*/
+
+#slider {
+	background-color: #f7f6fb;
+	font-size: 15px;
+}
+
+#sliderSegmentedControl2 {
+	width: 100%;
+}
+
+.mui-slider-indicator.mui-segmented-control {
+	margin-top: 250px;
+}
+
+.mui-fullscreen .mui-segmented-control~.mui-slider-group {
+	top: 290px;
+}
+
+#sliderSegmentedControl {
+	padding-left: 10px;
+}
+
+
+/*滑动组的内容*/
+
+.mui-slider .mui-slider-group {
+	height: 1px;
+}
+
+
+/*推荐、最新、最热宽度*/
+
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+	display: inline-block;
+	margin: 0;
+	line-height: 37px;
+	vertical-align: top;
+	width: 100%;
+	font-size: 17px;
+}
+
+.suzhou_school_active {
+	color: #187bc2!important;
+	border-bottom: 3px solid #187bc2 !important;
+}
+
+
+/*滑动控件边界居上聚下*/
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+	border-top: 1px solid #c8c7cc;
+	border-bottom: 0px solid #c8c7cc;
+}
+
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item {
+	padding: 0;
+}
+
+.mui-slider-indicator {
+	text-align: left;
+}
+
+#zhezhao-area {
+	display: none;
+	position: fixed;
+	top: 44px;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	filter: alpha(opacity=70);
+}
+
+#alertWin {
+	position: fixed;
+	display: none;
+	font-size: 18px;
+	padding: 15px;
+	color: #000000;
+	/*top: 300px;*/
+	width: 50%;
+	left: 25%;
+	z-index: 1002;
+	border-radius: 6px;
+	background-color: #EEEEEE;
+}
+
+#btnGroup {
+	margin-top: 100px;
+	text-align: center;
+}
+
+#btnGroup button {
+	margin: 0 8px;
+}
+
+.mui-btn,
+button {
+	padding: 10px 25px;
+	font-size: 16px;
+}
+
+
+/*自定义动画*/
+
+
+/*关键帧framesMove*/
+
+@keyframes framesMove {
+	from {
+		top: 100%;
+	}
+	to {
+		top: 40%;
+	}
+}
+
+@-moz-keyframes framesMove {
+	from {
+		top: 100%;
+	}
+	to {
+		top: 40%;
+	}
+}
+
+@-ms-keyframes framesMove {
+	from {
+		top: 100%;
+	}
+	to {
+		top: 40%;
+	}
+}
+
+@-webkit-keyframes framesMove {
+	from {
+		top: 100%;
+	}
+	to {
+		top: 40%;
+	}
+}
+
+@-o-keyframes framesMove {
+	from {
+		top: 100%;
+	}
+	to {
+		top: 40%;
+	}
+}
+
+
+/*关键帧framesMoveOut*/
+
+@keyframes framesMoveOut {
+	from {
+		top: 40%;
+	}
+	to {
+		top: 100%;
+	}
+}
+
+@-moz-keyframes framesMoveOut {
+	from {
+		top: 40%;
+	}
+	to {
+		top: 100%;
+	}
+}
+
+@-ms-keyframes framesMoveOut {
+	from {
+		top: 40%;
+	}
+	to {
+		top: 100%;
+	}
+}
+
+@-webkit-keyframes framesMoveOut {
+	from {
+		top: 40%;
+	}
+	to {
+		top: 100%;
+	}
+}
+
+@-o-keyframes framesMoveOut {
+	from {
+		top: 100%;
+	}
+	to {
+		top: 40%;
+	}
+}
+
+.imgBorder {
+	float: left;
+}
+
+.imgBorder img {
+	width: 89px;
+	height: 60px;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item img {
+	/*width: 89px;*/
+}
+
+.infoDetailBorder {
+	float: left;
+	width: 50%;
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 17px;
+	color: #b8b8b8;
+}
+
+.commontxt {
+	color: #b8b8b8;
+}
+
+.zhiboItem {
+	padding: 10px 10px;
+	width: 100%;
+	height: 82px;
+}
+
+.zhiboTitle {
+	font-size: 14px;
+	line-height: 17px;
+	margin-top: 2px;
+	margin-bottom: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+/*下拉刷新*/
+
+.mui-pull-top-pocket {
+	top: 10px !important;
+}
+
+
+/*直播日期*/
+
+.broadcastDate {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/*信息块样式*/
+
+.message-block-wrapper {
+	width: 100%;
+	/*margin-top: 152px;*/
+	background-color: #f7f6fb;
+}
+
+.message-block> li {
+	float: left;
+	width: 20%;
+	/*margin-left: 4%;*/
+	margin-top: 16px;
+	padding: 5px 10px 9px 10px;
+	background-color: #ffffff;
+}
+
+.message-block img {
+	width: 100%;
+	height: 152.766px;
+}
+
+.title-program {
+	display: block;
+	margin-top: 5px;
+	line-height: 31px;
+	font-size: 15px;
+}
+
+.m-btn {
+	width: 95px;
+	padding: 4.5px 0 4.5px 8.5px;
+	border-radius: 3px;
+	background-color: #3595da;
+}
+
+.m-btn-end {
+	background-color: #b3b3b3;
+}
+
+.m-btn:active {
+	background-color: #adbfb6;
+}
+
+.m-btn:active span {
+	font-size: 13px;
+	color: #ededd6;
+}
+
+.video-log {
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../../../img/resourceCenter/img_player.png) no-repeat;
+	background-size: 16px 16px;
+}
+
+.video-show {
+	float: left;
+	display: inline-block;
+	margin-left: 7px;
+	line-height: 17px;
+	font-size: 14px;
+	color: #fff;
+}
+
+
+/*弹出框*/
+
+.mui-popover {
+	width: 30%;
+	height: 150px;
+	/*border: 1px solid #029AFF;*/
+}
+
+#topPopover {
+	position: fixed;
+	top: 16px;
+	right: 6px;
+}
+
+.kindSelections li a {
+	text-align: center;
+}
+
+/*自定义动画*/
+
+.topItem {
+	animation: myfirst3 0.5s;
+	-moz-animation: myfirst3 0.5s;
+	/* Firefox */
+	-webkit-animation: myfirst3 0.5s;
+	/* Safari 和 Chrome */
+	-o-animation: myfirst3 0.5s;
+	/* Opera */
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes myfirst3 {
+	from {
+	}
+	to {
+		margin-top: -60px;
+	}
+}
+
+@-moz-keyframes myfirst3
+/* Firefox */
+
+{
+	from {
+	}
+	to {
+		margin-top: -60px;
+	}
+}
+
+@-webkit-keyframes myfirst3
+/* Safari 和 Chrome */
+
+{
+	from {
+	}
+	to {
+		margin-top: -60px;
+	}
+}
+
+@-o-keyframes myfirst3
+/* Opera */
+
+{
+	from {
+	}
+	to {
+		margin-top: -60px;
+	}
+}
+
+/*自定义动画*/
+
+.classifyListActive {
+	animation: myfirst 0.5s;
+	-moz-animation: myfirst 0.5s;
+	/* Firefox */
+	-webkit-animation: myfirst 0.5s;
+	/* Safari 和 Chrome */
+	-o-animation: myfirst 0.5s;
+	/* Opera */
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes myfirst {
+	from {
+		margin-top: 104px;
+	}
+	to {
+		margin-top: -97px;
+	}
+}
+
+@-moz-keyframes myfirst
+/* Firefox */
+
+{
+	from {
+		margin-top: 104px;
+	}
+	to {
+		margin-top: -97px;
+	}
+}
+
+@-webkit-keyframes myfirst
+/* Safari 和 Chrome */
+
+{
+	from {
+		margin-top: 104px;
+	}
+	to {
+		margin-top: -97px;
+	}
+}
+
+@-o-keyframes myfirst
+/* Opera */
+
+{
+	from {
+		margin-top: 104px;
+	}
+	to {
+		margin-top: -97px;
+	}
+}
+
+
+/*自定义动画.mui-slider-indicator.mui-segmented-control*/
+
+.tt {
+	animation: myfirst1 0.5s;
+	-moz-animation: myfirst1 0.5s;
+	/* Firefox */
+	-webkit-animation: myfirst1 0.5s;
+	/* Safari 和 Chrome */
+	-o-animation: myfirst1 0.5s;
+	/* Opera */
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes myfirst1 {
+	from {}
+	to {
+		margin-top: 60px;
+	}
+}
+
+@-moz-keyframes myfirst1
+/* Firefox */
+
+{
+	from {}
+	to {
+		margin-top: 60px;
+	}
+}
+
+@-webkit-keyframes myfirst1
+/* Safari 和 Chrome */
+
+{
+	from {}
+	to {
+		margin-top: 60px;
+	}
+}
+
+@-o-keyframes myfirst1
+/* Opera */
+
+{
+	from {}
+	to {
+		margin-top: 60px;
+	}
+}
+
+
+/*自定义动画.mui-fullscreen .mui-segmented-control~.mui-slider-group*/
+
+.tt2 {
+	animation: myfirst2 0.5s;
+	-moz-animation: myfirst2 0.5s;
+	/* Firefox */
+	-webkit-animation: myfirst2 0.5s;
+	/* Safari 和 Chrome */
+	-o-animation: myfirst2 0.5s;
+	/* Opera */
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes myfirst2 {
+	from {}
+	to {
+		top: 100px;
+	}
+}
+
+@-moz-keyframes myfirst2
+/* Firefox */
+
+{
+	from {}
+	to {
+		top: 100px;
+	}
+}
+
+@-webkit-keyframes myfirst2
+/* Safari 和 Chrome */
+
+{
+	from {}
+	to {
+		top: 100px;
+	}
+}
+
+@-o-keyframes myfirst2
+/* Opera */
+
+{
+	from {}
+	to {
+		top: 100px;
+	}
+}
+
+/*返回动画*/
+/*自定义动画*/
+
+.topItemA {
+	animation: myfirstA 10s;
+	-moz-animation: myfirstA 10s;
+	/* Firefox */
+	-webkit-animation: myfirstA 10s;
+	/* Safari 和 Chrome */
+	-o-animation: myfirstA 10s;
+	/* Opera */
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes myfirstA {
+	from {
+	}
+	to {
+		margin-top: 0px;
+	}
+}
+
+@-moz-keyframes myfirstA
+/* Firefox */
+
+{
+	from {
+	}
+	to {
+		margin-top: 0px;
+	}
+}
+
+@-webkit-keyframes myfirstA
+/* Safari 和 Chrome */
+
+{
+	from {
+	}
+	to {
+		margin-top: 0px;
+	}
+}
+
+@-o-keyframes myfirstA
+/* Opera */
+
+{
+	from {
+	}
+	to {
+		margin-top: 0px;
+	}
+}
+
+/*自定义动画*/
+
+.classifyListActiveB {
+	animation: myfirstB 10s;
+	-moz-animation: myfirstB 10s;
+	/* Firefox */
+	-webkit-animation: myfirstB 10s;
+	/* Safari 和 Chrome */
+	-o-animation: myfirstB 10s;
+	/* Opera */
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes myfirstB {
+	from {
+	}
+	to {
+		margin-top: 104px;
+	}
+}
+
+@-moz-keyframes myfirstB
+/* Firefox */
+
+{
+	from {
+	}
+	to {
+		margin-top: 104px;
+	}
+}
+
+@-webkit-keyframes myfirstB
+/* Safari 和 Chrome */
+
+{
+	from {
+	}
+	to {
+		margin-top: 104px;
+	}
+}
+
+@-o-keyframes myfirstB
+/* Opera */
+
+{
+	from {
+	}
+	to {
+		margin-top: 104px;
+	}
+}
+
+
+/*自定义动画.mui-slider-indicator.mui-segmented-control*/
+
+.ttC {
+	animation: myfirstC 10s;
+	-moz-animation: myfirstC 10s;
+	/* Firefox */
+	-webkit-animation: myfirstC 10s;
+	/* Safari 和 Chrome */
+	-o-animation: myfirstC 10s;
+	/* Opera */
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes myfirstC {
+	from {}
+	to {
+		margin-top: 250px;
+	}
+}
+
+@-moz-keyframes myfirstC
+/* Firefox */
+
+{
+	from {}
+	to {
+		margin-top: 250px;
+	}
+}
+
+@-webkit-keyframes myfirstC
+/* Safari 和 Chrome */
+
+{
+	from {}
+	to {
+		margin-top: 250px;
+	}
+}
+
+@-o-keyframes myfirstC
+/* Opera */
+
+{
+	from {}
+	to {
+		margin-top: 250px;
+	}
+}
+
+
+/*自定义动画.mui-fullscreen .mui-segmented-control~.mui-slider-group*/
+
+.ttD {
+	animation: myfirstD 10s;
+	-moz-animation: myfirstD 10s;
+	/* Firefox */
+	-webkit-animation: myfirstD 10s;
+	/* Safari 和 Chrome */
+	-o-animation: myfirstD 10s;
+	/* Opera */
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes myfirstD {
+	from {
+		top: 100px;
+	}
+	to {
+		top: 288px;
+	}
+}
+
+@-moz-keyframes myfirstD
+/* Firefox */
+
+{
+	from {
+		top: 100px;
+	}
+	to {
+		top: 288px;
+	}
+}
+
+@-webkit-keyframes myfirstD
+/* Safari 和 Chrome */
+
+{
+	from {
+		top: 100px;
+	}
+	to {
+		top: 288px;
+	}
+}
+
+@-o-keyframes myfirstD
+/* Opera */
+
+{
+	from {
+		top: 100px;
+	}
+	to {
+		top: 288px;
+	}
+}

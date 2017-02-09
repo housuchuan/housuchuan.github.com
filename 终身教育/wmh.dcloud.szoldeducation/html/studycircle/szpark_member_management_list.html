@@ -1,0 +1,58 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-13 08:29:07
+        描述： 圈主成员管理子页面
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/studycircle/szpark_member_management_list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<!--加标签的目的：解决某些手机刷新列表（空白）渲染不出来的情况（客户手机）-->
+					<div style="border-top: 1px solid #FFFFFF;height: 0px;color: #ffffff;">
+						.
+					</div>
+					<div class="content-wrapper" id="listdata">
+						<!--<div class="mui-tip mui-ellipsis clearfix">
+							<span>{{nick}}</span>
+							<span class="topic">{{topic}}话题</span>
+							<span>{{report}}回复</span><br/>
+							<span class="join-time">加入时间：</span>
+							<span class="join-time">{{enterTime}}</span><br/>
+							<span class="last-recall last-recall-act">最后发言：</span>
+							<span class="last-recall">{{lastTime}}</span>
+							<br/><span class="gag">是否禁言：</span>
+							<span class="gag">{{speak}}</span>
+							<button class="ignore">踢出</button>
+							<button class="shield">解除禁言</button></div>-->
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/studycircle/szpark_member_management_list");
+		</script>
+	</body>
+
+</html>

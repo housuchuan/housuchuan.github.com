@@ -1,0 +1,98 @@
+/** 
+*作者：孙尊路
+*时间：2016-06-22 11:21
+*描述： 我的学习--积分记录列表页面css 
+**/
+
+
+/*头部*/
+
+.topLayer {
+	height: 70px;
+	background-color: #1ebaf3;
+	margin-top: 44px;
+}
+
+.topLayerItem {
+	float: left;
+	width: 50%;
+	line-height: 70px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.topLayerItem h4 {
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.topLayerItem h5 {
+	color: #beeeff;
+	margin: 10px;
+}
+
+
+/*积分lable*/
+
+.jifen_lable {
+	color: #666666;
+	line-height: 40px;
+}
+
+.jifen_lable span:first-child {
+	float: left;
+	margin-left: 40px;
+}
+
+.jifen_lable span:last-child {
+	float: right;
+	margin-right: 40px;
+}
+
+
+/*列表li*/
+
+.mui-scroll-wrapper {
+	margin-top: 154px
+}
+
+.mui-table-view-cell span {
+	float: left;
+	margin-right: 15px;
+}
+
+.part {
+	float: left;
+	margin-left: -8px;
+}
+
+.center_part span {
+	font-weight: 600;
+	width: 100%;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.center_part p {
+	font-size: 12px;
+	display: block;
+}
+
+.before_part {
+	width: 75%;
+}
+
+.afer_part {
+	width: 25%;
+	text-align: right;
+	float: right;
+	margin-right: 55px;
+}
+
+.liubai {
+	line-height: 200px;
+	text-align: center;
+	color: #808080;
+}

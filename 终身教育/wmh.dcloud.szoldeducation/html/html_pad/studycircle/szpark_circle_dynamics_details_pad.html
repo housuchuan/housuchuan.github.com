@@ -1,0 +1,106 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-07-19 08:29:07
+        描述： 圈子动态详情页面
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/common/common_animate.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/css_pad/studycircle/szpark_circle_dynamics_details_pad.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">话题详情</h1>
+		</header>
+		<div class="mui-content">
+			<!--遮罩层-->
+			<div id="zhezhao-area"></div>
+			<div class="userwrapper mui-clearfix">
+				<!--遮罩层-->
+				<!--<img src="../../../img/studyCircle/img-women.jpg" />
+				<div class="character-outer">
+					<p class="charactersec">
+						<span class="character-name">张三：</span> 我最爱物理了！！！！！牛顿说：“如果我比别人看得远，那是因为我站在巨人的肩膀上”。 我最爱物理了！！！！！”。
+					</p>
+					<span class="character-datetime">2016-02-05</span>
+					<span class="character-datetime">17:13:25</span>
+				</div>
+				<img src="../../../img/studyCircle/img_shinystar.png" data-preview-src="../../../img/studyCircle/img_shinystar.png" data-preview-group="1" class="dynamics-img" />
+				<div class="report-wrapper">
+					<span class="praise-div"><span class="praise-icon praise"></span><span>赞<span class="report-number" id="praiseNumber">(5)</span></span>
+					</span>
+					<span class="comment-icon"></span><span>评论<span class="report-number">(1)</span></span>
+					<span class="report">举报</span>
+				</div>-->
+			</div>
+			<div class="mui-scroll-wrap">
+				<div class="mui-scro">
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="comments_list" id="commentlistdata">
+						<!--<li class="comment-area comment_item">
+							<img src="../../../img/MobileFrame/img_head_logo102-102.png" />
+							<div class="comment-content"><span>张凯：</span>
+								<p>该话题言简意赅，有点不明觉厉啊该话题言简意赅，有点不明觉厉啊
+								</p><br />
+								<span class="release-time">一小时前</span><span class="review-icon"></span><span class="replay-person">回复</span>
+								<span class="tip">举报</span>
+
+							</div>
+							<div class="secondLevelCommnet">
+								<img src="../../../img/MobileFrame/img_head_logo102-102.png" />
+								<div class="comment-content"><span>木子：</span>回复 <span class="replay-person">张凯：</span>
+									<p>该话题言简意赅，有点不明觉厉啊该话题言简意赅，有点不明觉厉啊
+									</p><br />
+									<span class="release-time">一小时前</span>
+									<span class="tip">举报</span>
+								</div>
+							</div>
+
+						</li>-->
+					</ul>
+				</div>
+			</div>
+			<div class="comment">
+				<input type="text" name="" id="content" value="" placeholder="说点什么吧...30 字左右！" />
+				<button type="button" class="mui-btn mui-btn-blue send" id="btnPublish">发表</button>
+			</div>
+		</div>
+		<!--弹出框-->
+		<div id="join-circle" class="join-circle">
+			<div class="circle-bar">
+				<span id="commontitle">举报</span>
+				<a class="clearfix"><span class="mui-icon mui-icon-closeempty"></span></a>
+			</div>
+			<div class="circle-input">
+				<textarea id="reason" name="" rows="5" cols="" placeholder="亲，请填写举报理由！"></textarea>
+			</div>
+			<div class="button-area clearfix">
+				<button class="cancel-btn">取消</button>
+				<button class="confirm-btn">举报</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js"></script>
+		<!--<script type="text/javascript" src="../../../js/libs/mui.previewimage.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mui.zoom.js"></script>-->
+		<script type="text/javascript" src="../../../js/core/sea.min.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../../js/'
+			});
+			seajs.use("bizlogic/studycircle/szpark_circle_dynamics_details");
+		</script>
+	</body>
+
+</html>

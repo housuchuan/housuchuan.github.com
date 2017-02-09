@@ -1,0 +1,62 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-27 14:29:07
+        描述： 学习计划
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>学习计划</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket44.css" />
+		<link rel="stylesheet" href="../../css/mystudy/szpark_study_planning_list.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">学习计划</h1>
+		</header>
+		<div class="mui-content">
+			<!--搜索框-->
+			<div class="input-area">
+				<div class="mui-input-row mui-search">
+					<input type="search" class="mui-input-clear" placeholder="请输入您要搜索的内容">
+				</div>
+			</div>
+			<div class="myplan clearfix">
+				<span>我的计划</span>
+				<a id="icon-close"><span class="mui-icon mui-icon-close"></span></a>
+				<a id="icon-plus"><span class="mui-icon mui-icon-plus"></span></a>
+			</div>
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="mui-table-view" id="listdata">
+						<!--<li class="mui-table-view-cell">
+							<span class="pitch pitch-on"></span>
+							<span class="content  mui-ellipsis-2"><span>【学习计划】</span><span>我的计划0125676我的计划012567我的计划0125676我的计划0125676我的计划0125676我的计划0125676我的计划0125676我的计划0125676我的计划0125676我的计划0125676我的计划01256766我的计划0125676</span></span>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+			<button type="button" class="mui-btn mui-btn-blue mui-btn-block">删除</button>
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/mystudy/szpark_study_planning_list");
+		</script>
+	</body>
+
+</html>

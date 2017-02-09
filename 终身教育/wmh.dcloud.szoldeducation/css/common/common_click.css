@@ -1,0 +1,13 @@
+/*
+ * 苏州园区教育APP样式  列表通用点击事件
+ * @author 孙尊路
+ * */
+/*通用列表点击效果一开始用的第一个颜色值：#f7f6fb;目前用的第二个颜色值：#f0f0f0;*/
+#listdata .mui-table-view-cell:hover {
+	background-color: #f0f0f0;
+}
+
+/*通用点击效果---学历教育-自选答疑列表*/
+#listdata .list-item:hover {
+	background-color: #f0f0f0;
+}

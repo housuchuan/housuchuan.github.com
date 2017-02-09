@@ -1,0 +1,26 @@
+/*
+        作者：黄赟博
+        时间：2016-04-08 08:44:03
+        描述：侧边栏-认证机构
+*/
+
+.mui-table-view-cell {
+	height: auto;
+	overflow: hidden;
+	padding: 10px;
+}
+
+
+/*
+ * 机构列表显示完全显示标题，不做超出处理
+ **/
+
+
+.mui-table-view-cell span {
+	width: 100%;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	word-break: break-all;
+	font-size: 14px;
+}

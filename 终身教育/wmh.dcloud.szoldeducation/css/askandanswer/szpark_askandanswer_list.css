@@ -1,0 +1,106 @@
+/*
+ * 你问我答列表页面
+ * 家长问答页面
+ * 咨询答疑列表
+ * @author dailc
+ * */
+
+
+/*右侧的icon btn*/
+
+.mui-bar .mui-icon {
+	color: #FFFFFF;
+	font-size: 30px;
+	padding-top: 8px;
+}
+
+
+/*列表容器区域*/
+
+.list-container {
+	/*relative来给子元素的absolute定位*/
+	position: relative;
+	background: #ffffff;
+}
+
+
+/*列表item*/
+
+.list-item {
+	/*relative来给子元素的absolute定位*/
+	position: relative;
+	width: 100%;
+	min-height: 72px;
+	height: auto !important;
+	font-size: 14px;
+	/*默认颜色*/
+	color: #333333;
+	padding-left: 10px;
+	border-bottom: 1px solid #e0e0e0;
+	overflow: hidden;
+	word-break: break-all;
+}
+
+
+/*最后一个item*/
+
+.last-item {
+	border-bottom: 0px;
+}
+
+
+/*ask 模块*/
+
+.ask-container {
+	min-height: 36px;
+	height: auto !important;
+	padding-top: 13px;
+	padding-bottom: 0;
+	/*超出部分隐藏*/
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/*answer 模块*/
+
+.answer-container {
+	min-height: 36px;
+	height: auto !important;
+	padding-top: 6px;
+	/*超出部分隐藏*/
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/*ask title*/
+
+.ask-title {}
+
+
+/*ask content*/
+
+.ask-content {
+	padding-left: 8px;
+}
+
+
+/*answer title*/
+
+.answer-title {
+	color: #bdbdbd;
+}
+
+
+/*answer content*/
+
+.answer-content {
+	color: #187bc2;
+	padding-left: 8px;
+	
+}

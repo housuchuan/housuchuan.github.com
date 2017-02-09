@@ -1,0 +1,78 @@
+/**
+ * 学历教育 在线报名
+ * @author daike
+ */
+html{
+	width: 100%;
+	height: 100%;
+	
+}
+.szpark_newstitle_right{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/*background: url(../../img/homepage/img_baoming_bg1.jpg) no-repeat;
+	background-size:100% 100%;*/
+}
+.backgroundurl{
+	background: url(../../img/homepage/img_baoming_bg1.jpg) no-repeat;
+	background-size:100% 100%;
+}
+
+.mui-content{
+		background: none!important;
+}
+/*详情容器区域*/
+.main-container {
+	/*relative来给子元素的absolute定位*/
+	width: 40%;
+	margin: 100px auto;
+	overflow: hidden;
+	word-break: break-all;
+
+}
+/*输入item*/
+.input-item {
+	height: 50px;
+	margin-top: 20px;
+	line-height: 50px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+input[type=text],textarea{
+	padding: 0;
+	margin-bottom: 0;
+	border: 0px;
+}
+/*输入item的 tips*/
+.input-item> .tips {
+	font-size: 15px;
+	color: #000000;
+	padding-left: 10px;
+}
+/*输入item的 input*/
+.input-item> input {
+	float: right;
+	height: 50px;
+	padding-left: 20px;
+	line-height: 50px;
+	font-size: 15px;
+	width: 100%;
+}
+/******************************按钮区域****************************/
+/*按钮通用*/
+.btn-common {
+	display: block;
+	width: 92%;
+	margin-left: 4%;
+	margin-right: 4%;
+	height: 40px;
+}
+/*提交按钮*/
+#btn-submit {
+	margin: 30px auto;
+	background: #1ebaf3;
+	color: #FFFFFF;
+	border-radius: 5px;
+	width: 30%;
+}

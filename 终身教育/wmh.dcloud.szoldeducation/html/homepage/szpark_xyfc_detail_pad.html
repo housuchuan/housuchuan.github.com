@@ -1,0 +1,69 @@
+<!-- 
+        作者：朱晓琪
+        时间：2016-05-17
+        描述： 学员 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>学员风采</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<style type="text/css">
+			/*轮播的高度*/
+			.mui-preview-header{
+				text-align: center;
+				padding-top: 20px;
+			}
+			.mui-preview-indicator{
+				color:#FFFFFF;
+				font-size: 20px;
+			}
+			.mui-slider {
+				margin-top: 44px;
+			}
+			/*照片的包裹层，使得里面图片居中显示*/
+			.mui-zoom-scroller{
+				text-align: center;
+			}
+			/*照片的大小*/
+			
+			.mui-slider .mui-slider-group .mui-slider-item img {
+				height: 400px;
+				width: 600px;
+			}
+			/*背景颜色*/
+			.mui-slider{
+				background-color: black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"></h1>
+		</header>
+		<div class="mui-content">
+			<!--图片轮播容器 height:125px -->
+			<!--<div id="gallerySlider">
+			</div>-->
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.zoom.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.previewimageCustome.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_xyfc_detail_pad');
+		</script>
+	</body>
+
+</html>

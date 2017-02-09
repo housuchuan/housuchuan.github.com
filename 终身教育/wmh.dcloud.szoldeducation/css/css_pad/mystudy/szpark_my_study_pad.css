@@ -1,0 +1,226 @@
+ /** 
+ *作者：孙尊路
+ *时间：2016-08-01 09:13
+ *描述：  我的学习模块
+ **/
+ 
+ .mui-icon-plusempty {
+ 	float: right;
+ }
+ /*頭部下拉列表顯示*/
+ 
+ .study-choose {
+ 	margin-top: 0;
+ 	margin-bottom: 0;
+ 	padding-left: 0;
+ 	width: 100%;
+ 	padding-top: 5px;
+ 	padding-bottom: 5px;
+ 	background-color: #f7f6fb;
+ }
+ 
+ .menu-wrapper {
+ 	/*border-bottom: 1px solid #e0e0e0;*/
+ }
+ 
+ .study {
+ 	float: left;
+ 	width: 20%;
+ 	height: 100%;
+ 	margin: 5px 0;
+ 	text-align: center;
+ 	border-right: 1px dashed #e0e0e0;
+ }
+ 
+ .study:last-child {
+ 	border: none;
+ }
+ 
+ .study> div {
+ 	width: 36px;
+ 	height: 33px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+ 
+ .study> span {
+ 	display: block;
+ 	text-align: center;
+ 	font-size: 11px;
+ 	overflow: hidden;
+ 	white-space: nowrap;
+ 	text-overflow: ellipsis;
+ }
+ 
+ .study-cha> div {
+ 	background: url(../../../img/img_pad/mystudy/img_myLessonPad.png) no-repeat;
+ 	background-size: 80% 100%;
+ }
+ 
+ .study-chb> div {
+ 	background: url(../../../img/img_pad/mystudy/img_myNotePad.png) no-repeat;
+ 	background-size: 100% 100%;
+ }
+ 
+ .study-chc> div {
+ 	background: url(../../../img/img_pad/mystudy/img_myActivityPad.png) no-repeat;
+ 	background-size: 100% 100%;
+ }
+ 
+ .study-chd> div {
+ 	background: url(../../../img/img_pad/mystudy/img_playRecordPad.png) no-repeat;
+ 	background-size: 100% 100%;
+ }
+ 
+ #study-chd {
+ 	border-right: none;
+ }
+ 
+ .study-che> div {
+ 	background: url(../../../img/img_pad/mystudy/img_integralRecordPad.png) no-repeat;
+ 	background-size: 100% 100%;
+ }
+ 
+ .line {
+ 	clear: both;
+ 	display: block;
+ 	height: 1px;
+ 	width: 100%;
+ 	border-top: 1px solid #e0e0e0;
+ }
+ 
+ .study-chf> div {
+ 	background: url(../../../img/img_pad/mystudy/img_myVideoPad.png) no-repeat;
+ 	background-size: 100% 80%;
+ }
+ 
+ .study-chg> div {
+ 	background: url(../../../img/img_pad/mystudy/img_studyPlanPad.png) no-repeat;
+ 	background-size: 80% 100%;
+ }
+ 
+ .study-chh> div {
+ 	background: url(../../../img/img_pad/mystudy/img_studyingRankingsPad.png) no-repeat;
+ 	background-size: 100% 100%;
+ }
+ 
+ .study-chi> div {
+ 	background: url(../../../img/img_pad/mystudy/img_learningFilesPad.png) no-repeat;
+ 	background-size: 100% 100%;
+ }
+ 
+ .study-chj> div {
+ 	background: url(../../../img/img_pad/mystudy/img_exchangeRecordPad.png) no-repeat;
+ 	background-size: 100% 100%;
+ }
+ 
+ #study-che {
+ 	border: none;
+ }
+ 
+ .study {
+ 	border-radius: 5px;
+ }
+ 
+ .study:active {
+ 	background-color: #d1d1d1;
+ }
+ /*子页面样式*/
+ /*信息块样式*/
+ 
+ .message-block-wrapper {
+ 	width: 100%;
+ 	margin-top: 175px;
+ 	background-color: #f7f6fb;
+ }
+
+ .message-block> li {
+ 	position: relative;
+ 	float: left;
+ 	width: 20%;
+ 	margin-left: 4%;
+ 	margin-top: 16px;
+ 	padding: 5px 5px 9px 5px;
+ 	background-color: #ffffff;
+ }
+ 
+ .message-block> li button {
+ 	position: absolute;
+ 	right: 5px;
+ 	top: 5px;
+ 	padding: 3px 8px;
+ 	font-size: 13px;
+ 	color: #ffffff;
+ 	background-color: #3595da;
+ }
+ 
+ .message-block img {
+ 	width: 100%;
+ 	height: 150px;
+ }
+ 
+ .title-program {
+ 	display: block;
+ 	margin-top: 5px;
+ 	line-height: 31px;
+ 	font-size: 15px;
+ }
+ 
+ .m-btn {
+ 	width: 95px;
+ 	padding: 4.5px 0 4.5px 8.5px;
+ 	border-radius: 3px;
+ 	background-color: #3595da;
+ }
+ 
+ .m-btn:active {
+ 	background-color: #adbfb6;
+ }
+ 
+ .m-btn:active span {
+ 	font-size: 13px;
+ 	color: #ededd6;
+ }
+ 
+ .video-log {
+ 	float: left;
+ 	width: 16px;
+ 	height: 16px;
+ 	background: url(../../../img/resourceCenter/img_player.png) no-repeat;
+ 	background-size: 16px 16px;
+ }
+ 
+ .video-show {
+ 	float: left;
+ 	display: inline-block;
+ 	margin-left: 7px;
+ 	line-height: 17px;
+ 	font-size: 14px;
+ 	color: #fff;
+ }
+ /*重写下拉刷新样式*/
+.mui-pull-top-pocket {
+	top: 0px !important;
+}
+
+ /*点播直播分类*/
+.column {
+	background-color: #f7f6fb;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.column > span:first-child {
+	margin-left: 15px;
+	margin-right: 14px;
+}
+
+.column > span {
+	display: inline-block;
+	padding: 0 11.5px;
+	line-height: 40px;
+}
+
+.items-active {
+	color: #187bc2;
+	border-bottom: 2px solid #187bc2;
+}

@@ -1,0 +1,134 @@
+/*
+ * 作者：sunzl
+ * 时间：2016-07-20 21:26:07
+ * 描述 ：播放记录
+ * /
+ * 
+/*标题选择样式设计*/
+
+body {
+	background-color: #fff;
+}
+
+.zhezhao {
+	display: none;
+	position: absolute;
+	top: 44px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000000;
+	opacity: .5;
+	z-index: 1000;
+}
+
+
+/*调整刷新滚动包裹层的高度*/
+
+.mui-scroll-wrapper {
+	margin-top: 86px;
+}
+
+.column {
+	background-color: #f7f6fb;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.column> span:first-child {
+	margin-left: 15px;
+	margin-right: 14px;
+}
+
+.column> span {
+	display: inline-block;
+	padding: 0 11.5px;
+	line-height: 40px;
+}
+
+.items-active {
+	color: #187bc2;
+	border-bottom: 2px solid #187bc2;
+}
+
+
+/*搜索框样式设计*/
+
+input[type=search] {
+	margin-bottom: 0;
+	border-radius: 15px;
+	background-color: #eeeff3;
+}
+
+.mui-search:before {
+	top: 70%;
+}
+
+.input-area {
+	padding: 10px 10px;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #fff;
+}
+
+
+/*内容样式设计*/
+
+.mui-table-view:after {
+	left: 15px;
+}
+
+.selection-items> li> span {
+	display: block;
+}
+
+.selection-items> li> span:first-child {
+	margin-bottom: 12px;
+	font-size: 14px;
+}
+
+.selection-items> li> span:last-child {
+	font-size: 12px;
+	color: #adadad;
+}
+
+
+/*视频内容样式设计*/
+
+.mui-slider-handle> img {
+	float: left;
+	width: 120px;
+	height: 90px;
+}
+
+.mui-slider-handle> h4 {
+	margin: 0 0 10px 130px;
+	padding-top: 10px;
+	line-height: 20px;
+	/*white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;*/
+	font-size: 14px;
+}
+
+.studyed {
+	margin: 0 0 0 10px;
+}
+
+.studying {
+	margin-left: 10px;
+}
+
+.studyed-common-sizecol {
+	font-size: 12px;
+	color: #b9b9b9;
+}
+
+.mui-table-view:after {
+	left: 15px;
+}
+
+
+/*调整下拉刷新位置*/
+
+.mui-bar-nav~.mui-content .mui-pull-top-pocket {
+	top: 0px;
+}

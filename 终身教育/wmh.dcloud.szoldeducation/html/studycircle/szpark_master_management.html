@@ -1,0 +1,109 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-13 08:29:07
+        描述： 圈主管理主页面 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>圈主管理</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/common/common_toggle_menu.css" />
+		<link rel="stylesheet" href="../../css/libs/mui.picker.min.css" />
+		<link rel="stylesheet" href="../../css/studycircle/szpark_master_management.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav clearfix" style="z-index: 300;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">圈主管理</h1>
+			<a><span class="mui-icon mui-icon-plusempty" id="menu-btn"></span></a>
+		</header>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div id="circleWrapper">
+						<!--<ul class="mui-table-view" id="{{circleId}}">
+							<li class="mui-table-view-cell" onclick="chooseImgFromGalleryFile.click()">
+								<a href="#" id="tupian" class="mui-circle mui-navigate-right mui-ellipsis">
+									<h4>圈子LOG</h4><img src="{{image}}" id="circleLog" /></a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a id="chooseType" class="mui-circle mui-circle-another mui-navigate-right mui-ellipsis">
+									<h4>圈子分类</h4><span><b id="typename">{{typenName}}</b><input type="hidden"name=""id="typeid"value="{{typeid}}"/></span></a>
+							</li>
+							<div class="mui-circle mui-circle-another mui-ellipsis">
+								<h4>圈子名称</h4><span><input type="text"name=""id="cricleName"value="{{title}}"disabled="disabled"/></span></div>
+							<div class="mui-circle mui-circle-another mui-ellipsis">
+								<h4>圈子简介</h4><span><input type="text"name=""id="instruction"value="{{introduction}}"/></span></div>
+							<div class="mui-circle mui-circle-another mui-ellipsis">
+								<h4>圈子标签</h4><span><input type="text"name=""id="flags"value="{{flags}}"/></span></div>
+							<div class="mui-circle mui-circle-another mui-ellipsis ">
+								<h4>圈子理由</h4><span><input type="text"name=""id="reason"value="{{reason}}"/></span></div>
+						</ul><button class="submit-btn">提交</button>-->
+					</div>
+				</div>
+			</div>
+			<div id="menu-wrapper" class="menu-wrapper hidden">
+				<div id="menu" class="menu">
+					<div class="study-choose">
+						<div class="study study-chf">
+							<div></div>
+							<span>设置</span>
+						</div>
+						<div class="study study-chs">
+							<div></div>
+							<span>成员</span>
+						</div>
+						<div class="study study-chth">
+							<div></div>
+							<span>待审核</span>
+						</div>
+						<div class="study study-chfo">
+							<div></div>
+							<span>举报管理</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="menu-backdrop" class="menu-backdrop"></div>
+			<div class="common-hidden">
+				<input type="file" id="chooseImgFromGalleryFile" />
+			</div>
+		</div>
+		<!--H5模式actionsheet-->
+		<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">从相册选择</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">拍照</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#picture"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use('bizlogic/studycircle/szpark_master_management')
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,82 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-06-23 16:38:07
+ * 描述：年鉴（子页面）样式
+ */
+ body {
+	background-color: #fff;
+}
+/*时间轴样式设计*/
+ .mui-content {
+ 	margin-top: 10px;
+ 	/*padding-left: 10px;*/
+ 	background-color: #fff;
+ 	border-top: 1px solid #e2e2e2;
+ }
+ .mui-scroll-wrapper{
+ 	margin-top: 10px;
+ }
+ .year-log img {
+ 	width: 32.5px;
+ 	height: 32.5px;
+ 	margin: 10px 16px -5px 27px;
+ }
+ .now-year {
+ 	vertical-align: 6px;
+ 	font-size: 18px;
+ 	font-weight: 700;
+ }
+ /*时间轴线*/
+ .time-wrapper {
+ 	position: relative;
+ }
+ .time-line {
+ 	position: absolute;
+ 	top: 0;
+ 	height: 100%;
+ 	bottom: 0;
+ 	left: 43.25px;
+ 	width: 1px;
+ 	background-color: #e0e0e0;
+ }
+/*日志历史样式*/
+ .publish-month {
+ 	position: relative;
+ 	margin-left: -4px;
+ 	font-size: 12px;
+ 	color: #adadad;
+ }
+ .radius-icon {
+ 	float: left;
+ 	top: 3px;
+ 	left: 38px;
+ 	display: inline-block;
+ 	width: 10px;
+ 	height: 10px;
+ 	margin-top: 7px;
+ 	border-radius: 10px;
+ 	background-color: #e0e0e0;
+ }
+ .publish-section {
+ 	margin-bottom: 16px;
+ 	padding: 0 18px 0 0;
+ }
+  .publish-area:active {
+ 	background-color: gainsboro;
+ 	font-size: 14px;
+ }
+ .publish-section > span {
+ 	position: relative;
+ 	top: 18px;
+ }
+ .publish-area {
+	margin-left: 55px;
+	margin-top: -18px;
+	padding: 13px 11px;
+	font-size: 15px;
+	background-color: #f6f5f8;
+ }
+ .publish-area span{
+ 	display: block;
+ 	margin-bottom: 10px;
+ } 

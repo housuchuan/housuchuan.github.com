@@ -1,0 +1,91 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-28 13:41:07
+        描述：  上传照片页面(具体上传)
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/menubar/szpark_upload_specific.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav clearfix">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">上传到</h1>
+		</header>
+		<div class="mui-content">
+			
+		    <div id="pullrefresh" class="mui-scroll-wrapper">
+		        <div class="mui-scroll">
+		            <!--这里放置真实显示的DOM内容-->
+		            <ul id="listdata" class="mui-table-view upload-pic">
+		                    <li class="mui-table-view-cell">
+		                    	<a class="mui-navigate-right">
+			                        <img src="../../img/educate/img_project1.png"/>
+			                        <div class="photo-info">
+			                        	<span>植物园一游</span>
+			                        	<span>562张</span>
+			                        </div>
+			                    </a>
+		                    </li>
+		                    <li class="mui-table-view-cell">
+		                    	<a class="mui-navigate-right">
+			                        <img src="../../img/educate/img_project1.png"/>
+			                        <div class="photo-info">
+			                        	<span>搞笑图片</span>
+			                        	<span>562张</span>
+			                        </div>
+			                    </a>
+		                    </li>
+		                    <li class="mui-table-view-cell">
+		                    	<a class="mui-navigate-right">
+			                        <img src="../../img/educate/img_project1.png"/>
+			                        <div class="photo-info">
+			                        	<span>手机相册</span>
+			                        	<span>562张</span>
+			                        </div>
+			                    </a>
+		                    </li>
+		                    <li class="mui-table-view-cell">
+		                    	<a class="mui-navigate-right">
+			                        <img src="../../img/educate/img_project1.png"/>
+			                        <div class="photo-info">
+			                        	<span>我自己</span>
+			                        	<span>562张</span>
+			                        </div>
+			                    </a>
+		                    </li>
+		                    <li class="mui-table-view-cell">
+		                    	<a class="mui-navigate-right">
+			                        <img src="../../img/educate/img_project1.png"/>
+			                        <div class="photo-info">
+			                        	<span>贴图相册</span>
+			                        	<span>562张</span>
+			                        </div>
+			                    </a>
+		                    </li>
+		               </ul>
+		        </div>
+		    </div>
+		    
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js" ></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js" ></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/menubar/szpark_upload_specific");
+		</script>
+	</body>
+
+</html>

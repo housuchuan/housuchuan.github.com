@@ -1,0 +1,134 @@
+/**
+ *  作者：侯苏川
+ *  时间：2016-06-22 15:29:07
+ *  描述： 个人空间(日志)子页面 
+**/
+
+.mui-content {
+	padding-bottom: 5px;
+}
+
+
+/*日志选择列表样式*/
+
+.log-style {
+	height: 47px;
+	/*margin-left: -10px;*/
+	padding-left: 10px;
+	background-color: #f7f6fb;
+}
+
+.log-style> div {
+	display: inline-block;
+	height: 100%;
+	padding: 0 8px;
+	line-height: 47px;
+	font-size: 14px;
+}
+
+.log-active {
+	font-size: 14px;
+	color: #187bc2;
+	border-bottom: 2px solid #187bc2;
+}
+
+.secret-log {
+	font-size: 14px;
+	margin-left: 9px;
+}
+
+.log-style> button {
+	float: right;
+	margin: 6px 10.5px 6px 0;
+	padding: 0;
+	padding: 7px 15px;
+	font-size: 12px;
+	color: #187bc2;
+	border-color: #187bc2;
+}
+
+
+/*子页面内容样式*/
+
+body,
+.mui-content {
+	background-color: #fff;
+}
+
+
+/*右划样式*/
+
+.mui-table-view-cell>.mui-slider-left>.mui-btn,
+.mui-table-view-cell>.mui-slider-right>.mui-btn {
+	padding: 0 20px;
+}
+
+.mui-table-view-cell>.mui-slider-left>.mui-btn.mui-icon,
+.mui-table-view-cell>.mui-slider-right>.mui-btn.mui-icon {
+	font-size: 15px;
+}
+
+.mui-content>.mui-table-view:first-child {
+	margin-top: 0;
+}
+
+.mui-slider-handle> img {
+	float: left;
+	width: 99px;
+	height: 72px;
+	margin-right: 10px;
+}
+
+.mui-slider-handle> h4 {
+	/*margin: 0 0 13px 100px;*/
+	margin: 0 0 13px 0px;
+	padding-top: 5px;
+	font-size: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: 600;
+}
+
+.log-news {
+	font-size: 12px;
+}
+
+.mui-slider-handle> p {
+	letter-spacing: 0.5px;
+	font-size: 14px;
+	color: #b9b9b9;
+}
+
+.studyed {
+	margin: 0 10px 0 4px;
+}
+
+.studying {
+	margin-left: 10px;
+}
+
+.studying-active {
+	color: red;
+}
+
+.studyed-common-sizecol {
+	color: #b9b9b9;
+}
+
+.mui-table-view-cell {
+	margin-left: 10px;
+	padding-left: 0;
+}
+
+.mui-table-view:before {
+	left: -10px;
+}
+
+.mui-table-view:after {
+	left: -10px;
+}
+
+.mui-table-view-cell:after {
+	left: 0px;
+}

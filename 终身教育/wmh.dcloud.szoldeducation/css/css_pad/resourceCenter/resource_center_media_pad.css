@@ -1,0 +1,56 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-07-10 12:47:07
+ * 描述：研习圈视频IPAD版本
+ */
+
+/*mui的bar样式*/
+
+ .mui-bar-nav {
+ 	background-color: #333333;
+ }
+ 
+ .mui-title {
+ 	text-align: left;
+ 	z-index: -1;
+ }
+ 
+ .selection-items {
+ 	float: right;
+ 	line-height: 44px;
+ 	font-size: 13px;
+ 	color: #d8d8d8;
+ }
+ 
+ .selection-items span {
+ 	display: inline-block;
+ 	width: 43px;
+ 	height: 24px;
+ 	text-align: center;
+ 	line-height: 24px;
+ 	margin-left: 17px;
+ 	border: 1px solid #999999;
+ 	border-radius: 5px;
+ }
+ 
+ .selection-items span:active {
+ 	background-color: #d8d8d8;
+ }
+ 
+ /*视频*/
+ .mui-content {
+ 	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #000000;
+ }
+ 
+ video {
+ 	width: 100%;
+ 	height: 100%;
+ 	border-right: 9px solid #000000;
+	border-left: 9px solid #000000;
+	background-color: #000000;
+ }
+

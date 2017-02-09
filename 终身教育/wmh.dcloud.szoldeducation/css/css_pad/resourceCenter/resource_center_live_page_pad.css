@@ -1,0 +1,218 @@
+/*
+ * 作者:侯苏川
+ * 时间：2016-15-49 15:49:07
+ * 描述：研习圈直播页面pad版本
+ */
+
+/*下拉刷新*/
+.mui-pull-top-pocket {
+	top: 0px !important;
+}
+
+
+/*mui的bar设置*/
+
+.mui-bar-nav {
+	background-color: #333333;
+}
+
+.mui-title {
+	text-align: left;
+}
+
+
+/*用户列表*/
+
+.media-wrapper {
+	width: 100%;
+	height: 493px;
+	background-color: #000000;
+}
+
+.userList {
+	float: left;
+	width: 30%;
+	height: 100%;
+	margin: 0 0 0 5px;
+}
+
+.userList img {
+	width: 100%;
+	height: 206px;
+	border-bottom: 2px solid #000000;
+}
+
+.userList-items {
+	color: #FFFFFF;
+	background-color: #333333;
+}
+
+.userListTitle {
+	line-height: 30px;
+	margin-top: -5px;
+	padding-left: 8px;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #434343;
+}
+
+.userList-wrapper {
+	width: 30%;
+	height: 257px;
+	margin-left: 5px;
+	margin-top: 280px;
+}
+
+.userList-wrapper > .mui-scroll {
+	width: 100%;
+}
+
+.userList-items li {
+	padding: 8px 0 8px 0;
+	font-size: 14px;
+	padding-left: 8px;
+}
+
+.userList-items li:active {
+	background-color: #434343;
+}
+
+.mui-table-view:before,
+.mui-table-view:after,
+.mui-table-view-cell:after {
+	content: none;
+}
+
+
+/*视频播放*/
+
+.media-autoplay {
+	float: left;
+	width: 100%;
+	height: 100%;
+	margin-right: 5px;
+}
+
+.media-autoplay #player {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*视频简介*/
+
+.media-introduction {
+	position: relative;
+	width: 100%;
+	padding: 15px 0 25px 0;
+}
+
+.introduction-content {
+	display: inline-block;
+	width: 75%;
+	margin-left: 15px;
+	border-right: 1px solid #e6e6e6;
+}
+
+.introduction-content div {
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+
+.introduction-content p {
+	font-size: 15px;
+}
+
+.save-praise {
+	position: absolute;
+	top: 15px;
+	right: 24px;
+	display: inline-block;
+}
+
+.save-praise span {
+	display: inline-block;
+	margin: 5px 0 0 0;
+	font-size: 16px;
+	color: #7e7e7e;
+}
+
+.save-praise .save,
+.praise {
+	display: inline-block;
+}
+
+.save-icon,
+.praise-icon {
+	line-height: 30px;
+}
+.save-icon-common {
+	background: url(../../../img/resourceCenter/img_savecommon.png) no-repeat;
+	background-size: 70%;
+	background-position: center;
+}
+
+.save-icon-active {
+	background: url(../../../img/resourceCenter/img_save_active.png) no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+.praise-icon {
+	background: url(../../../img/resourceCenter/img_comment.png) no-repeat;
+	background-size: 90%;
+	background-position: center;
+}
+
+.praise-icon:active {
+	background-color: #A9A9A9;
+}
+
+.praise {
+	margin-left: 21px;
+}
+
+.save div:first-child {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+}
+
+.praise div:first-child {
+	width: 30px;
+	height: 30px;
+	border-radius: 20px;
+}
+
+.save div,
+.praise div {
+	background-color: #eeeeee;
+}
+
+.selections {
+	/*float: left;*/
+	width: 90%;
+}
+
+.selections > span {
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 11px;
+}
+
+.selections-items > div {
+	display: inline-block;
+	width: 40px;
+	height: 30px;
+	margin-top: 3px;
+	margin-right: 5px;
+	text-align: center;
+	line-height: 30px;
+	color: #666666;
+	background-color: #eeeeee;
+}
+
+.selections-items div:first-child {
+	color: #ffffff;
+	background-color: #187bc2;
+}

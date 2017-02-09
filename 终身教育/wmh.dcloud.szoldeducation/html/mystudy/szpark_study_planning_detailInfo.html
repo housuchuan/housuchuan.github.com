@@ -1,0 +1,57 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-08-12 09:55:45
+        描述： 我的学习（学习计划）详情界面 
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/mystudy/szpark_study_planning_detailInfo.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">我的计划</h1>
+		</header>
+		<div class="mui-content">
+		    <div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div class="log-content" id="logContent">
+						<h4><!--计划名称--></h4>
+						<div>
+							<p><!--一生之中，似乎都在相遇和别离之间重复着。不 知不觉，我又再次面临着离别之日的到来，不只 是对人，甚至对这里的一花一草，都有着一种难 以割舍的情感。-->
+							<!--曾经，尚未体会过告别的不舍之前，我非常 期待每一次遇见期待每一次遇见期待每一次遇见期待每一次遇见期待每一次遇见期待每一次遇见，期待着更多的人进入我的生命， 走进我的世界，陪我走到天荒地老。后来，我慢 慢发现，有些人，不管有着多么美好的遇见，都 只是我人生中的过客，此次一别从不再见。-->
+							</p>
+						</div>
+						<div class="plan-time">
+							<div><span>计划开始时间：</span><span class="startTime"><!--X:xx:xx--></span></div>
+							<div><span>计划结束时间：</span><span class="endTime"><!--X:xx:xx--></span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="mui-btn mui-btn-block">删除</button>
+		</div>
+		
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js" ></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/mystudy/szpark_study_planning_detailInfo");
+		</script>
+	</body>
+
+</html>

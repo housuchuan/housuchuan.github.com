@@ -1,0 +1,53 @@
+<!-- 
+        作者：朱晓琪
+        时间：2016-06-28
+        描述：资源中心点播list
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>资源中心点播列表</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/resourceCenter/resource_center_dianbo_list.css" />
+	</head>
+	<body>
+		<div class="mui-content">
+			<div id="pullrefresh" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="list-container mui-table-view" id="listdata">
+						<!--<li>
+							<div>
+								<div class="courseNameTitle">本土课程</div>
+								<div class="courseInfoList">
+									<div class="courseNameIcon">
+										<div class="courseNameIcon1">本</div>
+										<div class="courseNameIcon2">土</div>
+									</div>
+									<ul class="courseName">
+										<li><div class="innerBorder">胜浦三宝</div></li><li><div class="innerBorder">化学工程</div></li><li><div class="innerBorder">物理实验</div></li><li><div class="innerBorder">苏州园区</div></li><li><div class="innerBorder">大学语文</div></li><li><div class="innerBorder">概率理论</div></li><li><div class="innerBorder">高等数学</div></li><li><div class="innerBorder">大学英语</div></li>
+									</ul>
+								</div>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js" ></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/resourceCenter/resource_center_dianbo_list");
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-13 08:29:07
+        描述：我的学习父页面 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的学习</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/common/common_toggle_menu.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket44.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/mystudy/szpark_my_study.css" />
+	</head>
+	<header class="mui-bar mui-bar-nav clearfix">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">我的课程</h1>
+		<a><span class="mui-icon mui-icon-plusempty" id="menu-btn"></span></a>
+	</header>
+
+	<body>
+		<div class="mui-content">
+			<!--内容选择-->
+			<div class="column">
+				<span class="TA-common items-active">点播</span>
+				<span class="TA-common">直播</span>
+			</div>
+			<div id="menu-wrapper" class="menu-wrapper hidden">
+				<div id="menu" class="menu">
+					<div class="study study-cha">
+						<div></div>
+						<span>我的课程</span>
+					</div>
+					<div class="study study-chb">
+						<div></div>
+						<span>我的笔记</span>
+					</div>
+					<div class="study study-chc">
+						<div></div>
+						<span>我的活动</span>
+					</div>
+					<div class="study study-chd">
+						<div></div>
+						<span>播放记录</span>
+					</div>
+					<div class="study study-che">
+						<div></div>
+						<span>积分记录</span>
+					</div>
+					<div class="study study-chf">
+						<div></div>
+						<span>我的视频</span>
+					</div>
+					<div class="study study-chg">
+						<div></div>
+						<span>学习计划</span>
+					</div>
+					<div class="study study-chh">
+						<div></div>
+						<span>学习排名</span>
+					</div>
+					<div class="study study-chi">
+						<div></div>
+						<span>学习档案</span>
+					</div>
+					<div class="study study-chj">
+						<div></div>
+						<span>兑换记录</span>
+					</div>
+				</div>
+			</div>
+			<div id="menu-backdrop" class="menu-backdrop"></div>
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul id="listdata" class="mui-table-view">
+						<!--视频点播-->
+						<!--<li class="mui-table-view-cell">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-yellow mui-icon">置顶</a>
+								<a class="mui-btn mui-btn-red mui-icon ">删除</a>
+							</div>
+							<div class="mui-slider-handle clearfix">
+								<img src="../../img/mystudy/img_my_study.jpg" />
+								<h4>冶金技术的发展</h4>
+								<div class="mui-ellipsis">
+									<span class="studying studying-active">[学习中]</span><span class="studyed studyed-common-sizecol">已学习</span><span class="studyed-common-sizecol">3/10</span><span class="studyed-common-sizecol">节课</span><br />
+								</div>
+								<span class="studying studyed-common-sizecol">积分：</span><span class="studyed-common-sizecol">200</span>
+							</div>
+						</li>-->
+						<!--视频直播-->
+						<!--<li class="mui-table-view-cell">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-yellow mui-icon">置顶</a>
+								<a class="mui-btn mui-btn-red mui-icon ">删除</a>
+							</div>
+							<div class="mui-slider-handle clearfix">
+								<img src="../../img/mystudy/img_my_study.jpg" />
+								<h4>我开的直播</h4>
+								<div class="mui-ellipsis">
+									<span class="studying studying-active">[开播]</span><span class="studyed studyed-common-sizecol">主播</span><span class="studyed-common-sizecol">zhRong</span><br />
+								</div>
+								<span class="studying studyed-common-sizecol">开播时间：</span><span class="studyed-common-sizecol">XXXX：xx:xx</span>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/mystudy/szpark_my_study");
+		</script>
+	</body>
+
+</html>

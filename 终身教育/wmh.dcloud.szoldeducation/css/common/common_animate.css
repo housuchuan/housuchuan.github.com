@@ -1,0 +1,163 @@
+/** 
+*作者：孙尊路
+*时间：2016-08-30 11:21
+*描述：  通用从上到下滑动动画,兼容各个主流的浏览器
+**/
+
+
+/*显示动画，从下至上移动显示*/
+
+.add-show {
+	animation: framesMove 0.5s infinite;
+	-webkit-animation: framesMove 0.5s infinite;
+	-o-animation: framesMove 0.5s infinite;
+	-ms-animation: framesMove 0.5s infinite;
+	-moz-animation: framesMove 0.5s infinite;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	-o-animation-iteration-count: 1;
+	-ms-animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+	-o-animation-timing-function: ease;
+	-ms-animation-timing-function: ease;
+	-moz-animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-webkit-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	-ms-animation-delay: 0s;
+}
+
+
+/*隐藏动画，从上至下移出隐藏*/
+
+.add-hide {
+	animation: framesMoveOut 0.5s infinite;
+	-webkit-animation: framesMoveOut 0.5s infinite;
+	-o-animation: framesMoveOut 0.5s infinite;
+	-ms-animation: framesMoveOut 0.5s infinite;
+	-moz-animation: framesMoveOut 0.5s infinite;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	-o-animation-iteration-count: 1;
+	-ms-animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+	-o-animation-timing-function: ease;
+	-ms-animation-timing-function: ease;
+	-moz-animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-webkit-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	-ms-animation-delay: 0s;
+}
+
+
+/*关键帧framesMove*/
+
+@keyframes framesMove {
+	from {
+		top: 120%;
+	}
+	to {
+		top: 20%;
+	}
+}
+
+@-moz-keyframes framesMove {
+	from {
+		top: 120%;
+	}
+	to {
+		top: 20%;
+	}
+}
+
+@-ms-keyframes framesMove {
+	from {
+		top: 120%;
+	}
+	to {
+		top: 20%;
+	}
+}
+
+@-webkit-keyframes framesMove {
+	from {
+		top: 120%;
+	}
+	to {
+		top: 20%;
+	}
+}
+
+@-o-keyframes framesMove {
+	from {
+		top: 120%;
+	}
+	to {
+		top: 20%;
+	}
+}
+
+
+/*关键帧framesMoveOut*/
+
+@keyframes framesMoveOut {
+	from {
+		top: 20%;
+	}
+	to {
+		top: 120%;
+	}
+}
+
+@-moz-keyframes framesMoveOut {
+	from {
+		top: 20%;
+	}
+	to {
+		top: 120%;
+	}
+}
+
+@-ms-keyframes framesMoveOut {
+	from {
+		top: 20%;
+	}
+	to {
+		top: 120%;
+	}
+}
+
+@-webkit-keyframes framesMoveOut {
+	from {
+		top: 20%;
+	}
+	to {
+		top: 120%;
+	}
+}
+
+@-o-keyframes framesMoveOut {
+	from {
+		top: 120%;
+	}
+	to {
+		top: 20%;
+	}
+}

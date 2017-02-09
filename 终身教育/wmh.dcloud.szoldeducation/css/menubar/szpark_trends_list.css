@@ -1,0 +1,186 @@
+/**
+ *  作者：侯苏川
+ *  时间：2016-06-24 16:04:07
+ *  描述：个人空间（动态）子页面
+ **/
+ .mui-content {
+	padding-bottom: 10px;
+}
+ .dynamic-area {
+ 	margin-top: 9px;
+ 	padding: 10px;
+ 	border-top: 1px solid #e2e2e2;
+ 	border-bottom: 1px solid #e2e2e2;
+ 	background-color: #fff;
+ }
+ .dynamic-area > img {
+ 	float: left;
+ 	width: 40px;
+ 	height: 40px;
+ }
+ .username {
+ 	margin-left: 10px;
+ 	font-weight: 500;
+ }
+ .publish-time {
+ 	margin-left: 10px;
+ 	font-size: 13px;
+ 	color: #adadad;
+ }
+ .publish-content {
+ 	display: inline-block;
+ 	margin-top: 7px;
+ 	margin-bottom: 3px;
+ 	font-size: 14px;
+ 	font-weight: 500;
+ }
+ .attach img {
+ 	margin-right: 5px;
+ }
+ /*评论赞等模块*/
+ .operate-module {
+ 	margin: 20px 0;
+ 	font-size: 12px;
+ 	color: #adadad;
+ }
+ .comment {
+ 	display: inline-block;
+ 	width: 16px;
+ 	height: 14px;
+ 	margin-right: 3.5px;
+ 	background: url(../../img/menubar/img-reporticon.png) no-repeat;	
+ 	background-size: 16px 14px;
+ }
+ .praise {
+ 	display: inline-block;
+ 	width: 15px;
+ 	height: 16px;
+ 	margin: 0 2px 0 18px;
+ }
+ .praise-common {
+ 	background: url(../../img/menubar/img-praiseicon.png) no-repeat;	
+ 	background-size: 15px 16px; 	
+ }
+ .praise-active {
+ 	background: url(../../img/menubar/img_praiseactive.png) no-repeat;
+ 	background-size: 15px 16px;
+ }
+ .delete {
+ 	display: inline-block;
+ 	width: 14px;
+ 	height: 14px;
+ 	margin: 0 2px 0 18px;
+ 	background: url(../../img/menubar/img-deleteicon.png) no-repeat;	
+ 	background-size: 14px 14px;
+ }
+ .reporticon {
+  	display: inline-block;
+ 	width: 18px;
+ 	height: 14px;
+ 	margin: 0 2px 0 15px;
+ 	background: url(../../img/menubar/img_report.png) no-repeat;	
+ 	background-size: 18px 14px;
+  }
+ .common-change {
+ 	display: inline-block;
+ 	height: 21px;
+ 	vertical-align: 2px;
+ }
+ .common-number {
+ 	color: #187bc2;
+ }
+ .attach img{
+ 	width: 30%;
+ 	height: 80px;
+ }
+ /*发表评论部分*/
+ .review {
+ 	font-size: 13px;
+ }
+ .mui-table-view-cell:after, .mui-table-view:after {
+ 	content: none;
+ }
+ .review li img {
+ 	position: absolute;
+ 	width: 40px;
+	height: 40px;
+ }
+ .mui-table-view-cell {
+ 	padding: 10px 0 0 0;
+ }
+ .review-content {
+ 	display: inline-block;
+ 	margin: 0 0 10px 50px;
+ 	/*text-align: justify;
+ 	text-justify: distribute-all-lines;*/
+ }
+ .review-replay {
+ 	margin-left: 23px;
+ }
+ .review-username {
+ 	color: #187bc2;
+ }
+ .reviewer {
+ 	margin: 0 10px;
+ }
+ .review-time {
+ 	font-size: 15px;
+ 	color: #adadad;
+ }
+ .review-icon {
+ 	display: inline-block;
+ 	width: 16px;
+ 	height: 13px;
+ 	margin: 0 15px;
+ 	background: url(../../img/menubar/img-reporticon.png) no-repeat;
+ 	background-size: 16px 13px;
+ }
+ .amputate {
+ 	display: inline-block;
+ 	width: 10px;
+ 	height: 10px;
+ 	margin-bottom: 2px;
+ 	background: url(../../img/menubar/img-amputate.png) no-repeat;
+ 	background-size: 10px 10px;
+ }
+ /*'我想说一句'按钮框*/
+ .dynamic-area  button {
+ 	width: 100%;
+ 	padding: 0;
+ }
+
+ .dynamic-area  button > span {
+ 	float: left;
+ 	display: inline-block;
+ 	padding: 9px 7.5px;
+ 	color: #adadad;
+ }
+ .dynamic-area  button > div {
+ 	float: right;
+ 	display: inline-block;
+ 	width: 15px;
+ 	height: 12.5px;
+ 	margin: 9px 7.5px 0 0;
+ 	background: url(../../img/menubar/img-cameraicon.png) no-repeat;
+ 	background-size: 15px 12.5px;
+ }
+  /*评论弹出框*/
+ .mui-table-view-cell {
+ 	padding: 11px 15px;
+ }
+ input[type=text] {
+ 	float: left;
+ 	width: 75%;
+ 	height: 35px;
+ 	margin-bottom: 0;
+ 	color: #000;
+ }
+ .send {
+ 	width: 20%;
+ 	height: 35px;
+ 	margin-left: 10px;
+ 	color: darkgray;
+ 	border: 1px solid #e0e0e0;
+ 	background-color: #fff;
+ }
+

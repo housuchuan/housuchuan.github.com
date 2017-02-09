@@ -1,0 +1,84 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-07-06 14:43:07
+        描述： 原创展示pad版本页面 
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>原创展示</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/menubar/szpark_original_display_pad.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">原创展示</h1>
+		    <a class="mui-clearfix"><span class="mui-icon mui-icon-search"></span></a>
+		</header>
+		
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper tab-content-wrapper">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div class="tab-content">
+						<div class="tab-item-style">视频</div>
+						<div>文档</div>
+					</div>
+				</div>
+			</div>
+
+			<!--视频文档内容-->
+			<div class="mui-scroll-wrapper message-block-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div class="message-block mui-clearfix" id="listdata">
+						<!--<div>
+							<img src="../../../img/menubar/img-menubar.jpg" />
+							<span class="title-program mui-ellipsis">冶金技术冶金技术冶金技术的发展</span>
+							<div class="m-btn mui-clearfix">
+								<div class="video-log"></div>
+								<span class="video-show">开始观看</span>
+							</div>
+						</div>
+						<div>
+							<img src="../../../img/menubar/img-menubar.jpg" />
+							<span class="title-program mui-ellipsis">初三数学</span>
+							<div class="m-btn mui-clearfix">
+								<div class="video-log"></div>
+								<span class="video-show">开始观看</span>
+							</div>
+						</div>
+						<div>
+							<img src="../../../img/menubar/img-menubar.jpg" />
+							<span class="title-program mui-ellipsis">初三数学、语文、英语、物理Myengilish</span>
+							<div class="m-btn mui-clearfix">
+								<div class="video-log"></div>
+								<span class="video-show">开始观看</span>
+							</div>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--引入框架库-->
+		<script type="text/javascript" src="../../../js/core/sea.min.js" ></script>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js" ></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js" ></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js" ></script>
+	</body>
+	<script type="text/javascript">
+		seajs.config({
+			base: '../../../js/'
+		})
+		seajs.use("bizlogic/js_pad/menubar/szpark_original_display_pad");
+	</script>
+</html>

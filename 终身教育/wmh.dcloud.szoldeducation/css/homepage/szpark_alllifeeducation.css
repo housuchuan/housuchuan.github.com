@@ -1,0 +1,31 @@
+/**
+ * 作者：戴科
+ * 日期：2016-04-05
+ * 简介：终身教育页面css
+ */
+
+#sliderSegmentedControl {
+    width: 200%;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+    display: inline-block;
+    margin: 1px 8px 0;
+    width: auto;
+    vertical-align: top;
+}
+.suzhou_school_tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #e2e2e3;
+}
+.mui-active {
+    color: #000000!important;
+    border-bottom:none!important;
+}
+.suzhou_school_active{
+	color: #187bc2!important;
+	border-bottom: 3px solid #187bc2!important;
+}

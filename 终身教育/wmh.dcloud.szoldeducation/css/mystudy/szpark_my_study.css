@@ -1,0 +1,188 @@
+ /** 
+ *作者：孙尊路
+ *时间：2016-06-28 11:21
+ *描述：  我的学习模块
+ **/
+ .mui-pull-top-pocket {
+	top: 2px !important;
+}
+ .mui-icon-plusempty {
+ 	float: right;
+ }
+ 
+ .mui-scroll-wrapper {
+ 	margin-top: 88px;
+ }
+ 
+ /*点播直播分类*/
+.column {
+	background-color: #f7f6fb;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.column > span:first-child {
+	margin-left: 15px;
+	margin-right: 14px;
+}
+
+.column > span {
+	display: inline-block;
+	padding: 0 11.5px;
+	line-height: 40px;
+}
+
+.items-active {
+	color: #187bc2;
+	border-bottom: 2px solid #187bc2;
+}
+ /*頭部下拉列表顯示*/
+ 
+ .study-choose {
+ 	margin-top: 0;
+ 	margin-bottom: 0;
+ 	padding-left: 0;
+ 	width: 100%;
+ 	padding-top: 5px;
+ 	padding-bottom: 5px;
+ 	background-color: #f7f6fb;
+ }
+ 
+ .study {
+ 	float: left;
+ 	width: 20%;
+ 	height: 100%;
+ 	margin: 5px 0;
+ 	text-align: center;
+ }
+ 
+ .study> div {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 45px;
+ 	height: 45px;
+ }
+ 
+ .study> span {
+ 	display: block;
+ 	text-align: center;
+ 	font-size: 11px;
+ 	overflow: hidden;
+ 	white-space: nowrap;
+ 	text-overflow: ellipsis;
+ }
+ 
+ .study-cha> div {
+ 	background: url(../../img/mystudy/img_mylesson.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study-chb> div {
+ 	background: url(../../img/mystudy/img_mynote.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study-chc> div {
+ 	background: url(../../img/mystudy/img_myactivity.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study-chd> div {
+ 	background: url(../../img/mystudy/img_playrecord.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study-che> div {
+ 	background: url(../../img/mystudy/img_integralrecord.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study-chf> div {
+ 	background: url(../../img/mystudy/img_myvideo.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study-chg> div {
+ 	background: url(../../img/mystudy/img_studyplanning.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study-chh> div {
+ 	background: url(../../img/mystudy/img_learningrankings.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study-chi> div {
+ 	background: url(../../img/mystudy/img_learningfiles.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study-chj> div {
+ 	background: url(../../img/mystudy/img_ezchangerecords.png) no-repeat;
+ 	background-size: 45px 45px;
+ }
+ 
+ .study {
+ 	border-radius: 5px;
+ }
+ 
+ .study:active {
+ 	background-color: #d1d1d1;
+ }
+ /*子页面样式*/
+ 
+ body,
+ .mui-content {
+ 	background-color: #fff;
+ }
+ 
+ .mui-content>.mui-table-view:first-child {
+ 	margin-top: 0;
+ }
+ 
+ .mui-slider-handle> img {
+ 	float: left;
+ 	width: 90px;
+ 	height: 75px;
+ }
+ 
+ .mui-slider-handle> h4 {
+ 	margin: 0 0 10px 100px;
+ 	padding-top: 5px;
+ 	font-size: 14px;
+ 	white-space: nowrap;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ }
+ 
+ .studyed {
+ 	margin: 0 10px 0 4px;
+ }
+ 
+ .studying {
+ 	margin-left: 10px;
+ }
+ 
+ .studying-active {
+ 	font-size: 14px;
+ 	color: red;
+ }
+ 
+ .studyed-common-sizecol {
+ 	font-size: 14px;
+ 	color: #b9b9b9;
+ }
+ 
+ .mui-table-view-cell {
+ 	padding-left: 15px;
+ }
+ /*右划样式*/
+ 
+ .mui-table-view-cell>.mui-slider-left>.mui-btn,
+ .mui-table-view-cell>.mui-slider-right>.mui-btn {
+ 	padding: 0 20px;
+ }
+ 
+ .mui-table-view-cell>.mui-slider-left>.mui-btn.mui-icon,
+ .mui-table-view-cell>.mui-slider-right>.mui-btn.mui-icon {
+ 	font-size: 15px;
+ }

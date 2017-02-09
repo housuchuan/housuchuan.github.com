@@ -1,0 +1,390 @@
+/** 
+*作者：孙尊路
+*时间：2016-06-22 11:21
+*描述：研习圈 页面样式
+**/
+
+.mui-bar-nav~.mui-content {
+	padding-top: 57px;
+}
+
+.mui-content {
+	background-color: #f7f7fb;
+}
+
+input[type=search] {
+	margin-bottom: 10px;
+	border-radius: 14px;
+	background-color: #ffffff;
+	border: 1px solid #dfdfe1;
+}
+
+.mui-search {
+	padding-right: 11px;
+}
+
+.mui-search .mui-placeholder {
+	color: #a9a9a9;
+	font-size: 14px;
+}
+
+
+/*頭部下拉列表顯示*/
+
+body {
+	background-color: #fff;
+}
+
+.study-choose {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	width: 100%;
+	height: 75px;
+	padding-top: 5px;
+	z-index: 1000;
+	background-color: #f7f6fb;
+	box-shadow: 5px 5px 5px #d4d4d4;
+}
+
+.study {
+	float: left;
+	width: 50%;
+	/*margin-left: 16.5%;*/
+	height: 100%;
+	text-align: center;
+}
+
+.study> div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 45px;
+	height: 45px;
+}
+
+.study> span {
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 1px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.study-personalpage {
+	background: url(../../img/studyCircle/img_personalpage.png) no-repeat;
+	background-size: 45px 45px;
+}
+
+.study-managecircle {
+	background: url(../../img/studyCircle/img_managecircle.png) no-repeat;
+	background-size: 45px 45px;
+}
+
+.study-managermanage {
+	background: url(../../img/studyCircle/img_managermanage.png) no-repeat;
+	background-size: 45px 45px;
+}
+
+.study-createcircle {
+	background: url(../../img/studyCircle/img_createcircle.png) no-repeat;
+	background-size: 45px 45px;
+}
+
+.study {
+	border-radius: 5px;
+}
+
+.study:active {
+	background-color: #d1d1d1;
+}
+
+.mui-icon-plusempty:before {
+	content: '\e468';
+}
+
+#add-icon {
+	width: 24px;
+	height: 24px;
+	float: right;
+}
+
+.circle-search {
+	margin: 0 5px;
+}
+
+#search-icon {
+	position: absolute;
+	right: 25px;
+	top: 14px;
+}
+
+.section-left> ul {
+	position: absolute;
+	top: 95px;
+	bottom: 0;
+}
+
+.section-left> ul> li {
+	height: 70px;
+	line-height: 48px;
+}
+
+.topic-choice {
+	width: 85px;
+	padding-right: 0;
+	font-size: 14px;
+}
+
+.topic-choice> div {
+	width: 70px;
+	height: 48px;
+	text-align: left;
+	line-height: 48px;
+	margin-top: 0;
+	padding: 0;
+}
+
+.topic-choice:after {
+	height: 0px;
+}
+
+.mui-navigate-right:after,
+.mui-push-right:after {
+	content: none;
+}
+
+.section-left-active {
+	color: #187bc2;
+	border-right: 4px solid #187bc2;
+}
+
+.mui-scroll-wrapper {
+	z-index: -2;
+	margin-top: 101px;
+}
+
+.topic-choice> div {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.mui-table-view:after {
+	height: 0;
+}
+
+#listdata> li {
+	padding: 0;
+}
+
+
+/*右边主题内容显示*/
+
+.mui-right-scroll {
+	margin-top: 0;
+}
+
+.mui-right {
+	z-index: 10;
+	position: absolute;
+	top: 101px;
+	right: 0;
+	bottom: 0;
+	left: 85px;
+	padding-left: 10px;
+	background-color: #fff;
+	border-left: 1px solid #e0e0e0;
+}
+
+.section-right {
+	position: relative;
+	height: 70px;
+	margin-left: 8px;
+	padding: 8px 0 8px 0;
+	border-bottom: 1px solid #dddddd;
+}
+
+.section-right> img {
+	float: left;
+	display: inline-block;
+	width: 53px;
+	height: 53px;
+	border: 1px solid #dddddd;
+}
+
+.section-right-fontSize {
+	font-size: 10px;
+	float: left;
+}
+
+.section-right-theme {
+	display: inline-block;
+	width: 80px;
+	font-size: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-left: 10px;
+	margin-top: 6px;
+}
+
+.section-right-number,
+.section-right-aNumber {
+	color: #187bc2;
+	margin-left: 5px;
+}
+
+.section-right-member,
+.section-right-answer {
+	color: #d0d0d0;
+}
+
+.section-right-number {
+	margin-left: 10px;
+}
+
+.section-right> button {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	padding: 0;
+	width: 60px;
+	height: 30px;
+	font-size: 11px;
+	/*color: #187bc2;*/
+	border: 1px solid #187bc2;
+}
+
+.join {}
+
+
+/*右划样式*/
+
+.mui-table-view-cell>.mui-slider-left>.mui-btn,
+.mui-table-view-cell>.mui-slider-right>.mui-btn {
+	font-size: 18px;
+	padding: 0 20px;
+}
+
+
+/*申请加入弹出样式 <!--遮罩层-->*/
+
+#zhezhao-area {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1006;
+	-moz-opacity: 0.5;
+	opacity: .50;
+	filter: alpha(opacity=50);
+}
+
+.join-circle {
+	position: fixed;
+	width: 95%;
+	margin-left: 2.5%;
+	border-radius: 5px;
+	background-color: #fafafa;
+	z-index: 1007;
+	display: none;
+}
+
+.circle-bar {
+	width: 100%;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #1ebaf3;
+}
+
+.mui-icon-closeempty {
+	float: right;
+	margin: 6px 4px 0 0;
+	color: #fff;
+	font-size: 30px;
+}
+
+
+/*名称及描述*/
+
+.circle-input {
+	margin-top: 10px;
+	padding: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	/*background-color: #fff;*/
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+.circle-input textarea{
+	height: 80px;
+}
+.cut-line {
+	width: 100%;
+	height: 1px;
+	background-color: #e0e0e0;
+}
+
+.button-area> button {
+	float: left;
+	display: inline-block;
+	width: 45%;
+	margin: 10px 2.5%;
+	padding: 13px 0;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.cancel-btn {
+	background-color: #d1d1d1;
+}
+
+.confirm-btn {
+	background-color: #1ebaf3;
+}
+
+
+/***
+  * 释放立即刷新 刷新字样调整为0
+  * */
+
+.mui-bar-nav~.mui-content .mui-pull-top-pocket {
+	top: 0px;
+}
+
+
+/*****************绘制img的左上角三角形以及数字***********/
+
+.topleft-triangle {
+	position: absolute;
+	z-index: 10;
+	width: 0;
+	height: 0;
+	top: 0;
+	right: 0;
+	border-top: 60px solid gray;
+	border-left: 110px solid transparent;
+}
+
+.blue-triangle {
+	border-top: 40px solid blue;
+}
+
+.topleft-text {
+	position: absolute;
+	z-index: 11;
+	top: -1px;
+	right: 3px;
+	font-size: 12px;
+	color: #FFFFFF;
+}

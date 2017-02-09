@@ -1,0 +1,188 @@
+/**
+ * 作者：戴科
+ * 日期：2016-04-05
+ * 介绍：教育关工委 首页pad
+ */
+
+html,
+body {
+	height: 100%;
+}
+
+.mui-content {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	color: #333333;
+}
+
+.mui-bar-nav {
+	background-color: #187bc2;
+}
+
+.mui-bar-nav h1 {
+	color: #ffffff;
+	font-size: 18px;
+}
+
+
+/*图标*/
+
+.wh-padded {
+	width: 100%;
+	height: 140px;
+	background-color: #fff;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.wh-padded-item {
+	float: left;
+	height: 100px;
+	margin: 19px 0;
+	width: 33.33333%;
+	text-align: center;
+	border-right: 1px dashed #dbdbdb;
+}
+
+.wh-padded-item img {
+	width: 74px;
+	height: 74px;
+}
+
+.wh-padded-item span {
+	display: block;
+	font-size: 12px;
+	color: #333;
+}
+
+.wh_end {
+	border: none;
+}
+
+
+/*更多*/
+
+.kecheng {
+	height: 40px;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 40px;
+}
+
+.kecheng span:first-child {
+	font-size: 14px;
+}
+
+.kecheng-right {
+	float: right;
+}
+
+#more {
+	font-size: 10px;
+	color: #adadad;
+}
+
+.kecheng-right img {
+	width: 10px;
+	height: 5px;
+}
+
+
+/*课程内容*/
+
+.content {
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	background-color: white;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.course {
+	position: relative;
+	width: 19%;
+	float: left;
+	margin-right: 1%;
+	margin-bottom: 9px;
+}
+
+.course-pic {
+	display: block;
+	width: 200px;
+	height: 125px;
+}
+
+.title {
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+
+ul {
+	margin-top: 4px;
+	float: left;
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+
+li {
+	width: 10px;
+	height: 10px;
+	float: left;
+	list-style-type: none;
+	margin-right: 2px;
+}
+
+/**
+ * 视频点播播放按钮css
+ */
+
+#zhezhao-area {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	filter: alpha(opacity=70);
+}
+
+#alertWin {
+	position: fixed;
+	display: none;
+	font-size: 18px;
+	padding: 15px;
+	color: #000000;
+	/*top: 300px;*/
+	width: 40%;
+	left: 30%;
+	z-index: 1002;
+	border-radius: 6px;
+	background-color: #EEEEEE;
+}
+
+#btnGroup {
+	margin-top: 100px;
+	text-align: center;
+}
+
+#btnGroup button {
+	padding: 8px 30px;
+	margin: 0 8px;
+}
+
+.noData {
+	display: none;
+	line-height: 150px;
+	text-align: center;
+	color: #E1E1E1;
+}

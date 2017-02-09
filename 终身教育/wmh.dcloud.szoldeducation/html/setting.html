@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>设置</title>
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/setting.css" />
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav yz-header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">设置</h1>
+		</header>
+		<div class="mui-content">
+			<div class="info-block">
+				<ul class="info-ul">
+					<a href=""></a>
+					<!--<li class="info-li">
+						<span>软件下载</span>
+						<i class="mui-icon mui-icon-arrowright"></i>
+					</li>-->
+					<li class="info-li clearSession">
+						<span>清除缓存</span>
+						<em id="name"></em>
+					</li>
+				</ul>
+			</div>
+			<div class="info-block">
+				<ul class="info-ul">
+					<li class="info-li" id="checkUpdate">
+						<span>检查更新</span>
+						<i class="mui-icon  person-arrow"></i>
+					</li>
+					<li class="info-li">
+						<span>应用版本</span>
+						<em id="ResourceversionNum">V 1.0.0</em>
+					</li>
+					<!--<li class="info-li ScanCode">
+						<span>软件下载</span>
+						<i class="mui-icon mui-icon-arrowright person-arrow"></i>
+					</li>-->
+				</ul>
+			</div>
+			<div class="quit">
+				<i class="quit-icon"></i>
+				<button type="button" class="mui-btn mui-btn-danger mui-btn-block" id="LogOut">注销</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../js/"
+			});
+			seajs.use('bizlogic/setting');
+		</script>
+	</body>
+
+</html>

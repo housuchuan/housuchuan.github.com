@@ -1,0 +1,112 @@
+/*
+ * 作者：侯苏川
+        时间：2016-06-28 09:18:07
+        描述 ：我的文档--笔记
+ * /
+/*标题选择样式设计*/
+
+body {
+	background-color: #fff;
+}
+
+.column {
+	background-color: #f7f6fb;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.column > span:first-child {
+	margin-left: 15px;
+	margin-right: 14px;
+}
+
+.column > span {
+	display: inline-block;
+	padding: 0 11.5px;
+	line-height: 40px;
+}
+
+.items-active {
+	color: #187bc2;
+	border-bottom: 2px solid #187bc2;
+}
+
+
+/*搜索框样式设计*/
+
+input[type=search] {
+	margin-bottom: 0;
+	border-radius: 15px;
+	background-color: #eeeff3;
+}
+
+.mui-search:before {
+	top: 70%;
+}
+
+.input-area {
+	padding: 10px 10px;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #fff;
+}
+
+
+/*内容样式设计*/
+
+.mui-table-view:after {
+	left: 15px;
+}
+
+.selection-items > li > span {
+	display: block;
+}
+
+.selection-items > li > span:first-child {
+	margin-bottom: 12px;
+	font-size: 14px;
+}
+
+.selection-items > li > span:last-child {
+	font-size: 12px;
+	color: #adadad;
+}
+
+
+/*视频内容样式设计*/
+
+.mui-slider-handle > img {
+	float: left;
+	width: 100px;
+	height: 75px;
+	/*background: url(../../img/mystudy/img_my_study.jpg) no-repeat;*/
+	/*background-size: 100px 75px;*/
+}
+
+.mui-slider-handle > h4 {
+	margin: 0 0 10px 110px;
+	padding-top: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 14px;
+}
+
+.studyed {
+	margin: 0 0 0 10px;
+}
+
+.studying {
+	margin-left: 10px;
+}
+
+.studyed-common-sizecol {
+	font-size: 12px;
+	color: #b9b9b9;
+}
+
+.timedata {
+	margin-left: 5px;	
+}
+
+.mui-table-view:after {
+	left: 15px;
+}

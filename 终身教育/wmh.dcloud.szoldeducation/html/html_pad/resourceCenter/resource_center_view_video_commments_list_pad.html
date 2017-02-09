@@ -1,0 +1,58 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-12 08:29:45
+        描述： 评论列表 
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>视频播放页面--评论列表</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/resourceCenter/resource_center_view_video_commments_list_pad.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper review-notes-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<!--用户评论笔记-->
+					<div class="review-notes">
+						<div class="newly-review">
+							<span>最新评论</span>
+						</div>
+						<ul class="mui-table-view review-notes-content" id="listdata">
+							<!--<li class="clearfix">
+								<img src="../../img/menubar/img-menubar.jpg" />
+								<div class="user-review-newlyInfo">
+									<div class="mui-ellipsis clearfix">
+										<span class="user-name">永辉大少</span><span class="user-praise">1赞</span>
+										<div class="praise-icon"></div>
+									</div>
+									<span class="time-records">8小时前</span>
+									<div>不错不错，老少皆宜不错不错，老少皆宜不错不错，老少皆宜</div>
+								</div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../../js/"
+			});
+			seajs.use('bizlogic/js_pad/resourceCenter/resource_center_view_video_commments_list_pad');
+		</script>
+	</body>
+
+</html>

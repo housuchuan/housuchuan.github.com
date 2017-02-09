@@ -1,0 +1,61 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-12 08:29:45
+        描述：  学校概况子页面 
+-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>学校概况</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/homepage/szpark_school_summary.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket90.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">学校概况</h1>
+		</header>
+		<div id="slider" class="mui-slider">
+				<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll" id="sliderSegmentedControl2">
+						<a class="mui-control-item mui-active" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa1">学校简介</a>
+						<a class="mui-control-item" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa2">学校荣誉</a>
+						<a class="mui-control-item" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa3">机构设置</a>
+						<a class="mui-control-item" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa4">大事件</a>
+						<a class="mui-control-item" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa5">校园风光</a>
+						<a class="mui-control-item" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa6">交通信息</a>
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa1" class="mui-slider-item mui-control-content mui-active"></div>
+					<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa2" class="mui-slider-item mui-control-content"></div>
+					<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa3" class="mui-slider-item mui-control-content"></div>
+					<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa4" class="mui-slider-item mui-control-content"></div>
+					<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa5" class="mui-slider-item mui-control-content"></div>
+					<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa6" class="mui-slider-item mui-control-content"></div>
+				</div>
+			</div>
+		<div class="mui-content">
+
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_school_summary');
+		</script>
+	</body>
+
+</html>

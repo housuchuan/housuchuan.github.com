@@ -1,0 +1,114 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-06-23 13:51:07
+ * 描述: 个人资料子页面
+ */
+body {
+	margin-bottom: 55px;
+}
+
+.mui-content> div {
+	line-height: 38.5px;
+	text-indent: 10px;
+}
+
+
+/*用户信息样式*/
+
+.mui-table-view-cell {
+	padding-left: 13px;
+}
+
+.mui-table-view-cell:after {
+	left: 10px;
+}
+
+#content li input[type=text] {
+	width: 60%;
+	font-size: 14px;
+} 
+
+.user-log> img {
+	width: 30px;
+	height: 30px;
+	vertical-align: -7px;
+	margin-left: 24px;
+}
+
+.user-log> span {
+	line-height: 35px;
+}
+
+.user-log> span:last-child {
+	margin-left: 24px;
+}
+
+.user-common,
+.user-hobby {
+	margin-left: 10px;
+	border-bottom: 1px solid #e3e3e3;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.user-common> span:last-child,
+.user-hobby> span:last-child {
+	display: inline-block;
+	width: 200px;
+	line-height: 57px;
+	margin-left: 24px;
+}
+
+
+/*按钮样式*/
+
+.save {
+	position: fixed;
+	bottom: 0;
+	border: none;
+	background-color: #635CF0;
+}
+
+.mui-btn-block {
+	margin-bottom: 0;
+}
+
+
+/*重写mui输入框*/
+
+.mui-input-row label {
+	padding: 11px 0px 11px 0px;
+}
+
+.mui-input-row label {
+	width: 67px;
+}
+
+.mui-input-row label~input,
+.mui-input-row label~select,
+.mui-input-row label~textarea {
+	float: left;
+	padding-left: 25px;
+}
+/*隐藏选择文件*/
+.common-hidden{
+	display: none;
+}
+
+/*通知提醒*/
+.noticeWay {
+	font-size: 13px;
+}
+
+.noticeWay div {
+	margin-top: 5px;
+}
+
+.noticeWay input {
+	vertical-align: -3px;
+}
+
+.noticeWay div:last-child input {
+	margin-left: 13px;
+}

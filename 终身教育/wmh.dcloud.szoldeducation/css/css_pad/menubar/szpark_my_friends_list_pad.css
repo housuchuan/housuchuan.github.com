@@ -1,0 +1,76 @@
+/**
+ *作者：侯苏川 
+ *时间：2016-08-08 15:08:45
+ *描述：好友模块子页面 
+ */
+/*按钮样式*/
+
+/*tab切换区域*/
+.friendsBar {
+	font-size: 14px;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.friendsBar span {
+	display: inline-block;
+	margin-left: 15px;
+	line-height: 40px;
+	font-size: 16px;
+} 
+
+.friends-tabBar {
+	float: right;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.friends-tabBar span {
+	font-size: 13px;
+}
+
+.friends-tabActive {
+	color: #007AFF;
+	border-bottom: 1px solid #007AFF;
+}
+
+.mui-media-body {
+	width: 45%;	
+}
+
+.mui-media-body span {
+	font-size: 14px;
+}
+
+.mui-media-body p {
+	font-size: 12px;
+}
+
+.mui-media img {
+	border-radius: 20px;
+}
+
+.friends-operation {
+	position: absolute;
+	right: 5px;
+	top: 30%;
+}
+
+.friends-operation button {
+	display: inline-block;
+	width: 40px;
+	padding: 3px 0;
+	font-size: 12px;
+	color: #ffffff;
+}
+
+.friends-operation button:first-child {
+	background-color: #00a348;
+}
+
+.friends-operation button:last-child {
+	background-color: #b2b2b2;
+}
+
+#delete {
+	background-color: #e32929;	
+}

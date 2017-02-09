@@ -1,0 +1,283 @@
+/**
+ * 作者：戴科
+ * 日期：2016-04-05
+ * 简介：老年教育首页页面css
+ */
+body{
+	background: #f7f6fb;
+}
+.suzhou_oldeducation_nav_title{
+	width:100%;
+	height: 40px;
+	font-size: 14px;
+	color: #333333;
+	line-height: 40px;
+	padding-left: 10px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.suzhou_oldeducation_nav{
+	width: 100%;
+	border-bottom: 1px solid #e0e0e0;
+}
+.suzhou_oldeducation_view{
+	width: 100%;
+	background: #ffffff;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.suzhou_oldeducation_view a{
+	color: #000000;
+}
+.suzhou_oldeducation_view li{
+	width: 16.6%;
+	height: 60px;
+	margin: 15px 0 ;
+	text-align: center;
+	font-size: 12px;
+	float: left;
+	border-right: 1px dashed #d8d8d8;
+}
+.suzhou_oldeducation_view_title{
+	width: 100%;
+	background: #ffffff;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.suzhou_oldeducation_view_title li{
+	width: 20%;
+	height: 110px;
+	margin: 15px 0 ;
+	text-align: center;
+	font-size: 12px;
+	float: left;
+	border-right: 1px dashed #d8d8d8;
+}
+.suzhou_oldeducation_bianji1{
+	display: block;
+	width: 74px;
+	height: 74px;
+	margin: 10px auto;
+	background: url(../../img/homepage/img_bianji1.jpg) no-repeat;
+	background-size: 74px 74px;
+}
+.suzhou_oldeducation_bianji2{
+	display: block;
+	width: 74px;
+	height: 74px;
+	margin: 10px auto;
+	background: url(../../img/homepage/img_bianji2.jpg) no-repeat;
+	background-size: 74px 74px;
+}
+.suzhou_oldeducation_bianji3{
+	display: block;
+	width: 74px;
+	height: 74px;
+	margin: 10px auto;
+	background: url(../../img/homepage/img_bianji3.jpg) no-repeat;
+	background-size: 74px 74px;
+}
+.suzhou_oldeducation_bianji4{
+	display: block;
+	width: 74px;
+	height: 74px;
+	margin: 10px auto;
+	background: url(../../img/homepage/img_bianji4.jpg) no-repeat;
+	background-size: 74px 74px;
+}
+.suzhou_oldeducation_bianji5{
+	display: block;
+	width: 74px;
+	height: 74px;
+	margin: 10px auto;
+	background: url(../../img/homepage/img_oldeducation_nav1.png) no-repeat;
+	background-size: 74px 74px;
+}
+.suzhou_oldeducation_nav1{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav1.png) no-repeat;
+	background-size: 41px 41px;
+}
+.suzhou_oldeducation_nav2{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav2.png) no-repeat;
+	background-size: 41px 41px;
+}
+.suzhou_oldeducation_nav3{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav3.png) no-repeat;
+	background-size: 41px 41px;
+}
+.suzhou_oldeducation_nav4{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav4.png) no-repeat;
+	background-size: 41px 41px;
+}
+.suzhou_oldeducation_nav5{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav5.png) no-repeat;
+	background-size: 41px 41px;
+}
+.suzhou_oldeducation_nav6{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav6.png) no-repeat;
+	background-size: 41px 41px;
+}
+.suzhou_oldeducation_nav7{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav7.png) no-repeat;
+	background-size: 41px 41px;
+}
+.suzhou_oldeducation_nav8{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav8.png) no-repeat;
+	background-size: 41px 41px;
+}
+.suzhou_oldeducation_nav9{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav9.png) no-repeat;
+	background-size: 41px 41px;
+}
+.suzhou_oldeducation_nav10{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav10.png) no-repeat;
+	background-size: 41px 41px;
+}
+.suzhou_oldeducation_nav11{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav10.png) no-repeat;
+	background-size: 41px 41px;
+}
+.suzhou_oldeducation_nav12{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav10.png) no-repeat;
+	background-size: 41px 41px;
+}
+.suzhou_oldeducation_nav13{
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 5px auto;
+	background: url(../../img/homepage/img_oldeducation_nav10.png) no-repeat;
+	background-size: 41px 41px;
+}
+/**
+ * 课程列表
+ */
+.suzhou_oldeducation_course_view{
+		width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	overflow: hidden;
+}
+.suzhou_oldeducation_course_view_cell{
+	width: 23%;
+	margin-right: 4%;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+}
+.suzhou_oldeducation_course_more{
+	color: #b7b7b7;
+	height: 40px;
+	line-height: 40px;
+	font-size: 10px;
+	float: right;
+	margin-right: 10px;
+}
+.suzhou_more{
+	display: block;
+	width: 10px;
+	height: 6px;
+	float: right;
+	margin-top: 17px;
+	background: url(../../img/educate/img_more.png) no-repeat;
+	background-size: 10px 6px;
+}
+.suzhou_active{
+	color: #187bc2;
+	border-bottom: 3px solid #187bc2;
+}
+.suzhou_oldeducation_course{
+	width: 100%;
+	background: #ffffff;
+	overflow: hidden;
+	border-bottom: 1px solid #e0e0e0;
+}
+.suzhou_oldeducation_course_show{
+	width: 19%;
+	height: 165px;
+	float: left;
+	margin: 10px 0 0 10px;
+	font-size: 12px;
+}
+.suzhou_oldeducation_course_pic{
+	width: 100%;
+	height: 120px;
+}
+.suzhou_stars{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.suzhou_stars_list{
+	width: 10px;
+	height: 10px;
+	margin-top: 5px;
+	margin-right: 2px;
+	float: left;
+}
+
+/**
+ * 星级
+ */
+.suzhou_stars_sellected{
+	background: url(../../img/educate/img_level_selected.png) no-repeat;
+	background-size: 10px 10px;
+}
+.suzhou_stars_unsellect{
+	background: url(../../img/educate/img_level.png) no-repeat;
+	background-size: 10px 10px;
+}

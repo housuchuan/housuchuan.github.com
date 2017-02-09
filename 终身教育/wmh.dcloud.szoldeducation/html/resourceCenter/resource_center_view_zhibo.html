@@ -1,0 +1,91 @@
+<!-- 
+        作者：朱晓琪
+        时间：2016-06-28
+        描述：资源中心index
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>资源中心</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/resourceCenter/resource_center_view_zhibo.css" />
+	</head>
+
+	<body>
+		<!--<header class="mui-bar mui-bar-nav clearfix">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">节目直播</h1>
+		</header>-->
+		<div class="mui-content">
+			<div id="player" style="width:100%;height:222px;"></div>
+			<!--<div id="shortIntroduce">
+				<div id="shortIntroduceTitle">简介</div>
+				<div id="shortIntroduceContent" style="text-indent: 25px;">-->
+			<!--九层妖塔<br/> 导演： 陆川<br/> 主演： 赵又廷 姚晨 凤小岳 李晨 唐嫣 冯瓅 李光洁 王庆祥 吴军 王德顺<br/> 时长： 118分钟<br/> 地区： 中国大陆<br/> 类型： 动作 惊悚 奇幻 冒险<br/> 年代：2015
+					<br/> 剧情介绍：
+					<br/> 1979年，昆仑山发生神秘生物骸骨，由胡八一（赵又廷 饰）率领的探险队深入昆仑山腹地，寻找有关古生物遗迹的更多秘密，却不料在这个过程中遭到不同神秘生物的轮番攻击，并意外坠入九层妖塔，除胡八一外，一行人生死成谜。胡八一退伍后回到北京，重逢了发小王凯旋（冯粒 饰），并在神秘人（李晨 饰）与科考队（凤小岳、唐嫣、李光洁 饰）两股力量的夹缝中重新踏上了探寻未知文明的征程，途中与Shirley杨（姚晨 饰）邂逅，熟识的面孔唤醒了他身处探险队那段日子的记忆。此行凶险，在还没来得及搞清楚Shirley的真实身份之际，胡八一、Shirley、王胖子率领一行人便在王子墓、石油小镇等地遭到不明生物的轰炸，这里所发生的一切再度指向九层妖塔，而这次等待他们的，将是一个尘封已千年的未解之谜…-->
+			<!--</div>
+			</div>-->
+
+			<!--课次需求不确定-->
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">简介</a>
+					<a class="mui-control-item" href="#item2mobile">课次</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div id="shortIntroduce">
+									<!--简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper" id="pullrefresh">
+							<div class="mui-scroll">
+								<ul class="list-container list-container-selection mui-table-view" id="listdata">
+									<!--<li class="mui-table-view-cell setItem">
+										<div class="topleft-triangle"></div><div class="topleft-text">正在开播</div>
+										<div class="setItemName">冶金技术发展背景冶金技术发展背景冶金技术发展背景冶金技术发展背景</div>
+										</br>
+										<div class="broadcastTimeWrapper">
+											<div class="broadcastTime"><span>直播开始时间：</span><span>2016-10-15 12:10:12</span></div>
+											<div class="broadcastTime"><span>直播结束时间：</span><span>2016-10-20 12:10:12</span></div>
+											<div class="broadcastTime"><span>直播状态：</span><span>0</span></div>
+										</div>
+									</li>-->
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<!--<script type="text/javascript" src="../../js/libs/blive.js"></script>-->
+		<script type="text/javascript" charset="utf-8" src="http://yuntv.letv.com/player/live/blive.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			mui(".personlist").scroll();
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/resourceCenter/resource_center_view_zhibo");
+		</script>
+	</body>
+
+</html>

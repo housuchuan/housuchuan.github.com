@@ -1,0 +1,582 @@
+/**
+ *作者：侯苏川 
+ *时间：2016-09-20 11:22:00
+ *描述：圈子动态界面设计  
+ */
+
+
+/*header样式设计*/
+
+.mui-bar-nav {
+	background: url(../../../img/img_pad/studycircle/img_circleBackground.jpg) no-repeat;
+	background-size: 100% 70%;
+}
+
+.mui-bar {
+	height: inherit;
+	padding: 0;
+}
+
+.mui-icon-search {
+	float: right;
+}
+
+.mui-bar-nav.mui-bar .mui-icon {
+	margin: 0;
+}
+
+.columnImg {
+	position: relative;
+	display: inline-block;
+	padding: 2px;
+	height: 77px;
+	left: -35px;
+	top: 55px;
+	z-index: 10;
+	border: 1px solid #dfdfdf;
+	background-color: #ffffff;
+}
+
+.columnImg img {
+	width: 71px;
+	height: 71px;
+}
+
+.parkBroadCast {
+	line-height: 34px;
+	text-indent: 106px;
+	color: #ffffff;
+	background-color: #000000;
+	opacity: .5;
+}
+
+.park-info {
+	position: relative;
+	padding: 28px 15px 14px 13px;
+	font-size: 14px;
+	background-color: #ffffff;
+}
+
+.park-member {
+	float: left;
+	margin-right: 14px;
+}
+
+.park-member span:first-child {
+	margin-right: 5px;
+	color: #ff0000;
+}
+
+.park-member span:last-child {
+	color: #999999;
+}
+
+.park-describe {
+	width: inherit;
+	margin-left: 80px;
+}
+
+.park-member span:last-child {
+	width: 70%;
+	color: #999999;
+}
+
+.park-describe p {
+	width: 80%;
+	color: #999999;
+	margin-left: 40px;
+}
+
+.title {
+	width: 70%;
+	color: #999999;
+	margin: 10px 0px;
+}
+
+.joinBtn.joinBtn {
+	position: absolute;
+	right: 15px;
+	top: 30px;
+	width: inherit;
+	padding: 7px 22px;
+	font-size: 14px;
+}
+
+
+/*动态区样式设计*/
+
+.mui-bar-nav~.mui-content {
+	padding-top: 209px;
+}
+
+.dynatmic-header .mui-btn-block {
+	width: inherit;
+}
+
+.dynatmic-header> div:first-child {
+	line-height: 49px;
+	text-indent: 16px;
+	color: #6a9fd1;
+}
+
+.input-search,
+.dynatmic-header> div:first-child {
+	display: inline-block;
+}
+
+.input-search {
+	float: right;
+	margin-top: 7.5px;
+}
+
+.input-search input {
+	width: 181px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.input-search> input,
+button {
+	float: left;
+	height: 30px;
+}
+
+input[type=text],
+.mui-btn-block {
+	margin-bottom: 0;
+}
+
+.searchBtn,
+.publishBtn {
+	padding: 0;
+	font-size: 14px;
+}
+
+.searchBtn {
+	padding: 5px 12px;
+	font-size: 18px;
+}
+
+.searchBtn a {
+	color: #ffffff;
+}
+
+.publishBtn {
+	margin: 0 15px 0 8px;
+	padding: 6px 19px;
+}
+
+.publishBtn img {
+	width: 16px;
+	height: 16px;
+}
+
+.publishBtn span {
+	margin-left: 6px;
+	vertical-align: 2px;
+}
+
+
+/*动态列表*/
+
+.mui-table-view:after,
+.mui-table-view:before {
+	content: none;
+}
+
+.mui-scroll-wrapper {
+	margin-top: 258px;
+}
+
+.mui-table-view {
+	margin: 0 12px;
+}
+
+.dynatmicList {
+	margin-bottom: 8px;
+	padding: 0;
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+}
+
+.userBaseInfo {
+	margin: 10px 12px;
+}
+
+.dynatmicList p {
+	float: left;
+	margin: 15px 0;
+	padding-right: 40px;
+}
+
+.userFile img {
+	width: 50px;
+	height: 50px;
+	border-radius: 20px;
+}
+
+.dynatmicUserInfo span:first-child {
+	color: #187bc2;
+	display: block;
+}
+
+.dynatmicUserInfo span:last-child {
+	display: block;
+	font-size: 14px;
+	color: #adadad;
+}
+
+.userFile img,
+.dynatmicUserInfo {
+	float: left;
+}
+
+.dynatmicUserInfo {
+	margin: 6px 0 0 11px;
+}
+
+.dynamicsImg {
+	display: block;
+}
+
+.dynamicsImg img {
+	width: 24%;
+	height: 140px;
+	margin-right: 1%;
+}
+
+.userOperation {
+	padding: 10px 12px;
+	background-color: #f8f8f8;
+	color: #777777;
+	border-top: 1px solid #e0e0e0;
+	font-size: 14px;
+}
+
+.userOperation div {
+	display: inline-block;
+}
+
+.report-div {
+	float: right;
+	margin-right: 15px;
+}
+
+.delete-div {
+	float: right;
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+.delete-div img {
+	width: 14px;
+	height: 14px;
+	margin-right: 3px;
+	vertical-align: -2px;
+}
+
+.comment div:first-child {
+	width: 16px;
+	height: 13px;
+	margin-right: 5px;
+	background: url(../../../img/menubar/img-reporticon.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.praise {
+	margin-left: 18px;	
+}
+
+.praise div:first-child {
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+.praise-common {
+	background: url(../../../img/menubar/img-praiseicon.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.praiseFlur {
+	background: url(../../../img/menubar/img_praiseactive.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/*发表动态样式*/
+
+.publish-list {
+	display: none;
+	position: fixed;
+	top: 30%;
+	width: 60%;
+	margin-left: 20%;
+	padding: 10px 12px;
+	background-color: #f7f6fb;
+	z-index: 1003;
+}
+
+.infoInput {
+	margin-top: 15px;
+}
+
+.infoInput> textarea {
+	height: 200px;
+}
+
+.comment-btn> button {
+	width: 45%;
+	margin-left: 3%;
+	padding: 0;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.comment-btn> button:first-child {
+	background-color: #e0e0e0;
+}
+
+.comment-btn> button:last-child {
+	background-color: #187bc2;
+}
+
+
+/*遮罩*/
+
+.zhezhaoConetnt {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #000000;
+	opacity: .5;
+	z-index: 13;
+}
+
+
+/*申请加入弹出样式 <!--遮罩层-->*/
+
+#zhezhao-area {
+	display: none;
+	position: fixed;
+	left: 0%;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.5;
+	opacity: .50;
+	filter: alpha(opacity=50);
+}
+
+.join-circle {
+	position: fixed;
+	top: 20%;
+	width: 50%;
+	margin-left: 25%;
+	border-radius: 5px;
+	background-color: #fafafa;
+	z-index: 1002;
+	display: none;
+}
+
+.circle-bar {
+	width: 100%;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #187bc2;
+}
+
+.mui-icon-closeempty {
+	float: right;
+	margin: 6px 4px 0 0;
+	color: #fff;
+	font-size: 30px;
+}
+
+
+/*名称及描述*/
+
+.circle-input {
+	margin-top: 10px;
+	padding: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	/*background-color: #fff;*/
+	border-top: 1px solid #e0e0e0;
+	/*border-bottom: 1px solid #e0e0e0;*/
+}
+
+.circle-input> textarea {
+	height: 200px;
+}
+
+.cut-line {
+	width: 100%;
+	height: 1px;
+	background-color: #e0e0e0;
+}
+
+.cancel-btn {
+	width: 40%;
+	margin:0 0 10px 25px;
+	float: left;
+	border: none;
+	background-color: #e0e0e0;
+}
+
+.confirm-btn {
+	width: 40%;
+	float: right;
+	margin:0 25px 10px 0;
+	font-size: 14px;
+	border: none;
+	background-color: #187bc2;
+}
+
+
+/*申请加好友*/
+
+.apply-friends {
+	position: fixed;
+	width: 50%;
+	top: 20%;
+	left: 25%;
+	z-index: 1008;
+	display: none;
+}
+
+.apply-friends> div:first-child {
+	line-height: 40px;
+	text-indent: 14px;
+	font-size: 14px;
+	color: #333333;
+	background-color: #f7f6fb;
+}
+
+.applyInfomation {
+	background-color: #ffffff;
+}
+
+.applyInfomation> div>img {
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 8px 13px;
+	border-radius: 20px;
+}
+
+.applyInfomation> div:first-child {
+	border-top: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.apply-describe {
+	margin: 10px 10px 0 0;
+	font-size: 14px;
+}
+
+.applyNews {
+	font-size: 13px;
+	color: #a0a0a0;
+}
+
+.font-num {
+	float: right;
+}
+
+.font-num> span:first-child {
+	color: #ff0000;
+}
+
+.textarea {
+	margin: 0 10px 13px 0;
+}
+
+.textarea textarea {
+	width: 78%;
+	height: 160px;
+	text-indent: 18px;
+	margin: 15px 0 0 64px;
+	font-size: 14px;
+	border-radius: 7px;
+	overflow-y: hidden
+}
+
+.textarea img {
+	position: absolute;
+	top: 125px;
+	left: 75px;
+	width: 16px;
+	height: 16px;
+}
+
+.applyBtn {
+	padding: 8px 0;
+}
+
+.applyBtn input {
+	display: inline-block;
+	width: 35%;
+	padding: 10px 37px;
+	color: #ffffff;
+	border-radius: 30px;
+}
+
+.applyBtn input:first-child {
+	background-color: #e6e6e6;
+	margin-left: 12%;
+	margin-right: 3px;
+}
+
+.applyBtn input:last-child {
+	background-color: #1ebaf3;
+	margin-left: 3%;
+}
+
+.applyLine {
+	margin-left: 14.5px;
+	width: 1px;
+	height: 15px;
+	background-color: #ffffff;
+}
+
+.hideIcon {
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	color: #777777;
+	background-color: #FFFFFF;
+	border-radius: 20px;
+}
+
+.hideIcon:active {
+	color: orange;
+	background-color: #e6e6e6;
+}
+
+.hid {
+	margin-left: 45%;
+}
+
+.more {
+	position: absolute;
+	right: 150px;
+	bottom: 0px;
+}
+
+.more span {
+	display: inline-block;
+	color: dimgray;
+	width: 60px;
+	text-align: center;
+	font-size: 14px;
+}

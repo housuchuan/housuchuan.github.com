@@ -1,0 +1,152 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-08-09 11:43:07
+        描述 ：我的文档--笔记详情
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的笔记</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/mystudy/szpark_my_note_detailInformation.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket0.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的笔记</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" style="margin-top: 44px;" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--内容选择-->
+					<!--<div class="column">
+						<span class="TA-common items-active">视频</span>
+						<span class="TA-common">文档</span>
+					</div>-->
+					<div class="input-area">
+						<div class="mui-input-row mui-search">
+							<input type="search" class="mui-input-clear" placeholder="请输入您要搜索的内容">
+						</div>
+					</div>
+
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="mui-table-view selection-items" id="listdata">
+						<!--时间轴线-->
+						<!--视频笔记-->
+						<!--<li class="time-line"></li>
+							<li class="note-items">
+								<div class="timer-icon"></div>
+								<div class="play-record">11:06</div>
+								<p>这是测试笔记这是测试笔记这是测试笔记这是测试笔记这是测试笔记</p>
+								<div class="li-bottomItems mui-clearfix">
+									<div>2016/08/05  16:43:31</div>
+									<div class="note-operation">
+										<span class='edit'><img src="../../img/mystudy/img_editIcon.png"/><span>编辑</span></span>
+										<span class='delete'><img src="../../img/mystudy/img_deleteIcon.png"/><span>删除</span></span>
+									</div>
+								</div>
+							</li>
+							<li class="note-items">
+								<div class="timer-icon"></div>
+								<div class="play-record">11:06</div>
+								<p>这是测试笔记这是测试笔记这是测试笔记这是测试笔记这是测试笔记</p>
+								<div class="li-bottomItems mui-clearfix">
+									<div>2016/08/05  16:43:31</div>
+									<div class="note-operation">
+										<span class='edit'><img src="../../img/mystudy/img_editIcon.png"/><span>编辑</span></span>
+										<span class='delete'><img src="../../img/mystudy/img_deleteIcon.png"/><span>删除</span></span>
+									</div>
+								</div>
+							</li>
+							<li class="note-items">
+								<div class="timer-icon"></div>
+								<div class="play-record">11:06</div>
+								<p>这是测试笔记这是测试笔记这是测试笔记这是测试笔记这是测试笔记</p>
+								<div class="li-bottomItems mui-clearfix">
+									<div>2016/08/05  16:43:31</div>
+									<div class="note-operation">
+										<span><img src="../../img/mystudy/img_editIcon.png"/><span>编辑</span></span>
+										<span><img src="../../img/mystudy/img_deleteIcon.png"/><span>删除</span></span>
+									</div>
+								</div>
+							</li>
+							<li class="note-items">
+								<div class="timer-icon"></div>
+								<div class="play-record">11:06</div>
+								<p>这是测试笔记这是测试笔记这是测试笔记这是测试笔记这是测试笔记</p>
+								<div class="li-bottomItems mui-clearfix">
+									<div>2016/08/05  16:43:31</div>
+									<div class="note-operation">
+										<span><img src="../../img/mystudy/img_editIcon.png"/><span>编辑</span></span>
+										<span><img src="../../img/mystudy/img_deleteIcon.png"/><span>删除</span></span>
+									</div>
+								</div>
+							</li>-->
+
+						<!--文档笔记-->
+						<!--<li class="articleNote-items">
+								<p>这是测试笔记这是测试笔记这是测试笔记这是测试笔记这是测试笔记</p>
+								<div class="li-bottomItems mui-clearfix">
+									<div>2016/08/05  16:43:31</div>
+									<div class="note-operation">
+										<span><img src="../../img/mystudy/img_editIcon.png"/><span>编辑</span></span>
+										<span><img src="../../img/mystudy/img_deleteIcon.png"/><span>删除</span></span>
+									</div>
+								</div>
+							</li>
+							<li class="articleNote-items">
+								<p>这是测试笔记这是测试笔记这是测试笔记这是测试笔记这是测试笔记</p>
+								<div class="li-bottomItems mui-clearfix">
+									<div>2016/08/05  16:43:31</div>
+									<div class="note-operation">
+										<span><img src="../../img/mystudy/img_editIcon.png"/><span>编辑</span></span>
+										<span><img src="../../img/mystudy/img_deleteIcon.png"/><span>删除</span></span>
+									</div>
+								</div>
+							</li>
+							<li class="articleNote-items">
+								<p>这是测试笔记这是测试笔记这是测试笔记这是测试笔记这是测试笔记</p>
+								<div class="li-bottomItems mui-clearfix">
+									<div>2016/08/05  16:43:31</div>
+									<div class="note-operation">
+										<span><img src="../../img/mystudy/img_editIcon.png"/><span>编辑</span></span>
+										<span><img src="../../img/mystudy/img_deleteIcon.png"/><span>删除</span></span>
+									</div>
+								</div>
+							</li>-->
+
+					</ul>
+				</div>
+			</div>
+			<!--遮罩-->
+			<div class="zhezhao-area"></div>
+			<!--编辑弹出框-->
+			<div class="editBox">
+				<img src="../../img/mystudy/img_editNoteIcon.png" />
+				<textarea id='textarea' name="" rows="" cols="" placeholder="编辑笔记"></textarea>
+				<div class="editBox-operation">
+					<button type="button" class="mui-btn mui-btn-outlined cancel">取消</button>
+					<button type="button" class="mui-btn mui-btn-outlined save">保存</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/mystudy/szpark_my_note_detailInformation");
+		</script>
+	</body>
+
+</html>

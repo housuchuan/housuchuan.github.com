@@ -1,0 +1,72 @@
+ .mui-content {
+ 	font-size: 14px;
+ 	background-color: #fff;
+ }
+
+ .content-wrapper div:first-child {
+ 	border-top: 1px solid #e2e2e3;
+ }
+.content-wrapper div {
+	background-color: #ffffff;
+}
+ .content-wrapper div:first-child {
+ 	border-bottom: 1px solid #e2e2e3;
+ }
+ .mui-tip {
+	padding: 11px 10px 0 10px;
+	border-bottom: 1px solid #e2e2e3;
+}
+ .mui-tip:last-child {
+ 	border-bottom: none;
+ }
+ .mui-tip > span:first-child {
+ 	color: #619bcf;
+ }
+ .topic {
+ 	margin: 0 10px;
+ }
+ .join-time {
+ 	display: inline-block;
+ 	font-size: 14px;
+ 	margin: 10px 0 0 0;
+ 	color: #999999;
+ }
+ .last-recall {
+ 	font-size: 14px;
+ 	color: #999999;
+ }
+ .last-recall-act {
+  	/*//margin-left: 45px;*/
+  	display: inline-block;
+ 	font-size: 14px;
+ 	margin: 11px 0;
+ 	color: #999999;
+  }
+ .gag {
+ 	font-size: 14px;
+ 	color: #999999;
+ }
+ button {
+ 	float: right;
+ 	width: 45px;
+ 	height: 27px;	
+ 	margin-left: 10px;
+ 	margin-top: -5px;
+ 	margin-bottom: 11px;
+ 	text-align: center;
+ 	padding: 0;
+ }
+ .shield {
+ 	font-size: 12px;
+ 	background-color: #1ebaf3;
+ 	color: #fff;
+ 	width: 60px;
+ }
+ .ignore {
+ 	margin-right: 10px;
+ 	font-size: 12px;
+ 	background-color: #fff;
+ 	color: #1ebaf3;
+ 	border: 1px solid #1ebaf3;
+ 	width: 60px;
+ }

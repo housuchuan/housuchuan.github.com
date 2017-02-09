@@ -1,0 +1,74 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-07-11 08:29:07
+ * 描述：系统设置页面
+ */
+
+
+/*系统设置*/
+
+.mui-content {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+}
+
+.set-items {
+	float: left;
+	display: inline-block;
+	width: 30%;
+	height: 100%;
+}
+
+.mui-table-view {
+	background-color: #f3f3f3;
+}
+
+.set-items ul {
+	height: 100%;
+	font-size: 14px;
+	color: #b1aeb2;
+}
+
+.mui-table-view-cell:last-child:after,
+.mui-table-view-cell:last-child:before {
+	height: 1px;
+}
+
+.mui-table-view-cell:after {
+	right: 5px;
+}
+
+.set-log {
+	float: left;
+	display: inline-block;
+	width: 70%;
+	height: 100%;
+	background-color: #ffffff;
+}
+
+.log {
+	margin: 40px 0 70px 0;
+	text-align: center;
+	font-size: 40px;
+	color: #029aff;
+}
+
+.latest-info {
+	width: 50%;
+	margin: 0 auto;
+	color: #323232;
+}
+
+.latest-info div {
+	margin-bottom: 10px;
+}
+
+
+/*版本*/
+
+.ResourceversionNum {
+	font-weight: 800;
+	margin-left: 20px;
+}

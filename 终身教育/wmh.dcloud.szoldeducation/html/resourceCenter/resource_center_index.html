@@ -1,0 +1,59 @@
+<!-- 
+        作者：朱晓琪
+        时间：2016-06-28
+        描述：资源中心index
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>资源中心</title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/resourceCenter/resource_center_index.css" />
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav clearfix">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">资源中心</h1>
+			<a class="mui-icon mui-icon-right-nav mui-pull-right" id="beginSearch"><img src="../../img/resourceCenter/resource_center_search_button.png" width="18px" height="18px" /></a>
+		</header>
+
+		<div class="mui-content">
+			<div id="topDivBorder" class="mui-bar mui-bar-nav">
+
+			</div>
+			<!--底部选项-->
+			<nav class="mui-bar mui-bar-tab ">
+				<a class="mui-tab-item  mui-active" href="homepage/szpark_homepage.html">
+					<span class="mui-icon icon-home"></span>
+					<span class="mui-tab-label">点播</span>
+				</a>
+				<a class="mui-tab-item" href="#">
+					<span class="mui-icon icon-news"></span>
+					<span class="mui-tab-label">职业资格认证与培训</span>
+				</a>
+				<a class="mui-tab-item" href="#">
+					<span class="mui-icon icon-news"></span>
+					<span class="mui-tab-label">直播</span>
+				</a>
+			</nav>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/resourceCenter/resource_center_index");
+		</script>
+	</body>
+
+</html>

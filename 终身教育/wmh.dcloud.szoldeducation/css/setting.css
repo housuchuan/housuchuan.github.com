@@ -1,0 +1,70 @@
+/** 
+        作者：孙尊路
+        时间：2016-04-07 11:38:16
+        描述：  设置页面
+**/
+
+em {
+	font-style: normal;
+}
+
+
+/*每一li之间的空隙间距*/
+
+.info-block {
+	margin-top: 15px;
+}
+
+.info-li {
+	height: 44px;
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+	background-color: #fff;
+	margin-top: -1px;
+	line-height: 44px;
+	font-size: 15px;
+	overflow: hidden;
+}
+
+.info-li span {
+	float: left;
+	padding-left: 14px;
+	color: #666;
+}
+
+.info-li em {
+	float: right;
+	padding-right: 8px;
+	color: #1493cd;
+}
+
+/*注销按钮*/
+.quit {
+	position: relative;
+	height: 48px;
+	margin: 24px 8px 0;
+	padding: 12px 8px 0;
+	border-top: 1px dashed #ccc;
+}
+
+.mui-btn-block {
+	font-size: 15px;
+	margin-bottom: 0;
+	padding: 10px 0;
+	background-color: #db3e39;
+	border: 1px solid #db3e39;
+}
+
+.mui-btn-block:enabled:active {
+	background-color: #f4453f;
+	border: 1px solid #f4453f;
+}
+
+/*每一栏目箭头*/
+.mui-icon-arrowright{
+    margin-top: 15px;
+    float: right;
+    font-size: 16px;
+    color: #aaa;
+    margin-right: 5px;
+}

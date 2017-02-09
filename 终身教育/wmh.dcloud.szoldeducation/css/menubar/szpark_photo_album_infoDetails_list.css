@@ -1,0 +1,168 @@
+/*
+ * 作者：侯苏川       
+ * 时间：2016-07-27 08:33:07       
+ * 描述：相册模块相册详情
+ */
+
+body {
+	background-color: #f7f6fb;
+}
+
+
+/*相册头部分样式*/
+.mui-table-view-cell {
+	padding: 0;
+	background-color: #ffffff;
+}
+
+.photo-top {
+	margin-left: 4px;
+	padding: 8px 0;
+}
+
+.photoAlbum-infoWrapper {
+	margin-top: 95px;
+	padding: 0 4px;
+}
+
+h4 {
+	display: inline-block;
+	margin: 6px 10px 6px 0;
+}
+
+.photoNum {
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #999999;
+}
+
+.mui-btn-block {
+	display: inline-block;
+}
+
+.upload-btn {
+	float: left;
+	margin-left: 4px;
+	width: 36%;
+	padding: 10px 0;
+	font-size: 14px;
+}
+
+.upload-btn img {
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+	vertical-align: -3px;
+}
+
+.mui-btn-block {
+	margin-bottom: 14px;
+}
+
+.manage-btn {
+	float: left;
+	width: 20%;
+	margin-left: 7px;
+	padding: 10px 0;
+	font-size: 14px;
+	letter-spacing: 2px;
+	background-color: #b3b3b3;
+}
+
+.mui-btn-outlined.mui-btn-blue {
+	color: #ffffff;
+}
+
+
+/*相册详情部分样式设计*/
+
+.mui-table-view:before,
+.mui-table-view:after {
+	content: none;
+}
+
+.photoList {
+	background-color: #f7f6fb;
+	padding-bottom: 15px;
+}
+
+.photoList li {
+	display: inline-block;
+	width: 30%;
+	height: 120px;
+	margin: 0 2% 16px 0;
+	background-color: #ffffff;
+}
+
+.mui-table-view-cell:after {
+	content: none;
+}
+
+.photoList li img {
+	width: 100%;
+	height: 78%;
+}
+
+.photoList li div {
+	display: none;
+	position: absolute;
+	right: 0;
+	width: 20px;
+	height: 20px;
+}
+
+.chooseIcon {
+	background: url(../../img/mystudy/img-nocheck.png) no-repeat;
+	background-size: 100%;
+}
+
+.chooseIcon-active {
+	background: url(../../img/mystudy/img-check.png) no-repeat;
+	background-size: 100%;
+}
+
+.photoTitle {
+	display: block;
+	height: 22%;
+	text-align: center;
+	font-size: 14px;
+}
+
+
+/*删除全选操作*/
+
+.deleteOperate {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 10;
+	border-top: 1px solid #e6e6e6;
+	background-color: #2993e0;
+}
+
+.operaton-bottomBar span {
+	display: inline-block;
+	width: 33.3%;
+	margin: 6.5px 0;
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+	border-right: 1px solid #ffffff;
+}
+
+.operaton-bottomBar span:active {
+	color:#09335A;
+}
+
+.operaton-bottomBar span:last-child {
+	border: none;
+}
+
+
+/*上传照片*/
+ .common-hidden {
+ 	display: none;
+ }
+ 
+ 

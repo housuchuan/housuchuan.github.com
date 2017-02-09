@@ -1,0 +1,134 @@
+/*
+ * 调查填写页面
+ * @author dailc
+ * */
+.titlecontent{
+	padding-left: 5px;
+	padding-right: 5px;
+	
+}
+/*调查问卷单词换行*/
+.title {
+	color: #333333;
+	margin: 10px 0px 15px 0px;
+	font-size: 16px;
+	text-align: left;
+	word-wrap:break-word;
+}
+
+
+/*调查问卷题目单词换行*/
+
+.title-item {
+	/*relative来给子元素的absolute定位*/
+	position: relative;
+	background: #f7f6fb;
+	font-size: 14px;
+	color: #333333;
+	width: 100%;
+	height: auto;
+	padding-left: 20px;
+	padding-top: 10px;
+	/*line-height: 40px;*/
+	padding-left: 20px;
+	overflow: hidden;
+	word-wrap:break-word;
+}
+
+
+/*通过伪元素,通过绘制border 插入li的.*/
+
+.title-item::before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 10px;
+	top: 18px;
+	border: 2px solid #187bc2;
+	content: ' '
+}
+
+
+/*************************多选模块**************************/
+
+
+/*这个input-group 自带通过伪元素绘制了上下两个border*/
+
+.mui-input-group {}
+
+
+/*重写 input-row*/
+
+.mui-input-group .mui-input-row {
+	height: auto;
+	font-size: 14px;
+}
+/*选项单词换行*/
+.mui-input-group .mui-input-row label{
+	word-wrap:break-word;
+}
+
+/*重写多选选中*/
+
+.mui-checkbox input[type=checkbox]:before,
+.mui-radio input[type=radio]:before {
+	font-size: 20px;
+}
+
+
+/*重写  input-row 下方的伪元素绘制的border*/
+
+.mui-input-group .mui-input-row:after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 10px;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #e0e0e0;
+}
+
+
+/*重写input的label*/
+
+.mui-checkbox.mui-left label,
+.mui-radio.mui-left label {
+	padding-left: 34px;
+}
+
+
+/*重写checkbox*/
+
+.mui-checkbox.mui-left input[type=checkbox],
+.mui-radio.mui-left input[type=radio] {
+	left: 10px;
+	top: 8px;
+}
+
+
+/*提交按钮*/
+
+#btn-submit {
+	display: block;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 40px;
+	margin-top: 10px;
+	background: #1ebaf3;
+	color: #FFFFFF;
+	border-radius: 5px;
+}
+
+.pos-foot {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	height: 56px;
+	background: #fff;
+}
+#content{
+	margin-bottom: 60px;
+}

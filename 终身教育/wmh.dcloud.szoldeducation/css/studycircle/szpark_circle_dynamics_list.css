@@ -1,0 +1,737 @@
+  /** 
+  *作者：孙尊路
+  *时间：2016-06-22 11:21
+  *描述： 圈子话题列表模块 
+  **/
+  
+  .mui-content {
+  	background-color: #fff;
+  }
+  /*头部样式设计*/
+  
+  .mui-content {
+  	/*padding-bottom: 48px;*/
+  }
+  
+  .mui-scroll-wrapper {
+  	margin-bottom: 45px;
+  }
+  
+  .topsec {
+  	position: relative;
+  }
+  
+  .topsec .table-view-cell {
+  	position: relative;
+  	padding: 0;
+  	font-size: 12px;
+  }
+  
+  .topsec .table-view-cell:first-child {
+  	height: 126px;
+  	background: url(../../img/studyCircle/circle_dynmatic.jpg) no-repeat;
+  	background-size: 100% 126px;
+  	-webkit-background-size: cover;
+  	background-size: cover;
+  	font-size: 15px;
+  }
+  
+  .join-us {
+  	float: right;
+  	width: 84px;
+  	height: 30px;
+  	margin-right: 10px;
+  	margin-top: 37px;
+  	padding: 0;
+  	border-radius: 5px;
+  	color: #fff;
+  	background: #1ebaf3;
+  }
+  
+  .topsec .table-view-cell:first-child> div {
+  	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	line-height: 25px;
+  	text-indent: 86px;
+  	opacity: 0.7;
+  	color: #fff;
+  	background-color: #7f8386;
+  }
+  
+  .topsec .table-view-cell:last-child {
+  	padding: 5px 2px 5px 86px;
+  	background-color: #f7f6fb;
+  }
+  
+  .circle-member {
+  	color: #999999;
+  }
+  
+  .circle-number {
+  	color: #4b8fca;
+  }
+  
+  .topsec> img {
+  	position: absolute;
+  	top: 91.5px;
+  	left: 8.5px;
+  	width: 69.5px;
+  	height: 67.5px;
+  }
+  
+  .character-operate {
+  	border-bottom: 1px solid #e2e2e3;
+  }
+  
+  .userwrapper {
+  	margin: 0 15px;
+  }
+  
+  .userwrapper> img:first-child {
+  	float: left;
+  	display: inline-block;
+  	width: 30px;
+  	height: 30px;
+  }
+  
+  .character-outer {
+  	padding-left: 40px;
+  	margin-bottom: 16px;
+  	font-size: 14px;
+  }
+  
+  .charactersec {
+  	margin-bottom: 8px;
+  	color: #000;
+  	text-align: justify;
+  	text-justify: inter-ideograph;
+  }
+  
+  .table-view-cell p {
+  	margin-bottom: 8px;
+  }
+  
+  .character-name {
+  	font-size: 14px;
+  	color: #187bc2;
+  }
+  
+  .character-datetime {
+  	color: #bfbfbf;
+  }
+  /*举报栏*/
+  
+  .report-wrapper {
+  	float: right;
+  	padding: 13px 0;
+  	font-size: 12px;
+  }
+  
+  .deleteIcon {
+  	display: inline-block;
+  	width: 16px;
+  	height: 13.5px;
+  	margin: 0 2px 0 0px;
+  	background: url(../../img/menubar/img-deleteicon.png) no-repeat;
+  	background-size: 16px 13.5px;
+  	vertical-align: -1px;
+  }
+  
+  .reporticon {
+  	display: inline-block;
+  	width: 16px;
+  	height: 13.5px;
+  	margin: 0 2px 0 15px;
+  	background: url(../../img/menubar/img_report.png) no-repeat;
+  	background-size: 16px 13.5px;
+  }
+  
+  .report-number {
+  	color: #6fa2d2;
+  }
+  
+  .dynamics-img {
+  	display: block;
+  	width: 100%;
+  }
+  
+  .comment-icon,
+  .praise-icon {
+  	display: inline-block;
+  	margin-left: 15px;
+  }
+  
+  .comment-icon {
+  	width: 16px;
+  	height: 13.5px;
+  	margin-right: 3px;
+  	vertical-align: -2px;
+  	background: url(../../img/studyCircle/img-reporticon.png) no-repeat;
+  	background-size: 16px 13.5px;
+  }
+  
+  .praise-icon {
+  	width: 15px;
+  	height: 15.5px;
+  	margin-right: 3px;
+  	vertical-align: -2px;
+  }
+  
+  .praise {
+  	background: url(../../img/studyCircle/img-praiseicon.png) no-repeat;
+  	background-size: 15px 15.5px;
+  }
+  
+  .praise-active {
+  	background: url(../../img/menubar/img_praiseactive.png) no-repeat;
+  	background-size: 15px 16px;
+  }
+  /*评论区域*/
+  
+  .table-view-cell {
+  	padding: 11px 0;
+  }
+  
+  .cut-line {
+  	margin-top: 47px;
+  	border-top: 1px solid #e2e2e3;
+  }
+  /*没有横线*/
+  
+  .cut-line-no-line {
+  	margin-top: 47px;
+  }
+  
+  .comment-area {
+  	padding-top: 10px;
+  }
+  
+  .comment-area> img {
+  	width: 30px;
+  	height: 30px;
+  }
+  
+  .comment-content {
+  	margin-top: -30px;
+  	margin-left: 40px;
+  	font-size: 14px;
+  }
+  
+  .comment-content> span:first-child {
+  	color: #187bc2;
+  }
+  
+  .comment-content> p {
+  	display: inline;
+  	text-align: justify;
+  	text-justify: distribute-all-lines;
+  	color: #333;
+  }
+  
+  .release-time {
+  	display: inline-block;
+  	margin-top: 10px;
+  	color: #b9b9b9;
+  }
+  
+  .tip {
+  	position: absolute;
+  	right: 18px;
+  	margin-top: 10px;
+  	color: #8c8c8c;
+  }
+  
+  .mui-table-view:after {
+  	content: none;
+  }
+  /*'我想说一句'按钮框*/
+  
+  .comment {
+  	margin-top: 10px;
+  	padding: 10px 0;
+  	/*border-top: 1px solid #e0e0e0;*/
+  	border-bottom: 1px solid #e0e0e0;
+  	background-color: #fafafa;
+  }
+  
+  .table-view-cell>a:not(.mui-btn) {
+  	padding: 10px 0;
+  	background-color: #fafafa;
+  	border-top: 1px solid #e2e2e3;
+  }
+  
+  .wanto-say button {
+  	width: 96%;
+  	margin-left: 2%;
+  	padding: 0;
+  }
+  
+  .wanto-say button> span {
+  	float: left;
+  	display: inline-block;
+  	padding: 9px 7.5px;
+  	color: #adadad;
+  }
+  
+  .wanto-say button> div {
+  	float: right;
+  	display: inline-block;
+  	width: 15px;
+  	height: 12.5px;
+  	margin: 9px 7.5px 0 0;
+  	background: url(../../img/menubar/img-cameraicon.png) no-repeat;
+  	background-size: 15px 12.5px;
+  }
+  /*评论弹出框*/
+  
+  .mui-popover .mui-table-view {
+  	max-height: none;
+  }
+  
+  .mui-popover.mui-popover-action .mui-table-view {
+  	margin: 0;
+  }
+  
+  .publish-list {
+  	padding-top: 10px;
+  }
+  /*原来height:35px;内间距注释掉*/
+  
+  input[type=text] {
+  	width: 95%;
+  	height: 40px;
+  	margin: 0;
+  	margin-left: 0;
+  	/*padding: 13px 0 13px 10.5px;*/
+  	color: #000;
+  }
+  
+  .infoInput {
+  	width: 95%;
+  	margin: 0 auto;
+  	margin-top: 9px;
+  	background-color: #fff;
+  	border: 1px solid #e0e0e0;
+  	border-radius: 5px;
+  }
+  
+  .circle-input > textarea {
+  	height: 80px;
+  	text-indent: -3px;
+  	color: #333;
+  	border: none;
+  }
+  
+  .infoInput textarea {
+  	height: 60px;
+  	text-indent: -3px;
+  	color: #333;
+  	border: none;
+  }
+  
+  .appendPicture {
+  	padding: 0 0 10px 10px;
+  	text-align: left;
+  }
+  
+  .appendPicture> span:first-child {
+  	display: inline-block;
+  	width: 59px;
+  	height: 59px;
+  	line-height: 59px;
+  	text-align: center;
+  	border: 1px solid #e0e0e0;
+  }
+  
+  .mui-icon-plusempty {
+  	color: #e0e0e0;
+  }
+  
+  .appendPicture> span:first-child:active {
+  	background-color: #e0e0e0;
+  }
+  
+  .notice-appendPicture {
+  	display: inline-block;
+  	margin-left: 10px;
+  	color: #cfcfd1;
+  }
+  
+  .comment-btn {
+  	margin-top: 15px;
+  	margin-bottom: 15px;
+  }
+  
+  .mui-popover .mui-btn-block {
+  	margin-bottom: 0;
+  }
+  
+  .comment-btn> button {
+  	display: inline-block;
+  	padding: 13px 0;
+  	color: #fff;
+  }
+  
+  .comment-btn> button:first-child {
+  	width: 40%;
+  	background-color: #d1d1d1;
+  }
+  
+  .comment-btn> button:last-child {
+  	width: 50%;
+  	margin-left: 3%;
+  	background-color: #1ebaf3;
+  }
+  /*图片存放区域*/
+  /*.picture-store {
+  	margin-top: 10px;
+  }
+  
+  .picture-store> img {
+  	width: 59px;
+  	height: 59px;
+  	margin-right: 5px;
+  }*/
+  
+  #tupian {
+  	background-color: #fff;
+  }
+  
+  #tupian img {
+  	height: 60px;
+  	width: 60px;
+  }
+  
+  .pailie {
+  	position: relative;
+  	display: inline-block;
+  	height: 60px;
+  	width: 60px;
+  	margin: 10px 12px 0 0;
+  	border: 0px dashed #ccc;
+  	/*background: url(../images/add-pic.png) no-repeat center;*/
+  	background-size: 50% 50%;
+  }
+  
+  .delete-icon {
+  	width: 16px;
+  	height: 16px;
+  	position: absolute;
+  	top: -5px;
+  	right: -8px;
+  	background-image: url(../../img/studyCircle/img_icon-del.png);
+  	background-size: 100% 100%;
+  }
+  /*动态*/
+  
+  .trends {
+  	padding-left: 15px;
+  	font-size: 15px;
+  	background-color: #fff;
+  }
+  /*发表动态*/
+  
+  .mui-btn-block {
+  	margin-bottom: 0;
+  	font-size: 14px;
+  	border: none;
+  }
+  
+  .footer-btn {
+  	position: fixed;
+  	bottom: 0;
+  	width: 100%;
+  	background-color: #1ebbf3;
+  	z-index: 100;
+  }
+  /*添加相片内容*/
+  
+  .zjg-pic-box {
+  	background-color: #fff;
+  	width: 100%;
+  	margin-top: 15px;
+  	padding: 15px;
+  }
+  
+  .choosePic {
+  	float: left;
+  	height: 50px;
+  	width: 50px;
+  	border: 1px dashed #ccc;
+  	background: url(../../img/studyCircle/img_add_pic.png) no-repeat center;
+  	background-size: 50% 50%;
+  }
+  
+  #tupian {
+  	background-color: #fff;
+  }
+  
+  #tupian img {
+  	height: 50px;
+  	width: 50px;
+  }
+  
+  .pailie {
+  	position: relative;
+  	display: inline-block;
+  	height: 50px;
+  	width: 50px;
+  	margin: 10px 0px 0 10px;
+  	border: 0px dashed #ccc;
+  	/*background: url(../images/add-pic.png) no-repeat center;*/
+  	background-size: 50% 50%;
+  }
+  
+  .delete-icon {
+  	width: 16px;
+  	height: 16px;
+  	position: absolute;
+  	top: -5px;
+  	right: -5px;
+  	background-image: url(../../img/studyCircle/img_icon-del.png);
+  	background-size: 100% 100%;
+  }
+  
+  .zjg-pic-info {
+  	display: block;
+  	float: left;
+  	width: 100%;
+  	margin-top: 14px;
+  	font-size: 13px;
+  	color: #ccc;
+  }
+  /*上传文件空间隐藏
+ * <input type="file" id="chooseImgFromGalleryFile" class="common-hidden" />
+ */
+  
+  .common-hidden {
+  	display: none;
+  }
+  /*申请加入弹出样式 <!--遮罩层-->*/
+  
+  #zhezhao-area {
+  	display: none;
+  	position: fixed;
+  	left: 0%;
+  	top: 0px;
+  	width: 100%;
+  	height: 100%;
+  	background-color: black;
+  	z-index: 1001;
+  	-moz-opacity: 0.5;
+  	opacity: .50;
+  	filter: alpha(opacity=50);
+  }
+  
+  .join-circle {
+  	position: fixed;
+  	top: 20%;
+  	width: 95%;
+  	margin-left: 2.5%;
+  	border-radius: 5px;
+  	background-color: #fafafa;
+  	z-index: 1002;
+  	display: none;
+  }
+  
+  .circle-bar {
+  	width: 100%;
+  	line-height: 44px;
+  	text-align: center;
+  	color: #fff;
+  	border-top-left-radius: 5px;
+  	border-top-right-radius: 5px;
+  	background-color: #1ebaf3;
+  }
+  
+  .mui-icon-closeempty {
+  	float: right;
+  	margin: 6px 4px 0 0;
+  	color: #fff;
+  	font-size: 30px;
+  }
+  /*名称及描述*/
+  
+  .circle-input {
+  	margin-top: 10px;
+  	padding: 0;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	padding-top: 20px;
+  	/*background-color: #fff;*/
+  	border-top: 1px solid #e0e0e0;
+  	border-bottom: 1px solid #e0e0e0;
+  }
+  
+  textarea {
+  	height: 80px;
+  	margin-bottom: 0;
+  	padding-bottom: 0;
+  }
+  
+  .cut-line {
+  	width: 100%;
+  	height: 1px;
+  	background-color: #e0e0e0;
+  }
+  
+  .button-area> button {
+  	float: left;
+  	display: inline-block;
+  	width: 45%;
+  	margin: 10px 2.5%;
+  	padding: 13px 0;
+  	border-radius: 5px;
+  	color: #fff;
+  }
+  
+  .cancel-btn {
+  	background-color: #d1d1d1;
+  }
+  
+  .confirm-btn {
+  	background-color: #1ebaf3;
+  }
+  
+  .topicName,
+  .introsty {
+  	word-break: break-word;
+  }
+  
+  .showMore {
+  	float: right;
+  	margin-right: 30px;
+  	color: dimgray;
+  }
+/*申请加好友*/
+.apply-friends  {
+	position: fixed;
+	width: 90%;
+	top: 20%;
+	left: 5%;
+	z-index: 1008;	
+	display: none;
+}
+
+.apply-friends > div:first-child{
+	line-height: 40px;
+	text-indent: 14px;
+	font-size: 14px;
+	color: #333333;
+	background-color: #f7f6fb;
+}
+
+.applyInfomation {
+	background-color: #ffffff;
+}
+
+.applyInfomation > div >img {
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 8px 13px;
+	border-radius: 20px;
+}
+
+.applyInfomation > div:first-child {
+	border-top: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.apply-describe {
+	margin: 10px 10px 0 0;
+	font-size: 14px;
+}
+
+.ownerName {
+	display: inline-block;
+	width: 100px;
+	vertical-align: -6px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.applyNews {
+	font-size: 13px;
+	color: #a0a0a0;
+}
+
+.font-num {
+	float: right;
+}
+
+.font-num > span:first-child {
+	color: #ff0000;
+} 
+
+.textarea {
+	margin: 0 10px 13px 0;
+}
+
+.textarea textarea {
+	width: 78%;
+	text-indent: 18px;
+	margin: 15px 0 0 64px;
+	font-size: 14px;
+	border-radius: 7px;
+	overflow-y:hidden
+}
+
+.textarea img {
+	position: absolute;
+	top: 125px;
+	left: 75px;
+	width: 16px;
+	height: 16px;
+}
+
+.applyBtn {
+	padding: 8px 0;
+}
+
+.applyBtn button {
+	display: inline-block;
+	width: 35%;
+	padding: 10px 37px;
+	color: #ffffff;
+	border-radius: 30px;
+}
+
+.applyBtn button:first-child {
+	background-color: #e6e6e6;
+	margin-left: 12%;
+	margin-right: 3px;
+}
+
+.applyBtn button:last-child {
+	background-color: #1ebaf3;
+	margin-left: 3%;
+}
+
+.applyLine {
+	margin-left: 14.5px;
+	width: 1px;
+	height: 15px;
+	background-color: #ffffff;
+}
+
+.hideIcon {
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	color: #777777;
+	background-color: #FFFFFF;
+	border-radius: 20px;
+}
+
+.hideIcon:active {
+	color: orange;
+	background-color: #e6e6e6;
+}
+
+.hid {
+	margin-left: 45%;
+}

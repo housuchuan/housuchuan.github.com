@@ -1,0 +1,70 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-23 13:51:07
+        描述: 个人资料子页面
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/mui.picker.min.css" type="text/css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/mystudy/szpark_add_study_planning.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的计划</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view" id="content">
+				<li class="user-common">
+					<div class="mui-input-row">
+						<label>计&nbsp;&nbsp;划&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;称</label>
+						<input id="planName" type="text" placeholder="请输入计划名称(50字以内)" >
+					</div>
+				</li>
+				<li class="user-common">
+					<div class="mui-input-row">
+						<label>计&nbsp;&nbsp;划&nbsp;&nbsp;&nbsp;内&nbsp;&nbsp;容</label>
+						<input id="planSection" type="text" placeholder="请输入计划内容" value="" />
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="planStartSelector" class="btn mui-navigate-right user-log">
+						<span>计划开始时间</span>
+						<span class="birthdayLable"></span>
+					</a>
+					<input type="hidden" name="birthday" class="birthday" value="" />
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="planEndSelector" class="btn mui-navigate-right user-log">
+						<span>计划结束时间</span>
+						<span class="birthdayLable1"></span>
+					</a>
+					<input type="hidden" name="birthday" class="birthday1" value="" />
+				</li>
+			</ul>
+		</div>
+		<button type="button" class="mui-btn mui-btn-blue mui-btn-block save" id="btnSave">保存</button>
+
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/mystudy/szpark_add_study_planning");
+		</script>
+	</body>
+
+</html>

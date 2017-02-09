@@ -1,0 +1,70 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-13 08:29:07
+        描述：举报管理子页面 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/studycircle/szpark_report_management_list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<!--加标签的目的：解决某些手机刷新列表（空白）渲染不出来的情况（客户手机）-->
+					<div style="border-top: 1px solid #FFFFFF;height: 0px;color: #ffffff;">
+						.
+					</div>
+					<ul id="listdata">
+						<!--<li>
+							<div class="mui-tip mui-ellipsis clearfix">
+								<span class="reporter">张三</span>
+								<span><b>阿斯达老师大理石的讲座</b></span><br />
+								<span class="section-type">内容类型：</span>
+								<span class="section-type">话题</span><br />
+								<span class="section-report">举报时间：</span>
+								<span class="section-report">2016-03-31</span>
+								<button type="button" class="mui-btn ignore">忽略</button>
+								<button type="button" class="mui-btn shield">屏蔽</button>
+							</div>
+						</li>
+						<li>
+							<div class="mui-tip mui-ellipsis clearfix">
+								<span class="reporter">张三</span>
+								<span><b>阿斯达老师大理石的讲座</b></span><br />
+								<span class="section-type">内容类型：</span>
+								<span class="section-type">话题</span><br />
+								<span class="section-report">举报时间：</span>
+								<span class="section-report">2016-03-31</span>
+								<button type="button" class="mui-btn ignore">忽略</button><button type="button" class="mui-btn shield">屏蔽</button>
+							</div>
+						</li>-->
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+		<script src="../../js/libs/mui.min.js"></script>
+		<script src="../../js/core/sea.min.js"></script>
+		<script src="../../js/libs/zepto.min.js"></script>
+		<script src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use('bizlogic/studycircle/szpark_report_management_list')
+		</script>
+	</body>
+
+</html>

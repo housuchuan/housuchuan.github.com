@@ -1,0 +1,157 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-06-28
+ * 描述：上传照片
+ */
+
+
+/*mui弹出框样式*/
+
+
+/*跨webview需要手动指定位置*/
+
+.mui-plus header.mui-bar {
+	display: none!important;
+}
+
+.mui-plus .mui-bar-nav~.mui-content {
+	padding: 0!important;
+}
+
+.mui-plus .plus {
+	display: inline;
+}
+
+.plus {
+	display: none;
+}
+
+#middlePopover {
+	width: 90%;	
+	font-size: 14px;
+}
+
+#middlePopover li {
+	text-indent: 47%;
+}
+
+#topPopover {
+	position: fixed;
+	top: 16px;
+	right: 6px;
+}
+
+#topPopover .mui-popover-arrow {
+	left: auto;
+	right: 6px;
+}
+
+p {
+	text-indent: 22px;
+}
+
+span.mui-icon {
+	font-size: 14px;
+	color: #007aff;
+	margin-left: -15px;
+	padding-right: 10px;
+}
+
+.mui-popover {
+	height: 300px;
+}
+/*mui以外样式*/
+.upload {
+	float: right;
+	line-height: 44px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.mui-content > div:first-child {
+	height: 80px;
+	background-color: #fff;
+}
+
+.uploadTo {
+	margin-top: 15px;
+}
+
+.mui-table-view:before,
+.mui-table-view:after {
+	content: none;
+}
+
+.photo-name {
+	float: right;
+	margin-right: 20px;
+	font-size: 14px;
+	font-weight: 800;
+}
+
+
+/*添加相片内容*/
+
+.zjg-pic-box {
+	background-color: #fff;
+	width: 100%;
+	margin-top: 15px;
+	padding: 15px;
+}
+
+.choosePic {
+	float: left;
+	height: 50px;
+	width: 50px;
+	border: 1px dashed #ccc;
+	background: url(../../img/studyCircle/img_add_pic.png) no-repeat center;
+	background-size: 50% 50%;
+}
+
+#tupian {
+	background-color: #fff;
+}
+
+#tupian img {
+	height: 100px;
+	width: 100px;
+}
+
+.pailie {
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	margin: 10px 0px 0 10px;
+	border: 0px dashed #ccc;
+	/*background: url(../images/add-pic.png) no-repeat center;*/
+	background-size: 50% 50%;
+}
+
+.delete-icon {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	background-image: url(../../img/studyCircle/img_icon-del.png);
+	background-size: 100% 100%;
+}
+
+.zjg-pic-info {
+	display: block;
+	float: left;
+	width: 100%;
+	margin-top: 14px;
+	font-size: 13px;
+	color: #ccc;
+}
+
+
+/*上传文件空间隐藏
+ * <input type="file" id="chooseImgFromGalleryFile" class="common-hidden" />
+ */
+
+.common-hidden {
+	display: none;
+}

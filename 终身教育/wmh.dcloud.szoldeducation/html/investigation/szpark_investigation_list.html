@@ -1,0 +1,50 @@
+<!-- 
+        作者：dailc 
+        时间：2016-04-05 15:06:37
+        描述： 调查列表页面 
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title> 调查列表页面 </title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/investigation/szpark_investigation_list.css" />
+	</head>
+
+	<body>
+
+		<div class="mui-content">
+			<div id="pullrefresh" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<div class="list-nav-item">
+						<span class="lnvi-title">
+					调查投票
+				</span>
+						<span class="lnvi-more">
+					
+				</span>
+					</div>
+					<ul class="list-container" id="listdata">
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/investigation/szpark_investigation_list.js');
+		</script>
+
+	</body>
+
+</html>

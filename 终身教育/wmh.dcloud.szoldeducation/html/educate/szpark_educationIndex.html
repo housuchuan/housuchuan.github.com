@@ -1,0 +1,121 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-06 11:34:03
+        描述： 教育关工委主页
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>教育关工委</title>
+
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/educate/szpark_educationIndex.css" />
+		<link rel="stylesheet" href="../../css/common/common_animate.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="pullrefresh" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--图片轮播-->
+					<div id="gallerySlider">
+
+					</div>
+					<!--图标-->
+					<div class="wh-padded mui-clearfix">
+						<div class="wh-padded-item" id="notice">
+							<img src="../../img/educate/img_notice.png" alt="" />
+							<span>通知公告</span>
+						</div>
+						<div class="wh-padded-item" id="parentaskanswer">
+							<img src="../../img/educate/img_question.png" alt="" />
+							<span>家长问答</span>
+						</div>
+						<div class="wh-padded-item" id="activitycolumn">
+							<img src="../../img/educate/img_activity.png" alt="" />
+							<span>活动专栏</span>
+						</div>
+					</div>
+					<!--学习课程-->
+					<div class="kecheng">
+						<span>学习课程</span>
+						<div class="kecheng-right">
+							<span id="more">更多&gt;&gt;</span>
+						</div>
+					</div>
+					<div class="content">
+						<!--<div class="course">
+							<img class="course-pic" src="../../img/educate/img_project1.png" />
+							<span class="title">食品的营养与健康</span>
+							<ul>
+								<li class="suzhou_stars_sellected"></li>
+								<li class="suzhou_stars_unsellect"></li>
+								<li class="suzhou_stars_unsellect"></li>
+								<li class="suzhou_stars_unsellect"></li>
+								<li class="suzhou_stars_unsellect"></li>
+							</ul>
+						</div>
+						<div class="course">
+							<img class="course-pic" src="../../img/educate/img_project1.png" />
+							<span class="title">科学养生食谱之速成篇</span>
+							<ul>
+								<li class="suzhou_stars_unsellect"></li>
+								<li class="suzhou_stars_unsellect"></li>
+								<li class="suzhou_stars_unsellect"></li>
+								<li class="suzhou_stars_unsellect"></li>
+								<li class="suzhou_stars_unsellect"></li>
+							</ul>
+						</div>
+						<div class="course">
+							<img class="course-pic" src="../../img/educate/img_project1.png" />
+							<span class="title">养生茶的泡制与作用</span>
+							<ul>
+								<li class="suzhou_stars_sellected"></li>
+								<li class="suzhou_stars_sellected"></li>
+								<li class="suzhou_stars_sellected"></li>
+								<li class="suzhou_stars_sellected"></li>
+								<li class="suzhou_stars_sellected"></li>
+							</ul>
+						</div>
+						<div class="course">
+							<img class="course-pic" src="../../img/educate/img_project1.png" />
+							<span class="title">百草堂</span>
+							<ul>
+								<li class="suzhou_stars_sellected"></li>
+								<li class="suzhou_stars_sellected"></li>
+								<li class="suzhou_stars_sellected"></li>
+								<li class="suzhou_stars_sellected"></li>
+								<li class="suzhou_stars_sellected"></li>
+							</ul>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="zhezhao-area"></div>
+		<div id="alertWin">
+			<div>您可以选择预览或者播放，如果预览则不能获取积分，也不能进行记录笔记等操作，如果播放需要先进行登录操作！</div>
+			<div id="btnGroup">
+				<button type="button" class="mui-btn mui-btn-blue mui-button-row alertWinBtn" id="preview">预览</button>
+				<button type="button" class="mui-btn mui-btn-green mui-button-row alertWinBtn" id="play">播放</button>
+				<button type="button" class="mui-btn mui-btn-grey mui-button-row alertWinBtn" id="cancle">取消</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/educate/szpark_educationIndex');
+		</script>
+	</body>
+
+</html>

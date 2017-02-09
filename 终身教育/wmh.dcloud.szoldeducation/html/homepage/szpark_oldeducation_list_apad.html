@@ -1,0 +1,62 @@
+<!-- 
+        作者：朱晓琪
+        时间：2016-5-16
+        描述：老年教育列表页  html pad
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>老年教育列表页pad</title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/homepage/szpark_oldeducation_list_apad.css" />
+		<link rel="stylesheet" href="../../css/common/common_list.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket90.css" />
+	</head>
+
+	<body>
+
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<ul class="mui-table-view" id="listdata">
+						<!--无图片的列表-->
+						<!--<li class="mui-table-view-cell" id="{{InfoID}}">
+							<div class="mui-table">
+								<div class="mui-table-cell mui-col-xs-10">
+									<h4 class="mui-ellipsis">{{Title}}</h4>
+									<p class="mui-h6 mui-ellipsis">{{InfoDate}}</p>
+								</div>
+							</div>
+						</li>-->
+
+						<!--带图片的列表-->
+						<!--<li class="mui-table-view-cell mui-media" id="{{InfoID}}">
+							<img class="mui-media-object mui-pull-left" data-img-localcache="{{HeadNewsAttachUrl}}" />
+							<div class="mui-media-body">
+								<h4 class="mui-ellipsis">{{Title}}</h4>
+								<p class="mui-h6 mui-ellipsis">发布时间：{{InfoDate}}</p>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_oldeducation_list_apad');
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,25 @@
+/**
+ * 作者：孙尊路
+ * 时间：2016-04-17
+ * 学校概况、学历教育、老年教育共用的css 
+ */
+
+img {
+	max-width: 100%;
+}
+
+
+/*默认滚动区域全屏的，故包裹层距离顶部应该45px显示内容*/
+
+
+/*（1）老年教育非列表详情页面*/
+
+.oldeducateArea {
+	position: absolute;
+	top: 45px;
+}
+
+.mui-content table {
+	/* 防止表格溢出。 */
+	width: 100% !important;
+}

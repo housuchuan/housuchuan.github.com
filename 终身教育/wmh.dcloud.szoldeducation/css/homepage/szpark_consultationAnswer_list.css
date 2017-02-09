@@ -1,0 +1,10 @@
+/*
+ * 咨询答疑列表页
+ * 大部分复用的szpark_askandanswer_list.css
+ * 这里重写小部分
+ * */
+/*answer content*/
+.answer-content {
+	color: #187bc2;
+	padding-left: 8px;
+}

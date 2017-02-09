@@ -1,0 +1,85 @@
+ /** 
+ *作者：孙尊路
+ *时间：2016-06-22 11:21
+ *描述：  
+ **/
+ .mui-content {
+ 	position: absolute;
+ 	top: 0;
+ 	bottom: 0;
+ 	width: 100%;	
+ }
+ 
+ .mui-content>.mui-table-view:first-child {
+ 	margin-top: 0;
+ }
+  .mui-content>.mui-table-view {
+ 	padding-left: 15px;
+ }
+ .mui-content>.mui-table-view:first-child {
+ 	padding-left: 15px;
+ }
+ .mui-table-view-cell>a:not(.mui-btn) {
+ 	padding: 0;
+ }
+ .mui-table-view-cell:after {
+ 	left: 0;
+ }
+ .mui-table-view:before {
+ 	top: 0;
+ }
+ .mui-circle > h4 {
+ 	display: inline-block;
+ 	color: #6e6e6e;
+ 	font-size: 15px;
+ }
+ .style-choose {
+ 	color: #c8c8ca;
+ 	font-size: 15px;
+ }
+ .mui-circle > input {
+ 	width: 70%;
+ 	margin-left: 13px;
+ 	margin-bottom: 0;
+ 	padding: 0;
+ 	padding-right: 10px;
+ 	border: 0;
+ 	font-size: 15px;
+ }
+ .mui-circle:first-child > img {
+ 	position: absolute;
+	top: 10px;
+ 	width: 45px;
+ 	height: 45px;
+	margin-left: 13px;	
+ }
+ .choose {
+ 	color: #a9a9a9;
+ }
+ .mui-circle-another > span {
+ 	margin-left: 13px;
+ }
+ .mui-circle-another {
+ 	border-bottom: 1px solid #e3e3e3;
+ }
+ .mui-circle:last-child {
+ 	border-bottom: none;
+ }
+ .mui-circle-another > h4,span {
+ 	line-height: 50px;
+ }
+ .mui-circle > P {
+ 	display: none;
+ 	white-space: normal;
+  	word-break:break-all; 
+  	font-size: 12px;
+  }
+/*按钮部分*/
+ #btnSubmit {
+ 	width: 95%;
+	margin-top: 85px;
+	margin-left: 2.5%;
+ 	padding: 13px 0;
+ 	color: #fff;
+ 	background-color: #1ebaf3;
+ }

@@ -1,0 +1,220 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-07-10 14:48:07
+ * 描述：资源视频预览
+ */
+
+#doc {
+	overflow: hidden;	
+}
+
+#doc img {
+	display: block;
+	width:100%;
+	height:430px;
+}
+/*mui的bar样式设计*/
+
+.mui-bar-nav {
+	background-color: #333333;
+}
+
+.mui-title {
+	text-align: left;
+}
+
+
+/*主体内容样式设计*/
+
+.mui-content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+
+/*媒体视频*/
+
+.mediaPlayer {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+
+.media-content {
+	width: 100%;
+	height: 100%;
+	padding-top: 44px;
+	background-color: #ffffff;
+}
+
+/*video {
+	width: 100%;
+	height: 430px;
+	border-left: 6px solid #000000;
+	border-right: 6px solid #000000;
+	background-color: #000000;
+}*/
+
+
+/*媒体播放*/
+#player {
+	width: 100%;
+	height: 430px;
+	border-left: 6px solid #000000;
+	border-right: 6px solid #000000;
+	background-color: #000000;
+}
+
+#doc {
+	width:100%;
+	height:430px; 
+	position: absolute; 
+	top: 44px;
+	z-index: 10;
+}
+
+.media-info {
+	position: relative;
+	margin: 0 9px 31px 15px;
+}
+
+/*简介选集tab切换*/
+.tabChoice {
+	border-bottom: 1px solid #E1E1E1;
+}
+
+.tabChoice span {
+	display: inline-block;
+	line-height: 60px;
+	padding: 0 20px;
+	font-size: 18px;
+}
+
+.tabChoice span:first-child {
+	color: #0000FF;
+	border-bottom: 1px solid #0000FF;
+}
+
+.tabChoice span:last-child {
+	margin-left: 60px;
+}
+
+/*新增*/
+
+.content-wrapper {
+	height: 200px;
+	margin-top: 62px;
+	z-index: 10;
+}
+
+.setItem{
+	padding: 10px 10px 0 10px;
+	line-height: 30px;
+	background-color: #f7f6fb;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.zhangjie {
+	font-size: 18px;
+	color: #0062CC;
+}
+
+.selectionsList {
+	font-size: 16px;
+}
+
+.selectionsList span {
+	display: inline-block;
+	line-height: 40px;
+	float: left;
+}
+
+.resouce {
+	display: inline-block;
+	width: 50%;
+	margin-left: 10%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.selectionsList span:last-child {
+	float: right;
+	margin-right: 10px;
+}
+
+.mui-table-view-cell {
+	padding: 0;
+}
+
+p {
+	margin: 12px 15px;
+}
+
+/*****************绘制img的左上角三角形以及数字***********/
+
+.topleft-triangle {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    border-top: 50px solid red;
+    border-left: 100px solid transparent;
+}
+.blue-triangle {
+	display: none;
+	border-top: 36px solid blue;
+}
+.topleft-text {
+	display: none;
+	position: absolute;
+	z-index: 11;
+	top: -1px;
+    right: 8px;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.setItemIcon{
+	padding-left: 10px;
+	float: left;
+	width: 20px;
+	font-size: 16px;
+}
+.setItemName{
+	text-align: left;
+	float: left;
+	width: 80%;
+	font-size: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.list-container-selection {
+	display: none;
+}
+
+.list-container-selection li:first-child div:nth-child(2) {
+	color: #ffffff;
+	background-color: #187bc2;
+}
+
+
+/*遮罩*/
+
+.zhezhao {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #000000;
+	opacity: .5;
+	z-index: 13;
+}

@@ -1,0 +1,224 @@
+ /** 
+ *作者：孙尊路
+ *时间：2016-06-22 11:21
+ *描述： 页面列表 
+ **/
+ .mui-pull-top-pocket {
+	top: -5px !important;
+}
+ @media only screen and (min-width: 100px) and (max-width: 640px) {}
+ 
+ .allwrapper {
+ }
+ 
+ .last-scroll {
+ 	/*height: 1000px;*/
+ }
+ 
+ .mui-content {
+ 	/*padding-bottom: 51px;*/
+ }
+ 
+ .circle-item {
+ 	padding-left: 15px;
+ 	background-color: #ffffff;
+ }
+ 
+ .mui-table-view:after {
+ 	content: none;
+ }
+ /*个人信息模块设计*/
+ 
+ .personal-info {
+ 	position: absolute;
+ 	width: 100%;
+ 	height: 118px;
+ 	padding-top: 3px;
+ 	padding-bottom: 8px;
+ 	background-color: #187bc2;
+ 	z-index: 5;
+ }
+ 
+ .personal-name {
+ 	width: 170px;
+ 	margin: 25px auto 25px auto;
+ 	white-space: nowrap;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ }
+ 
+ .personal-name> img:first-child {
+ 	display: inline-block;
+ 	width: 59px;
+ 	height: 59px;
+ 	margin-right: 14px;
+ 	border-radius: 30px;
+ }
+ 
+ .personal-concern {
+ 	position: absolute;
+ 	top: 0;
+ 	padding: 2.5px 0;
+ 	padding-top: 8px;
+ 	text-align: left;
+ 	display: inline-block;
+ 	font-size: 15px;
+ 	color: #fff;
+ }
+ 
+ .personal-concern> span {
+ 	display: inline-block;
+ 	margin: 35px 0 0 10px;
+ 	font-size: 18px;
+ }
+ 
+ .personal-choose> div {
+ 	float: left;
+ }
+ 
+ .personal-choose> div {
+ 	width: 33.333%;
+ 	margin-top: 3px;
+ 	text-align: center;
+ 	font-size: 13px;
+ 	color: #fff;
+ 	border-right: 1px solid #e3e3e3;
+ }
+ /*-----------------------------------------------------------*/
+ /*------------------------------------------------------------*/
+ /*圈子部分样式设计*/
+ 
+ .circle {
+ 	margin: 9.5px 0;
+ }
+ 
+ .circle> div {
+ 	border-bottom: 1px solid #e2e2e3;
+ }
+ 
+ .circle> div> span:first-child {
+ 	display: inline-block;
+ 	padding: 12px 0;
+ 	font-size: 15px;
+ }
+ 
+ .TA-create,
+ .TA-join {
+ 	float: right;
+ 	display: inline-block;
+ 	line-height: 44px;
+ 	padding-right: 2.5px;
+ }
+ 
+ .TA-join {
+ 	margin-right: 11px;
+ }
+ 
+ .TA-create {
+ 	margin-right: 13px;
+ }
+ 
+ .TA-active {
+ 	color: #187bc2;
+ 	border-bottom: 3px solid #187bc2;
+ }
+ 
+ #listdata2> li {
+ 	width: 100%;
+ }
+ 
+ .mui-btn-outlined {
+ 	padding: 3px 6px;
+ 	font-size: 12px;
+ }
+ 
+ .mui-table-view-cell>.mui-btn {
+ 	top: 25%;
+ 	right: 10px;
+ }
+ 
+ .circle-sec-inner> img {
+ 	float: left;
+ 	width: 30px;
+ 	height: 30px;
+ }
+ 
+ .circle-sec {
+ 	float: left;
+ 	display: inline-block;
+ 	margin-left: 10.5px;
+ 	padding-top: 2px;
+ 	font-size: 14px;
+ }
+ 
+ .circle-check {
+ 	display: inline-block;
+ 	margin: 10px 0;
+ 	color: #187bc2;
+ }
+ 
+ .circle-theme {
+ 	margin-left: 20px;
+ }
+ 
+ .circle-common-col {
+ 	color: #187bc2;
+ }
+ /*话题部分*/
+ 
+ .theme-sec,
+ .TA-common {
+ 	font-size: 12px;
+ }
+ 
+ .theme-sec> span:first-child {
+ 	font-size: 14px;
+ }
+ 
+ .theme-issuer {
+ 	display: inline-block;
+ 	margin: 10px 0;
+ }
+ 
+ .theme-commom {
+ 	float: right;
+ }
+ 
+ .content-origin {
+ 	width: 20%;
+ 	white-space: nowrap;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ }
+ 
+ .theme-view-reply {
+ 	margin-right: 5px;
+ }
+ 
+ .theme-watch {
+ 	color: #187bc2;
+ }
+ 
+ .theme-publish-date {
+ 	color: #d6d6d6;
+ }
+ 
+ .theme:after {
+ 	left: 15px;
+ }
+ /*mui区域滚动*/
+ 
+ .mui-scroll-wra {
+ 	/*height: 65px;*/
+ 	height: 100px;
+ }
+ 
+ .mui-scroll-top {
+ 	margin-top: 45px;
+ }
+ 
+ .mui-scroll-bottom {
+ 	/*margin-top: 176px;*/
+ 	margin-top: 211px;
+ 	background-color: #ffffff;
+ }

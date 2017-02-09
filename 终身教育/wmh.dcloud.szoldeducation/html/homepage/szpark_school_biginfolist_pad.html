@@ -1,0 +1,48 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-05 11:38:16
+        描述：  大事件子页面（pad版页面）
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>大事件</title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/common/common_list.css" />
+		<link rel="stylesheet" href="../../css/common/common_click.css" />
+	</head>
+
+	<body>
+		<div class="mui-scroll-wrapper" id="pullrefresh">
+			<div class="mui-scroll">
+				<ul class="mui-table-view" id="listdata">
+					<!--<li class="mui-table-view-cell" id="{{InfoID}}">
+						<div class="mui-table">
+							<div class="mui-table-cell mui-col-xs-10">
+								<h4 class="mui-ellipsis">{{Title}}</h4>
+								<h5 class="mui-ellipsis-2">{{infocontent}}</h5>
+							</div>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_school_biginfolist_pad');
+		</script>
+	</body>
+
+</html>

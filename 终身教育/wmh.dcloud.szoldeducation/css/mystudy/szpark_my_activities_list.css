@@ -1,0 +1,73 @@
+/*
+ * 作者：侯苏川
+        时间：2016-06-28 08:29:07
+        描述 ：我的活动页面
+ * /
+/*发表话题回复内容样式设计*/
+.mui-scroll-wrapper{
+	margin-top: 88px;
+}
+.column {
+	background-color: #f7f6fb;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.column > span:first-child {
+	margin-left: 15px;
+	margin-right: 14px;
+}
+
+.column > span {
+	display: inline-block;
+	padding: 0 11.5px;
+	line-height: 40px;
+}
+
+.items-active {
+	color: #187bc2;
+	border-bottom: 2px solid #187bc2;
+}
+
+
+/*内容详细设计*/
+.theme-sec,
+.TA-common {
+	font-size: 14px;
+}
+
+.theme-sec > span:first-child {
+	font-size: 17px;
+}
+
+.theme-issuer {
+	display: inline-block;
+	margin: 10px 0;
+}
+
+.theme-commom {
+	float: right;
+}
+
+.fromArea {
+	display: inline-block;
+	width: 100px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.theme-view-reply {
+	margin-right: 5px;
+}
+
+.theme-watch {
+	color: #187bc2;
+}
+
+.theme-publish-date {
+	color: #d6d6d6;
+}
+
+.theme:after {
+	left: 15px;
+}

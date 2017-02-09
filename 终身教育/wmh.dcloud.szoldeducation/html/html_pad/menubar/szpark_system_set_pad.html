@@ -1,0 +1,75 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-07-11 08:29:07
+        描述： 系统设置页面 
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>设置</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/common/common.css" />
+		<link rel="stylesheet" href="../../../css/css_pad/menubar/szpark_system_set_pad.css" />
+	</head>
+
+	<body>
+		
+		<!--导航栏设置-->
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">设置</h1>
+		</header>
+		
+		<div class="mui-content mui-clearfix">
+		    <div class="set-items">
+		    	<ul class="mui-table-view">
+		    	        <li class="mui-table-view-cell" id="clearStorage">
+		    	            <span>清除缓存</span>
+		    	        </li>
+		    	        <li class="mui-table-view-cell" id="updateVersion">
+		    	            <span>版本更新<span class="ResourceversionNum" id="ResourceversionNum"></span></span>
+		    	        </li>
+		    	        <li class="mui-table-view-cell" id="help">
+		    	            <span>帮助</span>
+		    	        </li>
+		    	        <li class="mui-table-view-cell" id="about">
+		    	            <span>关于</span>
+		    	        </li>
+		    	    </ul>
+		    </div>
+		    
+		    <div class="set-log">
+		    	<div class="log">LOG</div>
+		    	<div class="latest-info">
+		    		<div>
+		    			<span>软件名称：</span><span>苏州工业园区全名终身学习平台</span>
+		    		</div>
+		    		<div>
+		    			<span>当前版本：</span><span>v1.0</span>
+		    		</div>
+		    		<div>
+		    			<span>版权所有：</span><span>苏州教育局</span>
+		    		</div>
+		    		<div>
+		    			<span>官方地址：</span><span>http:/zsxx.sipedu.org</span>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+		
+		<script type="text/javascript" src="../../../js/core/sea.min.js" ></script>
+		<script type="text/javascript" src="../../../js/libs/mui.min.js" ></script>
+		<script type="text/javascript" src="../../../js/libs/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../../js/libs/mustache.min.js" ></script>
+		<script type="text/javascript">
+			seajs.config({
+				base:'../../../js/'
+			});
+			seajs.use("bizlogic/js_pad/menubar/szpark_system_set_pad");
+		</script>
+	</body>
+
+</html>

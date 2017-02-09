@@ -1,0 +1,9 @@
+/*
+ * 苏州园区教育APP样式  专门用来修复iphone5 iphone5s上的问题
+ * @author 孙尊路
+ * */
+/*div的侧滑栏中 如果position不为fixed,在5s safari中横屏有问题
+ !important 为设置100W的优先级*/
+.mui-off-canvas-wrap .mui-bar {
+	position: fixed !important;
+}

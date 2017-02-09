@@ -1,0 +1,78 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-29 21:26:07
+        描述 ：播放记录
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/mystudy/szpark_playrecord_list.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">播放记录</h1>
+		</header>
+		<div class="mui-content">
+			<!--内容选择-->
+			<!--<div class="column">
+				<span class="TA-common">视频选集</span>
+			</div>-->
+			<div class="input-area">
+				<div class="mui-input-row mui-search">
+					<input type="search" class="mui-input-clear" placeholder="请输入您要搜索的内容">
+				</div>
+			</div>
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="mui-table-view selection-items" id="listdata">
+						<!--<li class="mui-table-view-cell">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-yellow mui-icon">置顶</a>
+								<a class="mui-btn mui-btn-red mui-icon ">删除</a>
+							</div>
+							<div class="mui-word mui-slider-handle clearfix">
+								<span>我最喜欢的书籍上下五千年</span>
+								<span>2016-12-31</span>
+							</div>					
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="mui-slider-right mui-disabled">
+								<a class="mui-btn mui-btn-yellow mui-icon">置顶</a>
+								<a class="mui-btn mui-btn-red mui-icon ">删除</a>
+							</div>
+							<div class="mui-slider-handle clearfix">
+								<img src="../../img/educate/img_noticepic.png"/>
+								<h4>中小学教育</h4>
+								<span class="studyed studyed-common-sizecol">已学习</span>
+								<span class="studyed-common-sizecol">40%</span><br />
+								<span class="studying studyed-common-sizecol">积分：</span>
+								<span class="studyed-common-sizecol">200</span>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/mystudy/szpark_playrecord_list");
+		</script>
+	</body>
+
+</html>

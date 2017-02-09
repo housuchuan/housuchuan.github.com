@@ -1,0 +1,53 @@
+
+/**
+ *作者：侯苏川 
+ *时间：2016-08-12 09:55:45
+ *描述：我的学习（学习计划）详情界面 
+ */
+
+.mui-scroll {
+	margin-top: 44px;
+}
+
+.mui-scroll-wrapper {
+	padding-bottom: 44px;
+}
+
+.log-content {
+	padding: 0 10px;
+}
+
+.log-content > h4 {
+	margin: 18px 0 15px 0;
+	text-align: center;
+}
+
+.log-content > div > p {
+	text-indent: 28px;
+	text-align: justify;
+	text-justify: distribute-all-lines;
+	color: #333;
+}
+
+/*计划时间安排*/
+.plan-time {
+	color: #adadad;
+	font-size: 12px;
+}
+
+.plan-time div {
+	text-align: right;
+}
+
+.mui-scroll-wrapper {
+	margin-bottom: 44px;
+}
+
+/*块状按钮*/
+.mui-btn-block {
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+	color: #ffffff;
+	background-color: #ACACB4;
+}

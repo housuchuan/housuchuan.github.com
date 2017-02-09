@@ -1,0 +1,193 @@
+
+/**
+ *作者：侯苏川 
+ *时间：2016-09-20 09:37:00
+ *描述：个人主页子页面  
+ */
+
+/*审核区域样式*/
+ .circleHeader {
+ 	padding: 10px 0;
+ 	font-size: 18px;
+ 	background-color: #ffffff;
+ }
+ 
+ .circleHeader span {
+ 	display: inline-block;
+ 	color: #187bc2;
+ }
+ 
+ .circleHeader span:first-child {
+ 	width: 5px;
+ 	height: 21px;
+ 	margin: 0 5px 0 13px;
+ 	vertical-align: -4px;
+ 	background-color: #187bc2;
+ 	border-radius: 8px;
+ }
+
+ .validate-area {
+ 	margin-top: 41px;
+	height: 245px;
+}
+
+ .check-area li {
+ 	float: left;
+ 	position: relative;
+	width: 30%;
+	margin: 11px 0 0 2.5%;
+	padding: 13px 15px;
+	border: 1px solid #d9d9d9;
+	box-shadow:  0 0 2px #d9d9d9;
+	background-color: #ffffff;
+	border-radius: 7px;
+}
+
+ .check-area li img {
+ 	float: left;
+ 	width: 50px;
+ 	height: 50px;
+ 	border-radius: 20px;
+ }
+ 
+ .manage {
+ 	position: absolute;
+ 	right: 5px;
+ 	padding: 2px 6px;
+ 	color: #187bc2;
+ 	border: 1px solid #187bc2;
+ 	border-radius: 15px;
+ 	font-size: 11px;
+ }
+ 
+ .check-status {
+ 	float: left;
+ 	margin-left: 6px;
+ }
+ 
+ .check-status div:first-child {
+ 	width: 80px;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	white-space: nowrap;
+ 	color: #73a4d3;
+ }
+ 
+ .validate {
+ 	margin: 10px 0 6px 0;
+ 	color: #2d9d17;
+ 	font-size: 14px;
+ }
+ 
+ .check-status div:last-child {
+ 	font-size: 14px;
+ } 
+ 
+ .check-status div:last-child span:first-child,.topic-content span:first-child {
+ 	margin-right: 5px;
+ 	color: #ff7777;
+ }
+ 
+ .check-status div:last-child span:last-child,.topic-content span:last-child {
+ 	color: #a7a7a7;
+ }
+ 
+ .topic-content {
+ 	position: absolute;
+ 	right: 15px;
+ 	bottom: 13px;
+ 	font-size: 14px;
+ }
+ 
+/*发布内容区域*/
+ .topicHeader {
+ 	margin-top: 286px;
+ 	padding: 10px 0;
+ 	font-size: 18px;
+ 	background-color: #ffffff;
+ }
+ 
+ .topicHeader span {
+ 	display: inline-block;
+ 	color: #187bc2;
+ }
+ 
+ .topicHeader span:first-child {
+ 	width: 5px;
+ 	height: 21px;
+ 	margin: 0 5px 0 13px;
+ 	vertical-align: -4px;
+ 	background-color: #187bc2;
+ 	border-radius: 8px;
+ }
+
+ .publishConten-area {
+ 	margin-top: 382px;
+ 	background-color: #ffffff;
+ }
+ 
+ .mui-table-view-cell:after,.mui-table-view:before {
+ 	content: none;
+ }
+ 
+ #listdata2 {
+ 	padding: 12px 13px;	
+ }
+ 
+ #listdata2 li {
+ 	margin-bottom: 12px;
+ 	padding: 10px 16px 13px 16px;
+ 	border: 1px solid #d9d9d9;
+ 	border-radius: 3px;
+ }
+ 
+ #listdata2 li:last-child {
+ 	margin-bottom: 0;
+ }
+ 
+ .pubishContentAreaList img {
+ 	float: left;
+ 	width: 50px;
+ 	height: 50px;
+ 	border-radius: 20px;
+ }
+ 
+ .personalInfo {
+ 	float: left;
+ 	margin: 6px  0 0 11px;
+ }
+
+ .personalInfo div:last-child,.fromArea {
+ 	font-size: 14px;
+ }
+ 
+ .personalInfo div:last-child span:first-child {
+ 	color: #adadad;
+ }
+ 
+ .personalInfo div:last-child span:last-child {
+ 	color: #8c8c8c;
+ }
+ 
+ .personalInfo div:first-child {
+ 	color: #187bc2;
+ }
+ 
+ .fromArea {
+ 	float: right;
+ }
+ 
+ .fromArea span:first-child {
+ 	color: #999999;
+ }
+ 
+ p {
+ 	margin-top: 12px;
+ }
+ 
+ .mui-pull-top-pocket {
+	top: 5px !important;
+} 
+
+
+

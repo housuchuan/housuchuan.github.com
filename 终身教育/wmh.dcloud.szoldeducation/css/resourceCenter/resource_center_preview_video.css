@@ -1,0 +1,293 @@
+.mui-preview-image.mui-fullscreen {
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #000;
+}
+
+#doc {
+	overflow: hidden;
+}
+
+#doc img {
+	display: block;
+	width: 100%;
+}
+
+
+/*tab切换*/
+
+.mui-control-content {
+	background-color: white;
+	min-height: 215px;
+}
+
+.mui-control-content .mui-loading {
+	margin-top: 50px;
+}
+
+.mui-slider {
+	position: absolute;
+	top: 266px;
+	bottom: 0;
+}
+
+.mui-slider .mui-slider-group {
+	height: 100%;
+}
+
+#sliderSegmentedControl a {
+	display: inline-block;
+	float: left;
+	width: 33.333333%;
+}
+
+
+/*收藏评价*/
+
+.mui-bar .mui-title {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.headerIcon {
+	float: right;
+	padding-top: 12px;
+	z-index: 100;
+}
+
+.headerIcon img {
+	width: 20px;
+	height: 20px;
+}
+
+.headerIcon span:first-child {
+	margin: 0 10px;
+}
+
+.saveVideo {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../../img/resourceCenter/img_saveIcon.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.saveVideo-active {
+	background: url(../../img/img_pad/resourceCenter/img_praiseActive.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/*#slider {
+	margin-top: -5px;
+	background-color: #f7f6fb;
+	padding-left: 10px;
+	font-size: 15px;
+}
+#sliderSegmentedControl2 {
+	width: 100%;
+}*/
+
+
+/*滑动组的内容*/
+
+
+/*.mui-slider .mui-slider-group {
+    height: 1px;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+	display: inline-block;
+	margin: 0;
+	line-height: 37px;
+	vertical-align: top;
+	width: 15%;
+}
+.suzhou_school_active {
+	color: #187bc2!important;
+	border-bottom: 3px solid #187bc2 !important;
+}*/
+
+
+/*滑动控件边界居上聚下*/
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+	border-top: 1px solid #c8c7cc;
+	border-bottom: 0px solid #c8c7cc;
+}
+
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item {
+	padding: 0;
+}
+
+.mui-slider-indicator {
+	text-align: left;
+}
+
+#shortIntroduce {
+	display: block;
+	font-size: 14px;
+	color: #b8b8b8;
+	padding: 5px 10px;
+	height: 100%;
+	text-indent: 28px;
+}
+
+#chooseVideo {
+	display: none;
+}
+
+.mui-scroll-wrapper {
+	background-color: #FFFFFF;
+}
+
+#sliderSegmentedControl2 {
+	background-color: #f7f6fb;
+}
+
+
+/*选集列表css*/
+
+#chooseSetList {
+	display: none;
+}
+
+.setItem {
+	padding: 0;
+	padding-left: 10px;
+}
+
+.zhangjieId {
+	margin: 8px 0;
+	color: #0062CC;
+	font-size: 16px;
+}
+
+.list-container > li:first-child > div:nth-child(2) .setItemName {
+	color: #7F8386;
+}
+
+.mui-table-view-cell {
+	padding: 5px 10px;
+}
+
+.numIndex {
+	float: left;
+	width: 8%;
+	font-size: 14px;
+}
+
+.setItemIcon {
+	padding-left: 10px;
+	float: left;
+	width: 20px;
+	font-size: 14px;
+}
+
+.setItemName {
+	text-align: left;
+	padding-left: 25px;
+	float: left;
+	width: 72%;
+	font-size: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.studyStatus {
+	color: red;
+}
+
+#title {
+	font-size: 16px;
+	padding-left: 20px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #FFFFFF;
+}
+
+
+/*下拉刷新*/
+
+.mui-pull-top-pocket {
+	top: 0px !important;
+}
+
+
+/*总体评价*/
+
+.overallPraise {
+	display: none;
+	position: fixed;
+	top: 30%;
+	width: 280px;
+	left: 50%;
+	margin-left: -140px;
+	height: 185px;
+	background-color: #ffffff;
+	z-index: 13;
+}
+
+.overallTitle {
+	margin: 28px 0;
+	text-align: center;
+	color: #333333;
+}
+
+.overallPri {
+	margin: 0 auto 38px 63px;
+}
+
+.overallPri div {
+	display: inline-block;
+	margin-right: 7px;
+	width: 22px;
+	height: 22px;
+}
+
+.overallCommon {
+	background: url(../../img/img_pad/resourceCenter/img_praise.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.overallPriActive {
+	background: url(../../img/img_pad/resourceCenter/img_praiseActive.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.operateBtn {
+	border-top: 1px solid #d4d4d4;
+}
+
+.operateBtn .mui-btn-block {
+	margin: 3px 0px 0 0;
+	padding: 6px 30px;
+	width: inherit;
+	display: inline-block;
+	font-size: 14px;
+	border-radius: 20px;
+}
+
+.operateBtn .mui-btn-block:first-child {
+	margin: 5px 25px 0 38px;
+	background-color: #e6e6e6;
+	border: none;
+	color: #000000;
+}
+
+
+/*遮罩*/
+
+.zhezhao {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #000000;
+	opacity: .5;
+	z-index: 6;
+}

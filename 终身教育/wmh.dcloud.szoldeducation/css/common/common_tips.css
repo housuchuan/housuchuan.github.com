@@ -1,0 +1,42 @@
+/** 
+*作者：孙尊路
+*时间：2016-06-22 11:21
+*描述： 公共表单提示消息 [暂时只有研习圈-创建圈子有引用]
+**/
+
+.vol-tips {
+	background: #fedcc0;
+	padding: 8px 6px;
+	display: -webkit-box;
+	position: relative;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+}
+
+.vol-tips .tips-txt {
+	display: -webkit-box;
+	font-size: 12px;
+	color: #ae881f;
+	line-height: 18px;
+	padding-right: 24px;
+	moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	box-flex: 1;
+}
+
+.vol-tips .vol-close,
+.vol-tips .vol-close:hover {
+	position: absolute;
+	right: 6px;
+	top: 50%;
+	margin-top: -12px;
+	width: 24px;
+	height: 24px;
+	background: url(../../img/studyCircle/img_tips_close.png) no-repeat;
+	background-size: 24px auto;
+}
+
+.vol-tips .vol-close:active {
+	background-position: 0 -24px;
+}

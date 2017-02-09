@@ -1,0 +1,336 @@
+/** 
+*作者：侯苏川
+*时间：2016-07-08 08:22
+*描述：研习圈 ipad版本页面样式
+**/
+
+
+/*頭部下拉列表顯示*/
+
+.mui-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.study-choose {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	width: 100%;
+	padding: 20px 0 21px 0;
+	background-color: #fff;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.study {
+	float: left;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	border-right: 1px dashed #dbdbdb;
+}
+
+.study > div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 55px;
+	height: 55px;
+}
+
+.study > span {
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	letter-spacing: 1px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.study-personalpage {
+	background: url(../../../img/studyCircle/img_personalpage.png) no-repeat;
+	background-size: 55px 55px;
+}
+
+.study-managecircle {
+	background: url(../../../img/studyCircle/img_managecircle.png) no-repeat;
+	background-size: 45px 45px;
+}
+
+.study-managermanage {
+	background: url(../../../img/studyCircle/img_managermanage.png) no-repeat;
+	background-size: 45px 45px;
+}
+
+.study-createcircle {
+	background: url(../../../img/studyCircle/img_createcircle.png) no-repeat;
+	background-size: 45px 45px;
+}
+
+.study {
+	border-radius: 5px;
+}
+
+.study:active {
+	background-color: #d1d1d1;
+}
+
+.mui-icon-plusempty:before {
+	content: '\e468';
+}
+
+#add-icon {
+	width: 24px;
+	height: 24px;
+	float: right;
+}
+
+.column-selection {
+	width: 14%;
+	margin-top: 44px;
+	color: #fff;
+	background-color: #1a3a60;
+}
+
+.topic-choice,
+.sys-set-area {
+	width: 100%;
+	height: 70px;
+	line-height: 48px;
+	padding: 0;
+	font-size: 16px;
+	color: #bbc0c9;
+}
+
+.topic-choice > div,
+.sys-set-area > div {
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	margin-top: 0;
+	padding: 0;
+}
+
+.sys-set {
+	font-size: 30px;
+	color: #bbc0c9;
+}
+
+.sys-set:active {
+	color: #fff;
+}
+
+.topic-choice:after {
+	height: 0px;
+}
+
+.mui-navigate-right:after,
+.mui-push-right:after {
+	content: none;
+}
+
+.section-left-active {
+	color: #fff;
+	background-color: #187bc2;
+}
+
+.topic-choice > div {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.tab-list {
+	background-color: #1a3a60;
+}
+
+.tab-list:after {
+	height: 0;
+}
+
+#listdata > li {
+	padding: 0;
+}
+
+
+/*右边选项内容显示*/
+
+.mui-right-scroll {
+	z-index: -2;
+}
+
+.mui-right {
+	z-index: 10;
+	position: absolute;
+	top: 44px;
+	right: 0;
+	bottom: 0;
+	left: 14%;
+	border-left: 1px solid #e0e0e0;
+}
+
+
+/*信息块样式*/
+
+.message-block-wrapper {
+	margin-top: 118px;
+}
+
+.message-block > div {
+	float: left;
+	width: 20%;
+	margin-left: 4%;
+	margin-top: 16px;
+	padding: 5px 5px 9px 5px;
+	background-color: #ffffff;
+}
+
+.message-block img {
+	width: 100%;
+	height: 160px;
+}
+
+.title-program {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+	line-height: 31px;
+	font-size: 16px;
+}
+
+.m-btn {
+	float: right;
+	width: 60%;
+	height: 28px;
+	margin-top: 10px;
+	padding: 0.5px 1px 0.5px 1px;
+	border-radius: 3px;
+	background-color: #3595da;
+}
+
+.m-btn:active {
+	background-color: #adbfb6;
+}
+
+.m-btn:active span {
+	font-size: 13px;
+	color: #ededd6;
+}
+
+.attend-in {
+	position: absolute;
+	margin: 3px 0 0 3px;
+	font-size: 18px;
+	color: #fff;
+}
+
+.video-show {
+	display: block;
+	width: 100%;
+	line-height: 24px;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+}
+
+@media only screen and (max-width: 720px) {
+	.attend-in {
+		display: none;
+	}
+}
+ /*申请加入弹出样式 <!--遮罩层-->*/
+  
+  #zhezhao-area {
+  	display: none;
+  	position: fixed;
+  	left: 0%;
+  	width: 100%;
+  	height: 100%;
+  	background-color: black;
+  	z-index: 1001;
+  	-moz-opacity: 0.5;
+  	opacity: .50;
+  	filter: alpha(opacity=70);
+  }
+  
+  .join-circle {
+  	position: fixed;
+  	top: 100%;
+  	width: 50%;
+  	margin-left: 25%;
+  	border-radius: 5px;
+  	background-color: #fafafa;
+  	z-index: 1002;
+  }
+  
+  .circle-bar {
+  	width: 100%;
+  	line-height: 44px;
+  	text-align: center;
+  	color: #fff;
+  	border-top-left-radius: 5px;
+  	border-top-right-radius: 5px;
+  	background-color: #187bc2;
+  }
+  
+  .circle-bar div {
+  	display: inline-block;
+  	font-size: 14px;
+  }
+  
+  .circle-bar div:active {
+  	color: #0000FF;
+  }
+  
+   .cancel-btn {
+  	float: left;
+  	width: 40%;
+  	margin-left: 25px;
+  	color: #ffffff;
+  	background-color: #e0e0e0;
+  }
+  
+  .confirm-btn {
+  	float: right;
+  	width: 40%;
+  	margin-right: 25px;
+  	color: #ffffff;
+  	background-color: #187bc2;
+  }
+  
+  .button-area button {
+  	margin-bottom: 16px;
+  }
+  /*.mui-icon-closeempty {
+  	float: right;
+  	margin: 6px 4px 0 0;
+  	color: #fff;
+  	font-size: 30px;
+  }*/
+  /*名称及描述*/
+  
+  .circle-input {
+  	margin-top: 10px;
+  	padding: 0;
+  	padding-left: 20px;
+  	padding-right: 20px;
+  	padding-top: 20px;
+  	/*background-color: #fff;*/
+  	border-top: 1px solid #e0e0e0;
+  	/*border-bottom: 1px solid #e0e0e0;*/
+  }
+  
+  textarea {
+  	height: 200px;
+  }
+    
+  .cut-line {
+  	width: 100%;
+  	height: 1px;
+  	background-color: #e0e0e0;
+  }
+  

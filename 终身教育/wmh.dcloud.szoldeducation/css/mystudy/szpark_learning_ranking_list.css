@@ -1,0 +1,93 @@
+/*
+ * 作者：侯苏川
+ * 时间：2016-06-27
+ * 描述：学习排行子页面
+ */
+
+
+/*头部*/
+
+.mui-scroll-wrapper {
+	margin-top: 110px;
+}
+
+.topLayer {
+	height: 70px;
+	background-color: #1ebaf3;
+}
+
+.topLayerItem {
+	float: left;
+	width: 50%;
+	line-height: 70px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.topLayerItem h4 {
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.topLayerItem h5 {
+	color: #beeeff;
+	margin: 10px;
+}
+
+
+/*学习排行内容*/
+
+.mui-content>.mui-table-view:first-child {
+	margin-top: 0;
+}
+
+.ranking-name {
+	padding: 14px 0;
+	background-color: #f7f6fb;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.ranking-name > span:first-child {
+	display: inline-block;
+	width: 40%;
+	margin-left: 16%;
+}
+
+.ranking-name > span:last-child {
+	float: right;
+	display: inline-block;
+	width: 30%;
+}
+
+.mui-table-view-cell {
+	padding: 11px 0;
+}
+
+.mui-table-view-cell > div:last-child {
+	display: inline-block;
+	float: right;
+	width: 30%;
+}
+
+.mui-table-view-cell > div:first-child {
+	display: inline-block;
+	float: left;
+	width: 60%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.mui-table-view-cell > div:first-child > span:first-child {
+	position: absolute;
+	left: 15px;
+	color: #adadad;
+}
+
+.mui-table-view-cell > div:first-child > span:last-child {
+	margin-left: 27%;
+}
+
+.mui-table-view:last-child:after {
+	left: 15px;
+}

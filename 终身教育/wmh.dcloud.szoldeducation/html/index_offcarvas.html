@@ -1,0 +1,119 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-05 11:38:16
+        描述：  园区app首页 ,非Plus下,启用该页面
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>首页</title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" href="../css/index-menu.css" />
+		<!--div的侧滑栏中 如果position不为fixed,在5s safari中横屏有问题-->
+		<link rel="stylesheet" href="../css/common/common_iphone5s.css" />
+	</head>
+
+	<body>
+		<!--非Plus情况下 ,浏览器中-->
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<ul class="mui-table-view mui-table-view-chevron headLogin">
+							<li class="mui-table-view-cell mui-media login_area">
+								<img class="mui-media-object mui-pull-left head-img" id="head-img" src="../img/MobileFrame/img_head_logo190-190.png">
+								<div class="mui-media-body">
+									<span class="LoginName">请先登录</span>
+									<p class='mui-ellipsis' style="display: none;"></p>
+								</div>
+							</li>
+
+						</ul>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell" id="originalDisplay">
+								<div class="mui-navigate-right"><i class="mui-icon mui-icon-refresh"></i> 原创展示</div>
+							</li>
+							<li class="mui-table-view-cell" id="institution">
+								<div class="mui-navigate-right"> <i class="mui-icon mui-icon-star"></i> 认证机构</div>
+							</li>
+							<li class="mui-table-view-cell" id="rank">
+								<div class="mui-navigate-right"><i class="mui-icon mui-icon-help"></i> 积分排行</div>
+							</li>
+							<li class="mui-table-view-cell" id="personSpace">
+								<div class="mui-navigate-right"><i class="mui-icon mui-icon-contact"></i> 个人空间</div>
+							</li>
+							<li class="mui-table-view-cell" id="myStudy">
+								<div class="mui-navigate-right"><i class="mui-icon mui-icon-compose"></i> 我的学习</div>
+							</li>
+							<li class="mui-table-view-cell" id="myNews">
+								<div class="mui-navigate-right"><i class="mui-icon mui-icon-chat"></i> 我的消息</div>
+							</li>
+						</ul>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell1 settinglayer">
+								<div class="setting" style="float: left;"><i class="mui-icon mui-icon-gear"></i>设置</div>
+								<div class="comment" style="float: right;"><i class="mui-icon mui-icon-chatboxes"></i>反馈</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<!--主界面部分-->
+			<div class="mui-inner-wrap">
+				<!-- off-canvas backdrop -->
+				<header class="mui-bar mui-bar-nav bgblue">
+					<a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left suzhou_white"></a>
+					<h1 class="mui-title">首页</h1>
+					<i class="mui-icon mui-icon-plusempty mui-pull-right " id="btn-askQuestion"></i>
+				</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="mui-content-padded">
+						</div>
+					</div>
+				</div>
+				<div class="mui-off-canvas-backdrop"></div>
+				<!--底部选项-->
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item  mui-active" href="homepage/szpark_homepage.html">
+						<span class="mui-icon icon-home"></span>
+						<span class="mui-tab-label">首页</span>
+					</a>
+					<a class="mui-tab-item" href="#">
+						<span class="mui-icon icon-news"></span>
+						<span class="mui-tab-label">新闻公告</span>
+					</a>
+					<a class="mui-tab-item" href="#">
+						<span class="mui-icon icon-askanswer"></span>
+						<span class="mui-tab-label">你问我答</span>
+					</a>
+					<a class="mui-tab-item" href="#">
+						<span class="mui-icon  icon-check"></span>
+						<span class="mui-tab-label">调查问卷</span>
+					</a>
+					<a class="mui-tab-item" href="#">
+						<span class="mui-icon icon-educate"></span>
+						<span class="mui-tab-label">教育关工委</span>
+					</a>
+				</nav>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../js/"
+			});
+			seajs.use('bizlogic/homepage/index_offcarvas');
+		</script>
+	</body>
+
+</html>

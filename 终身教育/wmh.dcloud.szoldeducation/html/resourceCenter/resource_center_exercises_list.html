@@ -1,0 +1,68 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-10-27 09:27:11
+        描述：  练习题
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/resourceCenter/resource_center_exercises_list.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">练习题</h1>
+		</header>
+
+		<!--主体部分-->
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="mui-table-view" id="listdata">
+						<!--<li id="1">
+							<div class="problem"><span>1、</span><span>某市检察院运用电子设备双路监控，同步录音录像，监督检察官办案过程，推动理性文明执法。关于理性文明执法，下列哪一说法是不正确的？</span><span class="frame">(&nbsp;&nbsp;&nbsp;<span class="number"></span>&nbsp;&nbsp;&nbsp;)</span>
+							</div>
+							<div class="choice">
+								<div>
+									<span>A</span><span>体现了以人为本的原则与精神</span>
+								</div>
+								<div>
+									<span>B</span><span>体现了以人为本的原则与精神体现了以人为本的原则与精神11111</span>
+								</div>
+								<div>
+									<span>C</span><span>体现了以人为本的原则与精神体现了以人为本的原则与精神体现了以人为本的原则与精神222222</span>
+								</div>
+								<div>
+									<span>D</span><span>体现了以人为本的原则与精神44444</span>
+								</div>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+			<button type="button" class="mui-btn mui-btn-blue mui-btn-block">提交答案</button>
+		</div>
+
+		<!--引入相应工具-->
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/resourceCenter/resource_center_exercises_list");
+		</script>
+	</body>
+
+</html>

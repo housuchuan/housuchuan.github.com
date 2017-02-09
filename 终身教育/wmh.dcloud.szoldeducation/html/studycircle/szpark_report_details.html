@@ -1,0 +1,56 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-13 08:29:07
+        描述： 举报管理详情父页面 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>举报管理</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/studycircle/szpark_report_details.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">举报管理</h1>
+		</header>
+		<div class="mui-content" id="content">
+			<!--映射数据-->
+			<!--<div>
+				<span>用&nbsp;&nbsp;户&nbsp;&nbsp;名</span>
+				<span class="name">张三</span>
+			</div>
+			<div>
+				<span>举报内容</span><span class="report-section">阿斯达老师的大理石讲解内容，无关课堂内容话题</span>
+			</div>
+			<div>
+				<span>举报类型</span>
+				<span>话题</span>
+			</div>
+			<div>
+				<span>举报时间</span>
+				<span class="report-section">2016-2-2 18:32:22</span>
+			</div>
+			<button type="button" class="del-btn mui-btn">屏蔽</button><button type="button" class="ignored-btn mui-btn">忽略</button>-->
+		</div>
+
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js" ></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/studycircle/szpark_report_details")
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,93 @@
+/*
+ * 你问我答提问页面
+ * 包括  咨询答疑提交页面也复用了这个css
+ * 家长问答问答提交页面
+ * @author dailc
+ * */
+
+
+/*详情容器区域*/
+.main-container {
+	/*relative来给子元素的absolute定位*/
+	position: relative;
+	background: #f7f6fb;
+	font-size: 15px;
+	color: #333333;
+	overflow: hidden;
+	word-break: break-all;
+}
+/**提问区域 */
+.ask-container{
+	padding-top: 10px;
+	background: #FFFFFF;
+	border-bottom: 1px solid #e0e0e0;
+}
+input[type=text],textarea{
+	padding: 0;
+	margin-bottom: 0;
+	border: 0px;
+}
+/*自定义提问的 textarea*/
+.ask-container> textarea {
+	/*这个需要重写《因为Mui的textarea是重写了字体大小的,所以要重写回来*/
+	font-size: 15px;
+	text-align: left;
+	width: 100%;
+	height: 210px;
+	padding-left: 10px;
+	padding-right: 10px;
+	word-break: break-all;
+}
+
+/*验证码区域*/
+.verify-container {
+	margin-top: 10px;
+	background: #FFFFFF;
+	height: 45px;
+	line-height: 45px;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	overflow: hidden;
+}
+/*输入验证码的 input*/
+.verify-container> input {
+	font-size: 15px;
+	padding-left: 10px;
+	width: 70%;
+}
+/*图形验证码*/
+.img-verifycode {
+	float: right;
+	width:20%;
+	height: 30px;
+	margin-top: 6px;
+	/*还剩余10%  基本上width是大于300的*/
+	margin-right: 25px;
+	border: 1px solid #ccc
+}
+/*按钮通用*/
+.btn-common {
+	display: block;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 40px;
+}
+.btn-common:hover{
+	border-color: #000000;
+	background: #1ebcf8;
+	color: #ffffff;
+}
+/*提交按钮*/
+#btn-submit {
+	margin-top: 20px;
+	background: #1ebaf3;
+	border-radius: 5px;
+}
+/*取消按钮*/
+#btn-cancel {
+	margin-top: 15px;
+	background: #cdcdcd;
+	/*留给底部的空白*/
+	margin-bottom: 30px;
+}

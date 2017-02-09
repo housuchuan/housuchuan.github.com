@@ -1,0 +1,45 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-12 08:29:45
+        描述： 你问我答pad版页面 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>你问我答</title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<style type="text/css">
+			/*右侧的icon btn*/
+			.mui-bar .mui-icon {
+				color: #FFFFFF;
+				font-size: 30px;
+				padding-top: 8px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">你问我答</h1>
+			<i class="mui-icon mui-icon-plusempty mui-pull-right " id="btn-askQuestion"></i>
+		</header>
+		<div class="mui-content">
+
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/askandanswer/szpark_askandanswer_parent_pad');
+		</script>
+	</body>
+
+</html>

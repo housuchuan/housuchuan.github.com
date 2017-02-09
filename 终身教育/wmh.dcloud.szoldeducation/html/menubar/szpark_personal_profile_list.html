@@ -1,0 +1,126 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-06-23 13:51:07
+        描述: 个人资料子页面
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/mui.picker.min.css" type="text/css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/menubar/szpark_personal_profile_list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div>个人资料</div>
+			<ul class="mui-table-view" id="content">
+				<!--暂时不用,统一采用H5选择文件方式-->
+				<!--<li class="mui-table-view-cell default-plus-selectphoto">
+					<a href="#picture" class="mui-navigate-right user-log">
+						<span>头&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;像</span>
+						<img src="{{image}}" />
+					</a>
+				</li>-->
+				<li class="mui-table-view-cell default-Noplus-selectphoto">
+					<a href="#" class="mui-navigate-right user-log" onclick="chooseImgFromGalleryFile.click()">
+						<span>头&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;像</span>
+						<img src="" id="headImage" />
+					</a>
+				</li>
+				<li class="user-common">
+					<div class="mui-input-row">
+						<label>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label>
+						<input disabled="disabled" id="username" type="text" placeholder="请输入姓名" value="">
+					</div>
+				</li>
+
+				<li class="mui-table-view-cell">
+					<a id="birthdayWrappper" class="btn mui-navigate-right user-log">
+						<span>生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日</span><span id="birthdayLable"></span>
+					</a>
+					<input type="hidden" disabled="disabled" name="birthday" id="birthday" value="" />
+				</li>
+				<li class="mui-table-view-cell" id="bloodSelector">
+					<a href="#" class="mui-navigate-right user-log">
+						<span>血&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型</span><span id="bloodLable"></span>
+					</a>
+					<input type="hidden" name="blood" id="blood" value="" />
+				</li>
+				<li class="user-common">
+					<div class="mui-input-row">
+						<label>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</label>
+						<input id="email" type="text" placeholder="请输入邮箱" value="">
+					</div>
+				</li>
+				<li class="user-common">
+					<div class="mui-input-row">
+						<label>个性签名</label>
+						<input id="signature" type="text" placeholder="请输入个性签名" value="">
+					</div>
+				</li>
+				<li class="user-hobby">
+					<div class="mui-input-row">
+						<label>兴趣爱好</label>
+						<input id="interest" type="text" placeholder="请输入兴趣爱好" value="">
+					</div>
+				</li>
+				<li class="user-common">
+					<div class="mui-input-row">
+						<label>特&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长</label>
+						<input id="forte" type="text" placeholder="请输入特长" value="">
+					</div>
+				</li>
+
+			</ul>
+			<li class="user-common noticeWay">
+				<div>
+					<label for="newsTell">短信通知：</label><input type="checkbox" id="newsTell" name="newsTell" />
+				</div>
+				<div>
+					<label for="emailTell">邮件通知：</label><input type="checkbox" id="emailTell" name="emailTell" />
+				</div>
+				<div>
+					<label for="message">站内信：</label><input type="checkbox" id="message" name="message" />
+				</div>
+			</li>
+		</div>
+		<button type="button" class="mui-btn mui-btn-blue mui-btn-block save" id="btnSave">保存</button>
+		<input type="file" id="chooseImgFromGalleryFile" class="common-hidden" />
+
+		<!--头像选择-->
+		<!--<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">拍照或录像</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">选取现有的</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#picture"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>-->
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/menubar/szpark_personal_profile_list");
+		</script>
+	</body>
+
+</html>

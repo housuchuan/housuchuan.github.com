@@ -1,0 +1,88 @@
+/*
+ * 新闻公告tab
+ * author: hybo
+ * */
+
+.park-slider {
+	font-size: 14px;
+	padding-left: 15px;
+	height: 40px;
+	border-bottom: 1px solid #e3e3e3;
+	background-color: #fafafa;
+}
+
+#sliderSegmentedControl {
+	width: 200%;
+}
+
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+	display: inline-block;
+	margin: 0;
+	width: 72px;
+	line-height: 36px;
+	vertical-align: top;
+}
+
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar {
+	background: none;
+}
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+	color: #333;
+	border-bottom: none;
+}
+
+.new-active {
+	color: #187bc2 !important;
+	border-bottom: 3px solid #187bc2 !important;
+}
+
+.mui-segmented-control .mui-control-item {
+	height: 36px;
+	line-height: 36px;
+}
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+	border-top: 1px solid #e3e3e3;
+	border-bottom: none;
+}
+
+.mui-slider-indicator {
+	text-align: left;
+}
+
+.park-control {
+	font-size: 14px;
+	color: #666;
+}
+
+.mui-table-view-cell:after {
+	left: 0;
+}
+
+.mui-slider .mui-slider-group {
+	font-size: 0;
+	position: relative;
+	-webkit-transition: all 0s linear;
+	transition: all 0s linear;
+	white-space: nowrap;
+}
+
+.mui-pull-top-pocket {
+	top: 44px !important;
+}
+.tab_silder{
+	overflow: hidden;
+	height: 40px;
+	position: relative;
+	z-index: 1000;
+}
+.tab_silder_view{
+	width: 200%!important;
+	/*position: absolute;*/
+	height: 40px;
+	white-space: nowrap;
+}
+.mui-scroll{
+	/*margin-top: 44px;*/
+}

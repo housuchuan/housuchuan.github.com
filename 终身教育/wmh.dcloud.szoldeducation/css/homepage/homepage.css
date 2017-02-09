@@ -1,0 +1,319 @@
+/** 
+        作者：孙尊路
+        时间：2016-04-05 11:38:16
+        描述：  园区app首页面
+**/
+
+
+/**
+ * 图片轮播  
+ */
+
+.mui-slider-indicator .mui-active.mui-indicator {
+	/*background: #187bc2;*/
+}
+
+.mui-slider-indicator .mui-indicator {
+	/*background: #fff;*/
+	margin: 2px;
+}
+
+.mui-slider-indicator {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	background: 0 0;
+}
+
+.mui-grid-view.mui-grid-9 {
+	margin-top: 0px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+	margin: 0;
+	padding: 0px 15px;
+	vertical-align: top;
+	border-right: none;
+	border-bottom: none;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell.mui-col-xs-3 {
+	height: 88px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+	font-size: 12px;
+	color: #333333;
+}
+
+.main_menu {
+	background-image: url(../../img/index/img_menu.png);
+}
+
+.mui-icon-schoolservey {
+	width: 43px;
+	height: 43px;
+	background-image: url(../../img/homepage/img_academic_education.png);
+	background-size: 100%;
+}
+
+.mui-icon-grid02 {
+	width: 43px;
+	height: 43px;
+	background-image: url(../../img/homepage/img_news_bulletin.png);
+	background-size: 100%;
+}
+
+.mui-icon-grid03 {
+	width: 43px;
+	height: 43px;
+	background-image: url(../../img/homepage/img_community_education.png);
+	background-size: 100%;
+}
+
+.mui-icon-grid04 {
+	width: 43px;
+	height: 43px;
+	background-image: url(../../img/homepage/img_academic_education.png);
+	background-size: 100%;
+}
+
+.mui-icon-grid05 {
+	width: 43px;
+	height: 43px;
+	background-image: url(../../img/homepage/img_oldage_education.png);
+	background-size: 100%;
+}
+
+.mui-icon-grid06 {
+	width: 43px;
+	height: 43px;
+	background-image: url(../../img/homepage/imgl_lifelong_education.png);
+	background-size: 100%;
+}
+
+.mui-icon-grid07 {
+	width: 43px;
+	height: 43px;
+	background-image: url(../../img/homepage/img_resource_center.png);
+	background-size: 100%;
+}
+
+.mui-icon-grid08 {
+	width: 43px;
+	height: 43px;
+	background-image: url(../../img/homepage/img_study_circle.png);
+	background-size: 100%;
+}
+
+.mui-slider-title {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding-right: 5px;
+}
+
+
+/**
+ * 推荐课程
+ */
+
+.recommand_cource_ul {
+	background-color: #ffffff;
+	list-style-type: none;
+	padding: 0;
+	margin: 12px 0 0 0;
+	border-top: 1px solid #e0e0e0;
+}
+
+.recommand_cource_ul li {
+	/*background-color: #f7f6fb;*/
+	height: 40px;
+	padding-top: 10px;
+}
+
+.recommand_cource_ul .title {
+	padding-left: 10px;
+	font-size: 14px;
+	color: #333333;
+}
+
+.recommand_cource_ul .more {
+	float: right;
+	padding-right: 15px;
+	font-size: 10px;
+	color: #adadad;
+}
+
+.mui-table-view:before {
+	background-color: #ffffff;
+}
+
+.mui-table-view-cell:after {
+	background-color: #ffffff;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell {
+	text-align: left;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-object {
+	width: 146.5px;
+	height: 83px;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .content {
+	text-align: left;
+	color: #333333;
+}
+
+/*.mui-table-view.mui-grid-view .mui-table-view-cell .content span img {
+	width: 10px;
+	height: 10px;
+}*/
+
+
+/**
+ * 研习圈
+ */
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .content_yanxinquan {
+	text-align: left;
+	height: 44px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #333333;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .yanxiquan_img {
+	float: left;
+	width: 45px;
+	height: 44px;
+	margin-right: 10px;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .content_yanxinquan span {
+	margin-top: 10px;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .content_yanxinquan .memberandtiezi {
+	color: #adadad;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .content_yanxinquan .memberandtiezi span {
+	color: #2784c6;
+}
+
+.linewrap {
+	background-color: #ffffff;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 15px;
+}
+
+.linewrap .line {
+	width: 100%;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+
+/*推荐课程栏目&研习圈item点击效果*/
+
+.yanxinquan_ul .mui-table-view-cell:active,
+.recommand_cource_ul_content .mui-table-view-cell:active {
+	background-color: #EAEAEA;
+}
+
+
+/* 滑动条颜色 */
+
+
+/*暂时不需要，根据接口获取的数组的个数自动填充宽度*/
+
+#sliderSegmentedControl1 {
+	/*width: 84px;*/
+}
+
+
+/*重写滑动栏*/
+
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item {
+	width: 80px;
+}
+
+.image_icon {
+	margin: auto;
+}
+
+
+/**
+ * 视频点播播放按钮css
+ */
+
+#zhezhao-area {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	filter: alpha(opacity=70);
+}
+
+#alertWin {
+	display: none;
+	background-color: #EEEEEE;
+	font-size: 14px;
+	padding: 15px;
+	color: #000000;
+	position: fixed;
+	top: 150px;
+	width: 80%;
+	left: 10%;
+	z-index: 1002;
+	border-radius: 6px;
+}
+
+#btnGroup {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#btnGroup button {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+/*评价星*/
+.starList span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+
+.suzhou_stars_unsellect {
+	background: url(../../img/homepage/img_star0.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.suzhou_stars_sellected {
+	background: url(../../img/homepage/img_star1.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/*为登录状态下显示没有任何数据*/
+ .noData {
+ 	text-align: center;
+ 	line-height: 100px;
+ 	font-size: 14px;
+ 	color: darkgray;
+ }

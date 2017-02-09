@@ -1,0 +1,42 @@
+<!-- 
+        作者：dailc 
+        时间：2016-04-05 17:06:37
+        描述：  家长问答列表页面
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title> 家长问答列表页面 </title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/askandanswer/szpark_askandanswer_list.css" />
+	</head>
+	<body>
+		
+		<div class="mui-content">
+			<div id="pullrefresh" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--加标签的目的：解决某些手机刷新列表（空白）渲染不出来的情况（客户手机）-->
+					<div style="border-top: 1px solid #FFFFFF;"> 
+					</div>
+					<ul class="list-container" id="listdata">
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/educate/szpark_parentAskAnswer_list');
+		</script>
+	</body>
+</html>

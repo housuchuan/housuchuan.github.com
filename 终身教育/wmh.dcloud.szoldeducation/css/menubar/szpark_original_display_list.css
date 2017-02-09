@@ -1,0 +1,16 @@
+ .mui-scroll-wrapper {
+ 	padding-left: 10px;
+ 	background-color: #fff;
+ }
+ .mui-pull-left {
+	width: 80px;
+	height: 80px;
+	background: url(../../img/originalDisplay/img_develop.jpg) no-repeat;
+	background-size: 80px 80px;
+}
+ .mui-media-body h4, .mui-table h4 {
+ 	line-height: 68px;
+ }
+ .mui-table-view-cell {
+ 	padding-left: 0;
+ }

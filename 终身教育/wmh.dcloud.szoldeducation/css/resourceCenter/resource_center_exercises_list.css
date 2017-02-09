@@ -1,0 +1,73 @@
+
+/**
+ *作者：侯苏川 
+ *时间：2016-10-27
+ *描述：练习题  
+ */
+
+.mui-table-view-cell {
+	padding: 0;
+}
+
+.mui-scroll-wrapper {
+	margin: 44px 0 57px 0;
+}
+
+.problem {
+	padding: 11px 15px;
+	font-size: 15px;
+	color: #878787;
+}
+
+.frame {
+	margin-left: 20px;
+}
+
+.number {
+	color: red;
+}
+
+/*选项设置*/
+.choice {
+	padding: 20px 35px 20px 15px;
+	font-size: 14px;
+	color: #4d4d4d;
+	background-color: #f7f6fb;
+	border-top: 1px solid #eaeaeb;
+	border-bottom: 1px solid #eaeaeb;
+}
+
+.choice > div {
+	margin-top: 20px;
+}
+
+.choice > div:first-child {
+	margin-top: 0px;
+}
+
+.choice > div span:first-child {
+	position: absolute;
+	display: inline-block;
+	width: 28px;
+	line-height: 28px;
+	text-align: center;
+	margin-right: 18px;
+	color: #ffffff;
+	background-color: #b3b3b3;
+	border-radius: 20px;
+}
+
+.choice > div span:last-child {
+	display: inline-block;
+	margin: 3px 0 0 48px;
+}
+
+/*提交按钮*/
+.mui-btn-block {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 0;
+	background-color: #b5b5b5;
+	border: none;
+	z-index: 1000;
+}

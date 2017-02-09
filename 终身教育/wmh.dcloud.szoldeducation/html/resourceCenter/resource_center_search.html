@@ -1,0 +1,83 @@
+<!-- 
+        作者：朱晓琪
+        时间：2016-06-28
+        描述：资源中心index
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>资源中心</title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket44.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/resourceCenter/resource_center_search.css" />
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav clearfix">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">搜索</h1>
+		</header>
+		<div class="mui-content">
+
+			<div id="searchBorder">
+				<input type="search" id="search" placeholder="请输入关键字" />
+				<div id="searchButton"><img src="../../img/resourceCenter/resource_center_search_button.png" /></div>
+			</div>
+
+			<!--div实现的下拉刷新-->
+			<div id="searchList">
+				<div id="pullrefresh" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<ul class="list-container mui-table-view" id="listdata">
+							<!--直播视频数据-->
+							<!--<li class="mui-table-view-cell zhiboItem">
+								<div class="imgBorder"><img src="../../img/resourceCenter/resourceCenter1.jpg" /></div>
+								<div class="infoDetailBorder">
+									<div class="zhiboTitle">冶金技术的发展</div>
+									<div class="mui-ellipsis-2"><span>简介：</span>那你那你女女女男男女女家南京你看你看颈那你那你女女女男男女女家南京你看你看颈康胶囊康胶囊</div>
+								</div>
+							</li>-->
+							<!--点播视频数据-->
+							<!--<li class="mui-table-view-cell zhiboItem">
+								<div class="imgBorder"><img src="../../img/resourceCenter/resourceCenter1.jpg" /></div>
+								<div class="infoDetailBorder">
+									<div class="zhiboTitle">冶金技术的发展冶金技术的发展冶金技术的发展冶金技术的发展</div>
+									<div><span>2003</span><span>人学过</span></div>
+									<div><span>积分:&nbsp;&nbsp;</span><span>145</span></div>
+								</div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="zhezhao-area"></div>
+			<div id="alertWin">
+				<div>您可以选择预览或者播放，如果预览则不能获取积分，也不能进行记录笔记等操作，如果播放需要先进行登录操作！</div>
+				<div id="btnGroup">
+					<button type="button" class="mui-btn mui-btn-blue mui-button-row alertWinBtn" id="preview">预览</button>
+					<button type="button" class="mui-btn mui-btn-green mui-button-row alertWinBtn" id="play">播放</button>
+					<button type="button" class="mui-btn mui-btn-grey mui-button-row alertWinBtn" id="cancle">取消</button>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			})
+			seajs.use("bizlogic/resourceCenter/resource_center_search");
+		</script>
+	</body>
+
+</html>

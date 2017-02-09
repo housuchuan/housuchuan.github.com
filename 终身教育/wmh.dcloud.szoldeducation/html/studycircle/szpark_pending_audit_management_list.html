@@ -1,0 +1,52 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-13 08:29:07
+        描述： 圈主待审核管理父页面 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/studycircle/szpark_pending_audit_management_list.css" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" id="pullrefresh">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<!--加标签的目的：解决某些手机刷新列表（空白）渲染不出来的情况（客户手机）-->
+					<div style="border-top: 1px solid #FFFFFF;height: 0px;color: #ffffff;">
+						.
+					</div>
+					<ul id="listdata">
+						<!--<li id="{{userId}}">
+							<div class="mui-tip clearfix">
+								<div class="propose"><span class="applyer">申请人：</span><span class="applyer applyer-name">{{nick}}</span></div>
+								<div class="proposeReason mui-clearfix"><span class="apply-reason">申请理由：</span><span class="apply-reason want-join">{{reason}}</span></div>
+								<div class="btn"><button class="agree">同意</button><button class="refuse">拒绝</button></div>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/studycircle/szpark_pending_audit_management_list");
+		</script>
+	</body>
+
+</html>

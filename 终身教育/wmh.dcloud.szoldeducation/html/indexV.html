@@ -1,0 +1,62 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-05 11:38:16
+        描述：  园区app首页 ,Plus下,默认启用该页面
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	</head>
+
+	<body>
+		<!--Plus情况下 ,app启动页-->
+		<header class="mui-bar mui-bar-nav bgblue">
+			<div class="mui-icon mui-action-menu mui-icon-bars mui-pull-left suzhou_white"></div>
+			<h1 class="mui-title">首页</h1>
+			<i class="mui-icon mui-icon-plusempty mui-pull-right " id="btn-askQuestion"></i>
+		</header>
+		<div class="mui-content" id="">
+			<!--底部选项-->
+			<nav class="mui-bar mui-bar-tab ">
+				<a class="mui-tab-item  mui-active" href="homepage/szpark_homepage.html">
+					<span class="mui-icon icon-home"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a class="mui-tab-item" href="#">
+					<span class="mui-icon icon-news"></span>
+					<span class="mui-tab-label">新闻公告</span>
+				</a>
+				<a class="mui-tab-item" href="#">
+					<span class="mui-icon icon-askanswer"></span>
+					<span class="mui-tab-label">你问我答</span>
+				</a>
+				<a class="mui-tab-item" href="#">
+					<span class="mui-icon  icon-check"></span>
+					<span class="mui-tab-label">调查问卷</span>
+				</a>
+				<a class="mui-tab-item" href="#">
+					<span class="mui-icon icon-educate"></span>
+					<span class="mui-tab-label">教育关工委</span>
+				</a>
+			</nav>
+		</div>
+		<script type="text/javascript" src="../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../js/"
+			});
+			seajs.use('bizlogic/homepage/indexV');
+		</script>
+	</body>
+
+</html>

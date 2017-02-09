@@ -1,0 +1,76 @@
+<!-- 
+        作者：黄赟博
+        时间：2016-04-06 16:05:03
+        描述： 新闻公告子页面
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>新闻公告子页面</title>
+
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/news/szpark_news_list.css" />
+		<link rel="stylesheet" href="../../css/common/common_list.css" />
+	</head>
+
+	<body>
+		<div id="slider" class="mui-slider">
+			<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<div class="mui-scroll" id="sliderSegmentedControl2">
+					<a class="mui-control-item mui-active" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa1" id="002001">学习新闻</a>
+					<a class="mui-control-item" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa2" id="002002">区域动态</a>
+					<a class="mui-control-item" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa3" id="002003">公告消息</a>
+					<a class="mui-control-item" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa4" id="002004">图片新闻</a>
+				</div>
+			</div>
+			<div class="mui-slider-group">
+				<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa1" class="mui-slider-item mui-control-content"></div>
+				<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa2" class="mui-slider-item mui-control-content"></div>
+				<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa3" class="mui-slider-item mui-control-content"></div>
+				<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa4" class="mui-slider-item mui-control-content"></div>
+			</div>
+		</div>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper" id="pullrefresh" style="">
+				<div class="mui-scroll">
+					<!--数据容器-->
+					<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed" id="listdata">
+						<!--<li class="mui-table-view-cell" id="{{InfoID}}">
+							<div class="mui-table">
+								<div class="mui-table-cell mui-col-xs-10">
+									<h4 class="mui-ellipsis">{{Title}}</h4>
+									<h5 class="mui-ellipsis-2">{{infocontent}}</h5>
+								</div>
+							</div>
+						</li>-->
+						<!--带图片的列表-->
+						<!--<li class="mui-table-view-cell mui-media" id="{{InfoID}}">
+							<img class="mui-media-object mui-pull-left" data-img-localcache="{{HeadNewsAttachUrl}}" />
+							<div class="mui-media-body">
+								<h4 class="mui-ellipsis">{{Title}}</h4>
+								<h5 class="mui-ellipsis-2">{{infocontent}}</h5>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/news/szpark_news_list');
+		</script>
+	</body>
+
+</html>

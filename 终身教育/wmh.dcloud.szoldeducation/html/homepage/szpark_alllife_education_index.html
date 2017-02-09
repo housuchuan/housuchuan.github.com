@@ -1,0 +1,80 @@
+<!-- 
+        作者：孙尊路
+        时间：2016-04-07 10:25:50
+        描述： 终身教育研究所父页面 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>终身教育研究所</title>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/homepage/szpark_alllife_education_index.css" />
+		<link rel="stylesheet" href="../../css/common/repailTopPocket90.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">终身教育研究所</h1>
+		</header>
+		<div id="slider" class="mui-slider">
+			<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+				<div class="mui-scroll" id="sliderSegmentedControl2">
+					<a class="mui-control-item mui-active" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa1">研究所简介</a>
+					<a class="mui-control-item" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa2">科研动态</a>
+					<a class="mui-control-item" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa3">政策文献</a>
+					<a class="mui-control-item" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa4">科研讲坛</a>
+					<a class="mui-control-item" href="#f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa5">研究成果</a>
+
+				</div>
+			</div>
+			<div class="mui-slider-group">
+				<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa1" class="mui-slider-item mui-control-content"></div>
+				<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa2" class="mui-slider-item mui-control-content"></div>
+				<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa3" class="mui-slider-item mui-control-content"></div>
+				<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa4" class="mui-slider-item mui-control-content"></div>
+				<div id="f5ec0838-d1aa-4542-9d1e-a2e3f43e89fa5" class="mui-slider-item mui-control-content"></div>
+			</div>
+		</div>
+		<!--下拉刷新容器-->
+		<!--<div id="slider" class="tab_silder suzhou_school_tab">
+			<div  class="tab_silder_view   mui-segmented-control mui-segmented-control-inverted">
+				<a class="mui-slider-item mui-control-item mui-active suzhou_school_active">研究所简介</a>
+				<a class="mui-slider-item mui-control-item ">科研动态</a>
+				<a class="mui-slider-item mui-control-item ">政策文献</a>
+				<a class="mui-slider-item mui-control-item ">科研讲坛</a>
+				<a class="mui-slider-item mui-control-item ">研究成果</a>
+			</div>
+		</div>-->
+		<div class="mui-content">
+			<div class="mui-scroll">
+				<div class="suzhou_normal_content" id="alllife_jianjie">
+				</div>
+				<!--<div class="suzhou_normal_content" id="alllife_keyandongtai">
+			</div>
+			<div class="suzhou_normal_content" id="alllife_zhengcewenxian">
+			</div>
+			<div class="suzhou_normal_content" id="alllife_keyanjiangtan">
+			</div>
+			<div class="suzhou_normal_content" id="alllife_yanjiuchengguo">
+			</div>-->
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script>
+			seajs.config({
+				base: "../../js/"
+			});
+			seajs.use('bizlogic/homepage/szpark_alllife_education_index');
+		</script>
+	</body>
+
+</html>

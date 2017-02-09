@@ -1,0 +1,226 @@
+<!-- 
+        作者：朱晓琪
+        时间：2016-06-28
+        描述：资源中心---视频点播播放页面
+        涉及：简介、选集列表、评论 
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>看视频</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/repailTopPocket44.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/common_animate.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common/imageviewer.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/resourceCenter/resource_center_view_video.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav clearfix mui-back-active">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"></h1>
+			<div class="headerIcon">
+				<!--<span class="getVideoSetting">切换全屏</span>-->
+				<span id="clickWriteNote"><img src="../../img/resourceCenter/img_priceIcon.png"/></span>
+				<span class="saveVideo"></span>
+				<span id="clickPraise"><img src="../../img/resourceCenter/img_praiseIconPreview.png"/></span>
+			</div>
+			<span class="solveProblems">做题</span>
+		</header>
+		<div class="mui-content">
+			<!-- 点播html代码-->
+			<div id="player"></div>
+			<!--点播文档html区域-->
+			<div id="doc" style="width:100%;height:270px; position: absolute; top: 44px;z-index: 0;">
+				<div class="mui-scroll-wrapper imgList-wapper" id="pullrefresh4">
+					<div class="mui-scroll">
+						<!--这里放置真实显示的DOM内容-->
+						<ul class="mui-table-view img-wrapper" id="listdata4">
+							<!--图片存放区-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--<video src="http://218.87.172.126:8889/EpointBigFileUpLoad/BigFileUpLoadStorage/799d6091-d335-453f-a482-6f35d544e939/f47af25c04adde4b12400f6599d8fb02cb079fd6.mp4" controls="controls" autoplay="autoplay" width="100%" height="222px">
+				您的浏览器不支持 video 标签
+			</video>-->
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">简介</a>
+					<a class="mui-control-item" href="#item2mobile">选集</a>
+					<a class="mui-control-item" href="#item3mobile">评论</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div id="shortIntroduce">
+									<!--简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper" id="pullrefresh3">
+							<div class="mui-scroll">
+								<ul class="list-container list-container-selection mui-table-view" id="listdata3">
+									<!--<li id="{{id}}" class="setItem">
+										<div class="zhangjieId">章节一</div>
+										<div class="resourceList mui-table-view-cell">
+											<span id="{{uuId}}">
+	    									</span>
+											<span id="{{vuId}}">
+	    									</span>
+											<span id="{{type}}" class="type">
+	   										</span>
+											<div class="numIndex">
+												01
+											</div>
+											<div class="setItemIcon">
+											</div>
+											<div class="setItemName">
+												我的课程
+											</div>
+											<div class="studyStatus">
+												未学习
+											</div>
+										</div>
+									</li>-->
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper" id="pullrefresh" style="padding-bottom: 80px;">
+							<div class="mui-scroll">
+								<ul class="list-container commentArea mui-table-view" id="listdata">
+									<!--<li class="mui-table-view-cell CommentItem">
+										<div class="headImgBorder"><img src="../../img/MobileFrame/img_head_logo102-102.png" width="30px" height="30px" /></div>
+										<div class="commentBorder">
+											<div class="commentUserName">木棉</div>
+											<div class="commentDate">8小时前</div>
+											<div class="commentContent">说的真好说的真好说的真好说的真好说的真好说的真好说的真说的真好说的真好好说的真好说的真好说的真好</div>
+											<div class="secondLevelCommnet mui-clearfix">
+												<div class="review"><div class="reviewIcon"></div><div>回复</div></div>
+												<div class="report"><div class="reportIcon"></div><div>举报</div></div>
+												<div class="ZanBorder"><span>12</span><span>赞</span></div>
+											</div>
+											<div class="reviewContent">
+											<img src="../../img/educate/img_noticepic.png"/><span class="reviewName">木棉</span><span class="reviewEE">回复</span><span class="reviewName">木棉</span><span class="reviewName">:</span><span>你还好吗？？？？你还好吗你还好吗？？？？？？？</span><br />
+											<div class="reviewDate">2016-11-14 xx xx xx</div>
+											<div class="secondLevelCommnet mui-clearfix">
+												<div class="review"><div class="reviewIcon"></div><div class="replay">回复</div></div>
+												<div class="report"><div class="reportIcon"></div><div>举报</div></div>
+											</div>
+											</div>
+										</div>
+										<div class="zanBorder">
+											<span>12</span><span>赞</span>
+										</div>
+									</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--遮罩-->
+			<div class="zhezhao-area" id="zhezhao-area"></div>
+			<div id="takeNoteBorder">
+				<img id="closeWin" src="../../img/resourceCenter/resource_center_close.png" width="25px" height="25px" style="top: 0;right: 0;" />
+				<div id="sliderSegmentedControl3">
+					<a class="mui-control-item1 suzhou_school_active1" href="#" id="myNote">我的笔记</a>
+				</div>
+
+				<div id="takeMyNote">
+					<div class="mui-scroll-wrapper listwrapper" id="pullrefresh2">
+						<div class="mui-scroll">
+							<!--数据容器-->
+							<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed" id="listdata2">
+								<!--<li class="mui-table-view-cell myNoteItem">
+											<div class="myNoteItemDiv">
+												<img class="timeIcon" src="../../img/studyCircle/img_public_service.png" width="12px" height="12px" />
+												<div class="NoteNoteTime">
+													<span class="sanjiaoxin"></span>
+													<span class="NoteNoteTimeText">00:37</span>
+												</div>
+												<div class="NoteNoteUserName"><span>来自:</span><span>哈哈哈</span></div>
+												<div class="NoteNoteContent">测试测试</div>
+												<div class="NoteNoteDateZan">
+													<div class="NoteNoteDate">6月24日</div>
+													<div class="NoteNoteZan"><span class="NoteNoteZan-img"></span><span>(1)</span></div>
+												</div>
+											</div>
+										</li>-->
+							</ul>
+							<div id="takeNoteContent">
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="takeNoteBottomBar">
+					<input type="text" id="commitNote" placeholder="添加笔记(300字以内)" /><button id="commitButton" type="button" class="mui-btn mui-btn-green mui-button-row">记录</button>
+				</div>
+			</div>
+			<!--评论输入框-->
+			<div class="comment">
+				<input type="text" name="" id="content" value="" placeholder="说点什么吧...(50字以内)" />
+				<button type="button" class="mui-btn mui-btn-blue send" id="btnPublish">发表</button>
+			</div>
+
+			<!--总体评价-->
+			<div class="overallPraise">
+				<div class="overallTitle">总体评价</div>
+				<div class="overallPri">
+					<div class="overallCommon"></div>
+					<div class="overallCommon"></div>
+					<div class="overallCommon"></div>
+					<div class="overallCommon"></div>
+					<div class="overallCommon"></div>
+				</div>
+				<div class="operateBtn">
+					<button type="button" class="mui-btn mui-btn-blue mui-btn-block cancel">取消</button>
+					<button type="button" class="mui-btn mui-btn-blue mui-btn-block submit">提交</button>
+				</div>
+			</div>
+
+			<!--弹出框-->
+			<div id="join-circle" class="join-circle">
+				<div class="circle-bar">
+					<span id="commontitle">举报</span>
+					<a class="clearfix"><span class="mui-icon mui-icon-closeempty"></span></a>
+				</div>
+				<div class="circle-input">
+					<textarea id="reason" name="" rows="5" cols="" placeholder="亲，请填写举报理由！"></textarea>
+				</div>
+				<div class="button-area clearfix">
+					<button class="cancel-btn">取消</button>
+					<button class="confirm-btn">举报</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/bcloud.js"></script>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript" src="../../js/bizlogic/common/common.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.zoom.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.previewimage.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/resourceCenter/resource_center_view_video");
+		</script>
+	</body>
+
+</html>

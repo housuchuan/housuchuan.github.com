@@ -1,0 +1,41 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-06-27 08:19:07
+        描述：积分排行父页面
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>积分排行</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/menubar/szpark_ranking.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav clearfix">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a><span id="now-date" class="now-date">2016年01月</span>
+			<h1 class="mui-title">积分排行</h1>
+			<a class="study-star">学习之星</a>
+		</header>
+		<div class="mui-content">
+		    <div class="ranking-name clearfix">
+				<span>姓名</span><span>积分</span>
+			 </div>
+		</div>
+		<script type="text/javascript" src="../../js/core/sea.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/zepto.min.js"></script>
+		<script type="text/javascript" src="../../js/libs/mustache.min.js"></script>
+		<script type="text/javascript">
+			seajs.config({
+				base: '../../js/'
+			});
+			seajs.use("bizlogic/menubar/szpark_ranking");
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,184 @@
+body {
+	background-color: #ffffff;
+}
+#vidoeBorder {
+	height: 222px;
+	background-color: #000000;
+}
+
+#userList {
+	float: left;
+	width: 0%;
+	height: 222px;
+	/*padding: 5px;*/
+	/*overflow-y: scroll;*/
+	background-color: #000000;
+	border-right: 1px solid #333333;
+	display: none;
+}
+
+.personlist {
+	height: 100px;
+	width: 30%;
+	margin-top: 160px;
+}
+
+.userItem {
+	width: 100%;
+	height: 20px;
+	font-size: 13px;
+	color: #CCCCCC;
+	text-align: center;
+}
+
+#userListTxt {
+	font-size: 13px;
+	color: #CCCCCC;
+	text-align: center;
+	background-color: gray;
+}
+
+#videoContent {
+	float: left;
+	width: 70%;
+	height: 222px;
+}
+
+#shortIntroduce {
+	padding-top: 2px;
+	text-indent: 15px;
+}
+
+#shortIntroduceTitle {
+	font-size: 15px;
+	height: 40px;
+	background-color: #f7f6fb;
+	line-height: 40px;
+	padding-left: 10px;
+}
+
+#shortIntroduceContent {
+	font-size: 13px;
+	padding: 0px 10px 10px 10px;
+	background-color: #ffffff;
+}
+
+
+/*tab切换*/
+
+.mui-control-content {
+	background-color: white;
+	min-height: 215px;
+}
+
+.mui-control-content .mui-loading {
+	margin-top: 50px;
+}
+
+.mui-slider {
+	position: absolute;
+	top: 222px;
+	bottom: 0;
+}
+
+.mui-slider .mui-slider-group {
+	height: 100%;
+}
+
+#sliderSegmentedControl a {
+	display: inline-block;
+	float: left;
+	width: 33.333333%;
+}
+
+/*选集列表css*/
+#chooseSetList{
+	display: none;
+}
+.setItem{
+	padding: 0;
+	padding-left: 10px;
+	line-height: 30px;
+}
+/*****************绘制img的左上角三角形以及数字***********/
+
+.topleft-triangle {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    border-top: 40px solid red;
+    border-left: 60px solid transparent;
+}
+.blue-triangle {
+	display: none;
+	border-top: 36px solid blue;
+}
+.topleft-text {
+	display: none;
+	position: absolute;
+	z-index: 11;
+	top: -1px;
+    right: 0px;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+
+
+
+.setItemIcon{
+	padding-left: 10px;
+	float: left;
+	width: 20px;
+	font-size: 14px;
+}
+.setItemName{
+	text-align: left;
+	float: left;
+	width: 80%;
+	font-size: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#title{
+	font-size: 16px;
+	padding-left: 20px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #FFFFFF;
+}
+
+.broadcastTime {
+	font-size: 12px;
+	color: #b8b8b8;
+}
+
+.broadcastTimeWrapper {
+	margin-left: 30px;
+	display: none;	
+}
+
+.list-container-selection li:first-child .broadcastTimeWrapper {
+	display: block;
+}
+
+.list-container-selection li:first-child .topleft-triangle {
+	display: block;
+}
+
+.list-container-selection li:first-child .topleft-text {
+	display: block;
+}
+/*下拉刷新*/
+.mui-pull-top-pocket {
+	top: 0px !important;
+}
+
+.mui-scroll-wrapper {
+	padding-bottom: 20px;
+}

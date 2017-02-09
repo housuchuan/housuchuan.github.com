@@ -1,0 +1,50 @@
+/** 
+*作者：孙尊路
+*时间：2016-06-22 11:21
+*描述： 举报详情页面 
+**/
+
+body {
+	background-color: #ffffff;	
+}
+
+ .mui-content {
+ 	background-color: #ffffff;
+ 	border-top: 1px solid #e2e2e3;
+ 	font-size: 15px;
+ }
+ .mui-content > div {
+	margin-left: 10px;
+	padding: 11px 10px 11px 0;
+	border-bottom: 1px solid #e2e2e3;
+}
+ .mui-content > div:last-child {
+ 	border-bottom: none;
+ }
+ 
+ .mui-content > div span:first-child {
+  	margin-right: 9px;
+  }
+ .report-section {
+	display: block;
+	margin-left: 65px;
+	margin-top: -21px;
+ }
+.mui-btn {
+ 	display: block;
+ 	width: 94%;
+ 	padding: 13px 0;
+ 	margin: 0 auto;
+ }
+ .del-btn {
+ 	margin-top: 45px;
+ 	margin-bottom: 15px;
+ 	font-size: 15px;
+ 	background-color: #1ebaf3;
+ 	color: #fff;
+ }
+ .ignored-btn {
+ 	font-size: 15px;
+ 	background-color: #d1d1d1;
+ 	color: #fff;
+ }
