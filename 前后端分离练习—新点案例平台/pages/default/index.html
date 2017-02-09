@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="renderer" content="webkit">
+		<title>新点案例库</title>
+		<script src="../../js/cssboot.js"></script>
+		<script>
+			SrcBoot.output([
+				'./css/index.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<!-- 头 -->
+		<div id="header" class="header"></div>
+
+		<!-- 内容 -->
+		<div class="content">
+			<!--轮播图组件start-->
+			<div class="top-focus-wrap">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/1.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/2.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/3.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/3.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/6.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="images/6.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="swiper-pagination">
+						<span class="swiper-pagination-switch swiper-active-switch"></span>
+						<span class="swiper-pagination-switch"></span>
+						<span class="swiper-pagination-switch"></span>
+						<span class="swiper-pagination-switch"></span>
+						<span class="swiper-pagination-switch"></span>
+						<span class="swiper-pagination-switch"></span>
+					</div>
+					<div class="swiper-shade swiper-shade-left"></div>
+					<div class="swiper-shade swiper-shade-right"></div>
+					<a href="javascript:" class="swiper-arrow swiper-arrow-left"></a>
+					<a href="javascript:" class="swiper-arrow swiper-arrow-right"></a>
+				</div>
+			</div>
+			<!--轮播图组件end-->
+			<!--优秀案例-->
+			<div class="container excellentexamples">
+				<div class="excellentexamples-title clearfix">
+					<div class="top-line"></div>
+					<div class="bottom-line"></div>
+					<div class="excellentcase clearfix">
+						<h6 class="l">优秀案例</h6>
+						<h4 class="l">EXCELLENT&nbsp;&nbsp;  CASES</h4>
+					</div>
+				</div>
+				<div class="product-type">
+					<ul class="clearfix" id="product-type">
+					</ul>
+				</div>
+				<!--案例列表-->
+				<div class="case-list">
+					<ul class="case-list-wrapper clearfix" id="projectlistwrapper">
+					</ul>
+					<div class="more-case" id="morecase">更多案例</div>
+				</div>
+			</div>
+		</div>
+		<!-- 尾 -->
+		<div id="footer" class="footer"></div>
+		<!--模板-->
+		<!--tab优秀案例切换模板-->
+		<script type="text/x-template" id="tab">
+			{{#data}}
+			<li class="product-type-item l" id="{{CategoryNum}}">
+				<a>{{CategoryName}}</a>
+			</li>
+			{{/data}}
+		</script>
+		<!--项目列表模板-->
+		<script type="text/x-template" id="projectlist">
+			{{#datalist}}
+			<li class="l">
+				<div class="case-item cursor clearfix">
+					<img class="l" src="{{ListImgUrl}}" / alt="">
+					<p class="l case-item-fp">{{Title}}</p>
+					<p class="l prodectid">{{ProjectNum}}</p>
+					<div class="case-bghover clearfix">
+						{{#FormalWebUrl}}
+						<a class="pc l" href="{{FormalWebUrl}}">
+							<div class="pc-info">{{FormalWebUrl}}</div>
+						</a>
+						{{/FormalWebUrl}} {{#APPImgUrl}}
+						<a class="mobile l">
+							<div class="mobile-info">
+								<img src="{{APPImgUrl}}" alt=" " />
+								<div>安装移动端产品</div>
+							</div>
+						</a>
+						{{/APPImgUrl}} {{#TestWebUrl}}
+						<a class="code l" href="{{TestWebUrl}}">
+							<div class="code-info">{{TestWebUrl}}</div>
+						</a>
+						{{/TestWebUrl}}
+					</div>
+				</div>
+			</li>
+			{{/datalist}}
+		</script>
+		<script>
+			/**
+			 * 暴露给后端人员的配置参数
+			 * _settings.fe 为前端人员独立开发时使用的namespace
+			 * _settings.be 为后端人员对接联调时使用的namespace
+			 */
+			var _settings = {
+				Category: '/CaseShow_Category_List',
+				ProjectList: '/CaseShow_Case_List'
+			};
+		</script>
+		<script src="../../js/jsboot.js"></script>
+		<script>
+			SrcBoot.output([
+				'./js/index.js',
+				'js/lib/swiper/swiper.min.js'
+			]);
+		</script>
+	</body>
+
+</html>

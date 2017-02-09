@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="renderer" content="webkit">
+		<title>新点资源库</title>
+		<script src="../../js/cssboot.js"></script>
+		<script>
+			SrcBoot.output([
+				'./css/resourcestore.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<!-- 头 -->
+		<div id="header" class="header"></div>
+
+		<!-- 内容 -->
+		<div class="container">
+			<div class="user-info">
+				此模块正在开发中
+			</div>
+		</div>
+		<!-- 尾 -->
+		<div id="footer" class="footer"></div>
+		<!--模板-->
+		<script type="text/x-template" id="aaa-tmpl">
+
+		</script>
+		<script>
+			/**
+			 * 暴露给后端人员的配置参数
+			 * _settings.fe 为前端人员独立开发时使用的namespace
+			 * _settings.be 为后端人员对接联调时使用的namespace
+			 */
+			var _settings = {
+
+			};
+		</script>
+		<script src="../../js/jsboot.js"></script>
+		<script>
+			SrcBoot.output([
+				'./js/resourcestore.js'
+			]);
+		</script>
+	</body>
+
+</html>

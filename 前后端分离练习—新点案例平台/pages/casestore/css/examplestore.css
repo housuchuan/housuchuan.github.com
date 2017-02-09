@@ -1,0 +1,400 @@
+/*！
+*案例库
+*date:2017-02-04
+*author: housc;
+*/
+
+.case-store {
+	width: 100%;
+	padding-top: 51px;
+	background: url(../images/topbg_02.jpg) no-repeat;
+}
+
+.title {
+	color: #0068b7;
+}
+
+.wrapper {
+	padding-bottom: 6px;
+	background-color: #fff;
+	border: 1px solid #dedede;
+}
+
+.wrapper li:hover {
+	color: gray;
+	cursor: pointer;
+}
+
+.service,
+.color-set {
+	padding: 12px 16px;
+	padding-left: 24px;
+	background-color: #f4f4f4;
+}
+
+.service ul {
+	width: 870px;
+}
+
+.service li,
+.service span,
+.color-set li:first-child,
+.color-set span {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 18px;
+	text-align: center;
+}
+
+.service span,
+.color-set span {
+	padding: 0 11px 0 0;
+}
+
+.service li {
+	height: 30px;
+	border: 1px solid #fff;
+}
+
+.serviceall li {
+	border: 1px solid #f4f4f4;
+}
+
+.service li.active {
+	color: #d80000;
+	border: 1px solid #d80000;
+}
+
+.type {
+	position: relative;
+	padding-bottom: 4px;
+}
+
+.service ul,
+.type ul,
+.color-set ul {
+	width: 820px;
+}
+
+.typewrapper {
+	height: 64px;
+	padding: 1px 0 0 1px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.typewrapper-active {
+	overflow: inherit;
+	white-space: wrap;
+}
+
+.typewrapper-active> .see-more {
+	color: red;
+}
+
+.type .see-more {
+	position: absolute;
+	right: 6px;
+	top: 16px;
+	width: 64px;
+	text-align: center;
+	line-height: 22px;
+	background-color: #f4f4f4;
+	border: 1px solid #dddddd;
+	cursor: pointer;
+}
+
+.type .see-more:hover {
+	color: #d80000;
+}
+
+.type,
+.direction-wrapper,
+.color-set,
+.result-wrapper {
+	margin: 0 16px;
+	padding: 12px 8px;
+	background-color: #fff;
+	border-bottom: 1px dashed #cacaca;
+}
+
+.result-wrapper {
+	border-bottom: none;
+}
+
+.type-list {
+	width: 824px;
+}
+
+.type-list li {
+	/*margin-bottom: 8px;*/
+}
+
+.colorItem {
+	width: 32px;
+	height: 30px;
+	margin-right: 16px;
+	/*background-color: #F0E92F;*/
+}
+
+.colorItem:hover {
+	background-image: url(../images/goutype_03.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.color-set .colorItem.select {
+	background-image: url(../images/goutype_03.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.color-set .all.select {
+	color: #d80000;
+	border: 1px solid #d80000;
+}
+
+.color-set .all {
+	width: 30px;
+	margin-right: 22px;
+	height: 30px;
+	color: #000;
+	border: 1px solid #fff;
+}
+
+.color-set .ffffff.select {
+	background-image: url(../images/goutype_05.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.ffffff {
+	width: 32px;
+	height: 30px;
+	background-color: #fff;
+	border: 1px solid #ececec;
+}
+
+.ffffff:hover {
+	background-image: url(../images/goutype_05.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.result-wrapper li {
+	/*width: 95px;*/
+	height: 30px;
+	margin: 0 12px 5px 0;
+	padding: 0;
+	border: 1px solid #c0c0c0;
+}
+
+.result div {
+	width: 20px;
+	height: 16px;
+	margin: 6px 0 0 7px;
+	background: url(../images/checkbox_32.jpg) no-repeat;
+}
+
+.result .checkactive> div {
+	background: url(../images/checkbox_30.jpg) no-repeat;
+}
+
+.result span {
+	/*width: 68px;*/
+	padding: 0;
+	margin: 0 6px;
+	text-align: center;
+}
+
+.data-list {
+	margin-top: 30px;
+}
+
+.data-tab {
+	height: 50px;
+	background-color: #f4f4f4;
+}
+
+.new-bar {
+	width: 83px;
+	height: 49px;
+	cursor: pointer;
+	border-top: 1px solid #f4f4f4;
+}
+
+.new-bar:hover {
+	/*height: 49px;*/
+	color: #6b99cc;
+	background-color: #fff;
+	border-top: 1px solid #0068b7;
+}
+
+.new-bar:hover .tparrow {
+	background: url(../images/arrowicon_46.png) no-repeat;
+}
+
+.new-bar:hover .bmarrow {
+	background: url(../images/arrowiconbottom_43.png) no-repeat;
+}
+
+.newtitle {
+	line-height: 49px;
+	margin-left: 16px;
+}
+
+.new-icon {
+	margin: 19px 0 0 10px;
+}
+
+.new-icon div {
+	width: 10px;
+	height: 5px;
+	margin-bottom: 2px;
+}
+
+.tparrow {
+	background: url(../images/arrowicon_48.png) no-repeat;
+}
+
+.bmarrow {
+	background: url(../images/arrowicon_61.png) no-repeat;
+}
+
+.baractive,
+.barbmactive {
+	height: 49px;
+	color: #6b99cc;
+	background-color: #fff;
+	border-top: 1px solid #0068b7;
+}
+
+.baractive .tparrow {
+	background: url(../images/arrowicon_46.png) no-repeat;
+}
+
+.barbmactive .bmarrow {
+	background: url(../images/arrowiconbottom_43.png) no-repeat;
+}
+
+.download {
+	padding: 0 35px;
+}
+
+.data-tab .line {
+	height: 30px;
+	width: 1px;
+	margin-top: 10px;
+	background-color: #cfcece;
+}
+
+.data-tab input[type=text] {
+	width: 238px;
+	height: 28px;
+	line-height: 28px;
+	margin: 10px 0 0 13px;
+	text-indent: 8px;
+	border: 1px solid #cfcece;
+	border-right: none;
+}
+
+.input-searchbtn {
+	width: 28px;
+	height: 28px;
+	margin-top: 10px;
+	background: #fff url(../images/arrowicon_43.png) no-repeat;
+	background-position: center;
+	border: 1px solid #cfcece;
+	border-left: none;
+	cursor: pointer;
+}
+
+.casenuminfo {
+	line-height: 50px;
+}
+
+.pagenum {
+	margin-top: 16px;
+}
+
+.casenuminfo> .num {
+	margin: 0 9px;
+	color: #0068b7;
+}
+
+.leftarrow,
+.rightarrow {
+	width: 23px;
+	height: 23px;
+	background-color: #dddddd;
+	cursor: pointer;
+}
+
+.pageindex {
+	height: 21px;
+	padding: 0 5px;
+	text-align: center;
+	line-height: 21px;
+	margin: 14px 16px 0 0;
+	border: 1px solid #cfcece;
+}
+
+.leftarrow {
+	margin: 14px 10px 0 8px;
+	background-image: url(../images/arrowicon_51.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.leftarrow:hover {
+	background-image: url(../images/arrowicon_55.png);
+	background-color: #dbeffe;
+}
+
+.rightarrow {
+	margin: 14px 13px 0 17px;
+	background-image: url(../images/arrowicon_53.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.rightarrow:hover {
+	background-image: url(../images/arrowicon_57.png);
+	background-color: #dbeffe;
+}
+
+
+/*案例列表*/
+
+.caselist {
+	margin: 0 0 0 -25px;
+	padding-bottom: 0;
+}
+
+.caselist .case-item {
+	margin-top: 30px;
+}
+
+
+/*分页*/
+
+.pager {
+	margin: 30px 0;
+	float: right;
+}
+
+
+/*个性化分页样式*/
+
+.m-pagination-group> input {
+	line-height: 25px;
+	height: 25px;
+}
+
+.m-pagination-group> button {
+	height: 27px;
+}
+
+input[type='text'] {
+	outline: none;
+}

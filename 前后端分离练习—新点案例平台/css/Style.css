@@ -1,0 +1,59 @@
+﻿.province
+{
+    width: 100px;
+}
+/*#region 重写下拉框 */
+.chosen-container-single .chosen-single
+{
+    background: #fff;
+    border-color: #d2d2d2;
+    border-radius: 2px;
+    box-shadow: none;
+    line-height: 36px;
+    height: 36px;
+}
+
+.chosen-container-single .chosen-single span
+{
+    margin-right: 26px;
+}
+
+.chosen-container-single .chosen-single div
+{
+    padding: 0;
+    border-left: 1px solid #ddd;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div
+{
+    border-left: 1px solid #ddd;
+}
+
+.chosen-container-single .chosen-single div b
+{
+    background: url("images/order-down.png") no-repeat center center;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div b
+{
+    background: url("images/order-up.png") no-repeat center center;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single
+{
+    background: #fff;
+    box-shadow: none;
+    border-color: #d2d2d2;
+}
+
+.chosen-container-single .chosen-drop
+{
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+}
+
+.chosen-container .chosen-results li.highlighted
+{
+    background-color: #397ddb;
+    background-image: none;
+}
