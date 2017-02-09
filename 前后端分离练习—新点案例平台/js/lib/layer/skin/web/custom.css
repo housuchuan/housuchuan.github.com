@@ -1,0 +1,12 @@
+﻿
+html #layui_layer_skinwebstylecss
+{
+    display: none;
+    position: absolute;
+    width: 1989px;
+}
+body .layer-ext-test .layui-layer-title {
+    background: #587ed1;
+    color: #fff;
+    font-size: 16px;
+}

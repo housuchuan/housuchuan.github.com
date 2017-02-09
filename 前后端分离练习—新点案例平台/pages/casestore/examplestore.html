@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="renderer" content="webkit">
+		<title>新点案例库</title>
+		<script src="../../js/cssboot.js"></script>
+		<script>
+			SrcBoot.output([
+				'js/lib/pagination/mricode.pagination.css',
+				'./css/examplestore.css',
+			]);
+		</script>
+	</head>
+
+	<body>
+		<!-- 头 -->
+		<div id="header" class="header"></div>
+
+		<!-- 内容 -->
+		<div class="case-store">
+			<div class="container">
+				<!--tab选项-->
+				<div class="wrapper">
+					<!--业务-->
+					<div class="service clearfix" id="servicewrapper">
+						<span class="title l">业务：</span>
+						<ul class="l serviceall clearfix">
+							<li class="l active" id="serviceall">全部</li>
+						</ul>
+					</div>
+					<!--类型-->
+					<div class="service type clearfix">
+						<span class="title l">类型：</span>
+						<div class="typewrapper" id="typewrapper">
+							<ul class="l type-list clearfix" id="type-list">
+								<li class="l active" id="serviceall">全部</li>
+							</ul>
+							<div class="see-more" id="see-more">更多</div>
+						</div>
+					</div>
+					<!--方向-->
+					<div class="service direction-wrapper clearfix">
+						<span class="title l">方向：</span>
+						<ul class="l direction clearfix" id="direction">
+							<li class="l active">全部</li>
+						</ul>
+					</div>
+					<!--色调-->
+					<div class="color-set clearfix">
+						<span class="title l">色调：</span>
+						<ul class="l clearfix coloractive" id="colorwrapper">
+							<li class="l active all select">全部</li>
+						</ul>
+					</div>
+					<!--成果-->
+					<div class="service result-wrapper clearfix">
+						<span class="title l">成果：</span>
+						<ul class="l result clearfix" id="resultwrapper">
+						</ul>
+					</div>
+				</div>
+
+				<div class="data-list">
+					<div class="data-tab clearfix" id="data-tab">
+						<div class="new-bar baractive clearfix l">
+							<span class="newtitle l">最新</span>
+							<div class="new-icon l">
+								<div class="tparrow"></div>
+								<div class="bmarrow"></div>
+							</div>
+						</div>
+						<div class="new-bar download l clearfix">
+							<span class="newtitle l">下载量</span>
+							<div class="new-icon l">
+								<div class="tparrow"></div>
+								<div class="bmarrow"></div>
+							</div>
+						</div>
+						<!--line-->
+						<div class="line l"></div>
+						<input class="l" type="text" name="" id="inputkeyword" value="" />
+						<div class="input-searchbtn l" id="input-searchbtn"></div>
+						<div class="r clearfix">
+							<span class="casenuminfo l">共找到<span class="num" id="num">1000</span>个案例</span>
+							<div class="leftarrow l" id="leftarrow"></div>
+							<div class="pageindex l" id="current-index">1</div>
+							<div class="l pagenum">/<span id="allpage">100</span></div>
+							<div class="l rightarrow" id="rightarrow"></div>
+						</div>
+					</div>
+					<!--列表数据-->
+					<!--案例列表-->
+					<div class="case-list clearfix">
+						<ul class="case-list-wrapper caselist clearfix" id="caselist">
+						</ul>
+						<!--分页-->
+						<div class="pager"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 尾 -->
+		<div id="footer" class="footer"></div>
+		<!--模板-->
+		<!--业务模板-->
+		<script type="text/x-template" id="service">
+			{{#service}}
+			<li class="l" id="{{Value}}">{{Name}}</li>
+			{{/service}}
+		</script>
+		<!--成果模板-->
+		<script type="text/x-template" id="result">
+			{{#service}}
+			<li class="l clearfix" id="{{Value}}">
+				<div class="l"></div>
+				<span class="l">{{Name}}</span>
+			</li>
+			{{/service}}
+		</script>
+		<!--颜色模板-->
+		<script type="text/x-template" id="colorall">
+			{{#color}}
+			<li id="{{Name}}" class="l colorItem {{Value}}" style="background-color: #{{Value}};"></li>
+			{{/color}}
+		</script>
+		<!--案例列表模板-->
+		<script type="text/x-template" id="projectlist">
+			{{#data}}
+			<li class="l">
+				<div class="case-item cursor clearfix">
+					<img class="l" src="{{ListImgUrl}}" / alt="">
+					<p class="l case-item-fp">{{Title}}</p>
+					<p class="l prodectid">{{ProjectNum}}</p>
+					<div class="case-bghover clearfix">
+						{{#FormalWebUrl}}
+						<a class="pc l" href="{{FormalWebUrl}}">
+							<div class="pc-info">{{FormalWebUrl}}</div>
+						</a>
+						{{/FormalWebUrl}} {{#APPImgUrl}}
+						<a class="mobile l">
+							<div class="mobile-info">
+								<img src="{{APPImgUrl}}" alt=" " />
+								<div>安装移动端产品</div>
+							</div>
+						</a>
+						{{/APPImgUrl}} {{#TestWebUrl}}
+						<a class="code l" href="{{TestWebUrl}}">
+							<div class="code-info">{{TestWebUrl}}</div>
+						</a>
+						{{/TestWebUrl}}
+					</div>
+				</div>
+			</li>
+			{{/data}}
+		</script>
+		<script>
+			/**
+			 * 暴露给后端人员的配置参数
+			 * _settings.fe 为前端人员独立开发时使用的namespace
+			 * _settings.be 为后端人员对接联调时使用的namespace
+			 */
+			var _settings = {
+				service: '/Frame_Code_Item_List', //业务分类接口
+				color: '/Frame_Code_Item_List1', //颜色分类接口
+				projectlist: '/CaseShow_Case_List1' //案例列表接口
+			};
+		</script>
+		<script src="../../js/jsboot.js"></script>
+		<script>
+			SrcBoot.output([
+				'js/lib/pagination/mricode.pagination.js',
+				'./js/examplestore.js',
+			]);
+		</script>
+	</body>
+
+</html>

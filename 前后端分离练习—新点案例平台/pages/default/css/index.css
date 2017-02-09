@@ -1,0 +1,252 @@
+/*！
+*新点首页
+*date:2017-02-03
+*author: housc;
+*/
+
+/*轮播组件start*/
+/* 顶部焦点图 */
+
+.top-focus-wrap{
+    width: 100%;
+    height: 348px;
+    *position: relative;
+    overflow: hidden;
+}
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 348px;
+    margin: 0 auto;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 348px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 348px;
+}
+
+.swiper-slide .shadow {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 1000px;
+    height: 135px;
+    background: url(../images/banner_shadow.png) 0 0 no-repeat;
+}
+
+.swiper-slide .title {
+    position: absolute;
+    left: 0;
+    bottom: 36px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.swiper-slide .title h3 {
+    display: inline-block;
+    padding: 0 5px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.swiper-slide .title p {
+    height: 36px;
+    line-height: 36px;
+    font-size: 17px;
+}
+
+.swiper-slide a {
+    color: #fff;
+}
+
+.swiper-slide a:hover {
+    color: #fff;
+}
+
+/* 左右按钮 */
+.swiper-arrow{
+    display: none;
+    position: absolute;
+    top: 120px;
+    width: 50px;
+    height: 80px;
+    cursor: pointer;
+}
+.swiper-arrow-left {
+    left: 0;
+    background: url(../images/arrow_left.png);
+}
+
+.swiper-arrow-right {
+    right: 0;
+    background: url(../images/arrow_right.png);
+}
+
+.swiper-arrow-left:hover {
+    background: url(../images/arrow_lefth.png);
+}
+.swiper-arrow-right:hover {
+    background: url(../images/arrow_righth.png);
+}
+
+/* 左右遮罩 */
+
+.swiper-shade{
+    position: absolute;
+    top: 0;
+    width: 1000px;
+    height: 348px;
+    background: url(../images/mask-bg.png);
+}
+.swiper-shade-left {
+    left: -1000px;
+}
+
+.swiper-shade-right {
+    right: -1000px;
+}
+
+/* 焦点图状态栏 */
+
+.swiper-slide {
+    float: left;
+}
+
+.swiper-pagination {
+    position: absolute;
+    left: 0;
+    bottom: 18px;
+    z-index: 20;
+    width: 100%;
+    height: 10px;
+    line-height: 10px;
+    font-size:0;
+    text-align: center;
+}
+
+.swiper-pagination-switch {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #777;
+    margin-right: 10px;
+    opacity: 0.9;
+    cursor: pointer;
+    background-color: #b6b6b6;
+}
+
+.swiper-active-switch {
+	width: 33px;
+	border-radius: 30px;
+    background: #ffcc00;
+}
+
+/* 中间图片透明度 */
+
+.swiper-container a:hover img {
+    opacity: 0.8;
+}
+/*轮播组件end*/
+
+/*优秀案例start*/
+.excellentexamples {
+	margin: 55px auto 58px auto;
+}
+
+.excellentexamples-title h6 {
+	margin-left: 53px;
+	font-size: 26px;
+	font-weight: bold;
+	color: #0068b7;
+}
+
+.excellentexamples-title h4 {
+	margin: 8px 0 0 25px;
+	font-size: 18px;
+	color: #999999;
+}
+
+/*.left-line {
+	width: 300px;
+}
+
+.top-line,
+.bottom-line {
+	display: block;
+	height: 1px;
+	margin-top: 11px;
+}*/
+
+.top-line {
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid #dedede;
+}
+
+.bottom-line {
+	width: 70%;
+	height: 1px;
+	margin: 11px auto 0 auto;
+	border-top: 1px solid #63b1df;
+}
+
+.excellentcase {
+	width: 40%;
+	margin: -45px auto 0 auto;
+	padding: 18px 0;
+	background-color: #fff;
+}
+
+.product-type {
+	width: 880px;
+	margin-left: -46px;
+	margin: 15px auto;
+}
+
+.product-type-item {
+	margin-left: 46px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #333;
+	cursor: pointer;
+}
+
+.product-type-active > a,
+.product-type-item > a:hover {
+	color: #0068B7;
+}
+
+/*更多案例*/
+.more-case {
+	line-height: 30px;
+	text-align: center;
+	color: #666;
+	background-color: #f9f9f9;
+}
+
+.more-case:hover {
+	color: #333;
+	background-color: #F1F1F1;
+	cursor: pointer;
+}
+
