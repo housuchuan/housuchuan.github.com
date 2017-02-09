@@ -1,0 +1,84 @@
+<!-- 
+        作者：hybo
+        时间：2016年8月26日
+        描述：事项查看通用
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>事项查看</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/Service/ZWFW_ItemsCommon_detail.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<ul class="mui-table-view" id="content">
+			<!--<li class='mui-table-view-cell'>
+				<a class='mui-navigate-right current  mui-clearfix'> <label>事项名称</label> <span>{{TaskName}}</span></a>
+			</li>
+			<li class='mui-table-view-cell'>
+				<a class='mui-navigate-right current  mui-clearfix'> <label>事项编码</label> <span>{{Item_ID}}</span></a>
+			</li>
+			<li class='mui-table-view-cell'>
+				<a class='mui-navigate-right current  mui-clearfix'> <label>办理部门</label> <span>{{OUName}}</span></a>
+			</li>
+			<li class='mui-table-view-cell'>
+				<a class='mui-navigate-right current  mui-clearfix'> <label>事项性质</label> <span>{{TYPE}}</span></a>
+			</li>
+			<li class='mui-table-view-cell'>
+				<a class='mui-navigate-right current  mui-clearfix'> <label>承诺期限</label> <span class="current">{{PROMISE_DAY}}</span></a>
+			</li>
+			<li class='mui-table-view-cell'>
+				<a class='mui-navigate-right current  mui-clearfix'> <label>收费情况</label> <span class="current1">{{CHARGE_FLAG}}</span></a>
+			</li>
+			<li class='mui-table-view-cell'>
+				<a href='tel:" + {{LINK_TEL}} + "' class='mui-navigate-right current  mui-clearfix'> <label>窗口电话</label> <span class="current">{{LINK_TEL}}</span></a>
+			</li>
+			<li class='mui-table-view-cell'>
+				<a href='tel:" + {{SUPERVISE_TEL}} + "' class='mui-navigate-right current  mui-clearfix'> <label>监督电话</label> <span class="current">{{SUPERVISE_TEL}}</span></a>
+			</li>
+			<li class='mui-table-view-divider'> </li>
+			<li class='mui-table-view-cell'>
+				<a class='mui-navigate-right mui-clearfix'><label>所需材料</label><span id='materials'>材料列表({{matericalLength}})</span> </a>
+			</li>
+			<li class='mui-table-view-cell'>
+				<a class='mui-navigate-right mui-clearfix'><label>办理流程</label><span>流程图片({{picLength}})</span> </a>
+			</li>
+			<li class='mui-table-view-cell'>
+				<a class='mui-navigate-right current mui-clearfix'><label>受理条件</label><span>{{CONDITION}}</span> </a>
+			</li>-->
+		</ul>
+		<div class="three-btn mui-clearfix">
+			<ul>
+				<li class="btn-fgx" id="consult">
+					<a  class="btn-icon1">咨询</a>
+				</li>
+				<li class="btn-fgx" id="appointment">
+					<a  class="btn-icon2">预约</a>
+				</li>
+				<li id="apply">
+					<a  class="btn-icon3">申报</a>
+				</li>
+			</ul>
+		</div>
+
+	</body>
+	<!-- 通用js -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/Service/ZWFW_ItemsCommon_detail.js");
+	</script>
+
+</html>

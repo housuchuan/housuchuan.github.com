@@ -1,0 +1,126 @@
+<!-- 
+作者: daike
+时间: 2016-08-29
+描述: 办件详情 
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>办件详情</title>
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/Service/ZWFW_enterprise-service-declare.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+
+		<div class="mui-content">
+			<ul class="mui-table-view">
+
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current mui-clearfix">
+						<label>事项名称</label>
+						<span id="taskname" ></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label>办件编号</label>
+						<span id="flowsn" ></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label id="spxm"></label>
+						<span id="xm" ></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label>证件类型</label>
+						<span id="spsfz" ></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label>证件号码</label>
+						<span id="sfz" ></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label>联系人</label>
+						<span id="lxr" ></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label>联系手机</label>
+						<span id="lxsj" ></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label>申请日期</label>
+						<span id="sqrq" ></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label>办理进度</label>
+						<span id="bljd" ></span>
+					</a>
+				</li>
+				<div id="divspjg" style=" display:none">
+					<li class='mui-table-view-divider'> </li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right current">
+							<label>审批日期</label>
+							<span id="sprq" ></span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right current">
+							<label>审批结果</label>
+							<span id="spjg" ></span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							<label>相关附件</label>
+							<span id="xgfj" ></span>
+						</a>
+					</li>
+				</div>
+
+				<input id="Appleruserguid" type="hidden" placeholder="" value="" />
+			</ul>
+			
+		</div>
+		<button id="btnnext" type="button" class="nextbtn mui-btn-primary mui-btn-block">
+        </button>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		//将需要的配置文件进行封装函数,可以省去重复代码
+		//所有的seajs别名或者项目中bizlogic文件夹下的js都需要在seaBizConfig.js中设置别名,通过别名引用
+		//实际项目中请删除这些注释
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('js/bizlogic/Service/ZWFW_AuditProjectDetail.js');
+	</script>
+
+</html>

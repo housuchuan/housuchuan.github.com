@@ -1,0 +1,63 @@
+
+/*底部nav切换样式*/
+.mui-bar {
+    -webkit-box-shadow: 0 -4px 4px rgba(209,231,252,.75);
+    box-shadow: 0 -4px 4px rgba(209,231,252,.75);
+}
+.mui-bar-tab .mui-tab-item {
+	color: #666;
+}
+.mui-bar-tab .mui-tab-item .mui-icon {
+	height: 20px;
+	width: 20px;
+}
+
+.mui-bar-tab .mui-tab-item .mui-icon.activity,
+.mui-bar-tab .mui-tab-item .mui-icon.download,
+.mui-bar-tab .mui-tab-item .mui-icon.home {
+	height: 19px;
+	width: 19px;
+}
+
+.mui-bar-tab .mui-tab-item .mui-icon.service {
+	width: 19px;
+}
+
+.mui-tab-item .home {
+	background-image: url(../../img/img-homepage/homepage-nor.png);
+	background-size: cover;
+}
+
+.mui-tab-item.mui-active .home {
+	background-image: url(../../img/img-homepage/homepage-hov.png);
+}
+
+.mui-tab-item .application {
+	background-image: url(../../img/img-homepage/application-nor.png);
+	background-size: cover;
+}
+.mui-tab-item.mui-active .application {
+	background-image: url(../../img/img-homepage/application-hov.png);
+}
+
+.mui-tab-item .microclass {
+	background-image: url(../../img/img-homepage/microclass-nor.png);
+	background-size: cover;
+}
+.mui-tab-item.mui-active .microclass {
+	background-image: url(../../img/img-homepage/microclass-hov.png);
+}
+.mui-tab-item .activity {
+	background-image: url(../../img/img-homepage/activity-nor.png);
+	background-size: cover;
+}
+.mui-tab-item.mui-active .activity {
+	background-image: url(../../img/img-homepage/activity-hov.png);
+}
+.mui-tab-item .download {
+	background-image: url(../../img/img-homepage/download-nor.png);
+	background-size: cover;
+}
+.mui-tab-item.mui-active .download {
+	background-image: url(../../img/img-homepage/download-hov.png);
+}

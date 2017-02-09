@@ -1,0 +1,44 @@
+<!-- 
+        作者：hybo
+        时间：2016年8月26日
+        描述：便民服务
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>便民服务</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/Service/ZWFW_BianMinFuWu.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="personal-affairs mui-clearfix">
+
+			<ul>
+				<span id="iteminfo">
+             	<!--<li class='affairs-item'><a href='{{temValue}}'  class='affairs-item-icon' style='background: url({{ItemUrl}});background-size: 50px 50px;'></a><a href='{{ItemValue}}' class='affairs-item-name'>{{ItemText}}</a></li>-->
+             </span>
+
+			</ul>
+		</div>
+
+	</body>
+	<!-- 通用js -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/Service/ZWFW_BianMinFuWu.js");
+	</script>
+
+</html>

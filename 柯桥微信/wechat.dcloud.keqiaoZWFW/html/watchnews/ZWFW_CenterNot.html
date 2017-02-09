@@ -1,0 +1,53 @@
+<!-- 
+        作者：LB
+        时间：2016-08-31
+        描述： 通知公告模块
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>通知公告</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/watchnews/ZWFW_CenterNot.css'
+			]);
+		</script>
+	</head>
+	<body>
+	<div class="mui-content">
+		<div id="pullrefresh"  class="mt10 mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<ul class="mui-table-view"  id="listdata">
+					<!--<li class="news-item mui-clearfix" id="CategoryList[i].CategoryInfo.InfoID">
+						<div class="news-info" id="CategoryList[i].CategoryInfo.InfoID">
+							<span class="news-title" id="CategoryList[i].CategoryInfo.InfoID">标题</span>
+							<div class="news-tagging mui-clearfix" id="CategoryList[i].CategoryInfo.InfoID">
+								<span class="tagging-name" id="CategoryList[i].CategoryInfo.InfoID">author</span>
+								<span class="tagging-time" id="CategoryList[i].CategoryInfo.InfoID">时间</span>
+							</div>
+						</div>
+					</li>-->
+				</ul>
+			</div>               
+  		</div>
+	</div>
+
+	
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('js/bizlogic/watchnews/ZWFW_CenterNot.js');
+	</script>
+	</body>
+
+</html>

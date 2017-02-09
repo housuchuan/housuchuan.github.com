@@ -1,0 +1,111 @@
+<!-- 
+        作者：chenxuan
+        时间：2015-12-29
+        描述：应用页面
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'../../css/mui.min.css',
+				'../../css/common/common.css',
+				'../../css/css-application/application.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<!-- 标题 -->
+		<!--<header id="header" class="mui-bar mui-bar-nav ">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="title" class="mui-title">全部应用</h1>
+		</header>-->
+		<div class="mui-content">
+			<div class="parent-ul">
+				<ul class="application-ul mui-table-view" id="application-list">
+					<!--<li class="mui-table-view-cell">
+						<div class="image"><img src="../../img/img-application/application1.png" /></div>
+						<p class="name">微家校</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="image"><img src="../../img/img-application/application2.png" /></div>
+						<p class="name">筋斗云</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="image"><img src="../../img/img-application/application3.png" /></div>
+						<p class="name">校园一卡通</p>
+					</li>
+					<li class="mui-table-view-cell mr0">
+						<div class="image"><img src="../../img/img-application/application4.png" /></div>
+						<p class="name">学校平台</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="image"><img src="../../img/img-application/application5.png" /></div>
+						<p class="name">移动办公</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="image"><img src="../../img/img-application/application6.png" /></div>
+						<p class="name">悦读悦乐</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="image"><img src="../../img/img-application/application7.png" /></div>
+						<p class="name">教育督导</p>
+					</li>
+					<li class="mui-table-view-cell mr0">
+						<div class="image"><img src="../../img/img-application/application8.png" /></div>
+						<p class="name">教师研修</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="image"><img src="../../img/img-application/application1.png" /></div>
+						<p class="name">微家校</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="image"><img src="../../img/img-application/application2.png" /></div>
+						<p class="name">筋斗云</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="image"><img src="../../img/img-application/application3.png" /></div>
+						<p class="name">校园一卡通</p>
+					</li>
+					<li class="mui-table-view-cell mr0">
+						<div class="image"><img src="../../img/img-application/application4.png" /></div>
+						<p class="name">学校平台</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="image"><img src="../../img/img-application/application5.png" /></div>
+						<p class="name">移动办公</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="image"><img src="../../img/img-application/application6.png" /></div>
+						<p class="name">悦读悦乐</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="image"><img src="../../img/img-application/application7.png" /></div>
+						<p class="name">教育督导</p>
+					</li>
+					-->
+				</ul>
+			</div>
+		</div>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		//将需要的配置文件进行封装函数,可以省去重复代码
+		//所有的seajs别名或者项目中bizlogic文件夹下的js都需要在seaBizConfig.js中设置别名,通过别名引用
+		//实际项目中请删除这些注释
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('../../js/bizlogic/bizlogic-application/application-index.js');
+	</script>
+
+</html>

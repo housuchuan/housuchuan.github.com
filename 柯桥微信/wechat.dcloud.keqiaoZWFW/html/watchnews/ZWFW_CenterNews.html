@@ -1,0 +1,80 @@
+<!-- 
+        作者：LB
+        时间：2016-08-26
+        描述： 中心新闻模块
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>中心新闻</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/watchnews/ZWFW_CenterNews.css'
+			]);
+		</script>
+	</head>
+	<body>
+	<div class="mui-content">
+		<div id="pullrefresh"  class="mt10 mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<ul class="mui-table-view"  id="listdata">
+					<!--<li class="news-item mui-clearfix">
+					<div class='news-pic' id='" + CategoryList[i].CategoryInfo.InfoID + "' >
+						<img  src='" + CategoryList[i].CategoryInfo.HeadNewsPic + "' id='" + CategoryList[i].CategoryInfo.InfoID + "' > 
+					</div> 
+					<div class='news-info' id='" + CategoryList[i].CategoryInfo.InfoID + "'>
+						<span class='news-title' id='" + CategoryList[i].CategoryInfo.InfoID + "'>
+							  这是标题 这是标题 这是标题 这是标题 这是标题 这是标题 
+						</span>
+						<div class='news-tagging mui-clearfix' id='" + CategoryList[i].CategoryInfo.InfoID + "'>
+							<span class='tagging-name' id='" + CategoryList[i].CategoryInfo.InfoID + "'>
+								 新闻科
+							</span>
+							<span class='tagging-time' id='" + CategoryList[i].CategoryInfo.InfoID + "'> 
+								2016-8-26
+							</span>
+						</div>
+					</div>
+					</li>
+					<li class="news-item mui-clearfix">
+					<div class='news-pic' id='" + CategoryList[i].CategoryInfo.InfoID + "' >
+						<img  src='" + CategoryList[i].CategoryInfo.HeadNewsPic + "' id='" + CategoryList[i].CategoryInfo.InfoID + "' > 
+					</div> 
+					<div class='news-info' id='" + CategoryList[i].CategoryInfo.InfoID + "'>
+						<span class='news-title' id='" + CategoryList[i].CategoryInfo.InfoID + "'>
+							  这是标题 这是标题 这是标题 这是标题 这是标题 这是标题 这是标题
+						</span>
+						<div class='news-tagging mui-clearfix' id='" + CategoryList[i].CategoryInfo.InfoID + "'>
+							<span class='tagging-name' id='" + CategoryList[i].CategoryInfo.InfoID + "'>
+								 新闻科
+							</span>
+							<span class='tagging-time' id='" + CategoryList[i].CategoryInfo.InfoID + "'> 
+								2016-8-26
+							</span>
+						</div>
+					</div>
+					</li>-->
+				</ul>
+			</div>               
+  		</div>
+	</div>
+
+	
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('js/bizlogic/watchnews/ZWFW_CenterNews.js');
+	</script>
+	</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-09-16 08:29:45
+        描述：  登录提示页面（中转页面）
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>登录提示</title>
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'../../css/mui.min.css',
+				'../../css/css-transformPage/transferPage.css'
+			]);
+		</script>
+	</head>
+
+	<body class="szedu-bg-grey">
+		<div class="mui-content szedu-bg-grey">
+			<div class="szedu-content szedu-bg-grey">
+				<img src="../../img/img-transformPage/img-smile@2x1.png" alt="" class="szedu-smile-icon" />
+				<h3 class="szedu-submit"></h3>
+				<h3 class="szedu-tip"></h3>
+				<p class="szedu-submit-p">
+					请妥善保管好您的随身密码
+				</p>
+				<div id="list-icon" style="display: none;">
+					<div><input type="radio" name="1" id="1" value="" /><label for="1">语文</label></div>
+					<div><input type="radio" name="1" id="2" value="" /><label for="2">数学</label></div>
+					<div><input type="radio" name="1" id="3" value="" /><label for="3">英语</label></div>
+					<div><input type="radio" name="1" id="4" value="" /><label for="4">历史</label></div>
+					<div><input type="radio" name="1" id="5" value="" /><label for="5">地理</label></div>
+					<div><input type="radio" name="1" id="6" value="" /><label for="6">政治</label></div>
+					<div><input type="radio" name="1" id="7" value="" /><label for="7">生物</label></div>
+					<div><input type="radio" name="1" id="8" value="" /><label for="8">物理</label></div>
+					<div><input type="radio" name="1" id="9" value="" /><label for="9">化学</label></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		//将需要的配置文件进行封装函数,可以省去重复代码
+		//所有的seajs别名或者项目中bizlogic文件夹下的js都需要在seaBizConfig.js中设置别名,通过别名引用
+		//实际项目中请删除这些注释
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('../../js/bizlogic/bizlogic-transformPage/TransferPage.js');
+	</script>
+
+</html>

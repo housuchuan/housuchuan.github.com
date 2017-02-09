@@ -1,0 +1,254 @@
+
+/**
+ *作者：侯苏川 
+ *时间：2016-11-14
+ *描述：办事查询页面  
+ */
+
+ body {
+ 	font-size: 14px;
+ 	color: #666666;
+}
+
+ .tabItem span {
+ 	display: inline-block;
+ 	float: left;
+ 	width: 49.8%;
+ 	line-height: 42px;
+ 	text-align: center;
+ 	border-bottom:  1px solid #eeeeee;
+ 	box-shadow: 0 1px 0px 0px #eeeeee;
+ }
+ 
+ .tabItem span:first-child {
+ 	color: #008aff;
+ 	border-right: 2px solid #eeeeee;
+ }
+ 
+ .scrollWrapper {
+ 	display: none;
+ 	margin-top: 44px;
+ 	z-index: -2;
+ }
+ 
+ .search {
+ 	position: relative;
+ 	z-index: 10;
+ }
+ 
+ .scrollWrapper>.mui-table-view:first-child {
+ 	margin-top: 0px;
+ }
+ 
+ .scrollWrapper .mui-table-view:before {
+ 	content: none;
+ }
+ 
+ .scrollWrapper .mui-table-view-cell {
+ 	line-height: 43px;
+ 	padding: 0 15px;
+ }
+ 
+ .mui-btn-primary {
+ 	margin-left: 5px;
+ 	padding: 6px 8px;
+ }
+ 
+ .mui-search .mui-placeholder {
+ 	font-size: 14px;
+ }
+
+ 
+ /*办件查询*/
+.eventSearch {
+	padding-top: 45px;
+}
+
+.eventSearch .mui-table-view:before {
+	content: none;
+}
+
+.search {
+	margin-top: 0px;
+	height: 50px;
+	padding: 8px 10px 0px 10px;
+	background-color: #fff;
+}
+
+.search .mui-search {
+	float: left;
+	width: 83%;
+	height: 34px;
+	background-color: #f5f5f5;
+}
+
+.search .mui-search.mui-active:before {
+	top: 24px;
+	left: 8px;
+}
+
+.search .mui-input-clear {
+	height: 34px;
+	line-height: 34px;
+	margin-bottom: 0;
+}
+
+.eventSearch .mui-search .mui-placeholder {
+	font-size: 14px;
+	color: #999;
+}
+
+.eventSearch .mui-search .mui-placeholder {
+	left: 8px;
+	text-align: left;
+}
+
+.eventSearch .search .mui-btn {
+	float: left;
+	padding: 0;
+	width: 15%;
+	margin-left: 6px;
+	height: 34px;
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+	border: 1px solid #3182eb;
+	background-color: #3182eb;
+}
+
+.mt10 {
+	margin-top: 0px;
+	width: 100%;
+}
+
+.eventSearch .mui-table-view {}
+
+.eventSearch .mui-scroll-wrapper {
+	top: 98px;
+	padding-top: 10px;
+	background-color: #f5f5f5;
+}
+
+.eventSearch .mui-table-view {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.eventSearch .mui-table-view-cell {
+	padding: 5px 10px;
+}
+
+.eventSearch .mui-table-view-cell:after {
+	left: 10px;
+}
+
+.eventSearch .mui-table-view-cell p {
+	line-height: 24px;
+}
+
+.itme-number {
+	float: right;
+	font-size: 15px;
+	color: #3182eb;
+	margin-bottom: 5px;
+}
+
+.state {
+	
+	float: right;
+	font-size: 15px;
+	color: #18a11e;
+}
+
+.unit {
+	font-size: 14px;
+	color: #999;
+	margin-top: 5px;
+}
+.data{
+	margin-left: 10px;
+}
+.mui-table-view-cell label {
+	font-size: 13px;
+	color: #999;
+}
+
+.requirement {
+	font-size: 16px;
+	color: #333;
+	display: block;
+	width: 100%;
+}
+
+.eventSearch .mui-table-view-cell {
+}
+
+.eventSearch li{
+	border-bottom: 1px solid #EFEFF4;
+}
+
+.mt10 {
+	margin-top: 0px;
+	width: 100%;
+}
+
+.mui-table-view {}
+
+.mui-table-view {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.mui-table-view-cell {
+	padding: 5px 10px;
+}
+
+.mui-table-view-cell:after {
+	left: 10px;
+}
+
+.mui-table-view-cell p {
+	line-height: 24px;
+}
+
+.itme-number {
+	float: left;
+	font-size: 15px;
+	color: #3182eb;
+	margin-bottom: 5px;
+}
+
+.state {
+	
+	float: right;
+	font-size: 15px;
+	color: #18a11e;
+}
+
+.unit {
+	font-size: 14px;
+	color: #333;
+		margin-top: 5px;
+}
+
+.mui-table-view-cell label {
+	font-size: 13px;
+	color: #999;
+}
+
+.requirement {
+	font-size: 14px;
+	color: #999;
+	display: block;
+	width: 100%;
+}
+
+.mui-table-view-cell {
+}
+
+li{
+	border-bottom: 1px solid #EFEFF4;
+}
+

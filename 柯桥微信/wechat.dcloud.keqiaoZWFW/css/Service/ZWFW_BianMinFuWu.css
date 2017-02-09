@@ -1,0 +1,44 @@
+/*
+ * 便民服务
+ * author: hybo
+ * */
+
+
+/* main */
+
+body {
+	background-color: #fff;
+}
+
+.personal-affairs {
+	padding-top: 20px;
+}
+
+.personal-affairs ul {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.affairs-item {
+	float: left;
+	width: 33.33%;
+	height: 90px;
+}
+
+.affairs-item-name {
+	display: block;
+	margin-top: 6px;
+	line-height: 14px;
+	font-size: 12px;
+	color: #666666;
+	text-align: center;
+}
+
+.affairs-item-icon {
+	display: block;
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+}

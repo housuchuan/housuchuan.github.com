@@ -1,0 +1,98 @@
+/*
+ * 准营准办相关事项
+ * author: wangkai
+ * */
+
+/* main */
+
+body{
+	background-color:#f5f5f5;
+}
+
+.mui-table-view {
+	
+	margin-bottom: 60px;
+}
+
+
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	font-size: 15px;
+	color: #666;
+}
+
+.mui-table-view-cell label {
+	float: left;
+	width: 70px;
+}
+
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after {
+	right: 10px;
+}
+
+.mui-navigate-right.current:after, .mui-push-right.current:after {
+	content: '';
+}
+
+.mui-navigate-right span {
+	float: left;
+	width:70%;
+	margin-left: 15px;
+	font-size: 15px;
+	color: #000;
+	white-space: normal;
+}
+
+.mui-navigate-right span.current {
+	color: #3182eb;
+}
+
+.mui-navigate-right span.current1 {
+	color: #FF0000;
+}
+
+
+.nextbtn {
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 0;
+	height: 44px;
+	border-radius: 0;
+	padding: 0;
+	border-color: #3182eb;
+	background-color: #3182eb;
+	font-size: 18px;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

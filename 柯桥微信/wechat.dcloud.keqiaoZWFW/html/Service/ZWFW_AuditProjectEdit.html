@@ -1,0 +1,90 @@
+<!-- 
+作者: daike
+时间: 2016-08-29
+描述: 自助申报 
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>自助申报</title>
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/Service/ZWFW_auditapply.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li id="xzlx" class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+
+						<!--<select id="selecttype" onchange="typechange();"></select>-->
+
+						<span id="Span1">申请类型</span>
+						<input type="text" readonly="readonly" name="selecttype" id="selecttype" value="" placeholder="请选择申请类型" />
+						<input type="hidden" name="selecttype" id="ApplerType" value="" placeholder="请选择申请类型" />
+						</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<input id="xm" type="text" placeholder="请输入名称（必填）" value="" />
+						<span id="spxm">申请人</span> </a>
+				</li>
+
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<input id="spsfz" type="text" placeholder="" value="身份证" disabled />
+						<span id="zjlx">证件类型</span> </a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<input id="sfz" type="text" placeholder="请输入证件号码（必填）" value="" />
+						<span id="zjhm">证件号码</span> </a>
+				</li>
+
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<input id="lxr" type="text" placeholder="请输入联系人（必填）" /> 联系人
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<input id="lxsj" type="number" placeholder="请输入联系手机（必填）" /> 联系手机 </a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<input id="lxdz" type="text" placeholder="请输入联系地址（必填）" /> 联系地址 </a>
+				</li>
+
+				
+				<input id="Appleruserguid" type="hidden" placeholder="" value="" />
+			</ul>
+			<button id="btnnext" type="button" class="nextbtn mui-btn-primary mui-btn-block">
+        下一步</button>
+		</div>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		//将需要的配置文件进行封装函数,可以省去重复代码
+		//所有的seajs别名或者项目中bizlogic文件夹下的js都需要在seaBizConfig.js中设置别名,通过别名引用
+		//实际项目中请删除这些注释
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('js/bizlogic/Service/ZWFW_AuditProjectEdit.js');
+	</script>
+
+</html>

@@ -1,0 +1,151 @@
+/**
+ * 中学css
+ */
+
+.mui-scroll-wrapper {
+	top: 0;
+	background-color: #f5f5f5;
+}
+img {
+	width: 100%;
+}
+.brief-text {
+	margin: 3px 6px;
+	line-height: 22px;
+	color: #333;
+}
+.brief-state {
+	float: right;
+	margin-right: 6px;
+	color: #0280f2;
+}
+/*two-link*/
+
+.two-link {
+	position: relative;
+	margin-top: 10px;
+	overflow: hidden;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.two-link:before {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+    top: 0;
+}
+.two-link:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+}
+.two-link>button {
+	width: 48%;
+	font-size: 15px;
+	padding: 7px 12px;
+	border-radius: 5px;
+	color: #fff;
+	border: 0;
+}
+
+.two-link>.school {
+	float: left;
+	background-color: #2983d8;
+}
+
+.two-link>.teacher {
+	float: right;
+	background-color: #9f75ba;
+}
+
+.two-link .icon {
+	display: inline-block;
+	margin-right: 8px;
+    margin-top: 1px;
+	vertical-align: inherit;
+	width: 18px;
+	height: 18px;
+	background-image: url(../../img/img-homepage/school-countbg.png);
+	background-size: cover;
+}
+
+.two-link>.teacher .icon {
+	height: 19px;
+	background-image: url(../../img/img-homepage/teacher-countbg.png);
+}
+
+
+/*校园直通车*/
+.school-hd h5{
+	font-size: 15px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.school-hd h5 .bg0380f2 {
+	display: inline-block;
+	margin-left: 4px;
+	padding: 1px 3px;
+	color: #fff;
+	background-color: #f8537d;
+	border-radius: 4px;
+}
+
+.school-info {
+	position: relative;
+	padding-top: 14px;
+	background-color: #f5f5f5;
+}
+.school-info:before {
+	position: absolute;
+    right: 0;
+    left: 0;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
+    top: 18px;
+}
+.school-hd {
+	height: 38px;
+	background-color: #fff;
+}
+.school-hd h5 {
+	padding-top: 10px;
+	padding-left: 15px;
+	color: #000;
+}
+.school-hd h5 .bg0380f2 {
+	background-color: #0380f2 ;
+    padding: 3px 4px;
+}
+.school-info .title {
+	font-size: 15px;
+	color: #333;
+}
+.school-info .sourse {
+	float: left;
+	color: #999;
+}
+.school-info .sourse .blue {
+	color: #4875db;
+}
+.school-info .time {
+	float: right;
+	color: #666;
+}
+.school-info .mui-table-view:before {
+	left: 15px;
+}

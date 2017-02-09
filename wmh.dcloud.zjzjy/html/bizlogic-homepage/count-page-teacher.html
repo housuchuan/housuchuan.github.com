@@ -1,0 +1,186 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-12-30
+        描述：教师统计页面
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'../../css/mui.min.css',
+				'../../css/common/common.css',
+				'../../css/css-homepage/count-page-student.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<!-- 标题 -->
+		<div class="mui-content" id="mui-content">
+			<div class="mui-itemlist">
+				<div id="item2" class="mui-control-content mui-active">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<!--第一块-->
+							<div class="block-first">
+								<div class="left">
+									<p class="school-name">江苏省镇江中学</p>
+									<div class="width50 chuqing">
+										<img src="../../img/img-homepage/chuqinglv-bg.png" />
+										<p class="className">出勤率</p>
+										<p class="percent">98%</p>
+									</div>
+									<div class="width50 total-per">
+										<img src="../../img/img-homepage/totle-person.png" />
+										<p class="className">总人数(人)</p>
+										<p class="percent">12121</p>
+									</div>
+								</div>
+								<div class="right">
+									<img src="../../img/test/block-first-right.jpg" />
+								</div>
+							</div>
+							<!--第二块-->
+							<div class="block-second">
+								<p class="percent-name">各时段到校人数</p>
+								<div class="echart">
+									<img src="../../img/test/block-second1.jpg" />
+								</div>
+							</div>
+							<!--第三块-->
+							<div id="slider2" class="mui-slider">
+								<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+									<a class="mui-control-item mui-active" href="#item4mobile"><span>一年级</span></a>
+									<a class="mui-control-item" href="#item5mobile"><span>二年级</span></a>
+									<a class="mui-control-item" href="#item6mobile"><span>三年级</span></a>
+								</div>
+								<div class="mui-slider-group">
+									<div id="item4mobile" class="mui-slider-item mui-control-content mui-active">
+										<div id="scroll4" class="mui-scroll-wrapper">
+											<div class="mui-scroll">
+												<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+													<li class="mui-table-view-cell">
+														<div class="mui-slider-cell">
+															<div class="oa-contact-cell mui-table">
+																<div class="oa-contact-avatar mui-table-cell">
+																	<img src="../../img/test/teacher-img.jpg" />
+																</div>
+																<div class="oa-contact-content mui-table-cell">
+																	<div class="mui-clearfix">
+																		<h4 class="oa-contact-name">叶文洁</h4>
+																		<span class="oa-contact-position mui-h6">三班(班主任)</span>
+																	</div>
+																	<p class="oa-contact-email mui-h6">
+																		<span class="blue">物理老师</span> (四班、六班、九班)
+																	</p>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="mui-table-view-cell">
+														<div class="mui-slider-cell">
+															<div class="oa-contact-cell mui-table">
+																<div class="oa-contact-avatar mui-table-cell">
+																	<img src="../../img/test/teacher-img.jpg" />
+																</div>
+																<div class="oa-contact-content mui-table-cell">
+																	<div class="mui-clearfix">
+																		<h4 class="oa-contact-name">叶文洁</h4>
+																		<span class="oa-contact-position mui-h6">三班(班主任)</span>
+																	</div>
+																	<p class="oa-contact-email mui-h6">
+																		<span class="blue">物理老师</span> (四班、六班、九班)
+																	</p>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="mui-table-view-cell">
+														<div class="mui-slider-cell">
+															<div class="oa-contact-cell mui-table">
+																<div class="oa-contact-avatar mui-table-cell">
+																	<img src="../../img/test/teacher-img.jpg" />
+																</div>
+																<div class="oa-contact-content mui-table-cell">
+																	<div class="mui-clearfix">
+																		<h4 class="oa-contact-name">叶文洁</h4>
+																		<span class="oa-contact-position mui-h6">三班(班主任)</span>
+																	</div>
+																	<p class="oa-contact-email mui-h6">
+																		<span class="blue">物理老师</span> (四班、六班、九班)
+																	</p>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="mui-table-view-cell">
+														<div class="mui-slider-cell">
+															<div class="oa-contact-cell mui-table">
+																<div class="oa-contact-avatar mui-table-cell">
+																	<img src="../../img/test/teacher-img.jpg" />
+																</div>
+																<div class="oa-contact-content mui-table-cell">
+																	<div class="mui-clearfix">
+																		<h4 class="oa-contact-name">叶文洁</h4>
+																		<span class="oa-contact-position mui-h6">三班(班主任)</span>
+																	</div>
+																	<p class="oa-contact-email mui-h6">
+																		<span class="blue">物理老师</span> (四班、六班、九班)
+																	</p>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div id="item5mobile" class="mui-slider-item mui-control-content">
+										<div id="scroll5" class="mui-scroll-wrapper">
+											<div class="mui-scroll">
+												<div class="mui-loading">
+													<div class="mui-spinner">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="item6mobile" class="mui-slider-item mui-control-content">
+										<div id="scroll6" class="mui-scroll-wrapper">
+											<div class="mui-scroll">
+												<div class="mui-loading">
+													<div class="mui-spinner">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		//将需要的配置文件进行封装函数,可以省去重复代码
+		//所有的seajs别名或者项目中bizlogic文件夹下的js都需要在seaBizConfig.js中设置别名,通过别名引用
+		//实际项目中请删除这些注释
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('../../js/bizlogic/bizlogic-homepage/count-page-teacher.js');
+	</script>
+
+</html>

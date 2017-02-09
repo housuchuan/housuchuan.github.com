@@ -1,0 +1,132 @@
+/*
+ * 事项搜索
+ * author: wangkai
+ * */
+
+/* main */
+
+body{
+	background-color:#f5f5f5;
+}
+
+.mui-table-view {
+	
+	margin-bottom: 60px;
+}
+
+
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	font-size: 15px;
+	color: #666;
+}
+
+.mui-table-view-cell label {
+	float: left;
+	width: 70px;
+}
+
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after {
+	right: 10px;
+}
+
+.mui-navigate-right.current:after, .mui-push-right.current:after {
+	content: '';
+}
+
+.mui-navigate-right span {
+	float: left;
+	width: 70%;
+	margin-left: 15px;
+	font-size: 15px;
+	color: #000;
+	white-space: normal;
+}
+
+.mui-navigate-right span.current {
+	color: #3182eb;
+}
+
+.mui-navigate-right span.current1 {
+	color: #FF0000;
+}
+
+.three-btn {
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 0;
+	width: 100%;
+	height: 50px;
+	border-radius: 0;
+	padding: 0;
+	border: 0;
+	border-top: 1px solid #e6e6e6;
+	background-color: #fff;
+}
+
+.three-btn ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.three-btn li {
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	font-size: 11px;
+	
+}
+
+.btn-fgx {
+	background: url(../images/btn-fgx.jpg) right 11px no-repeat;
+	background-size: 1px 27px;
+}
+
+.three-btn a {
+	display: block;
+	padding-top: 27px;
+	color: #666;
+}
+
+.btn-icon1 {
+	background: url(../images/zx-icon.png) 50% 8px no-repeat;
+	background-size: 19px 18px;
+}
+
+.btn-icon2 {
+	background: url(../images/yy-icon.png) 50% 8px no-repeat;
+	background-size: 17px 17px;
+}
+
+
+.btn-icon3 {
+	background: url(../images/sb-icon.png) 50% 8px no-repeat;
+	background-size: 18px 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

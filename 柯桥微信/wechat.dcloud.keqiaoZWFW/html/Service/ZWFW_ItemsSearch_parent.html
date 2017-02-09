@@ -1,0 +1,57 @@
+<!-- 
+        作者：hybo
+        时间：2016年8月26日
+        描述：事项搜索父页面
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>事项搜索</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/Service/ZWFW_ItemsSearch_parent.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="search mui-clearfix" id="search">
+			<div class="mui-input-row mui-search">
+				<!--<div class="mui-icon mui-icon-search"></div>-->
+				<input type="search" class="mui-input-clear" placeholder="请输入事项名称" id="searchvalue">
+			</div>
+			<button type="button" class="mui-btn mui-btn-primary" id="check">查询</button>
+		</div>
+
+		<div id="divhottask">
+			<div class="hot-item">热门事项</div>
+			<ul class="mui-table-view hot-item-list" id="hotlist">
+
+			</ul>
+		</div>
+		<div id="pullrefresh" class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				
+				<ul class="mui-table-view hot-item-list" id="listdata">
+
+				</ul>
+			</div>
+		</div>
+
+	</body>
+	<!-- 通用js -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/Service/ZWFW_ItemsSearch_parent.js");
+	</script>
+
+</html>

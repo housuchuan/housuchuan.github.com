@@ -1,0 +1,96 @@
+<!-- 
+        作者：陈轩
+        时间：2016-12-30
+        描述：中学
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'../../css/mui.min.css',
+				'../../css/common/common.css',
+				'../../css/css-homepage/middle-school.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<!-- 标题 -->
+		<!--<header id="header" class="mui-bar mui-bar-nav ">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="title" class="mui-title">镇江中学</h1>
+		</header>-->
+		<div class="mui-content">
+			<div id="pullrefresh" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--简介-->
+					<div class="school-brief">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<div class="guardInfo">
+									<!--<img src="../../img/test/zhnegjiang-school.jpg" class="brief-img" />
+									<p class="brief-text">培养有深厚文化教养的现代中国人，办有品位的学校，做有品味的老师。</p>-->
+								</div>
+								<p class="brief-state"><!--——镇江中学--></p>
+							</li>
+						</ul>
+					</div>
+					<!--2个链接-->
+					<div class="two-link">
+						<button type="button" class="mui-btn school"><span class="icon"></span>学生在线统计</button>
+						<button type="button" class="mui-btn teacher"><span class="icon"></span>教师在线统计</button>
+					</div>
+					<!--校园直通车-->
+					<div class="school-info">
+						<div class="school-hd">
+							<h5>校园<span class="bg0380f2">直通车</span></h5>
+						</div>
+						<ul id="listdata1" class="mui-table-view">
+							<!--<li class="mui-table-view-cell">
+								<p class="mui-ellipsis title">山东嘉通集团有限公司山东嘉通集团有限公司山东嘉通集团有限公司</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-ellipsis title">山东嘉通集团有限公司山东嘉通集团有限公司山东嘉通集团有限公司</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-ellipsis title">山东嘉通集团有限公司山东嘉通集团有限公司山东嘉通集团有限公司</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-ellipsis title">山东嘉通集团有限公司山东嘉通集团有限公司山东嘉通集团有限公司</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-ellipsis title">山东嘉通集团有限公司山东嘉通集团有限公司山东嘉通集团有限公司</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-ellipsis title">山东嘉通集团有限公司山东嘉通集团有限公司山东嘉通集团有限公司</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-ellipsis title">山东嘉通集团有限公司山东嘉通集团有限公司山东嘉通集团有限公司</p>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		//将需要的配置文件进行封装函数,可以省去重复代码
+		//所有的seajs别名或者项目中bizlogic文件夹下的js都需要在seaBizConfig.js中设置别名,通过别名引用
+		//实际项目中请删除这些注释
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('../../js/bizlogic/bizlogic-homepage/middle-school.js');
+	</script>
+
+</html>

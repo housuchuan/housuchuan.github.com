@@ -1,0 +1,81 @@
+<!-- 
+        作者：袁凯忻
+        时间：2016年8月26日
+        描述：新增预约
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>新增预约</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'../../css/mui.min.css',
+				'../../css/common/common.css',
+				'../../css/Interaction/ZWFW_Appointment_Add.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div id="litemplate">
+			<ul class="mui-table-view" id="listdata">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label>预约部门</label>
+						<span class="item-name" id="spanouname"></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label>办理事项</label>
+						<span class="item-name" id="spantaskname"></span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell" id="yuyuetimeselect">
+					<a class="mui-navigate-right ">
+						<label>预约时间</label>
+						<input class="item-name current" id="yuyuetime" placeholder="请选择预约时间" value=""></input>
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label>姓名</label>
+						<input type="text" placeholder="请输入您的姓名（必填）" id="name" value="">
+
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label>身份证号</label>
+						<input type="text" placeholder="请输入您的身份证（必填）" id="id-number" value="">
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right current">
+						<label>手机号</label>
+						<input type="number" placeholder="请输入您的手机号（必填）" id="phone" value="">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="prompt">
+			<span class="prompt-title">提示：</span>
+			<p class="prompt-info">预约后如果临时有事无法办理，请取消预约！过号未办理可能会被限制预约权限。</p>
+		</div>
+		<button class="mui-btn nextbtn mui-btn-primary mui-btn-block" id="appointmentadd">预约</button>
+	</body>
+	<!-- 通用js -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/Interaction/ZWFW_Appointment_Add.js");
+	</script>
+
+</html>

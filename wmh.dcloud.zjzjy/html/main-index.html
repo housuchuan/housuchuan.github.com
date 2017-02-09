@@ -1,0 +1,59 @@
+<!-- 
+        作者：Created By chenxuan(陈轩)
+        版本：1.0.0
+        时间：2016-12-28 16:56:02
+        描述：  
+-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script>
+			document.write("<script type='text/javascript' src='../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'../css/mui.min.css',
+				'../css/common/common.css',
+				'../css/common/nav.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item mui-active" href="#" data-id="1">
+					<span class="mui-icon home"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a class="mui-tab-item" href="#" data-id="0">
+					<span class="mui-icon application"></span>
+					<span class="mui-tab-label">应用</span>
+				</a>
+				<a class="mui-tab-item" href="#" data-id="0">
+					<span class="mui-icon microclass"></span>
+					<span class="mui-tab-label">微课</span>
+				</a>
+				<a class="mui-tab-item" href="#" data-id="0">
+					<span class="mui-icon activity"></span>
+					<span class="mui-tab-label">活动</span>
+				</a>
+				<a class="mui-tab-item" href="#" data-id="0">
+					<span class="mui-icon download"></span>
+					<span class="mui-tab-label">下载</span>
+				</a>
+			</nav>
+		</div>
+		<script>
+			SrcBoot.outSeaConfig();
+		</script>
+		<script>
+			seajs.use('../js/bizlogic/main-index.js');
+		</script>
+	</body>
+
+</html>

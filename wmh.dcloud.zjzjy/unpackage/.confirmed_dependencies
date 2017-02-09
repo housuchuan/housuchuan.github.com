@@ -1,0 +1,102 @@
+{
+	"html/bizlogic-homepage/homepage.html": {
+		"resources": [
+			"img/img-application/application9.png",
+			"css/css-homepage/flipsternavtabs.css",
+			"fonts/mui.ttf",
+			"js/libs/mui.min.js",
+			"js/core/sea.min.js",
+			"js/bizlogic/config/seaBizConfig.js",
+			"css/common/common.css",
+			"img/img-homepage/homeleft-navbg.png",
+			"js/libs/marqueescroll.min.js",
+			"js/libs/epoint.moapi.v2.js",
+			"js/core/RayApp/Tools/RayApp.UITools.js",
+			"css/css-homepage/jquery.flipster.css",
+			"js/bizlogic/config/config.js",
+			"js/core/RayApp/sea.config.js",
+			"js/core/RayApp/cacheControl.config.js",
+			"js/libs/mustache.min.js",
+			"js/core/RayApp/Tools/RayApp.CommonTools.js",
+			"js/core/RayApp/RayApp.Config.js",
+			"js/libs/jquery.flipster.js",
+			"css/mui.min.css",
+			"js/bizlogic/bizlogic-homepage/homepage.js",
+			"css/common/common_search.css",
+			"js/libs/jquery-1.8.3.min.js",
+			"img/img-homepage/pagemain-bg.jpg",
+			"css/css-homepage/homepage.css",
+			"html/bizlogic-homepage/info-detail.html",
+			"html/bizlogic-homepage/info-list.html"
+		],
+		"refer": [
+			"html/bizlogic-homepage/info-detail.html",
+			"html/bizlogic-homepage/info-list.html"
+		]
+	},
+	"html/bizlogic-homepage/info-detail.html": {
+		"resources": [
+			"js/libs/zepto.min.js",
+			"css/css-homepage/info-detail.css",
+			"js/bizlogic/bizlogic-homepage/info-detail.js",
+			"js/core/RayApp/Tools/RayApp.StorageTools.js",
+			"js/core/RayApp/Tools/RayApp.WindowTools.js",
+			"js/core/RayApp/cacheControl.config.js",
+			"html/bizlogic-homepage/homepage.html"
+		],
+		"refer": [
+			"html/bizlogic-homepage/homepage.html"
+		]
+	},
+	"html/bizlogic-homepage/info-list.html": {
+		"resources": [
+			"js/core/RayApp/Tools/RayApp.PullToRefresh.Base.Type1.material1.js",
+			"js/core/RayApp/Tools/RayApp.PullToRefresh.Base.Type1.js",
+			"js/bizlogic/bizlogic-homepage/info-list.js",
+			"js/core/RayApp/Tools/RayApp.HtmlTools.js",
+			"js/core/RayApp/Tools/RayApp.PullToRefresh.Impl.Default.js",
+			"css/css-homepage/info-list.css",
+			"css/RayApp/RayApp.PullToRefresh.css",
+			"js/core/RayApp/cacheControl.config.js",
+			"html/bizlogic-homepage/homepage.html",
+			"js/libs/zepto.min.js",
+			"js/core/RayApp/Tools/RayApp.StorageTools.js",
+			"js/core/RayApp/Tools/RayApp.WindowTools.js"
+		],
+		"refer": [
+			"html/bizlogic-homepage/homepage.html"
+		]
+	},
+	"html/bizlogic-application/application-index.html": {
+		"resources": [
+			"js/bizlogic/bizlogic-application/application-index.js",
+			"css/css-application/application.css",
+			"js/core/RayApp/cacheControl.config.js",
+			"html/bizlogic-application/application-detail.html"
+		],
+		"refer": [
+			"html/bizlogic-application/application-detail.html"
+		]
+	},
+	"html/bizlogic-application/application-detail.html": {
+		"resources": [
+			"img/img-application/application1.png",
+			"img/img-application/appli-icon1.png",
+			"img/test/application-detail1.jpg",
+			"js/libs/mui.zoom.js",
+			"img/img-application/appli-icon2.png",
+			"js/libs/mui.previewimage.js",
+			"js/bizlogic/bizlogic-application/application-detail.js",
+			"css/css-application/application-detail.css",
+			"img/img-application/appli-icon3.png",
+			"img/img-application/star2.png",
+			"img/img-application/star1.png",
+			"img/img-application/appli-icon4.png",
+			"js/core/RayApp/cacheControl.config.js",
+			"html/bizlogic-application/application-index.html"
+		],
+		"refer": [
+			"html/bizlogic-application/application-index.html"
+		]
+	}
+}

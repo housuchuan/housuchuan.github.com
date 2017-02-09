@@ -1,0 +1,132 @@
+<!-- 
+        作者：侯苏川
+        时间：2017-01-06
+        描述：便民服务
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'../../css/service/keqiao_publicService.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<div class="itemWrapper">
+						<h4>交通出行</h4>
+						<div class="line"></div>
+						<ul class="mui-clearfix">
+							<li>
+								<a onclick="initListenter('http://zjgscxdh.yyhj.zjzwfw.gov.cn/')" class="mui-clearfix"><img src="../../img/service/便民交互_04.png" /><span>高速出行导航</span></a>
+							</li>
+							<li>
+								<a onclick="initListenter('http://weixin.zjt.gov.cn/weixin/getpage?type=zjt&id=4')" class="mui-clearfix"><img src="../../img/service/便民交互_08.png" /><span>高速实时路况</span></a>
+							</li>
+							<li>
+								<a onclick="initListenter('http://115.29.204.183/weixin/getpage?type=zjt&id=5')" class="mui-clearfix"><img src="../../img/service/便民交互_13.png" /><span>高速易堵路段</span></a>
+							</li>
+							<li>
+								<a onclick="initListenter('http://zjqcp.yyhj.zjzwfw.gov.cn/control/manage/choose')" class="mui-clearfix"><img src="../../img/service/便民交互_17.png" /><span>查汽车票</span></a>
+							</li>
+							<li>
+								<a onclick="initListenter('http://zjjsyjfcx.yyhj.zjzwfw.gov.cn/wap/drvQuery.do')" class="mui-clearfix"><img src="../../img/service/便民交互_23-06.png" /><span>驾驶员计分</span></a>
+							</li>
+							<li>
+								<a onclick="initListenter('http://zjjdcwfcx.yyhj.zjzwfw.gov.cn/wap/vehQuery.do')" class="mui-clearfix"><img src="../../img/service/便民交互_23.png" /><span>机动车违法</span></a>
+								<canvas id="invaildPlay" width="100" height="100"></canvas>
+							</li>
+						</ul>
+					</div>
+					<div class="itemWrapper">
+						<h4>医疗卫生</h4>
+						<div class="line"></div>
+						<ul class="mui-clearfix">
+							<li>
+								<a onclick="initListenter('http://zjghyy.yyhj.zjzwfw.gov.cn/#/home')" class="mui-clearfix"><img src="../../img/service/便民交互_28.png" /><span>诊疗挂号</span></a>
+								<canvas id="medicine" width="100" height="100"></canvas>
+							</li>
+							<li>
+								<a onclick="initListenter('http://www.zjzwfw.gov.cn/module/map/getmap.jsp?webId=56&cataName=CA0000204')" class="mui-clearfix"><img src="../../img/service/便民交互_31.png" /><span>预防接种机构</span></a>
+							</li>
+						</ul>
+					</div>
+					<div class="itemWrapper">
+						<h4>环境天气</h4>
+						<div class="line"></div>
+						<ul class="mui-clearfix">
+							<li>
+								<a onclick="initListenter('http://zjtqyb.yyhj.zjzwfw.gov.cn/')" class="mui-clearfix"><img src="../../img/service/便民交互_35.png" /><span>天气预报</span></a>
+							</li>
+							<li>
+								<a onclick="initListenter('http://typhoon.zjwater.gov.cn/default.aspx')" class="mui-clearfix"><img src="../../img/service/便民交互_37.png" /><span>实时台风信息</span></a>
+							</li>
+							<li>
+								<a onclick="initListenter('http://zjdzzhyb.yyhj.zjzwfw.gov.cn/')" class="mui-clearfix"><img src="../../img/service/便民交互_40.png" /><span>地址灾害预报</span></a>
+							</li>
+						</ul>
+					</div>
+					<div class="itemWrapper">
+						<h4>考试查询</h4>
+						<div class="line"></div>
+						<ul class="mui-clearfix">
+							<li>
+								<a onclick="initListenter('http://zjjiaoyuadultexamwx.yyhj.zjzwfw.gov.cn/control/exam/homepage')" class="mui-clearfix"><img src="../../img/service/便民交互_44.png" /><span>成人高考</span></a>
+							</li>
+							<li>
+								<a onclick="initListenter('http://zjjslkscj.yyhj.zjzwfw.gov.cn/control/exam/homepage?YHUserInfo=&type=%E5%BE%AE%E4%BF%A1&userAgent=Mozilla/5.0%20(Windows%20NT%206.1;%20WOW64)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/39.0.2171.95%20Safari/537.36%20MicroMessenger/6.5.2.501%20NetType/WIFI%20WindowsWechat%20QBCore/3.43.27.400%20QQBrowser/9.0.2524.400&authcode=null')" class="mui-clearfix"><img src="../../img/service/便民交互_45.png" /><span>建设厅考试</span></a>
+							</li>
+						</ul>
+					</div>
+					<div class="itemWrapper">
+						<h4>证件办理</h4>
+						<div class="line"></div>
+						<ul class="mui-clearfix">
+							<li>
+								<a onclick="initListenter('http://zjcrjbz.yyhj.zjzwfw.gov.cn/wap/crjQuery.do')" class="mui-clearfix"><img src="../../img/service/便民交互_50.png" /><span>出入境办证</span></a>
+							</li>
+							<li>
+								<a onclick="initListenter('http://zjcrjbz.pcyyhj.zjzwfw.gov.cn/?tabid=14503&winzoom=1')" class="mui-clearfix"><img src="../../img/service/便民交互_52.png" /><span>出入境办证查询</span></a>
+							</li>
+						</ul>
+					</div>
+					<div class="itemWrapper">
+						<h4>数据浙江</h4>
+						<div class="line"></div>
+						<ul class="mui-clearfix">
+							<li>
+								<a onclick="initListenter('http://sjzj.yyhj.zjzwfw.gov.cn/')" class="mui-clearfix"><img src="../../img/service/便民交互_56.png" /><span>数据浙江</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		//将需要的配置文件进行封装函数,可以省去重复代码
+		//所有的seajs别名或者项目中bizlogic文件夹下的js都需要在seaBizConfig.js中设置别名,通过别名引用
+		//实际项目中请删除这些注释
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('js/bizlogic/service/keqiao_publicService.js');
+	</script>
+
+</html>

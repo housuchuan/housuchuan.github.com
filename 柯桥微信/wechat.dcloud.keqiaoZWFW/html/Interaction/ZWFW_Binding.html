@@ -1,0 +1,71 @@
+
+<!-- 
+        作者：daike	
+        时间：2016-09-01
+        描述：账户绑定
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>账户绑定</title>
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/Interaction/ZWFW_account-binding.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		
+		<div class="mui-content">
+<ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right current mui-clearfix">
+            	<label>用户名</label>
+                <input type="text" placeholder="请输入您的用户名" id="labLoginID">   	
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right current">
+            	<label>密码</label>
+                <input type="password" placeholder="请输入您的密码" id="labPassword">  	
+            </a>
+        </li>
+    </ul>
+    <button type="button" class="surebtn mui-btn-primary mui-btn-block" id="bind">绑 定</button>
+    <div class="second-btn mui-clearfix">
+   
+    	<a  class="retrieve-password" id="register">快速注册</a>
+    </div>
+    <div class="prompt">
+    	<span>提示：</span>
+    	<p>
+    		1、用户名为中心门户网站(http://www.epoint.gov.cn/)中已注册的外网申报账号，<br />
+    
+    		2、如之前没有账号，请先注册后再进行用户绑定操作。
+    	</p>
+    </div>
+		</div>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		//将需要的配置文件进行封装函数,可以省去重复代码
+		//所有的seajs别名或者项目中bizlogic文件夹下的js都需要在seaBizConfig.js中设置别名,通过别名引用
+		//实际项目中请删除这些注释
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('js/bizlogic/Interaction/ZWFW_Binding.js');
+	</script>
+
+</html>

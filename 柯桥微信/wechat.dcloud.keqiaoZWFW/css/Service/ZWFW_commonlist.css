@@ -1,0 +1,12 @@
+/**
+ * daike
+ * 201-09-05
+ * 通用事项列表
+ */
+.mui-scroll-wrapper{
+	top:44px;
+}
+.hot-item .hot-item-number {
+	font-size: 15px;
+	color: #ff0000;
+}

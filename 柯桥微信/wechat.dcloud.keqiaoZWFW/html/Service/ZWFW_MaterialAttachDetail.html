@@ -1,0 +1,67 @@
+<!-- 
+        作者：daike
+        时间：2016-08-30
+        描述：材料上传
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>查看材料</title>
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/Service/ZWFW_enterprise-service-upload.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+
+		<div class="mui-content">
+			<ul class="mui-table-view" id="ulpull">
+				<li class='mui-table-view-cell'>
+					<span id="Mname" class='material-name'></span>
+				</li>
+				
+
+			</ul>
+			<div class="hasupload">
+				已上传
+			</div>
+			<ul class="doclist" id="doclist">
+				<!--<li class=" mui-table-view-cell doclist_cell " id="">
+					
+					
+						左滑显示删除按钮
+					
+				</li>-->
+				
+			</ul>
+		</div>
+		<button type="button" id="finish" class="surebtn mui-btn-primary mui-btn-block">
+        返回</button>
+		<div style="display:none">
+			<input type="text" id="attachcount"></input>
+		</div>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		//将需要的配置文件进行封装函数,可以省去重复代码
+		//所有的seajs别名或者项目中bizlogic文件夹下的js都需要在seaBizConfig.js中设置别名,通过别名引用
+		//实际项目中请删除这些注释
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('js/bizlogic/Service/ZWFW_MaterialAttachDetail.js');
+	</script>
+
+</html>

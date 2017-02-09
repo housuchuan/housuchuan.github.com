@@ -1,0 +1,42 @@
+<!-- 
+        作者：hybo
+        时间：2016年8月26日
+        描述：材料父页面父页面
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>材料查看</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/Service/ZWFW_ItemsSearch_parent.css',
+				'css/Service/ZWFW_Common_parent.css',
+				'css/Service/ZWFW_MaterialCheck_parent.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="hot-item">
+			共<span id="totalnum" class="hot-item-number"></span>个材料</div>
+		<!--数据列表-->
+		<ul class="mui-table-view hot-item-list" id="listdata">
+		</ul>
+
+	</body>
+	<!-- 通用js -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/Service/ZWFW_MaterialCheck_parent.js");
+	</script>
+
+</html>

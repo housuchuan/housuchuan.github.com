@@ -1,0 +1,55 @@
+/**
+ * 作者  chenxuan
+ * 日期  2016-12-6
+ * 简介  详情页面
+ */
+
+
+/*头*/
+
+.detail-hd {
+	margin: 0 15px;
+}
+
+.detail-hd h4 {
+	font-size: 16px;
+	line-height: 38px;
+	margin: 0;
+	font-weight: normal;
+}
+
+.detail-hd p {
+	font-size: 12px
+}
+
+
+/*内容*/
+
+.detail-content {
+	margin: 0 15px;
+	padding: 10px 0;
+	border-top: 1px dashed #c2c2c2;
+}
+
+.detail-content img {
+	max-width: 100%;
+}
+.border-bottom {
+	height: 44px;
+}
+
+.mui-scroll-wrapper {
+	top: 0;
+	background-color: #fff;
+}
+
+/*上下border*/
+
+.mui-table-view-cell:after {
+	right: 15px;
+}
+
+.mui-table-view:before {
+	right: 15px;
+	left: 15px;
+}

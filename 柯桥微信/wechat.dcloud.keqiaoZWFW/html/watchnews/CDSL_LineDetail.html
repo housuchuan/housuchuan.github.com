@@ -1,0 +1,69 @@
+<!-- 
+        作者：袁凯忻
+        时间：
+        描述：
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/watchnews/CDSL_LineDetail.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="head">
+				<p>当前区域：</p>
+				<span class="head-icon"></span>
+				<p class="tit" id="template"></p>
+			</div>
+		</div>
+		<p class="span-tit">窗口办理队列</p>
+		<div id="item1" class="mui-control-content mui-active">
+			<div class="search mui-clearfix" id="search">
+				<div class="mui-input-row mui-search">
+					<input type="search" id="TaskName" class="mui-input-clear" placeholder="请输入您的编号对应的窗口信息">
+				</div>
+				<button type="button" class="mui-btn mui-btn-primary" id="input-searchName">搜索</button>
+			</div>
+		</div>
+		<ul class="content-line mui-clearfix" id="litemplate">
+			<!--<li class="status_view">
+				<p class="tit-blue">{{WindowNO}}</p>
+				<p class="tit-black">{{WindowName}}</p>
+				<div class="realstatus">
+					<span class="state">当前</span>
+				<span class="line-red">{{HandleNO}}</span>
+				</div>
+				<div class="realstatusright">
+					<span class="state">等待</span>
+				<span class="line-red">{{WindowWaitNum}}</span>
+				</div>
+				
+			</li>-->
+	
+		</ul>
+		<div class="foo">
+			<button type="button" class="mui-btn mui-btn-primary mui-btn-block add-btn" id="tijiao">刷新</button>
+		</div>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('../../js/bizlogic/watchnews/CDSL_LineDetail.js');
+	</script>
+
+</html>

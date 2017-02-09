@@ -1,0 +1,47 @@
+/*
+ * 咨询成功
+ * 时间：2016年8月28日
+ * author: yuankaixin
+ * */
+
+
+/* main */
+
+body {
+	background-color: #fff;
+}
+
+.success-tips {
+	margin-top: 44px;
+	padding-top: 67px;
+}
+
+.consulting-icon {
+	display: block;
+	width: 92.5px;
+	height: 92.5px;
+	margin: 0 auto;
+}
+
+.success-info {
+	margin-top: 19px;
+	margin-bottom: 28px;
+	line-height: 18px;
+	font-size: 15px;
+	color: #1f9a0b;
+	text-align: center;
+}
+
+.mui-btn {
+	margin: 0 auto;
+	width: 45%;
+	height: 29px;
+	line-height: 29px;
+	border-radius: 0;
+	padding: 0;
+	border-color: #3182eb;
+	background-color: #3182eb;
+	font-size: 15px;
+	color: #fff;
+	border-radius: 30px;
+}

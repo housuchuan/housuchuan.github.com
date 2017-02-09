@@ -1,0 +1,82 @@
+/**
+ *作者：侯苏川 
+ *时间：2016-11-14
+ *描述：项目阶段页面  
+ */
+
+body {
+	font-size: 14px;
+	background-color: #f5f5f5;
+}
+
+.mui-bar {
+	background-color: #0b98f2;
+}
+
+.mui-bar-nav~.mui-content {
+	padding-top: 0;
+	margin-top: 59px;
+}
+
+.steps {
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.mui-content .stepsWrapper:first-child .steps {
+	border-top: 1px solid #e6e6e6;
+} 
+
+.steps > div {
+	display: inline-block;
+	line-height: 44px;
+	width: 50%;
+}
+
+.steps > div:first-child {
+	text-indent: 13px;
+	color: #59aef4;
+}
+
+.steps > div:last-child {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.mui-icon-arrowright {
+	vertical-align: -1px;
+}
+
+.mui-scroll-wrapper {
+	/*display: none;*/
+	position: relative;
+	height: 130px;
+}
+
+.liWrapperInner li span,
+.liWrapper span {
+	float: left;
+	display: inline-block;
+	width: 50%;
+	color: #666666;
+}
+
+.liWrapperInner li span:last-child,
+.liWrapper span:last-child {
+	text-align: right;
+	padding-right: 20px;
+}
+
+.mui-navigate-right span:first-child{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.liWrapper span {
+	color: #59aef4;
+}
+
+/*去除下拉刷新底部显示信息*/
+.mui-pull-bottom-wrapper {
+	display: none;
+}

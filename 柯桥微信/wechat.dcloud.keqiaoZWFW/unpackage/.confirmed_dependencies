@@ -1,0 +1,165 @@
+{
+	"html/Service/ZWFW_ItemsSearch_parent.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"js/libs/mui.min.js",
+			"js/core/sea.min.js",
+			"js/bizlogic/config/seaBizConfig.js",
+			"js/core/RayApp/Tools/RayApp.UITools.js",
+			"js/core/RayApp/sea.config.js",
+			"js/bizlogic/config/config.js",
+			"js/core/RayApp/cacheControl.config.js",
+			"js/libs/mustache.min.js",
+			"js/core/RayApp/Tools/RayApp.CommonTools.js",
+			"js/libs/zepto.min.js",
+			"css/Service/ZWFW_ItemsSearch_parent.css",
+			"js/core/RayApp/RayApp.Config.js",
+			"html/Service/ZWFW_ItemsSearch_list.html",
+			"css/mui.min.css",
+			"js/bizlogic/Service/ZWFW_ItemsSearch_parent.js",
+			"js/core/RayApp/Tools/RayApp.StorageTools.js",
+			"js/core/RayApp/Tools/RayApp.WindowTools.js",
+			"/html/Service/ZWFW_ItemsCommon_detail.html"
+		],
+		"refer": [
+			"html/Service/ZWFW_ItemsSearch_list.html"
+		]
+	},
+	"html/Service/ZWFW_ItemsSearch_list.html": {
+		"resources": [
+			"js/core/RayApp/Tools/RayApp.HtmlTools.js",
+			"js/core/RayApp/Tools/RayApp.PullToRefresh.Base.Default.js",
+			"css/common/common.css",
+			"js/core/RayApp/Tools/RayApp.PullToRefresh.Impl.Default.js",
+			"js/core/RayApp/cacheControl.config.js"
+		],
+		"refer": []
+	},
+	"/html/Service/ZWFW_ItemsCommon_detail.html": {
+		"resources": [
+			"img/Service/img_btn_fgx.jpg",
+			"css/Service/ZWFW_ItemsCommon_detail.css",
+			"/js/core/RayApp/cacheControl.config.js",
+			"img/Service/img_yy_icon.png",
+			"img/Service/img_zx_icon.png",
+			"js/bizlogic/Service/ZWFW_ItemsCommon_detail.js",
+			"img/Service/img_sb_icon.png"
+		],
+		"refer": []
+	},
+	"html/watchnews/ZWFW_WindowsDis.html": {
+		"resources": [
+			"js/libs/mui.min.js",
+			"js/core/sea.min.js",
+			"js/bizlogic/config/seaBizConfig.js",
+			"css/common/common.css",
+			"js/core/RayApp/sea.config.js",
+			"js/bizlogic/config/config.js",
+			"js/core/RayApp/cacheControl.config.js",
+			"js/libs/mustache.min.js",
+			"js/core/RayApp/Tools/RayApp.CommonTools.js",
+			"js/libs/zepto.min.js",
+			"js/bizlogic/watchnews/ZWFW_WindowsDis.js",
+			"js/core/RayApp/RayApp.Config.js",
+			"js/core/RayApp/Tools/RayApp.HtmlTools.js",
+			"js/core/RayApp/Tools/RayApp.PullToRefresh.Base.Default.js",
+			"css/common/watchnews/ZWFW_WindowsDis.css",
+			"css/mui.min.css",
+			"img/watchnews/tel-icon.png",
+			"js/core/RayApp/Tools/RayApp.PullToRefresh.Impl.Default.js"
+		],
+		"refer": []
+	},
+	"html/Interaction/ZWFW_Consult_add.html": {
+		"resources": [
+			"js/bizlogic/Interaction/ZWFW_Consult_add.js",
+			"js/libs/mui.min.js",
+			"js/core/sea.min.js",
+			"js/bizlogic/config/seaBizConfig.js",
+			"css/common/common.css",
+			"js/core/RayApp/Tools/RayApp.UITools.js",
+			"js/core/RayApp/sea.config.js",
+			"js/bizlogic/config/config.js",
+			"js/core/RayApp/cacheControl.config.js",
+			"js/libs/mustache.min.js",
+			"js/core/RayApp/Tools/RayApp.CommonTools.js",
+			"js/libs/zepto.min.js",
+			"js/core/RayApp/RayApp.Config.js",
+			"css/mui.min.css",
+			"css/Interaction/ZWFW_Consult_add.css",
+			"js/core/RayApp/Tools/RayApp.StorageTools.js",
+			"js/core/RayApp/Tools/RayApp.WindowTools.js"
+		],
+		"refer": [
+			"html/Interaction/ZWFW_Consult_Success.html"
+		]
+	},
+	"html/Interaction/ZWFW_Consult_Success.html": {
+		"resources": [
+			"img/Interaction/Consult/img_consultin_icon.png",
+			"js/bizlogic/Interaction/ZWFW_Consult_Success.js",
+			"css/Interaction/ZWFW_Consult_Success.css",
+			"js/core/RayApp/cacheControl.config.js"
+		],
+		"refer": []
+	},
+	"html/investmentProjects/keqiao_projectRecord.html": {
+		"resources": [
+			"js/bizlogic/investmentProjects/keqiao_projectRecord.js",
+			"img/investmentProjects/img_hezhun.png",
+			"js/libs/mui.zoom.js",
+			"js/libs/mui.previewimage.js",
+			"css/investmentProjects/keqiao_projectRecord.css",
+			"js/libs/mui.min.js",
+			"css/common/imageviewer.css",
+			"js/core/sea.min.js",
+			"js/bizlogic/config/seaBizConfig.js",
+			"css/common/common.css",
+			"js/core/RayApp/Tools/RayApp.ImageLoaderTools.js",
+			"js/bizlogic/config/config.js",
+			"js/core/RayApp/sea.config.js",
+			"js/core/RayApp/cacheControl.config.js",
+			"js/libs/mustache.min.js",
+			"js/core/RayApp/Tools/RayApp.CommonTools.js",
+			"js/libs/zepto.min.js",
+			"js/core/RayApp/RayApp.Config.js",
+			"js/core/RayApp/Tools/RayApp.HtmlTools.js",
+			"css/mui.min.css",
+			"js/core/RayApp/Tools/RayApp.PullToRefresh.Impl.Default.js",
+			"js/core/RayApp/Tools/RayApp.StorageTools.js",
+			"js/core/RayApp/Tools/RayApp.WindowTools.js",
+			"fonts/mui.ttf",
+			"js/core/RayApp/Tools/RayApp.UITools.js",
+			"js/core/RayApp/Tools/RayApp.PullToRefresh.Base.Type1.js",
+			"js/core/RayApp/Tools/RayApp.PullToRefresh.Base.Type1.material1.js",
+			"css/RayApp/RayApp.PullToRefresh.css"
+		],
+		"refer": [
+			"html/Service/ZWFW_ItemsCommon_detail.html"
+		]
+	},
+	"html/Service/ZWFW_ItemsCommon_detail.html": {
+		"resources": [
+			"img/Service/img_btn_fgx.jpg",
+			"css/Service/ZWFW_ItemsCommon_detail.css",
+			"img/Service/img_yy_icon.png",
+			"img/Service/img_zx_icon.png",
+			"js/bizlogic/Service/ZWFW_ItemsCommon_detail.js",
+			"img/Service/img_sb_icon.png",
+			"js/core/RayApp/cacheControl.config.js",
+			"js/libs/mui.min.js",
+			"js/core/sea.min.js",
+			"js/bizlogic/config/seaBizConfig.js",
+			"js/core/RayApp/Tools/RayApp.UITools.js",
+			"js/bizlogic/config/config.js",
+			"js/core/RayApp/sea.config.js",
+			"js/libs/mustache.min.js",
+			"js/core/RayApp/Tools/RayApp.CommonTools.js",
+			"js/libs/zepto.min.js",
+			"js/core/RayApp/RayApp.Config.js",
+			"css/mui.min.css",
+			"js/core/RayApp/Tools/RayApp.StorageTools.js",
+			"js/core/RayApp/Tools/RayApp.WindowTools.js"
+		]
+	}
+}

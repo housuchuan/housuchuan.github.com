@@ -1,0 +1,67 @@
+<!-- 
+        作者：袁凯忻
+        时间：2016年8月26日
+        描述：热点咨询
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>我的咨询</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'../../css/mui.min.css',
+				'../../css/common/common.css',
+				'../../css/Interaction/ZWFW_Consult_Hot.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="my-reservation">
+			<div class="mui-segmented-control">
+				<ul class="mui-clearfix">
+					<li class="tab-fgx">
+						<a href="#item1" id="hotconsult" class="mui-control-item mui-active">热点咨询</a>
+					</li>
+					<li>
+						<a href="#item1" id="myconsult" class="mui-control-item">我的咨询</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<div id="item1" class="mui-control-content mui-active">
+				<div class="search mui-clearfix">
+					<div class="mui-input-row mui-search">
+						<input type="search" class="mui-input-clear" placeholder="请输入咨询问题" id="search">
+					</div>
+					<button type="button" class="mui-btn mui-btn-primary" id='input-searchName'>查询</button>
+				</div>
+			</div>
+			<!--下拉刷新容器-->
+			<div id="pullrefresh" class="mt10 mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--数据列表-->
+					<ul class="mui-table-view" id="listdata">
+					</ul>
+				</div>
+			</div>
+			<button type="button" class="mui-btn mui-btn-primary mui-btn-block add-btn" id="AddConsult">新增咨询</button>
+		</div>
+
+	</body>
+	<!-- 通用js -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('../../js/bizlogic/Interaction/ZWFW_Consult_Hot.js');
+	</script>
+
+</html>

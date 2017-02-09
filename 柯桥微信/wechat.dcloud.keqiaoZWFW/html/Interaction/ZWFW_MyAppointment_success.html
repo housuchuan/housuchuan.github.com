@@ -1,0 +1,40 @@
+<!-- 
+        作者：袁凯忻
+        时间：2016年8月26日
+        描述：预约成功
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>预约成功</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'../../css/Interaction/ZWFW_MyAppointment_success.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="success-tips">
+			<img src="../../img/Interaction/Appointment-success/img_appointment_success.png" class="consulting-icon">
+			<p class="success-info">您已预约成功<br/>请您于预约当日到中心取号机领取您的预约号</p>
+		</div>
+		<button type="button" class="mui-btn mui-btn-primary mui-btn-block" id="AddAppointment">返回我的预约列表</button>
+	</body>
+	<!-- 通用js -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/Interaction/ZWFW_MyAppointment_success.js");
+	</script>
+
+</html>

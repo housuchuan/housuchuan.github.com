@@ -1,0 +1,39 @@
+<!-- 
+        作者：袁凯忻
+        时间：2016年8月26日
+        描述：咨询成功
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>新增投诉</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/Interaction/ZWFW_Consult_add.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-input-row">
+			<textarea id="textarea" rows="5" placeholder="输入您的投诉内容" class="input-txt"></textarea>
+		</div>
+		<button type="button" class="mui-btn mui-btn-primary mui-btn-block add-btn" id="tijiao">提交</button>
+	</body>
+	<!-- 通用js -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/Interaction/ZWFW_addcomplain.js");
+	</script>
+
+</html>

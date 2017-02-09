@@ -1,0 +1,123 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-11-14
+        描述：项目阶段页面
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'../../css/itemCheck/keqiao_projectStep.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+				<!--<div class="stepsWrapper">
+				<div class="steps"><div>项目立项阶段</div><div class="status"><span class="status1">办理中</span><a><span class="mui-icon mui-icon-arrowright"></span></a></div></div>
+				<div class="msWrapper">
+					
+				</div>-->
+				<!--<div class="mui-scroll-wrapper" id="pullrefresh">
+				    <div class="mui-scroll">
+				   		<ul class="mui-table-view liWrapperInner" id="listdata">
+				   		        <li class="mui-table-view-cell">
+				   		            <a class="mui-navigate-right">
+				   		                <span>事项1</span><span class="event">已办结</span>
+				   		            </a>
+				   		        </li>
+				   		        <li class="mui-table-view-cell">
+				   		            <a class="mui-navigate-right">
+				   		                <span>事项2</span><span class="event">已办结</span>
+				   		            </a>
+				   		        </li>
+				   		        <li class="mui-table-view-cell">
+				   		            <a class="mui-navigate-right">
+				   		                <span>事项3</span><span class="event">未开始</span>
+				   		            </a>
+				   		        </li>
+				   		    </ul>
+				    </div>
+				</div>-->
+				<!--</div>
+				<div class="stepsWrapper">
+				<div class="steps"><div>综合评估阶段</div><div class="status"><span class="status1">办理中</span><a><span class="mui-icon mui-icon-arrowright"></span></a></div></div>
+				<div class="msWrapper">
+					
+				</div>-->
+				<!--<div class="mui-scroll-wrapper" id="pullrefresh1">
+				    <div class="mui-scroll">
+				   		<ul class="mui-table-view liWrapperInner" id="listdata1">
+				   		        <li class="mui-table-view-cell">
+				   		            <a class="mui-navigate-right">
+				   		                <span>事项1</span><span class="event">已办结</span>
+				   		            </a>
+				   		        </li>
+				   		        <li class="mui-table-view-cell">
+				   		            <a class="mui-navigate-right">
+				   		                <span>事项2</span><span class="event">已办结</span>
+				   		            </a>
+				   		        </li>
+				   		        <li class="mui-table-view-cell">
+				   		            <a class="mui-navigate-right">
+				   		                <span>事项3</span><span class="event">未开始</span>
+				   		            </a>
+				   		        </li>
+				   		    </ul>
+				    </div>
+				</div>-->
+				<!--</div>
+				<div class="stepsWrapper">
+				<div class="steps"><div>建设评审阶段</div><div class="status"><span class="status1">办理中</span><a><span class="mui-icon mui-icon-arrowright"></span></a></div></div>
+				<div class="msWrapper">
+					
+				</div>-->
+				<!--<div class="mui-scroll-wrapper" id="pullrefresh2">
+				    <div class="mui-scroll">
+				   		<ul class="mui-table-view liWrapperInner" id="pullrefresh2">
+				   		        <li class="mui-table-view-cell">
+				   		            <a class="mui-navigate-right">
+				   		                <span>事项1</span><span class="event">已办结</span>
+				   		            </a>
+				   		        </li>
+				   		        <li class="mui-table-view-cell">
+				   		            <a class="mui-navigate-right">
+				   		                <span>事项2</span><span class="event">已办结</span>
+				   		            </a>
+				   		        </li>
+				   		        <li class="mui-table-view-cell">
+				   		            <a class="mui-navigate-right">
+				   		                <span>事项3</span><span class="event">未开始</span>
+				   		            </a>
+				   		        </li>
+				   		    </ul>
+				    </div>
+				</div>-->
+				<!--</div>-->
+		</div>
+
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		//将需要的配置文件进行封装函数,可以省去重复代码
+		//所有的seajs别名或者项目中bizlogic文件夹下的js都需要在seaBizConfig.js中设置别名,通过别名引用
+		//实际项目中请删除这些注释
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('js/bizlogic/itemCheck/keqiao_projectStep.js');
+	</script>
+
+</html>

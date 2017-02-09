@@ -1,0 +1,60 @@
+/**
+ * 应用css
+ */
+.mui-content>.mui-table-view:first-child {
+	margin-top: 0;
+}
+.mui-table-view {
+    background-color: #f5f5f5;
+}
+.parent-ul{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+	padding: 0 10px;
+	width: 100%;
+    background-color: #f5f5f5;
+}
+.application-ul {
+	overflow: hidden;
+	margin-right: -3%;
+}
+.application-ul>li {
+	float: left;
+	width: 22%;
+	height: 86px;
+	text-align: center;
+	padding: 0;
+	margin-top: 9px;
+	margin-right: 3%;
+    background-color: #fff;
+}
+.application-ul .image {
+	padding-top: 7px;
+	width: 100%;
+	text-align: center;
+}
+.application-ul .image>img {
+	width: 49px;
+	height: 49px;
+}
+.image.more-application>img {
+	width: 34px;
+	height: 34px;
+	margin-top: 20px;
+}
+.application-ul .name {
+	padding-bottom: 7px;
+	font-size: 10px;
+	color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.application-ul.mui-table-view:after ,
+.application-ul .mui-table-view-cell:after {
+	height: 0;
+}

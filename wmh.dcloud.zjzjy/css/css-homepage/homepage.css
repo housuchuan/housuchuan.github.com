@@ -1,0 +1,379 @@
+/**
+ * 首页css
+ */
+
+.mui-bar .logo {
+	position: absolute;
+	height: 32px;
+	width: 29px;
+	top: 7px;
+	left: 18px;
+	background-image: url(../../img/img-homepage/homeleft-navbg.png);
+	background-size: cover;
+}
+
+#menu {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	color: #fff;
+}
+
+.mui-pull-bottom-wrapper {
+	display: none;
+}
+
+
+/*3d轮播图00*/
+
+.flip-content {
+	position: relative;
+}
+
+.flip-content div {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding: 2px 5px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 14px;
+	color: #2F3238;
+	opacity: .8;
+	background-color: #E0E0E0;
+}
+
+.flip-items img {
+	width: 280px;
+	height: 160px;
+}
+
+
+/*应用列表*/
+
+#Gallery {
+	padding-bottom: 25px;
+	background-color: #fff;
+}
+
+.mui-slider-indicator {
+	bottom: 10px;
+	height: 12px;
+	line-height: 12px;
+}
+
+.mui-slider-indicator .mui-indicator {
+	width: 5px;
+	height: 5px;
+	margin: 3px 2px;
+	background-color: #b8b8b8;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.mui-slider-indicator .mui-active.mui-indicator {
+	background-color: #0381f2;
+}
+
+.mui-slider-indicator .radius {
+	width: 60px;
+	margin: 0 auto;
+	background-color: #f5f5f5;
+	border-radius: 40px;
+}
+
+.mui-col-xs-4 {
+	width: 25%;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+	font-size: 10px;
+	margin-top: 5px;
+}
+
+.mui-grid-view.mui-grid-9 {
+	background-color: #fff;
+	border: 0;
+}
+
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+	border: 0;
+}
+
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+	padding: 2px 9px;
+}
+
+.mui-slider-group .mui-icon {
+	display: block;
+	margin: 0 auto;
+	width: 49px;
+	height: 49px;
+	background-image: url(../../img/img-application/application1.png);
+	background-size: cover;
+}
+
+.mui-slider-group .mui-icon.application2 {
+	background-image: url(../../img/img-application/application2.png);
+}
+
+.mui-slider-group .mui-icon.application3 {
+	background-image: url(../../img/img-application/application3.png);
+}
+
+.mui-slider-group .mui-icon.application4 {
+	background-image: url(../../img/img-application/application4.png);
+}
+
+.mui-slider-group .mui-icon.application5 {
+	background-image: url(../../img/img-application/application5.png);
+}
+
+.mui-slider-group .mui-icon.application6 {
+	background-image: url(../../img/img-application/application6.png);
+}
+
+.mui-slider-group .mui-icon.application7 {
+	background-image: url(../../img/img-application/application7.png);
+}
+
+.mui-slider-group .mui-icon.application8 {
+	background-image: url(../../img/img-application/application8.png);
+}
+
+.mui-slider-group .mui-icon.application9 {
+	background-image: url(../../img/img-application/application9.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+}
+
+
+/*信息列表*/
+
+.mui-scroll-wrapper {
+	top: 0px;
+}
+
+
+/*热点*/
+
+#marquee,
+.hot-new {
+	position: relative;
+	height: 47px;
+	line-height: 23px;
+}
+
+.hot-new .mui-table-view:before {
+	top: 0;
+}
+
+.campus-hd h5,
+.education-hd h5,
+.hot-new .title {
+	font-size: 15px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.campus-hd h5 .bgff6c00,
+.education-hd h5 .bg0380f2,
+.hot-new .title .bgf8537d {
+	display: inline-block;
+	margin-left: 4px;
+	padding: 1px 4px;
+	color: #fff;
+	background-color: #f8537d;
+	border-radius: 4px;
+}
+
+.marqueelist {
+	padding-left: 15px;
+	border-left: 1px solid #c8c7cc;
+}
+
+.hot-new .mui-table-view .mui-media-object {
+	height: 24px;
+	max-width: 36px;
+	width: 36px;
+}
+
+.mui-pull-left,
+.mui-pull-right {
+	margin: 0;
+}
+
+.hot-new .mui-ellipsis {
+	color: inherit;
+}
+
+.marqueelist p {
+	/*width: 80%;*/
+}
+
+
+/*教育咨讯*/
+
+
+/*智慧校园*/
+
+.smart-campus,
+.education-info {
+	position: relative;
+	padding-top: 14px;
+	background-color: #f5f5f5;
+}
+
+.smart-campus:before,
+.education-info:before {
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #c8c7cc;
+	top: 18px;
+}
+
+.campus-hd,
+.education-hd {
+	height: 38px;
+	background-color: #fff;
+}
+
+.campus-hd h5,
+.education-hd h5 {
+	padding-top: 10px;
+	padding-left: 15px;
+	color: #000;
+}
+
+.campus-hd h5 .bgff6c00,
+.education-hd h5 .bg0380f2 {
+	background-color: #0380f2;
+	padding: 3px 4px;
+}
+
+.education-info .title {
+	margin-bottom: 4px;
+	font-size: 15px;
+	color: #333;
+}
+
+.education-info .sourse {
+	float: left;
+	color: #999;
+}
+
+.education-info .sourse .blue {
+	color: #4875db;
+}
+
+.education-info .time {
+	float: right;
+	color: #666;
+}
+
+.education-info .mui-table-view:before {
+	left: 15px;
+}
+
+
+/*智慧校园*/
+
+.campus-hd h5 {
+	float: left;
+	padding-top: 5px;
+}
+
+.campus-hd>p {
+	float: right;
+	margin-right: 15px;
+	padding-top: 2px;
+	margin-bottom: 0;
+	font-size: 12px;
+	color: #666;
+}
+
+.campus-hd>p .blue {
+	color: #0280f2;
+	font-size: 14px;
+	line-height: 34px;
+}
+
+.campus-hd h5 .bgff6c00 {
+	background-color: #ff6c00;
+}
+
+.smart-campus:before {
+	top: 14px;
+}
+
+.campus-ul {
+	overflow: hidden;
+	width: 100%;
+	padding: 0 4px;
+}
+
+.campus-ul>li {
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding: 0 6px;
+	margin: 11px 0 10px 0;
+}
+
+.campus-ul .image {
+	width: 100%;
+	text-align: center;
+}
+
+.campus-ul .image>img {
+	width: 70px;
+	height: 70px;
+}
+
+.campus-ul .name {
+	height: 40px;
+	padding-bottom: 5px;
+	color: #000;
+}
+
+.campus-ul .mui-table-view-cell:after {
+	height: 0;
+}
+
+.campus-ul.mui-table-view:before {
+	top: 3px;
+	left: 15px;
+}
+
+
+/*热点新闻省略样式*/
+
+@media screen and (min-width:766px){
+	.marqueelist .mui-ellipsis {
+		width: 600px;
+	}
+}
+
+@media screen and (min-width:413px) and (max-width:766px) {
+	.marqueelist .mui-ellipsis {
+		width: 295px;
+	}
+}
+
+@media screen and (min-width:375px) and (max-width:413px) {
+	.marqueelist .mui-ellipsis {
+		width: 254px;
+	}
+}
+@media screen and (max-width:320px) {
+	.marqueelist .mui-ellipsis {
+		width: 200px;
+	}
+}

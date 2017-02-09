@@ -1,0 +1,173 @@
+/*
+ * 热点咨询
+ * author: ykx
+ * */
+
+
+/* main */
+
+body {
+	background-color: #fff;
+}
+
+.my-reservation {
+	margin-top: 0px;
+}
+
+.mui-segmented-control {
+	border: 0;
+	border-radius: 0;
+}
+
+.mui-segmented-control ul {
+	list-style: none;
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.mui-segmented-control li {
+	float: left;
+	width: 50%;
+}
+
+.tab-fgx {
+	background: url(../../img/Interaction/MyAppointment/img_tab-fgx.png) right 50% no-repeat;
+	background-size: 1px 20px;
+}
+
+.my-reservation .mui-control-item {
+	display: table;
+	margin: 0 auto;
+	font-size: 15px;
+	color: #666;
+	border-bottom: 2px solid transparent;
+}
+
+.my-reservation .mui-control-item.mui-active {
+	padding: 0px 10px;
+	background-color: #fff;
+	color: #3182EB;
+	border-bottom: 2px solid #3182eb;
+}
+
+.search {
+	height: 50px;
+	padding: 8px 10px 0px 10px;
+	background-color: #fff;
+}
+
+.search .mui-search {
+	float: left;
+	width: 83%;
+	height: 34px;
+	background-color: #f5f5f5;
+}
+
+.search .mui-search.mui-active:before {
+	top: 24px;
+	left: 8px;
+}
+
+.search .mui-input-clear {
+	height: 34px;
+	line-height: 34px;
+	margin-bottom: 0;
+}
+
+.mui-search .mui-placeholder {
+	font-size: 14px;
+	color: #999;
+}
+
+.mui-search .mui-placeholder {
+	left: 8px;
+	text-align: left;
+}
+
+.search .mui-btn {
+	float: left;
+	padding: 0;
+	width: 15%;
+	margin-left: 6px;
+	height: 34px;
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+	border: 1px solid #3182eb;
+	background-color: #3182eb;
+}
+
+.mui-table-view {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.mui-table-view-cell {
+	padding: 6px 10px;
+}
+
+.mui-table-view-cell:after {
+	left: 10px;
+}
+
+.mui-table-view-cell p {
+	line-height: 24px;
+}
+
+.appointment-date {
+	float: left;
+	font-size: 12px;
+	color: #adadad;
+}
+
+.cancel-reservation {
+	float: right;
+	font-size: 12px;
+}
+
+.mui-table-view-cell .appointment-matters {
+	line-height: 18px;
+	margin-bottom: 8px;
+}
+
+.appointment-matters {
+	font-size: 15px;
+	color: #333;
+}
+
+.cancel-reservation.current1 {
+	color: #ff0000;
+}
+
+.cancel-reservation.current2 {
+	color: #1c8d34;
+}
+
+.mui-control-content {
+	margin-bottom: 54px;
+}
+
+.add-btn {
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 0;
+	height: 44px;
+	border-radius: 0;
+	padding: 0;
+	border-color: #3182eb;
+	background-color: #3182eb;
+	font-size: 18px;
+	color: #fff;
+	z-index: 9999;
+}
+
+.mt10 {
+	margin-top: 95px;
+	margin-bottom: 44px;
+}
+

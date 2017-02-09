@@ -1,0 +1,148 @@
+/*
+ * 事项搜索
+ * author: wangkai
+ * */
+
+/* main */
+
+body{
+	background-color:#f5f5f5;
+}
+
+.search {
+	margin-top: 0px;
+	height: 50px;
+	padding: 8px 10px 0px 10px;
+	background-color: #fff;
+}
+
+.search .mui-search {
+	float: left;
+	width: 83%;
+	height: 34px;
+	background-color: #f5f5f5;
+}
+
+.search .mui-search.mui-active:before {
+	top: 24px;
+	left: 8px;
+}
+
+.search .mui-input-clear {
+	height: 34px;
+	line-height: 34px;
+	margin-bottom: 0;
+}
+
+.mui-search .mui-placeholder {
+	font-size: 14px;
+	color: #999;
+}
+
+.mui-search .mui-placeholder {
+	left: 8px;
+	text-align: left;
+}
+
+.search .mui-btn {
+	float: left;
+	padding: 0;
+	width: 15%;
+	margin-left: 6px;
+	height: 34px;
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+	border: 1px solid #3182eb;
+	background-color: #3182eb;
+}
+
+.hot-item {
+	padding-left: 10px;
+	height: 38px;
+	line-height: 38px;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	background-color: #f5f5f5;
+	font-size: 14px;
+	color: #3182eb;
+}
+
+.hot-item-list .mui-table-view-cell {
+	padding: 0px 0px 0px 10px;
+	height: 43px;
+	line-height: 43px;
+}
+
+.hot-item-list .mui-table-view-cell>a:not(.mui-btn) {
+	margin: 0px 0px;
+	padding: 0px 0px;
+	padding-right:25px;
+	font-size: 15px;
+	color: #666;
+}
+
+.hot-item-list .mui-table-view-cell:after {
+	left: 10px;
+}
+.mt10 {
+	margin-top: 1px;
+}
+.mui-table-view {}
+
+.mui-scroll-wrapper {
+	top: 58px;
+}
+
+.mui-table-view {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.mui-table-view-cell {
+	padding: 5px 10px;
+}
+
+.mui-table-view-cell:after {
+	left: 10px;
+}
+
+.mui-table-view-cell p {
+	line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+{
+  "html/itemCheck/keqiao_serviceQuery.html": {
+    "resources": [
+      "js/core/RayApp/Tools/RayApp.PullToRefresh.Base.Type1.js",
+      "fonts/mui.ttf",
+      "js/libs/mui.min.js",
+      "js/core/sea.min.js",
+      "js/bizlogic/config/seaBizConfig.js",
+      "css/common/common.css",
+      "js/core/RayApp/Tools/RayApp.UITools.js",
+      "js/libs/epoint.moapi.js",
+      "js/bizlogic/config/config.js",
+      "js/core/RayApp/sea.config.js",
+      "js/core/RayApp/cacheControl.config.js",
+      "js/libs/mustache.min.js",
+      "js/core/RayApp/Tools/RayApp.PullToRefresh.Base.Type1.material1.js",
+      "js/core/RayApp/Tools/RayApp.CommonTools.js",
+      "js/libs/zepto.min.js",
+      "js/core/RayApp/RayApp.Config.js",
+      "js/core/RayApp/Tools/RayApp.HtmlTools.js",
+      "css/itemCheck/keqiao_serviceQuery.css",
+      "css/mui.min.css",
+      "js/core/RayApp/Tools/RayApp.PullToRefresh.Impl.Default.js",
+      "css/RayApp/RayApp.PullToRefresh.css",
+      "js/core/RayApp/Tools/RayApp.StorageTools.js",
+      "js/bizlogic/itemCheck/keqiao_serviceQuery.js",
+      "js/core/RayApp/Tools/RayApp.WindowTools.js",
+      "js/libs/epoint.moapi.v2.js",
+      "html/itemCheck/keqiao_projectDetail.html"
+    ],
+    "refer": [
+      "html/itemCheck/keqiao_projectDetail.html"
+    ]
+  },
+  "html/itemCheck/keqiao_projectDetail.html": {
+    "resources": [
+      "css/itemCheck/keqiao_projectDetail.css",
+      "js/bizlogic/itemCheck/keqiao_projectDetail.js",
+      "js/core/RayApp/cacheControl.config.js",
+      "html/itemCheck/keqiao_serviceQuery.html"
+    ],
+    "refer": [
+      "html/itemCheck/keqiao_serviceQuery.html"
+    ]
+  },
+  "html/investmentProjects/keqiao_projectRecord.html": {
+    "resources": [
+      "js/bizlogic/investmentProjects/keqiao_projectRecord.js",
+      "img/investmentProjects/img_hezhun.png",
+      "css/investmentProjects/keqiao_projectRecord.css",
+      "css/common/imageviewer.css",
+      "js/core/sea.min.js",
+      "js/bizlogic/config/seaBizConfig.js",
+      "css/common/common.css",
+      "js/core/RayApp/Tools/RayApp.ImageLoaderTools.js",
+      "js/libs/epoint.moapi.v2.js",
+      "js/bizlogic/config/config.js",
+      "js/core/RayApp/sea.config.js",
+      "js/core/RayApp/cacheControl.config.js",
+      "js/core/RayApp/Tools/RayApp.CommonTools.js",
+      "js/core/RayApp/RayApp.Config.js",
+      "js/core/RayApp/Tools/RayApp.HtmlTools.js",
+      "css/mui.min.css",
+      "js/core/RayApp/Tools/RayApp.PullToRefresh.Impl.Default.js",
+      "js/core/RayApp/Tools/RayApp.StorageTools.js",
+      "js/core/RayApp/Tools/RayApp.WindowTools.js",
+      "js/libs/mustache.min.js",
+      "js/libs/zepto.min.js",
+      "js/libs/mui.zoom.js",
+      "js/libs/mui.previewimage.js",
+      "js/libs/mui.min.js"
+    ],
+    "refer": []
+  }
+}

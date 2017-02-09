@@ -1,0 +1,84 @@
+
+/**
+ *作者：侯苏川 
+ *时间：2016-11-14
+ *描述：项目详情页面  
+ */
+
+ body {
+ 	font-size: 14px;
+ 	background-color: #f5f5f5;
+ }
+ 
+ .mui-bar {
+ 	background-color: #0b98f2;
+ }
+ 
+ .mui-content {
+ 	margin-top: 15px;
+ 	padding: 12px 6px;
+ 	background-color: #f5f5f5;
+ }
+ 
+ .projectDetail {
+ 	padding: 8px;
+ 	border-radius: 3px;
+ 	box-shadow: 0 0 3px 3px #ededed;
+ 	background-color: #ffffff;
+ }
+ 
+ .projectDetail .mui-table-view {
+ 	border: 1px dashed #e8e8e8;
+ }
+ 
+ .mui-table-view:before,.mui-table-view:after {
+ 	content: none;
+ }
+ 
+ .mui-table-view-cell:after {
+ 	right: 15px;
+ }
+ 
+ .projectDetail .mui-table-view-cell span {
+ 	display: inline-block;
+ }
+ 
+ .projectDetail .mui-table-view-cell span:last-child {
+ 	float: right;
+ 	width: 60%;
+ 	text-align: right;
+ 	color: #0b98f2;
+ }
+ 
+ 
+ /*审核过程*/
+ .projectSteps {
+ 	margin-top: 15px;
+ }
+ 
+ .projectSteps .mui-table-view {
+ 	background-color: #f5f5f5;
+ }
+ 
+ .projectSteps .mui-table-view-cell:after {
+ 	content: none;
+ }
+ 
+ .projectSteps .mui-table-view-cell {
+ 	margin-bottom: 6px;
+ 	background-color: #ffffff;
+ 	border-radius: 3px;
+ 	border-right: 3px solid #37b74a;
+ }
+ 
+ .projectSteps .mui-table-view-cell span {
+ 	display: inline-block;
+ 	width: 50%;
+ 	line-height: 28px;
+ }
+ 
+ .projectSteps .mui-table-view-cell span:last-child {
+ 	text-align: right;
+ }
+ 
+ 

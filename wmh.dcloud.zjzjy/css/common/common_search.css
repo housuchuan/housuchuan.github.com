@@ -1,0 +1,44 @@
+/**
+ * 定义搜索的公用样式
+ * dailc
+ */
+.common-input-row {
+	position: relative;
+	height: 44px;
+	margin: 0 34px;
+	padding: 6px 0;
+	overflow: hidden;
+}
+.common-input {
+	background-color: #fff;
+	border: 0;
+	border-radius: 10px;
+	margin-top: 0;
+}
+input[type=text].common-input-clear {
+	border: 0;
+	line-height: 14px;
+	font-size: 12px;
+	height: 30px;
+	margin-bottom: 0;
+	margin-left: 28px;
+	padding-left: 5px;
+	max-width: 80%;
+}
+/*搜索按钮*/
+.btn-search {
+	display: block;
+	float: left;
+	color: #c1c1c1;
+	width: 22px;
+	height: 22px;
+	margin-top: -7px;
+	margin-left: 18px;
+}
+.btn-search:active {
+	color: #8cd2a3;
+}
+.mui-bar-nav.mui-bar .mui-icon.mui-icon-search {
+	margin-left: 0;
+}
+/*3d轮播图*/

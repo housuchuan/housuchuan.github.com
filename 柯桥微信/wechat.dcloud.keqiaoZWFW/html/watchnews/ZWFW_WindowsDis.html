@@ -1,0 +1,83 @@
+<!-- 
+        作者：LB
+        时间：2016-08-26
+        描述： 窗口切换模块
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>窗口分布</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/watchnews/ZWFW_WindowsDis.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			
+			<div class="tab-view">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll" id="list">
+												
+					</div>
+				</div>
+				
+								
+				<div data-role="body">
+					<div class="region" data-role="tab-content" data-id="tab-a">
+						<div class="region-pic">
+							<img id="imgLobby" />
+						</div>
+
+						<!--下拉刷新容器-->
+					<div id="pullrefresh" class="mt10 mui-scroll-wrapper ">
+						<div class="region-list">
+							<!--数据列表-->
+							<ul id="listdata" class="mui-table-view">								
+								<!--<li class="mui-clearfix">
+									<span class='region-name'>发改委(1)</span>
+									<a href='#' id='" + WindowList[i].WindowInfo.Tel + "' class='region-tel'>58188000</a>
+									<div class="line"><span class="line-name">排队:</span><span class="line-num">20</span><span class="line-per">人</span></div>
+								</li>
+								<li class="mui-clearfix">
+									<span class='region-name'>发改委(2)</span>
+									<a href='#' id='" + WindowList[i].WindowInfo.Tel + "' class='region-tel'>58188000</a>
+									<div class="line"><span class="line-name">排队:</span><span class="line-num">20</span><span class="line-per">人</span></div>
+								</li>
+								<li class="mui-clearfix">
+									<span class='region-name'>发改委(3)</span>
+									<a href='#' id='" + WindowList[i].WindowInfo.Tel + "' class='region-tel'>58188000</a>
+									<div class="line"><span class="line-name">排队:</span><span class="line-num">20</span><span class="line-per">人</span></div>
+								</li>		-->				
+							</ul>
+						</div>
+
+					</div>
+
+					</div>
+
+				</div>
+				<div style="display:none">
+					<input type="text" id="labLobbyType" value="0">
+				</div>
+			</div>
+		</div>
+		<script>
+			SrcBoot.outSeaConfig();
+		</script>
+		<script>
+			seajs.use('js/bizlogic/watchnews/ZWFW_WindowsDis.js');
+		</script>
+	</body>
+
+</html>

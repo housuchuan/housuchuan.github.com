@@ -1,0 +1,63 @@
+<!-- 
+        作者：袁凯忻
+        时间：2016年8月28日
+        描述：预约时间
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>预约时间</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'../../css/Interaction/ZWFW_Appointment_Time.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right current">
+					<label>预约部门</label>
+					<span class="item-name" id="spanouname"></span>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right current">
+					<label>办理事项</label>
+					<span class="item-name" id="spantaskname"></span>
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right" id="selectbut" >
+					<label>预约日期</label>
+					<!--<select class="item-name" id="selectdate" >-->
+					<input type="text" readonly="readonly" placeholder=""  class="item-name" id="selectdate" value="" />
+					<input type="hidden" readonly="readonly" placeholder="" id="select" value="" />
+					<!--</select>-->
+				</a>
+			</li>
+			<li class="mui-table-view-divider">
+				<span>预约时间段</span>
+			</li>
+			<div id="spantimelist"></div>
+		</ul>
+	</body>
+	<!-- 通用js -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/Interaction/ZWFW_Appointment_Time.js");
+	</script>
+
+</html>

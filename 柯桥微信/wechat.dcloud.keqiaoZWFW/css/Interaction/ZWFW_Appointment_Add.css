@@ -1,0 +1,139 @@
+/*
+ * 新增预约
+ * author: 袁凯忻
+ * 时间：2016年8月26日
+ * */
+
+
+/* 主题 */
+
+body {
+	background-color: #f5f5f5;
+}
+
+.mui-table-view {
+	margin-top: 14px;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	font-size: 15px;
+	color: #666;
+}
+
+.mui-table-view-cell label {
+	float: left;
+	word-break:normal;
+	word-wrap: break-word;
+	width: 60px;
+}
+
+.mui-table-view input,
+.mui-table-view .item-name {
+	float: left;
+	width: 60%;
+	margin: 0;
+	margin-left: 10px;
+	padding: 0;
+	border: 0;
+	height: auto;
+	text-align: left;
+	margin-right: 10px;
+	font-size: 15px;
+	color: #333;
+}
+
+.mui-table-view .item-name {
+	white-space: normal;
+}
+
+.mui-table-view .item-name.current {
+	color: #3182eb;
+	line-height: 21px;
+}
+
+.mui-table-view input.current {
+	color: #3182eb;
+	line-height: 21px;
+}
+
+.mui-navigate-right:after,
+.mui-push-left:after,
+.mui-push-right:after {
+	right: 10px;
+}
+
+.mui-navigate-right.current:after,
+.mui-push-right.current:after {
+	content: '';
+}
+
+.nextbtn {
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 0;
+	height: 44px;
+	border-radius: 0;
+	padding: 0;
+	border-color: #3182eb;
+	background-color: #3182eb;
+	font-size: 18px;
+	color: #fff;
+}
+
+.mui-navigate-right.current:after,
+.mui-push-right.current:after {
+	content: '';
+}
+
+.mui-table-view input.code {
+	margin-right: 10px;
+	width: 40%;
+}
+
+.get-code {
+	float: right;
+	padding-left: 10px;
+	font-size: 12px;
+	color: #3182eb;
+	height: 20px;
+	border-left: 1px solid #3182eb;
+}
+
+
+/*提示*/
+
+.prompt {
+	padding: 3px 10px 35px 10px;
+	margin-bottom: 44px;
+	background-color: #f5f5f5;
+}
+
+.prompt-title {
+	height: 27px;
+	line-height: 27px;
+	font-size: 12px;
+	color: #ff0000;
+}
+
+.prompt-info {
+	line-height: 18px;
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 0;
+}
+
+
+/*验证码*/
+
+.identifying {
+	width: 40% !important;
+}
+
+.att-id {
+	float: right !important;
+	width: 90px !important;
+	display: block;
+	border-left: 1px solid #3182eb;
+	color: #3182eb;
+	padding-left: 10px;
+}

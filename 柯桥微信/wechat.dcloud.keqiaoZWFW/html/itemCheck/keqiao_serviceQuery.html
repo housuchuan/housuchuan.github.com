@@ -1,0 +1,102 @@
+<!-- 
+        作者：侯苏川
+        时间：2016-11-14
+        描述：办事查询页面
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'../../css/itemCheck/keqiao_serviceQuery.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="tabItem">
+				<span>办件查询</span>
+				<span>项目查询</span>
+			</div>
+
+			<!--项目查询-->
+			<div class="mui-scroll-wrapper scrollWrapper" >
+				<div class="search mui-clearfix" id="search">
+					<div class="mui-input-row mui-search">
+						<input type="search" id="Tasksearch" class="mui-input-clear" placeholder="请输入项目编号">
+					</div>
+					<button type="button" class="mui-btn mui-btn-primary" id="input-searchName">查询</button>
+				</div>
+				<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+					<ul class="mui-table-view ProjectSearch" >
+						<!--<li class="mui-table-view-cell mui-ellipsis">
+							这里是项目名称1这里是项目名称1这里是项目名称XM2016121000021
+						</li>
+						<li class="mui-table-view-cell mui-ellipsis">
+							这里是项目名称1这里是项目名称1这里是项目名称1
+						</li>
+						<li class="mui-table-view-cell mui-ellipsis">
+							这里是项目名称1这里是项目
+						</li>-->
+					</ul>
+				</div>
+			</div>
+
+			<!--办件查询-->
+			<div class="eventSearch">
+				<div id="item1" class="mui-control-content mui-active">
+					<div class="search mui-clearfix" id="search">
+						<div class="mui-input-row mui-search">
+							<input type="search" id="TaskId" class="mui-input-clear" placeholder="请输入办件名称">
+						</div>
+						<button type="button" class="mui-btn mui-btn-primary" id="input-searchIdName">查询</button>
+					</div>
+				</div>
+				<input id="Appleruserguid" type="hidden" placeholder="" value="" />
+				<!--下拉刷新容器-->
+				<div class="mt10 mui-scroll-wrapper" id="pullrefresh">
+					<div class="mui-scroll">
+						<!--数据列表-->
+						<ul class="mui-table-view BJSearch" id="listdata">
+							<!--<li id="{{ProjectGuid}}" _task="{{Status}}" class="mui-table-view-cell mui-clearfix">
+								<div class="mui-slider-right mui-disabled">
+									<a id="{{ProjectGuid}}" class="mui-btn mui-btn-red">删除</a>
+								</div>
+								<div class="mui-slider-handle mui-table">
+									<div class="mui-table-cell">
+										<p id="{{ProjectGuid}}" _task="{{Status}}" class="requirement">{{TaskName}}</p>
+										<p id="{{ProjectGuid}}" _task="{{Status}}" class="unit"><span>{{ApplyerName}}</span><span class="data">{{ApplyDate}}</span><span class="itme-number">{{Status}}</span></p>
+									</div>
+								</div>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		//将需要的配置文件进行封装函数,可以省去重复代码
+		//所有的seajs别名或者项目中bizlogic文件夹下的js都需要在seaBizConfig.js中设置别名,通过别名引用
+		//实际项目中请删除这些注释
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('js/bizlogic/itemCheck/keqiao_serviceQuery.js');
+	</script>
+
+</html>

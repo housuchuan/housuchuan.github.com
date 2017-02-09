@@ -1,0 +1,100 @@
+/*作者：袁凯忻
+        时间：2016年8月28日
+        描述：预约时间
+*/
+body{
+	background-color:#fff;
+}
+
+.mui-table-view {
+	margin-bottom: 54px;
+}
+
+.mui-table-view-cell>a:not(.mui-btn) {
+	font-size: 15px;
+	color: #666;
+}
+
+
+.mui-table-view input ,
+.mui-table-view .item-name {
+	float: left;
+	width: 50%;
+	margin: 0;
+	margin-left: 10px;
+	padding: 0;
+	border: 0;
+	height: auto;
+	text-align: left;
+	margin-right: 50px;
+	font-size: 15px;
+	color: #333;
+}
+
+.mui-table-view .item-name {
+	color: #3182eb;
+	width: 60%;
+	margin-right: 0px;
+}
+
+
+.mui-table-view-cell label {
+	float: left;
+	width: 70px;
+}
+
+.mui-table-view input.current {
+	color: #3182eb;
+}
+
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after {
+	right: 10px;
+}
+.mui-navigate-right.current:after, .mui-push-right.current:after {
+	content: '';
+}
+
+
+.mui-navigate-right.current:after, .mui-push-right.current:after {
+	    content: '';
+}
+
+
+.mui-table-view .mui-table-view-divider {
+	padding: 0;
+	padding-left: 15px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #3182eb;
+	background-color: #fff;
+}
+
+.appointment-time {
+	float: left;
+	font-size: 15px;
+	color: #666;
+}
+
+.appointment-number {
+	float: right;
+	font-size: 12px;
+	color: #999;
+}
+
+.appointment-number span {
+	font-size: 15px;
+	color: #ff0000;
+}
+.button-next{
+	position: fixed;
+	width: 100%;
+	border-radius: 0px;
+	bottom: 0px;
+	height: 44px;
+	font-size: 18px;
+	background: #3182eb;
+	text-align: center;
+	color: #fff;
+	line-height: 44px;
+}

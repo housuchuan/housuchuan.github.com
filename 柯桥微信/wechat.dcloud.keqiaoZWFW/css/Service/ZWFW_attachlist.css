@@ -1,0 +1,82 @@
+﻿/*
+ * 附件查看
+ * author: wangkai
+ * */
+
+/* main */
+
+body{
+	background-color:#f5f5f5;
+}
+
+.hot-item {
+
+	padding-left: 11px;
+	height: 38px;
+	line-height: 38px;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	background-color: #f5f5f5;
+	font-size: 14px;
+	color: #3182eb;
+}
+
+.hot-item .hot-item-number {
+	font-size: 15px;
+	color: #ff0000;
+}
+
+.hot-item-list .mui-table-view-cell {
+	padding: 0px 0px 0px 10px;
+	height: 43px;
+	line-height: 43px;
+}
+
+.hot-item-list .mui-table-view-cell>a:not(.mui-btn) {
+	margin: 0px 0px;
+	padding: 0px 0px;
+	padding-right:25px;
+	font-size: 15px;
+	color: #666;
+}
+
+.hot-item-list .mui-table-view-cell:after {
+	left: 10px;
+}
+
+.mt10 {
+	margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

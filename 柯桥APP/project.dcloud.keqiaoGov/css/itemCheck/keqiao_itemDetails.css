@@ -1,0 +1,104 @@
+
+/**
+ *作者：侯苏川 
+ *时间：2016-11-15
+ *描述：事项详情页面  
+ */
+
+body {
+	font-size: 14px;
+	background-color: #f5f5f5;
+}
+
+.mui-bar {
+	height: auto;
+	padding: 0;
+	background-color: #0b98f2;
+	box-shadow: 0 2px 2px 2px #dfdfdf;
+}
+
+.mui-bar-nav.mui-bar .mui-icon {
+	margin-left: 0;
+}
+
+.topicItem {
+	padding: 33px 0 26px 0;
+	background: url(../../img/itemCheck/img_bar.png) no-repeat;
+	background-size: 100% 100%;
+	color: #ffffff;
+}
+
+.topicItem div {
+	text-align: center;
+}
+
+.user {
+	display: inline-block;
+	margin: 0 5px;
+	font-size: 17px;
+	color: #fff000;
+}
+
+/*主题部分*/
+.mui-content {
+	margin: 120px 7px 0 7px;
+	padding: 0 8px 8px 8px;
+	border-radius: 6px;
+	color: #959595;
+	box-shadow: 0 0 2px 4px #e8e8e8;
+}
+
+.mui-bar-nav~.mui-content {
+	padding-top: 8px;
+}
+
+.mui-table-view:before,.mui-table-view:after {
+	content: none;
+}
+
+.mui-table-view {
+	border-radius: 6px;
+	border: 1px dashed #dcdcdc;
+}
+
+.mui-content>.mui-table-view:first-child {
+	margin-top: 0;
+}
+
+.mui-table-view-cell:after {
+	right: 15px;
+}
+
+.mui-table-view li span {
+	display: inline-block;
+	float: left;
+}
+
+.mui-table-view li span:first-child {
+	width: 30%;
+}
+
+.mui-table-view li span:last-child {
+	width: 70%;
+	color: #000000;
+}
+
+.event {
+	color: #008aff;
+}
+
+.number {
+	color: #ff2424;
+}
+
+#pass {
+	color: #2ba83f;
+}
+
+/*加载信息*/
+.downloadTip {
+	line-height: 200px;
+	text-align: center;
+	font-size: 14px;
+}
+

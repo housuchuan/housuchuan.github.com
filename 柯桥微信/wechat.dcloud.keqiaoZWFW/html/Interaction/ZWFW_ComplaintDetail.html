@@ -1,0 +1,50 @@
+<!-- 
+        作者：daike
+        时间：2016-09-01
+        描述：投诉详情
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>投诉详情</title>
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/Interaction/ZWFW_consult-details.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		
+		<div class="mui-content">
+			<div class="question-answer">
+			<div class="question-bk" style="word-break: break-all;">
+				<span>问：</span>
+				<span id="QUESTION"></span>
+			</div>
+			<div class="question-bk mt10" style="word-break: break-all;">
+				<span>答：</span>
+				<span id="ANSWER"></span>
+			</div>
+		</div>
+		</div>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('js/bizlogic/Interaction/ZWFW_ComplaintDetail.js');
+	</script>
+
+</html>

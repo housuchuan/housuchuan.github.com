@@ -1,0 +1,292 @@
+<!-- 
+        作者：陈轩
+        时间：2016-12-29
+        描述：首页
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'../../css/mui.min.css',
+				'../../css/common/common.css',
+				'../../css/common/common_search.css',
+				'../../css/css-homepage/flipsternavtabs.css',
+				'../../css/css-homepage/jquery.flipster.css',
+				'../../css/css-homepage/homepage.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<!-- 标题 -->
+		<!--<header id="header" class="mui-bar mui-bar-nav ">
+			<a class="mui-icon mui-pull-left logo"></a>
+			<div class="common-input-row">
+				<div class="common-input common-search-container mui-search">
+					<span class="btn-search mui-icon mui-icon-search" id="searchBtn"></span>
+					<input type="text" class="common-input-clear" placeholder="搜索应用、学校" id="input-searchName">
+				</div>
+			</div>
+			<a id="menu" class="mui-icon mui-icon-bars mui-pull-right"></a>
+		</header>-->
+		<div class="mui-content ">
+			<div id="pullrefresh" class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--3d轮播-->
+					<div class="flipster" id="flipster">
+						<ul class="flip-items">
+							<div style="height: 160px;width: 100%;color: gray;text-align: center;line-height: 160px;">信息加载中...</div>
+							<!--<li id="Coverflow-1" title="Cricket" data-flip-category="Fun Sports">
+								<img src="../../img/test/1.jpg">
+								<div>111111111111111111111111111111111111111111111111监督你进度杰克丹尼那可能1111111111</div>
+							</li>
+							<li id="Coverflow-2" title="Surfing" data-flip-category="Fun Sports">
+								<img src="../../img/test/1.jpg">
+								<div>这是一个旋转木马轮埠vdhabjhdbjhjhdbjad几点到</div>
+							</li>
+							<li id="Coverflow-3" title="Baseball" data-flip-category="Boring Sports">
+								<img src="../../img/test/3.jpg">
+								<div>这是一个旋转木马轮埠111111111111111111111111111</div>
+							</li>
+							<li id="Coverflow-4" title="Running" data-flip-category="Boring Sports">
+								<img src="../../img/test/4.jpg">
+								<div>这是一个旋转木马轮埠这是一个旋转木马轮埠这是一个旋转木马轮埠</div>
+							</li>
+							<li id="Coverflow-7" title="Air Kicking" data-flip-category="These are Sports?">
+								<img src="../../img/test/5.jpg">
+								<div>这是一个旋转木马轮埠这是一个旋转木马轮埠</div>
+							</li>
+							<li id="Coverflow-5" title="Bike Sitting" data-flip-category="These are Sports?">
+								<img src="../../img/test/6.jpg">
+								<div>这是一个旋转木马轮埠这是一个旋转木马轮埠这是一个旋转木马轮埠这是一个旋转木马轮埠</div>
+							</li>
+							<li id="Coverflow-6" title="Extreme Bike Sitting" data-flip-category="These are Sports?">
+								<img src="../../img/test/7.jpg">
+								<div>这是一个旋转木马轮埠</div>
+							</li>-->
+						</ul>
+					</div>
+
+					<!--应用列表切换-->
+					<div id="Gallery" class="mui-slider" style="margin-top:15px;">
+						<div class="mui-slider-group">
+							<!--<div class="mui-slider-item">
+								<ul class="mui-table-view mui-grid-view mui-grid-9">
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application1"></span>
+											<div class="mui-media-body">微家校</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application2"></span>
+											<div class="mui-media-body">筋斗云</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application3"></span>
+											<div class="mui-media-body">校园一卡通</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application4"></span>
+											<div class="mui-media-body">学校平台</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application5"></span>
+											<div class="mui-media-body">移动办公</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application6"></span>
+											<div class="mui-media-body">悦读悦乐</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application7"></span>
+											<div class="mui-media-body">教育督导</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application8"></span>
+											<div class="mui-media-body">教师研修</div>
+										</a>
+									</li>
+								</ul>
+							</div>-->
+							<!--<div class="mui-slider-item">
+								<ul class="mui-table-view mui-grid-view mui-grid-9">
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application1"></span>
+											<div class="mui-media-body">微家校</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application2"></span>
+											<div class="mui-media-body">筋斗云</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application3"></span>
+											<div class="mui-media-body">校园一卡通</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application4"></span>
+											<div class="mui-media-body">学校平台</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application5"></span>
+											<div class="mui-media-body">移动办公</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application6"></span>
+											<div class="mui-media-body">悦读悦乐</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application7"></span>
+											<div class="mui-media-body">教育督导</div>
+										</a>
+									</li>
+									<li class="more mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+										<a href="#">
+											<span class="mui-icon application9"></span>
+											<div class="mui-media-body">更多</div>
+										</a>
+									</li>
+								</ul>
+							</div>-->
+						</div>
+						<div class="mui-slider-indicator">
+							<div class="radius">
+								<!--<div class="mui-indicator mui-active"></div>
+								<div class="mui-indicator"></div>-->
+							</div>
+						</div>
+					</div>
+					<!--热点-->
+					<div class="hot-new">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<div id="hotNews" class="title mui-pull-left">热点<span class="bgf8537d">新闻</span></div>
+									<div class="mui-media-body marqueelist" id="marquee">
+										<!--<p class="mui-ellipsis">新点软件中标中国新点软件中标中国新点软件中标中国新点软件中标中国新点软件中标中国</p>
+										<p class="mui-ellipsis">新点软件中标中国...</p>
+										<p class="mui-ellipsis">新点软件中标中国...</p>
+										<p class="mui-ellipsis">新点软件中标中...</p>-->
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--教育咨讯-->
+					<div class="education-info">
+						<div class="education-hd">
+							<h5>教育<span class="bg0380f2">资讯</span></h5>
+						</div>
+						<ul id="listdata1" class="mui-table-view">
+							<!--<li class="mui-table-view-cell">
+								<p class="mui-ellipsis title">山东嘉通集团有限公司山东嘉通集团有限公司山东嘉通集团有限公司</p>
+								<p><span class="sourse">来源：<span class="blue">此次为来源</span></span><span class="time">2013-11-11</span></p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-ellipsis title">山东嘉通集团有限公司山东嘉通集团有限公司山东嘉通集团有限公司</p>
+								<p><span class="sourse">来源：<span class="blue">此次为来源</span></span><span class="time">2013-11-11</span></p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-ellipsis title">山东嘉通集团有限公司山东嘉通集团有限公司山东嘉通集团有限公司</p>
+								<p><span class="sourse">来源：<span class="blue">此次为来源</span></span><span class="time">2013-11-11</span></p>
+							</li>
+							<li class="mui-table-view-cell">
+								<p class="mui-ellipsis title">山东嘉通集团有限公司山东嘉通集团有限公司山东嘉通集团有限公司</p>
+								<p><span class="sourse">来源：<span class="blue">此次为来源</span></span><span class="time">2013-11-11</span></p>
+							</li>-->
+						</ul>
+					</div>
+					<!--智慧校园-->
+					<div class="smart-campus">
+						<div class="campus-hd">
+							<h5>智慧<span class="bgff6c00">校园</span></h5>
+							<p>共<span class="blue">0</span>所学校</p>
+						</div>
+						<ul id="listdata2" class="campus-ul mui-table-view">
+							<div class="loading" style="height: 160px;width: 100%;color: gray;text-align: center;line-height: 160px;">信息加载中...</div>
+							<!--<li class="mui-table-view-cell">
+								<div class="image"><img src="../../img/img-application/application1.png"/></div>
+								<p class="name">镇江中学</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="image"><img src="../../img/img-application/application1.png"/></div>
+								<p class="name">镇江中学</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="image"><img src="../../img/img-application/application1.png"/></div>
+								<p class="name">镇江中学</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="image"><img src="../../img/img-application/application1.png"/></div>
+								<p class="name">镇江中学</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="image"><img src="../../img/img-application/application1.png"/></div>
+								<p class="name">镇江中学</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="image"><img src="../../img/img-application/application1.png"/></div>
+								<p class="name">镇江中学</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="image"><img src="../../img/img-application/application1.png"/></div>
+								<p class="name">镇江中学</p>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="image"><img src="../../img/img-application/application1.png"/></div>
+								<p class="name">镇江中学</p>
+							</li>-->
+						</ul>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		//将需要的配置文件进行封装函数,可以省去重复代码
+		//所有的seajs别名或者项目中bizlogic文件夹下的js都需要在seaBizConfig.js中设置别名,通过别名引用
+		//实际项目中请删除这些注释
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('../../js/bizlogic/bizlogic-homepage/homepage.js');
+	</script>
+
+</html>

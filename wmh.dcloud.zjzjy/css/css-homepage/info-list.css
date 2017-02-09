@@ -1,0 +1,74 @@
+/**
+ * 作者  chenxuan
+ * 日期  2016-12-6
+ * 简介  列表信息
+ */
+.mui-scroll-wrapper {
+	top: 0;
+}
+/*listdata*/
+
+#listdata .mui-media-object {
+	max-width: 25%;
+	width: 25%;
+	height: 70px;
+}
+
+#listdata .mui-media-object.wd30 {
+	max-width: 32%;
+	width: 32%;
+}
+
+#listdata .mui-media-object.wd100 {
+	max-width: 100%;
+	width: 100%;
+	height: 124px;
+}
+
+#listdata .mui-media-object.wd50 {
+	max-width: 49%;
+	width: 49%;
+	height: 100px;
+}
+
+#listdata .wd50.mui-pull-left,
+#listdata .wd30.mui-pull-left {
+	margin-right: 2%;
+}
+
+#listdata .mr0.mui-pull-left {
+	margin-right: 0;
+}
+
+.mui-table-view-cell p.news-title {
+	color: inherit;
+	font-size: 15px;
+	white-space: normal;
+	margin-bottom: 6px;
+}
+
+.mui-table-view-cell p.date {
+	margin-top: 6px;
+	font-size: 12px;
+	line-height: 26px;
+	color: #999;
+}
+
+.mui-table-view-cell p.date .type {
+	display: inline-block;
+	font-size: 11px;
+	line-height: 20px;
+	padding: 0 6px;
+	border: 1px solid #4b70d3;
+	margin-left: 9px;
+	color: #4b70d3;
+	border-radius: 3px;
+}
+
+
+/*sliderSegmentedControl*/
+
+#sliderSegmentedControl {
+	padding-right: 11%;
+}
+

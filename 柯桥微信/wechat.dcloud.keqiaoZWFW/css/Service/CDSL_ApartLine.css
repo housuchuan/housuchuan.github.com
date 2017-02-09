@@ -1,0 +1,112 @@
+/*
+  * 作者：ykx 
+  * 时间：2016年8月9日
+  * 描述：排队
+ */
+
+body,
+ul,
+.mui-table-view {
+	background-color: #f5f5f5;
+}
+
+li {
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+
+
+/*
+.common-input-row {
+	position: relative;
+	height: 44px;
+	background-color: #eaeaea;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 6px 10px 6px 10px;
+	overflow: hidden;
+}
+
+.common-input {
+	background-color: #fff;
+	border: 1px solid #cecece;
+	border-radius: 30px;
+	margin-top: 0;
+}
+
+input[type=text].common-input-clear {
+	border: 0;
+	line-height: 14px;
+	font-size: 12px;
+	height: 30px;
+	margin-bottom: 0;
+	margin-left: 16px;
+	padding-left: 5px;
+	max-width: 70%;
+}*/
+
+.mui-content {
+	margin: 0 10px;
+}
+
+
+/*列表*/
+
+.content-list {
+	height: 44px;
+	padding: 0;
+font-size: 14px;
+}
+
+.content-list img{
+	width: 39px;
+	height: 44px;
+	float: left;
+}
+
+
+/*标题*/
+
+.tittle {
+	padding: 11px 15px;
+	display: inline-block;
+	float: left;
+}
+
+.content-right {
+padding: 11px 15px;
+	display: inline-block;
+	float: right;
+}
+
+.number {
+	display: inline-block;
+	color: red;
+}
+
+.odd {
+	margin-right: 20px;
+}
+
+.foo {
+	position: fixed;
+	bottom: 5px;
+	height: 35px;
+	width: 100%;
+	border-top: 1px solid #d5d5d5;
+	background: #fff;
+}
+
+.add-btn {
+	height: 30px;
+	font-size: 15px;
+	line-height: 30px;
+	margin: 5px;
+	width: 50%;
+	border-color: #0b98f2;
+	background-color: #0b98f2;
+	border-radius: 20px;
+	padding: 0;
+	margin-left: 25%;
+	color: #fff;
+	z-index: 999;
+}

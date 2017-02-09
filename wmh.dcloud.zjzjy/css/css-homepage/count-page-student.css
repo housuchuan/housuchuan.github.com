@@ -1,0 +1,262 @@
+/**
+ * 统计详情 页面
+ */
+
+.mui-control-content {
+	position: inherit;
+}
+
+.mui-slider .mui-control-content {
+	min-height: 300px;
+}
+
+.mui-slider .mui-scroll-wrapper {
+	top: 0;
+}
+
+.mui-slider {
+	background-color: #fff;
+}
+.mui-segmented-control.mui-segmented-control-inverted {
+	height: 38px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+	border-top: 0;
+}
+
+.mui-slider .mui-segmented-control .mui-control-item span {
+	display: inline-block;
+	line-height: 38px;
+	padding: 0 8px;
+}
+.mui-slider .mui-segmented-control .mui-control-item.mui-active span {
+	border-bottom: 2px solid #0280f2;
+}
+.mui-scroll-wrapper {
+	top: 0;
+	background-color: #f5f5f5;
+}
+
+.mui-segmented-control .mui-control-item {
+	color: #fff;
+	line-height: 30px;
+}
+
+.mui-segmented-control {
+	border: 1px solid #fff;
+}
+
+.mui-bar .mui-segmented-control {
+	border-radius: 16px;
+	width: 65%;
+}
+
+.mui-segmented-control .mui-control-item.mui-active {
+	background-color: #fff;
+	color: #0280f2;
+}
+
+
+/*block-first*/
+
+.block-first {
+	position: relative;
+	overflow: hidden;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.block-first .left {
+	float: left;
+	width: 50%;
+	padding-right: 3%;
+	border-right: 1px dashed #d5d5d5;
+}
+
+.block-first .right {
+	float: right;
+	width: 47%;
+}
+
+.block-first .right img {
+	width: 100%;
+}
+
+.block-first .school-name {
+	color: #000;
+	font-size: 18px;
+	line-height: 60px;
+	border-bottom: 1px dashed #d5d5d5;
+	;
+}
+
+.width50 {
+	float: left;
+	width: 48%;
+	text-align: center;
+	height: 85px;
+}
+
+.block-first .width50 img{
+	width: 30px;
+	height: 22px;
+}
+
+.width50 .className {
+	font-size: 13px;
+	color: #666;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.width50 .percent {
+	color: #ff4200;
+	font-size: 25px;
+}
+
+.block-second:before,
+.block-first:before {
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #c8c7cc;
+	top: 0;
+}
+
+.block-second:after,
+.block-first:after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #c8c7cc;
+}
+
+
+/*.block-second*/
+
+.block-second {
+	position: relative;
+	margin: 10px 0;
+	background-color: #fff;
+	padding: 0 10px;
+}
+
+.block-second .percent-name {
+	line-height: 38px;
+	border-bottom: 1px solid #D5D5D5;
+	text-align: center;
+	color: #333;
+}
+
+.block-second img {
+	width: 100%;
+}
+
+
+/*教师列表*/
+
+.oa-contact-cell.mui-table .mui-table-cell {
+	padding: 11px 0;
+	vertical-align: middle;
+}
+
+.oa-contact-cell {
+	position: relative;
+	margin: -11px 0;
+}
+.oa-contact-position.mui-h6 {
+	color: #666;
+	font-size: 14px;
+	line-height: 25px;
+}
+.oa-contact-email.mui-h6 {
+	color: #999;
+	font-size: 14px;
+}
+.oa-contact-email.mui-h6 .blue {
+	color: #4875db;
+}
+.oa-contact-avatar {
+	width: 60px;
+}
+.mui-slider .mui-slider-group .mui-slider-item img {
+	width: 45px;
+}
+.oa-contact-avatar img {
+	border-radius: 50%;
+}
+
+.oa-contact-content {
+	width: 100%;
+}
+
+.oa-contact-name {
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0;
+	margin-right: 20px;
+	line-height: 25px;
+}
+
+.oa-contact-name,
+.oa-contact-position {
+	float: left;
+}
+/*学生列表*/
+.student-li {
+	border-radius: 8px;
+	line-height: 36px;
+	background-color: #e1eefd;
+}
+
+.mui-slider .mui-scroll {
+	background-color: #fff;
+}
+.mui-table-view-cell.student-li {
+	padding: 0;
+	margin: 13px 15px;
+	font-size: 15px;
+}
+.student-li .percent {
+	float: right;
+	color: #ff4200;
+	margin-right: 15px;
+}
+.student-li .classNum {
+	float: left;
+	color: #0280f2;
+	margin-left: 15px;
+}
+
+
+.data-daoxiao > div,.data-rest > div {
+	float: left;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.data-number {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.data-number div {
+	text-align: center;
+	font-size: 13px;
+	color: gray;
+}
+
+.data-number div:last-child {
+	font-size: 20px;
+	color: red;
+}

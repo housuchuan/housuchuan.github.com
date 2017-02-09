@@ -1,0 +1,40 @@
+<!-- 
+        作者：袁凯忻
+        时间：2016年8月26日
+        描述：咨询成功
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>咨询成功</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/Interaction/ZWFW_Consult_Success.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="success-tips">
+			<img src="../../img/Interaction/Consult/img_consultin_icon.png" class="consulting-icon">
+			<p class="success-info">提交成功，我们会尽快处理您的咨询。<br/>请您耐心等待！</p>
+		</div>
+		<button type="button" class="mui-btn mui-btn-primary mui-btn-block" id="ConsultList">返回我的咨询列表</button>
+	</body>
+	<!-- 通用js -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/Interaction/ZWFW_Consult_Success.js");
+	</script>
+
+</html>

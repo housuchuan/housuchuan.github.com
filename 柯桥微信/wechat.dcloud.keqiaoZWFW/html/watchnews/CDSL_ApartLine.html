@@ -1,0 +1,101 @@
+<!-- 
+        作者：
+        时间：
+        描述：
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<script>
+			//这是属于老版的缓存控制方案,后续的自定构建解决缓存也兼容这种模式,所以写法没问题
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			//支持项目相对路径和绝对路径
+			SrcBoot.output([
+				'css/mui.min.css',
+				'css/common/common.css',
+				'css/watchnews/CDSL_ApartLine.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<!-- 标题 -->
+		<div class="mui-content">
+			<!--数据列表-->
+			<ul class="mui-table-view" id="listdata">
+				<!--<li class="mui-table-view-cell content-list" id="{{InfoId}}">
+					<img src="../../img/watchnews/IMG_tit1.png" />
+					<span class="tittle">{{tittle}}</span>
+					<div class="content-right">
+						<span class="number">{{number}}</span><span>人</span>
+					</div>
+				</li>
+				<li class="mui-table-view-cell content-list" id="{{InfoId}}">
+					<img src="../../img/watchnews/IMG_tit2.png" />
+					<span class="tittle">{{tittle}}</span>
+					<div class="content-right">
+						<span class="number">{{number}}</span><span>人</span>
+					</div>
+				</li>
+				<li class="mui-table-view-cell content-list" id="{{InfoId}}">
+					<img src="../../img/watchnews/IMG_tit3.png" />
+					<span class="tittle">{{tittle}}</span>
+					<div class="content-right">
+						<span class="number">{{number}}</span><span>人</span>
+					</div>
+				</li>
+				<li class="mui-table-view-cell content-list" id="{{InfoId}}">
+					<img src="../../img/watchnews/IMG_tit4.png" />
+					<span class="tittle">{{tittle}}</span>
+					<div class="content-right">
+						<span class="number">{{number}}</span><span>人</span>
+					</div>
+				</li>
+				<li class="mui-table-view-cell content-list" id="{{InfoId}}">
+					<img src="../../img/watchnews/IMG_tit1.png" />
+					<span class="tittle">{{tittle}}</span>
+					<div class="content-right">
+						<span class="number">{{number}}</span><span>人</span>
+					</div>
+				</li>
+				<li class="mui-table-view-cell content-list" id="{{InfoId}}">
+					<img src="../../img/watchnews/IMG_tit2.png" />
+					<span class="tittle">{{tittle}}</span>
+					<div class="content-right">
+						<span class="number">{{number}}</span><span>人</span>
+					</div>
+				</li>
+				<li class="mui-table-view-cell content-list" id="{{InfoId}}">
+					<img src="../../img/watchnews/IMG_tit3.png" />
+					<span class="tittle">{{tittle}}</span>
+					<div class="content-right">
+						<span class="number">{{number}}</span><span>人</span>
+					</div>
+				</li>
+				<li class="mui-table-view-cell content-list" id="{{InfoId}}">
+					<img src="../../img/watchnews/IMG_tit4.png" />
+					<span class="tittle">{{tittle}}</span>
+					<div class="content-right">
+						<span class="number">{{number}}</span><span>人</span>
+					</div>
+				</li>-->
+			</ul>
+		</div>
+		<div class="foo">
+			<button type="button" class="mui-btn mui-btn-primary mui-btn-block add-btn" id="tijiao">刷新</button>
+		</div>
+	</body>
+	<!-- 通用seajs配置 -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use("../../js/bizlogic/watchnews/CDSL_ApartLine.js");
+	</script>
+
+</html>

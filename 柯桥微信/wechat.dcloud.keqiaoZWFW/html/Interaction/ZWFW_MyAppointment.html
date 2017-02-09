@@ -1,0 +1,61 @@
+<!-- 
+        作者：袁凯忻
+        时间：2016年8月26日
+        描述：我的预约
+-->
+<!DOCTYPE html >
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>我的预约</title>
+		<script>
+			document.write("<script type='text/javascript' src='../../js/core/RayApp/cacheControl.config.js?" + Math.random() + "'></scr" + "ipt>");
+		</script>
+		<script>
+			SrcBoot.output([
+				'../../css/mui.min.css',
+				'../../css/common/common.css',
+				'../../css/Interaction/ZWFW_MyAppointment.css'
+			]);
+		</script>
+	</head>
+
+	<body>
+		<div class="my-reservation">
+			<div class="mui-segmented-control">
+				<ul class="mui-clearfix">
+					<li class="tab-fgx">
+						<a href="#" id="myyy" class="mui-control-item mui-active">我的预约</a>
+					</li>
+					<li>
+						<a href="#" id="lsyy" class="mui-control-item">历史预约</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<!--下拉刷新容器-->
+			<div id="pullrefresh" class="mt10 mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--数据列表-->
+					<ul class="mui-table-view" id="listdata">
+					</ul>
+				</div>
+			</div>
+			<div style="display:none">
+				<input type="text" id="inputtype" value="0"></input>
+			</div>
+		</div>
+		<button type="button" class="mui-btn mui-btn-primary mui-btn-block add-btn" id="AddAppointment">新增预约</button>
+	</body>
+	<!-- 通用js -->
+	<script>
+		SrcBoot.outSeaConfig();
+	</script>
+	<script>
+		seajs.use('../../js/bizlogic/Interaction/ZWFW_MyAppointment.js');
+	</script>
+
+</html>
